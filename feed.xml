@@ -3,7 +3,7 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-10-11T01:17:55-03:00</updated>
+    <updated>2024-10-11T02:13:51-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
@@ -16,21 +16,24 @@
         </author>
         <link href="https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html"/>
         <id>https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/16/publii-cms.webp" medium="image" />
             <category term="Publii"/>
 
         <updated>2024-10-11T01:17:55-03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/16/publii-cms.webp" alt="" />
                     El config.jsonarchivo desempeña un papel fundamental en la personalización del aspecto y&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/16/publii-cms.webp" class="type:primaryImage" alt="" /></p>
                 <header>
 <p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">El </span><code style="font-weight: var(--font-weight-normal);">config.json</code><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">archivo desempeña un papel fundamental en la personalización del aspecto y el funcionamiento del sitio web generado por Publii. Funciona como el centro de configuración principal para el renderizador de temas y determina varios aspectos de cómo se muestra el contenido.</span></p>
 </header>
 <div class="post__entry">
-<p><span>Publii fusiona el archivo de configuración del tema con el predeterminado que se ve a continuación:</span></p>
+<p>Publii fusiona el archivo de configuración del tema con el predeterminado que se ve a continuación:</p>
 <div class="code-toolbar">
 <pre class="language-json" tabindex="0"><code>{
     "postTemplates": {},
@@ -106,48 +109,48 @@
     "customElements": []
 }</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>Los campos </span><code>name</code><span>, </span><code>version</code><span>, </span><code>author</code><span>son OBLIGATORIOS. Los demás campos se fusionarán con el archivo </span><strong><span>config.json</span></strong><span> predeterminado si algunos campos no existen en el archivo </span><strong><span>config.json</span></strong><span> del tema .</span></p>
-<h2 id="therenderersection"><span>La sección </span><strong><span>del renderizador</span></strong></h2>
-<p><span>La sección </span><strong><span>de renderizador</span></strong><span> contiene valores que no se deben cambiar en las opciones del tema, pero que pueden ser modificados por el desarrollador del tema o por usuarios más avanzados. Para obtener información más detallada sobre la configuración de las opciones </span><strong><span>del renderizador</span></strong><span> , consulta el artículo de la documentación de Publii sobre </span><a href="https://getpublii.com/dev/how-to-configure-rendering-process-of-your-website/"><span>Cómo configurar el proceso de renderizado de tu sitio web</span></a><span> .</span></p>
-<h2 id="thesupportedfeaturessection"><span>La sección de características admitidas</span></h2>
-<p><span>La sección supportedFeatures del archivo config.json se utiliza para indicar qué funciones de Publii son compatibles con el tema. Esto permite a los usuarios identificar fácilmente si un tema ofrece la funcionalidad deseada y facilita la elección de un tema que satisfaga sus necesidades.</span></p>
-<p><span>Para obtener más información sobre la sección Características compatibles y las funciones admitidas, consulta el artículo </span><a href="https://getpublii.com/dev/theme-supported-features/"><span>Características compatibles del tema</span></a><span> .</span></p>
-<h2 id="theconfigsection"><span>La sección </span><strong><span>de configuración</span></strong></h2>
-<p><span>La sección </span><strong><span>de configuración</span></strong><span> contiene algunas opciones útiles para el usuario y el renderizador de temas:</span></p>
+<p>Los campos <code>name</code>, <code>version</code>, <code>author</code>son OBLIGATORIOS. Los demás campos se fusionarán con el archivo <strong>config.json</strong> predeterminado si algunos campos no existen en el archivo <strong>config.json</strong> del tema .</p>
+<h2 id="therenderersection">La sección <strong>del renderizador</strong></h2>
+<p>La sección <strong>de renderizador</strong> contiene valores que no se deben cambiar en las opciones del tema, pero que pueden ser modificados por el desarrollador del tema o por usuarios más avanzados. Para obtener información más detallada sobre la configuración de las opciones <strong>del renderizador</strong> , consulta el artículo de la documentación de Publii sobre <a href="https://getpublii.com/dev/how-to-configure-rendering-process-of-your-website/">Cómo configurar el proceso de renderizado de tu sitio web</a> .</p>
+<h2 id="thesupportedfeaturessection">La sección de características admitidas</h2>
+<p>La sección supportedFeatures del archivo config.json se utiliza para indicar qué funciones de Publii son compatibles con el tema. Esto permite a los usuarios identificar fácilmente si un tema ofrece la funcionalidad deseada y facilita la elección de un tema que satisfaga sus necesidades.</p>
+<p>Para obtener más información sobre la sección Características compatibles y las funciones admitidas, consulta el artículo <a href="https://getpublii.com/dev/theme-supported-features/">Características compatibles del tema</a> .</p>
+<h2 id="theconfigsection">La sección <strong>de configuración</strong></h2>
+<p>La sección <strong>de configuración</strong> contiene algunas opciones útiles para el usuario y el renderizador de temas:</p>
 <ul>
-<li><strong><span>postsPerPage</span></strong><span> - número de publicaciones mostradas en la página de inicio y en la página de etiquetas (si no se ha configurado </span><strong><span>tags_posts_per_page ),</span></strong></li>
-<li><strong><span>tagsPostsPerPage</span></strong><span> - número de publicaciones mostradas en las páginas de etiquetas,</span></li>
-<li><strong><span>excerptLength</span></strong><span> - longitud de los extractos en palabras.</span></li>
+<li><strong>postsPerPage</strong> - número de publicaciones mostradas en la página de inicio y en la página de etiquetas (si no se ha configurado <strong>tags_posts_per_page ),</strong></li>
+<li><strong>tagsPostsPerPage</strong> - número de publicaciones mostradas en las páginas de etiquetas,</li>
+<li><strong>excerptLength</strong> - longitud de los extractos en palabras.</li>
 </ul>
-<p><span>Para las publicaciones por página, un valor de opción de 0 se define como una cantidad ilimitada (aunque técnicamente no es ilimitada; el máximo es 999 publicaciones por página) de publicaciones mostradas.</span></p>
-<p><span>La sección de archivos le permite modificar el comportamiento del renderizador:</span></p>
+<p>Para las publicaciones por página, un valor de opción de 0 se define como una cantidad ilimitada (aunque técnicamente no es ilimitada; el máximo es 999 publicaciones por página) de publicaciones mostradas.</p>
+<p>La sección de archivos le permite modificar el comportamiento del renderizador:</p>
 <ul>
-<li><strong><span>ignoreAssets</span></strong><span> : una matriz que define los recursos (archivos y directorios) que se deben ignorar al copiar activos al directorio de salida.</span></li>
-<li><strong><span>assetsPath</span></strong><span> : especifica qué directorio contiene los activos del tema</span></li>
-<li><strong><span>partialsPath</span></strong><span> : especifica qué directorio contiene los archivos parciales del tema</span></li>
-<li><strong><span>useDynamicAssets</span></strong><span> : especifica si el tema usa </span><a href="https://getpublii.com/dev/dynamic-assets/"><span>activos dinámicos</span></a><span> o no.</span></li>
-<li><strong><span>responsiveImages</span></strong><span> : especifica el atributo de tamaño y las dimensiones (y el modo de recorte) de las miniaturas creadas. Si no se define la configuración de featuredImages, todas las imágenes utilizarán la configuración de contentImages. Puede utilizar "auto" en lugar de un número si desea cambiar el tamaño de las imágenes según una dimensión.</span></li>
+<li><strong>ignoreAssets</strong> : una matriz que define los recursos (archivos y directorios) que se deben ignorar al copiar activos al directorio de salida.</li>
+<li><strong>assetsPath</strong> : especifica qué directorio contiene los activos del tema</li>
+<li><strong>partialsPath</strong> : especifica qué directorio contiene los archivos parciales del tema</li>
+<li><strong>useDynamicAssets</strong> : especifica si el tema usa <a href="https://getpublii.com/dev/dynamic-assets/">activos dinámicos</a> o no.</li>
+<li><strong>responsiveImages</strong> : especifica el atributo de tamaño y las dimensiones (y el modo de recorte) de las miniaturas creadas. Si no se define la configuración de featuredImages, todas las imágenes utilizarán la configuración de contentImages. Puede utilizar "auto" en lugar de un número si desea cambiar el tamaño de las imágenes según una dimensión.</li>
 </ul>
-<p class="msg msg--warning"><strong><span>¡ADVERTENCIA!</span></strong><span>  Los nombres de las dimensiones de las imágenes no pueden contener caracteres no latinos, espacios, comas, etc. y siempre deben estar en minúsculas.</span></p>
-<p><span>La sección </span><strong><span>de menús</span></strong><span> opcionales es un objeto con las áreas de menú disponibles.</span></p>
-<p class="msg msg--warning"><strong><span>¡ADVERTENCIA!</span></strong><span> Las claves de este objeto solo deben utilizar letras, ya que se utilizarán en el menú parcial como parámetro del objeto de menús.</span></p>
-<p><span>En las secciones opcionales </span><strong><span>postTemplates/tagTemplates/authorTemplates</span></strong><span> , puede crear una colección de pares clave-valor que se usarán para generar la lista de plantillas de publicación/etiqueta/autor.</span></p>
-<p><span>La sección opcional </span><strong><span>customElements</span></strong><span> agrega estilos personalizados para elementos específicos que se pueden previsualizar en nuestro editor de publicaciones. Al agregar un </span><code>customElements</code><span>campo, puede usar todos los elementos personalizados que ofrece el </span><a href="https://www.tinymce.com/docs/demo/format-custom/" target="_blank" rel="noopener noreferrer"><span>editor TinyMCE</span></a><span> .</span></p>
-<h2 id="moreexamples"><span>Más ejemplos</span></h2>
-<p><span>Un ejemplo para la sección de menús:</span></p>
+<p class="msg msg--warning"><strong>¡ADVERTENCIA!</strong>  Los nombres de las dimensiones de las imágenes no pueden contener caracteres no latinos, espacios, comas, etc. y siempre deben estar en minúsculas.</p>
+<p>La sección <strong>de menús</strong> opcionales es un objeto con las áreas de menú disponibles.</p>
+<p class="msg msg--warning"><strong>¡ADVERTENCIA!</strong> Las claves de este objeto solo deben utilizar letras, ya que se utilizarán en el menú parcial como parámetro del objeto de menús.</p>
+<p>En las secciones opcionales <strong>postTemplates/tagTemplates/authorTemplates</strong> , puede crear una colección de pares clave-valor que se usarán para generar la lista de plantillas de publicación/etiqueta/autor.</p>
+<p>La sección opcional <strong>customElements</strong> agrega estilos personalizados para elementos específicos que se pueden previsualizar en nuestro editor de publicaciones. Al agregar un <code>customElements</code>campo, puede usar todos los elementos personalizados que ofrece el <a href="https://www.tinymce.com/docs/demo/format-custom/" target="_blank" rel="noopener noreferrer">editor TinyMCE</a> .</p>
+<h2 id="moreexamples">Más ejemplos</h2>
+<p>Un ejemplo para la sección de menús:</p>
 <div class="code-toolbar">
 <pre class="language-json" tabindex="0"><code>"menus": {
     "mainMenu": "Main menu", 
     "footerMenu": "Footer menu"
 },</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>Un ejemplo para la sección customElements:</span></p>
+<p>Un ejemplo para la sección customElements:</p>
 <div class="code-toolbar">
 <pre class="language-json" tabindex="0"><code>"customElements": [
         {
@@ -162,11 +165,11 @@
         }
 ]</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><strong><span>La etiqueta</span></strong><span> hace que el elemento quede envuelto por el elemento especificado en la etiqueta, con las clases CSS definidas en  </span><strong><span>cssClasses </span></strong><span> agregadas. Si se configura  el </span><strong><span>selector , las </span></strong><strong><span>cssClasses</span></strong><span> especificadas  se agregarán a los elementos que coincidan con el selector proporcionado (debe usarse especialmente al aplicar estilo a párrafos).</span></p>
-<p><span>Un ejemplo para la sección de plantillas:</span></p>
+<p><strong>La etiqueta</strong> hace que el elemento quede envuelto por el elemento especificado en la etiqueta, con las clases CSS definidas en  <strong>cssClasses </strong> agregadas. Si se configura  el <strong>selector , las </strong><strong>cssClasses</strong> especificadas  se agregarán a los elementos que coincidan con el selector proporcionado (debe usarse especialmente al aplicar estilo a párrafos).</p>
+<p>Un ejemplo para la sección de plantillas:</p>
 <div class="code-toolbar">
 <pre class="language-json" tabindex="0"><code>"postTemplates": {
        "alternative": "Post alternative template (from post-alternative.hbs file)"
@@ -285,38 +288,38 @@
 <p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Cada tema de Publii debe contener algunos archivos obligatorios, pero también se pueden incluir algunos archivos de forma opcional en el tema.</span></p>
 </header>
 <div class="post__entry">
-<p><span>Se requieren los siguientes archivos:</span></p>
+<p>Se requieren los siguientes archivos:</p>
 <ul>
-<li><strong><span>config.json</span></strong><span> - archivo de configuración del tema principal,</span></li>
-<li><strong><span>index.hbs</span></strong><span> - plantilla de página de inicio,</span></li>
-<li><strong><span>post.hbs</span></strong><span> - plantilla de publicación única,</span></li>
-<li><strong><span>miniatura.png</span></strong><span> - que se mostrará en la configuración de la aplicación (dimensiones requeridas: 400x300px),</span></li>
-<li><strong><span>assets/css/main.css</span></strong><span> : archivo CSS principal que se utiliza para generar el archivo </span><strong><span>styles.css (que se fusiona con el archivo </span></strong><strong><span>override.css</span></strong><span> generado opcionalmente ).</span></li>
+<li><strong>config.json</strong> - archivo de configuración del tema principal,</li>
+<li><strong>index.hbs</strong> - plantilla de página de inicio,</li>
+<li><strong>post.hbs</strong> - plantilla de publicación única,</li>
+<li><strong>miniatura.png</strong> - que se mostrará en la configuración de la aplicación (dimensiones requeridas: 400x300px),</li>
+<li><strong>assets/css/main.css</strong> : archivo CSS principal que se utiliza para generar el archivo <strong>styles.css (que se fusiona con el archivo </strong><strong>override.css</strong> generado opcionalmente ).</li>
 </ul>
-<p><span>Se recomiendan estos archivos:</span></p>
+<p>Se recomiendan estos archivos:</p>
 <ul>
-<li><strong><span>tag.hbs</span></strong><span> - plantilla de página de etiqueta única,</span></li>
-<li><strong><span>tags.hbs</span></strong><span> - plantilla de página de etiquetas individuales,</span></li>
-<li><strong><span>author.hbs</span></strong><span> - plantilla de página de autor único,</span></li>
-<li><strong><span>partials/</span></strong><span> - ubicación de los archivos que se cargarán con el uso del </span><code>{{&gt; fileName}}</code><span>código,</span></li>
-<li><strong><span>partials/footer.hbs</span></strong><span> - pie de página utilizado en todas las páginas,</span></li>
-<li><strong><span>partials/header.hbs</span></strong><span> - encabezado utilizado en todas las páginas</span></li>
+<li><strong>tag.hbs</strong> - plantilla de página de etiqueta única,</li>
+<li><strong>tags.hbs</strong> - plantilla de página de etiquetas individuales,</li>
+<li><strong>author.hbs</strong> - plantilla de página de autor único,</li>
+<li><strong>partials/</strong> - ubicación de los archivos que se cargarán con el uso del <code>{{&gt; fileName}}</code>código,</li>
+<li><strong>partials/footer.hbs</strong> - pie de página utilizado en todas las páginas,</li>
+<li><strong>partials/header.hbs</strong> - encabezado utilizado en todas las páginas</li>
 </ul>
-<p><span>Y estos archivos son opcionales:</span></p>
+<p>Y estos archivos son opcionales:</p>
 <ul>
-<li><strong><span>visual-override.js</span></strong><span> : archivo que contiene una función utilizada para </span><strong><span>generar el</span></strong><span> archivo override.css,</span></li>
-<li><strong><span>feed-xml.hbs</span></strong><span> : la estructura del archivo XML del feed, generado como </span><strong><span>feed.xml</span></strong><span> (el archivo </span><strong><span>feed-xml.hbs</span></strong><span> se reemplazará con el predeterminado de la aplicación si no existe uno en el tema),</span></li>
-<li><strong><span>feed-json.hbs</span></strong><span> : la estructura del archivo JSON del feed, generado como </span><strong><span>feed.json</span></strong><span> (el archivo </span><strong><span>feed-json.hbs</span></strong><span> se reemplazará con el predeterminado de la aplicación si no existe uno en el tema),</span></li>
-<li><strong><span>search.hbs</span></strong><span> : plantilla de página de resultados de búsqueda dedicada. Esta plantilla es necesaria para los temas que pretenden ofrecer capacidades de búsqueda mejoradas o integrarse con complementos de búsqueda específicos, como un complemento de búsqueda de Google. </span></li>
-<li><strong><span>partials/pagination.hbs</span></strong><span> - paginación para todas las páginas (la paginación parcial será reemplazada con la predeterminada de la aplicación si no existe en el tema),</span></li>
-<li><strong><span>partials/menu.hbs</span></strong><span> - estructura del menú para todas las páginas (el menú parcial será reemplazado por el predeterminado de la aplicación si no existe uno en el tema).</span></li>
-<li><strong><span>post-template.hbs</span></strong><span> : un archivo de plantilla de publicación alternativa que se puede seleccionar para publicaciones individuales y que ofrece un diseño personalizado distinto de la </span><code>post.hbs</code><span>plantilla predeterminada.</span></li>
-<li><strong><span>tag-template.hbs</span></strong><span> : un archivo de plantilla personalizado para páginas de etiquetas individuales. Esta plantilla permite un diseño o disposición únicos para páginas que incluyen publicaciones asociadas con una etiqueta en particular. </span></li>
-<li><strong><span>author-template.hbs</span></strong><span> : un archivo de plantilla alternativo dedicado a la página de cada autor. Esta plantilla le permite aplicar un diseño o disposición únicos para las páginas que muestran publicaciones escritas por un autor específico. </span></li>
-<li><strong><span>helpers.js</span></strong><span> : un archivo JavaScript que contiene definiciones de ayudantes Handlebars personalizados adaptados a las necesidades específicas del tema. </span></li>
-<li><strong><span>dynamic-assets-mapping.js</span></strong><span> : un archivo JavaScript que genera una lista de rutas de recursos que se deben cargar de forma dinámica según la configuración del tema. El uso principal de este archivo es administrar recursos como fuentes, imágenes u otros medios que pueden variar según las opciones de personalización del usuario o las opciones del tema.</span></li>
-<li><strong><span>theme-variables.js</span></strong><span> : un archivo JavaScript que genera dinámicamente propiedades CSS personalizadas (variables) en función de la configuración del tema. El resultado </span><code>theme-variables.js</code><span>es crucial para definir parámetros de estilo fundamentales, como colores, familias de fuentes, tamaños y más. El aspecto clave de este archivo es que su resultado se inyecta normalmente al principio del </span><code>style.css</code><span>  archivo. Esta posición garantiza que las variables CSS definidas estén disponibles y se puedan utilizar en el resto del archivo CSS, lo que proporciona una base de estilo coherente y fácilmente personalizable para el tema.</span></li>
-<li><strong><span>visual-override.js</span></strong><span> : el propósito de este archivo JavaScript es generar estilos CSS personalizados que permitan modificaciones específicas de los estilos predeterminados del tema en función de los parámetros configurados por el usuario. A diferencia de </span><code>theme-variables.js</code><span>, la salida de </span><code>visual-override.js</code><span>se agrega al final del </span><code>style.css</code><span>archivo. Esta ubicación es estratégica, ya que garantiza que las modificaciones personalizadas precedan a los estilos definidos previamente, lo que permite una personalización y ajustes efectivos de la apariencia del tema. </span></li>
+<li><strong>visual-override.js</strong> : archivo que contiene una función utilizada para <strong>generar el</strong> archivo override.css,</li>
+<li><strong>feed-xml.hbs</strong> : la estructura del archivo XML del feed, generado como <strong>feed.xml</strong> (el archivo <strong>feed-xml.hbs</strong> se reemplazará con el predeterminado de la aplicación si no existe uno en el tema),</li>
+<li><strong>feed-json.hbs</strong> : la estructura del archivo JSON del feed, generado como <strong>feed.json</strong> (el archivo <strong>feed-json.hbs</strong> se reemplazará con el predeterminado de la aplicación si no existe uno en el tema),</li>
+<li><strong>search.hbs</strong> : plantilla de página de resultados de búsqueda dedicada. Esta plantilla es necesaria para los temas que pretenden ofrecer capacidades de búsqueda mejoradas o integrarse con complementos de búsqueda específicos, como un complemento de búsqueda de Google. </li>
+<li><strong>partials/pagination.hbs</strong> - paginación para todas las páginas (la paginación parcial será reemplazada con la predeterminada de la aplicación si no existe en el tema),</li>
+<li><strong>partials/menu.hbs</strong> - estructura del menú para todas las páginas (el menú parcial será reemplazado por el predeterminado de la aplicación si no existe uno en el tema).</li>
+<li><strong>post-template.hbs</strong> : un archivo de plantilla de publicación alternativa que se puede seleccionar para publicaciones individuales y que ofrece un diseño personalizado distinto de la <code>post.hbs</code>plantilla predeterminada.</li>
+<li><strong>tag-template.hbs</strong> : un archivo de plantilla personalizado para páginas de etiquetas individuales. Esta plantilla permite un diseño o disposición únicos para páginas que incluyen publicaciones asociadas con una etiqueta en particular. </li>
+<li><strong>author-template.hbs</strong> : un archivo de plantilla alternativo dedicado a la página de cada autor. Esta plantilla le permite aplicar un diseño o disposición únicos para las páginas que muestran publicaciones escritas por un autor específico. </li>
+<li><strong>helpers.js</strong> : un archivo JavaScript que contiene definiciones de ayudantes Handlebars personalizados adaptados a las necesidades específicas del tema. </li>
+<li><strong>dynamic-assets-mapping.js</strong> : un archivo JavaScript que genera una lista de rutas de recursos que se deben cargar de forma dinámica según la configuración del tema. El uso principal de este archivo es administrar recursos como fuentes, imágenes u otros medios que pueden variar según las opciones de personalización del usuario o las opciones del tema.</li>
+<li><strong>theme-variables.js</strong> : un archivo JavaScript que genera dinámicamente propiedades CSS personalizadas (variables) en función de la configuración del tema. El resultado <code>theme-variables.js</code>es crucial para definir parámetros de estilo fundamentales, como colores, familias de fuentes, tamaños y más. El aspecto clave de este archivo es que su resultado se inyecta normalmente al principio del <code>style.css</code>  archivo. Esta posición garantiza que las variables CSS definidas estén disponibles y se puedan utilizar en el resto del archivo CSS, lo que proporciona una base de estilo coherente y fácilmente personalizable para el tema.</li>
+<li><strong>visual-override.js</strong> : el propósito de este archivo JavaScript es generar estilos CSS personalizados que permitan modificaciones específicas de los estilos predeterminados del tema en función de los parámetros configurados por el usuario. A diferencia de <code>theme-variables.js</code>, la salida de <code>visual-override.js</code>se agrega al final del <code>style.css</code>archivo. Esta ubicación es estratégica, ya que garantiza que las modificaciones personalizadas precedan a los estilos definidos previamente, lo que permite una personalización y ajustes efectivos de la apariencia del tema. </li>
 </ul>
 </div>
             ]]>
@@ -785,7 +788,7 @@
         </author>
         <link href="https://gabrielgenri.github.io/ProyectoWebs/sites-google.html"/>
         <id>https://gabrielgenri.github.io/ProyectoWebs/sites-google.html</id>
-            <category term="Sites Google"/>
+            <category term="Sites"/>
 
         <updated>2024-10-10T23:40:19-03:00</updated>
             <summary>
