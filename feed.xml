@@ -3,12 +3,325 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-10-11T01:09:34-03:00</updated>
+    <updated>2024-10-11T01:17:55-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
+    <entry>
+        <title>Archivo config.json del tema</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-10-11T01:17:55-03:00</updated>
+            <summary>
+                <![CDATA[
+                    El config.jsonarchivo desempeña un papel fundamental en la personalización del aspecto y&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">El </span><code style="font-weight: var(--font-weight-normal);">config.json</code><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">archivo desempeña un papel fundamental en la personalización del aspecto y el funcionamiento del sitio web generado por Publii. Funciona como el centro de configuración principal para el renderizador de temas y determina varios aspectos de cómo se muestra el contenido.</span></p>
+</header>
+<div class="post__entry">
+<p><span>Publii fusiona el archivo de configuración del tema con el predeterminado que se ve a continuación:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "postTemplates": {},
+    "tagTemplates": {},
+    "authorTemplates": {},
+    "menus": {},
+    "renderer": {
+        "relatedPostsNumber": 5,
+        "includeFeaturedInPosts": true,
+        "tagsIncludeFeaturedInPosts": true,
+        "authorsIncludeFeaturedInPosts": true,
+        "featuredPostsNumber": 0,
+        "tagsFeaturedPostsNumber": 0,
+        "authorsFeaturedPostsNumber": 0,      
+        "includeHandlebarsInHelpers": false,
+        "create404page": false,
+        "nameFor404page": "404.html"
+    },
+    "supportedFeatures": {
+        "authorImages": true,
+        "blockEditor": true,
+        "errorPage": true,
+        "searchPage": true,
+        "tagImages": true,
+        "tagsList": true,
+        "pages": true
+    },
+    "config": [
+        {
+            "name": "logo",
+            "label": "Website logo",
+            "value": "",
+            "type": "media",
+            "upload": true
+        },
+        {
+            "name": "postsPerPage",
+            "label": "Posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "tagsPostsPerPage",
+            "label": "Tags posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "authorsPostsPerPage",
+            "label": "Authors posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "excerptLength",
+            "label": "Excerpt length",
+            "value": 30,
+            "type": "number"
+        }
+    ],
+    "customConfig": [],
+    "postConfig": [],
+    "pageConfig": [],
+    "files": {
+        "ignoreAssets": [
+            "scss",
+            ".DS_Store"
+        ],
+        "assetsPath": "assets",
+        "partialsPath": "partials",
+        "useDynamicAssets": false
+    },
+    "customElements": []
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Los campos </span><code>name</code><span>, </span><code>version</code><span>, </span><code>author</code><span>son OBLIGATORIOS. Los demás campos se fusionarán con el archivo </span><strong><span>config.json</span></strong><span> predeterminado si algunos campos no existen en el archivo </span><strong><span>config.json</span></strong><span> del tema .</span></p>
+<h2 id="therenderersection"><span>La sección </span><strong><span>del renderizador</span></strong></h2>
+<p><span>La sección </span><strong><span>de renderizador</span></strong><span> contiene valores que no se deben cambiar en las opciones del tema, pero que pueden ser modificados por el desarrollador del tema o por usuarios más avanzados. Para obtener información más detallada sobre la configuración de las opciones </span><strong><span>del renderizador</span></strong><span> , consulta el artículo de la documentación de Publii sobre </span><a href="https://getpublii.com/dev/how-to-configure-rendering-process-of-your-website/"><span>Cómo configurar el proceso de renderizado de tu sitio web</span></a><span> .</span></p>
+<h2 id="thesupportedfeaturessection"><span>La sección de características admitidas</span></h2>
+<p><span>La sección supportedFeatures del archivo config.json se utiliza para indicar qué funciones de Publii son compatibles con el tema. Esto permite a los usuarios identificar fácilmente si un tema ofrece la funcionalidad deseada y facilita la elección de un tema que satisfaga sus necesidades.</span></p>
+<p><span>Para obtener más información sobre la sección Características compatibles y las funciones admitidas, consulta el artículo </span><a href="https://getpublii.com/dev/theme-supported-features/"><span>Características compatibles del tema</span></a><span> .</span></p>
+<h2 id="theconfigsection"><span>La sección </span><strong><span>de configuración</span></strong></h2>
+<p><span>La sección </span><strong><span>de configuración</span></strong><span> contiene algunas opciones útiles para el usuario y el renderizador de temas:</span></p>
+<ul>
+<li><strong><span>postsPerPage</span></strong><span> - número de publicaciones mostradas en la página de inicio y en la página de etiquetas (si no se ha configurado </span><strong><span>tags_posts_per_page ),</span></strong></li>
+<li><strong><span>tagsPostsPerPage</span></strong><span> - número de publicaciones mostradas en las páginas de etiquetas,</span></li>
+<li><strong><span>excerptLength</span></strong><span> - longitud de los extractos en palabras.</span></li>
+</ul>
+<p><span>Para las publicaciones por página, un valor de opción de 0 se define como una cantidad ilimitada (aunque técnicamente no es ilimitada; el máximo es 999 publicaciones por página) de publicaciones mostradas.</span></p>
+<p><span>La sección de archivos le permite modificar el comportamiento del renderizador:</span></p>
+<ul>
+<li><strong><span>ignoreAssets</span></strong><span> : una matriz que define los recursos (archivos y directorios) que se deben ignorar al copiar activos al directorio de salida.</span></li>
+<li><strong><span>assetsPath</span></strong><span> : especifica qué directorio contiene los activos del tema</span></li>
+<li><strong><span>partialsPath</span></strong><span> : especifica qué directorio contiene los archivos parciales del tema</span></li>
+<li><strong><span>useDynamicAssets</span></strong><span> : especifica si el tema usa </span><a href="https://getpublii.com/dev/dynamic-assets/"><span>activos dinámicos</span></a><span> o no.</span></li>
+<li><strong><span>responsiveImages</span></strong><span> : especifica el atributo de tamaño y las dimensiones (y el modo de recorte) de las miniaturas creadas. Si no se define la configuración de featuredImages, todas las imágenes utilizarán la configuración de contentImages. Puede utilizar "auto" en lugar de un número si desea cambiar el tamaño de las imágenes según una dimensión.</span></li>
+</ul>
+<p class="msg msg--warning"><strong><span>¡ADVERTENCIA!</span></strong><span>  Los nombres de las dimensiones de las imágenes no pueden contener caracteres no latinos, espacios, comas, etc. y siempre deben estar en minúsculas.</span></p>
+<p><span>La sección </span><strong><span>de menús</span></strong><span> opcionales es un objeto con las áreas de menú disponibles.</span></p>
+<p class="msg msg--warning"><strong><span>¡ADVERTENCIA!</span></strong><span> Las claves de este objeto solo deben utilizar letras, ya que se utilizarán en el menú parcial como parámetro del objeto de menús.</span></p>
+<p><span>En las secciones opcionales </span><strong><span>postTemplates/tagTemplates/authorTemplates</span></strong><span> , puede crear una colección de pares clave-valor que se usarán para generar la lista de plantillas de publicación/etiqueta/autor.</span></p>
+<p><span>La sección opcional </span><strong><span>customElements</span></strong><span> agrega estilos personalizados para elementos específicos que se pueden previsualizar en nuestro editor de publicaciones. Al agregar un </span><code>customElements</code><span>campo, puede usar todos los elementos personalizados que ofrece el </span><a href="https://www.tinymce.com/docs/demo/format-custom/" target="_blank" rel="noopener noreferrer"><span>editor TinyMCE</span></a><span> .</span></p>
+<h2 id="moreexamples"><span>Más ejemplos</span></h2>
+<p><span>Un ejemplo para la sección de menús:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"menus": {
+    "mainMenu": "Main menu", 
+    "footerMenu": "Footer menu"
+},</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Un ejemplo para la sección customElements:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"customElements": [
+        {
+            "label": "Custom style",
+            "cssClasses": "custom-style",
+            "tag": "span"
+        },
+        {
+            "label": "Custom style 2",
+            "cssClasses": "custom-style-2",
+            "selector": "p"
+        }
+]</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><strong><span>La etiqueta</span></strong><span> hace que el elemento quede envuelto por el elemento especificado en la etiqueta, con las clases CSS definidas en  </span><strong><span>cssClasses </span></strong><span> agregadas. Si se configura  el </span><strong><span>selector , las </span></strong><strong><span>cssClasses</span></strong><span> especificadas  se agregarán a los elementos que coincidan con el selector proporcionado (debe usarse especialmente al aplicar estilo a párrafos).</span></p>
+<p><span>Un ejemplo para la sección de plantillas:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"postTemplates": {
+       "alternative": "Post alternative template (from post-alternative.hbs file)"
+},
+"pageTemplates": {
+       "alternative": "Page alternative template (from page-alternative.hbs file)"
+},
+"tagTemplates": {
+       "alternative": "Tag alternative template (from tag-alternative.hbs file)"
+},
+"authorTemplates": {
+       "alternative": "Author alternative template (from author-alternative.hbs file)"
+},</code></pre>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>¿Cómo se representa el tema?</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-se-representa-el-tema.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-se-representa-el-tema.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-10-11T01:17:08-03:00</updated>
+            <summary>
+                <![CDATA[
+                    El proceso de renderizado de un tema tiene varios pasos; conocerlos es&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">El proceso de renderizado de un tema tiene varios pasos; conocerlos es muy útil si quieres comprender a fondo todas las posibilidades que puede ofrecer el renderizador.</span></p>
+</header>
+<div class="post__entry">
+<p><span>El renderizador Publii puede funcionar en varios modos:</span></p>
+<ul>
+<li><span>Modo de vista previa de publicación</span></li>
+<li><span>Modo de vista previa de la página de etiquetas</span></li>
+<li><span>Modo de vista previa de la página del autor</span></li>
+<li><span>Modo de vista previa de la página de inicio</span></li>
+<li><span>Modo de página completa</span></li>
+</ul>
+<p><span>La vista previa de la publicación está disponible en el editor de publicaciones y se utiliza para obtener una vista previa de los cambios antes de implementarlos en el servidor.</span></p>
+<p><span>El modo de vista previa de etiqueta, autor y página de inicio se utiliza para verificar rápidamente los cambios durante la edición de parámetros en la configuración de Publii para subpáginas determinadas.</span></p>
+<p><span>El modo de página completa se utiliza para crear una vista previa y durante la sincronización del sitio web.</span></p>
+<p><span>Nos centraremos aquí en el modo de página completa; otros modos funcionan de forma muy similar pero sólo representan una página específica.</span></p>
+<h2 id="renderingprocess"><span>Proceso de renderizado</span></h2>
+<ol>
+<li><span>El tema está validado,</span></li>
+<li><span>La configuración del sitio está cargada,</span></li>
+<li><span>Las traducciones están cargadas,</span></li>
+<li><span>El renderizador carga datos del sitio web desde la base de datos,</span></li>
+<li><span>La configuración del tema está cargada,</span></li>
+<li><span>Se cargan los archivos de tema,</span></li>
+<li><span>Los ayudantes de Publii Handlebars están registrados,</span></li>
+<li><span>Los ayudantes de tema de helpers.js (si existen) están registrados,</span></li>
+<li><span>La estructura del contenido se carga y almacena en caché.</span></li>
+<li><span>Se cargan datos comunes para todas las vistas,</span></li>
+<li><span>Se registran parciales (estándar y personalizados),</span></li>
+<li><span>Se muestra la página de inicio y su paginación,</span></li>
+<li><span>Se representan las páginas de publicación ( </span><a href="https://getpublii.com/dev/how-the-post-content-is-modified-before-the-output/"><span>se aplican algunas operaciones</span></a><span> al contenido de la publicación antes de la salida),</span></li>
+<li><span>Se representan las páginas de etiquetas y su paginación.</span></li>
+<li><span>Se representan las páginas del autor y su paginación,</span></li>
+<li><span>Se muestra la página de error (si se utiliza),</span></li>
+<li><span>Se muestra la página de búsqueda (si se utiliza),</span></li>
+<li><span>Se crea CSS,</span></li>
+<li><span>Los archivos de configuración, los activos y los archivos multimedia se copian al directorio de salida.</span></li>
+<li><span>Se procesan las fuentes RSS y JSON.</span></li>
+<li><span>Se crea el mapa del sitio,</span></li>
+</ol>
+<p><span>Puedes utilizar </span><a href="https://getpublii.com/dev/how-to-create-custom-handlebars-helpers/"><span>ayudantes</span></a><span> y </span><a href="https://getpublii.com/dev/creating-custom-partials/"><span>parciales</span></a><span> personalizados en tu tema.</span></p>
+<p><span>El tema CSS es una suma de cinco fuentes CSS:</span></p>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>theme-variables.js output + main.css + GDPR popup CSS + visual-overrides.js output + custom CSS</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Veamos estas fuentes CSS:</span></p>
+<ul>
+<li><strong><a href="https://getpublii.com/dev/theme-variables/"><span>theme-variables.js</span></a></strong><span> : es un archivo opcional que se puede utilizar para generar un código CSS que anteponga el código CSS de su tema. El caso principal de uso es la compatibilidad con variables CSS. Como puede obtener opciones de tema en este archivo, puede crear variables CSS basadas en ellas y luego usarlas en su código main.css.</span></li>
+<li><strong><span>main.css</span></strong><span> : es un archivo obligatorio que contiene el CSS principal de su tema</span></li>
+<li><strong><a href="https://getpublii.com/dev/prepare-theme-gdpr-compliant/"><span>CSS de ventana emergente GDPR</span></a></strong><span> : este es un código CSS generado por Publii. Actualmente, no puedes modificar este código CSS directamente; debes usar CSS personalizado o modificaciones visuales para realizar cambios.</span></li>
+<li><strong><a href="https://getpublii.com/dev/visual-overrides/"><span>visual-overrides.js</span></a></strong><span> : es un archivo opcional que funciona como</span><strong><span> theme-variables.js</span></strong><span> , pero agrega el código CSS a la salida del archivo main.css.</span></li>
+<li><strong><span>CSS personalizado</span></strong><span> : es un código que agrega el usuario en </span><strong><span>Herramientas -&gt; Vista CSS personalizada</span></strong><span> en Publii. Este código CSS es el último código CSS que se agrega a la salida CSS y puede anular todo lo generado anteriormente.</span></li>
+</ul>
+<p><strong><span>En breve:</span></strong></p>
+<p><span>La salida del archivo </span><strong><span>visual-overrides.js</span></strong><span> reemplaza el código </span><strong><span>main.css</span></strong><span> , pero cualquier código CSS generado por Publii se puede reemplazar con código CSS personalizado que se agrega en la sección Herramientas de Publii. La salida de theme-variables.js también puede anteponer todo el código.</span></p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Estructura del tema</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/estructura-del-tema.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/estructura-del-tema.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-10-11T01:15:50-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Cada tema de Publii debe contener algunos archivos obligatorios, pero también se&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Cada tema de Publii debe contener algunos archivos obligatorios, pero también se pueden incluir algunos archivos de forma opcional en el tema.</span></p>
+</header>
+<div class="post__entry">
+<p><span>Se requieren los siguientes archivos:</span></p>
+<ul>
+<li><strong><span>config.json</span></strong><span> - archivo de configuración del tema principal,</span></li>
+<li><strong><span>index.hbs</span></strong><span> - plantilla de página de inicio,</span></li>
+<li><strong><span>post.hbs</span></strong><span> - plantilla de publicación única,</span></li>
+<li><strong><span>miniatura.png</span></strong><span> - que se mostrará en la configuración de la aplicación (dimensiones requeridas: 400x300px),</span></li>
+<li><strong><span>assets/css/main.css</span></strong><span> : archivo CSS principal que se utiliza para generar el archivo </span><strong><span>styles.css (que se fusiona con el archivo </span></strong><strong><span>override.css</span></strong><span> generado opcionalmente ).</span></li>
+</ul>
+<p><span>Se recomiendan estos archivos:</span></p>
+<ul>
+<li><strong><span>tag.hbs</span></strong><span> - plantilla de página de etiqueta única,</span></li>
+<li><strong><span>tags.hbs</span></strong><span> - plantilla de página de etiquetas individuales,</span></li>
+<li><strong><span>author.hbs</span></strong><span> - plantilla de página de autor único,</span></li>
+<li><strong><span>partials/</span></strong><span> - ubicación de los archivos que se cargarán con el uso del </span><code>{{&gt; fileName}}</code><span>código,</span></li>
+<li><strong><span>partials/footer.hbs</span></strong><span> - pie de página utilizado en todas las páginas,</span></li>
+<li><strong><span>partials/header.hbs</span></strong><span> - encabezado utilizado en todas las páginas</span></li>
+</ul>
+<p><span>Y estos archivos son opcionales:</span></p>
+<ul>
+<li><strong><span>visual-override.js</span></strong><span> : archivo que contiene una función utilizada para </span><strong><span>generar el</span></strong><span> archivo override.css,</span></li>
+<li><strong><span>feed-xml.hbs</span></strong><span> : la estructura del archivo XML del feed, generado como </span><strong><span>feed.xml</span></strong><span> (el archivo </span><strong><span>feed-xml.hbs</span></strong><span> se reemplazará con el predeterminado de la aplicación si no existe uno en el tema),</span></li>
+<li><strong><span>feed-json.hbs</span></strong><span> : la estructura del archivo JSON del feed, generado como </span><strong><span>feed.json</span></strong><span> (el archivo </span><strong><span>feed-json.hbs</span></strong><span> se reemplazará con el predeterminado de la aplicación si no existe uno en el tema),</span></li>
+<li><strong><span>search.hbs</span></strong><span> : plantilla de página de resultados de búsqueda dedicada. Esta plantilla es necesaria para los temas que pretenden ofrecer capacidades de búsqueda mejoradas o integrarse con complementos de búsqueda específicos, como un complemento de búsqueda de Google. </span></li>
+<li><strong><span>partials/pagination.hbs</span></strong><span> - paginación para todas las páginas (la paginación parcial será reemplazada con la predeterminada de la aplicación si no existe en el tema),</span></li>
+<li><strong><span>partials/menu.hbs</span></strong><span> - estructura del menú para todas las páginas (el menú parcial será reemplazado por el predeterminado de la aplicación si no existe uno en el tema).</span></li>
+<li><strong><span>post-template.hbs</span></strong><span> : un archivo de plantilla de publicación alternativa que se puede seleccionar para publicaciones individuales y que ofrece un diseño personalizado distinto de la </span><code>post.hbs</code><span>plantilla predeterminada.</span></li>
+<li><strong><span>tag-template.hbs</span></strong><span> : un archivo de plantilla personalizado para páginas de etiquetas individuales. Esta plantilla permite un diseño o disposición únicos para páginas que incluyen publicaciones asociadas con una etiqueta en particular. </span></li>
+<li><strong><span>author-template.hbs</span></strong><span> : un archivo de plantilla alternativo dedicado a la página de cada autor. Esta plantilla le permite aplicar un diseño o disposición únicos para las páginas que muestran publicaciones escritas por un autor específico. </span></li>
+<li><strong><span>helpers.js</span></strong><span> : un archivo JavaScript que contiene definiciones de ayudantes Handlebars personalizados adaptados a las necesidades específicas del tema. </span></li>
+<li><strong><span>dynamic-assets-mapping.js</span></strong><span> : un archivo JavaScript que genera una lista de rutas de recursos que se deben cargar de forma dinámica según la configuración del tema. El uso principal de este archivo es administrar recursos como fuentes, imágenes u otros medios que pueden variar según las opciones de personalización del usuario o las opciones del tema.</span></li>
+<li><strong><span>theme-variables.js</span></strong><span> : un archivo JavaScript que genera dinámicamente propiedades CSS personalizadas (variables) en función de la configuración del tema. El resultado </span><code>theme-variables.js</code><span>es crucial para definir parámetros de estilo fundamentales, como colores, familias de fuentes, tamaños y más. El aspecto clave de este archivo es que su resultado se inyecta normalmente al principio del </span><code>style.css</code><span>  archivo. Esta posición garantiza que las variables CSS definidas estén disponibles y se puedan utilizar en el resto del archivo CSS, lo que proporciona una base de estilo coherente y fácilmente personalizable para el tema.</span></li>
+<li><strong><span>visual-override.js</span></strong><span> : el propósito de este archivo JavaScript es generar estilos CSS personalizados que permitan modificaciones específicas de los estilos predeterminados del tema en función de los parámetros configurados por el usuario. A diferencia de </span><code>theme-variables.js</code><span>, la salida de </span><code>visual-override.js</code><span>se agrega al final del </span><code>style.css</code><span>archivo. Esta ubicación es estratégica, ya que garantiza que las modificaciones personalizadas precedan a los estilos definidos previamente, lo que permite una personalización y ajustes efectivos de la apariencia del tema. </span></li>
+</ul>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>El complemento de búsqueda estática</title>
         <author>
@@ -782,92 +1095,6 @@
 <p>Si un complemento requiere la configuración de opciones adicionales, esto se indicará en la sección de esta guía específica para ese complemento.</p>
 <h3 id="uninstallingaplugin">Desinstalar un complemento</h3>
 <p>Si ya no quieres usar un complemento y necesitas liberar espacio, puedes desinstalarlo por completo de tu instalación de Publii. Para ello, abre la página <strong>Complementos</strong> haciendo clic en el <strong>ícono de tres puntos &gt;</strong> opción Complementos para abrir la página Complementos. En la lista de complementos instalados, busca el complemento que ya no necesitas y haz clic en el <strong>ícono de la papelera</strong> a la derecha de su nombre. Se te pedirá que confirmes la eliminación; al hacer clic en el botón <strong>Aceptar,</strong> se desinstalará el complemento de Publii.</p>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Publii</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/publii.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/publii.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-10-10T22:59:53-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Publii es una aplicación que aporta un nuevo concepto al desarrollo web:&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Publii es una aplicación que aporta un nuevo concepto al desarrollo web: el primer CMS de sitios web estáticos para escritorio. Diseñado con la simplicidad necesaria para que lo utilicen los principiantes, pero con amplias opciones y funcionalidades que permiten a los desarrolladores web experimentados realizar modificaciones más complejas, Publii crea un sitio web estático seguro y rápido sin complicaciones. En esta guía, podrá aprender cómo funciona, desde la instalación hasta la creación.</p>
-<p class="msg msg--success"><a href="https://getpublii.com/download/" class="invert">Descargar Publii</a></p>
-<p class="msg msg--success"><a href="https://marketplace.getpublii.com/themes/" class="invert">Temas</a></p>
-<p class="msg msg--success"><a href="https://marketplace.getpublii.com/plugins/" class="invert">Complementos</a></p>
-<p class="msg msg--success"><a href="https://getpublii.com/dev/" aria-label="Enlace a la página de inicio">Documentación para desarrolladores</a></p>
-<header>
-<h1 class="post__title">Descarga e instalación</h1>
-</header>
-<div class="post__entry">
-<p>Como Publii es una aplicación de escritorio en lugar de un CMS del lado del servidor, la instalación es muy sencilla. Primero, deberá descargar la aplicación desde la <a href="https://getpublii.com/download/">sección de descargas oficiales de Publii</a> ; hay descargas disponibles para las versiones de Publii para Windows, Mac y Linux. Elija su sistema operativo y haga clic en el botón de descarga. Cuando se complete la descarga, haga doble clic en el archivo descargado para ejecutar el instalador.</p>
-<p>Una vez hecho esto, Publii se iniciará automáticamente; para uso futuro, se agregará un acceso directo al escritorio y a la carpeta de programas si usa Windows o Linux, o al Launchpad en Mac para que tenga fácil acceso a Publii la próxima vez.</p>
-<h2 id="publiifilelocations">Ubicaciones de archivos de Publii</h2>
-<p>Después de la instalación, Publii almacenará sus archivos en dos ubicaciones separadas en su computadora, que variarán según si está usando Windows, Linux o MacOS:</p>
-<h3 id="forwindows">Para Windows</h3>
-<p>En los sistemas basados ​​en Windows, los archivos de la aplicación, que controlan la interfaz y las funcionalidades de la aplicación, se almacenan en la ubicación de instalación de Publii (normalmente <code>C:\Users\USER NAME\AppData\Local\Publii</code>). Estos archivos no deben modificarse excepto por desarrolladores experimentados, de lo contrario, pueden producirse fallas u otros problemas con la aplicación.</p>
-<p>Los archivos de contenido de Publii, que contienen los archivos de los sitios web y otros contenidos que Publii genera, se almacenan por separado en el área <strong>Documentos</strong> para el usuario actual, por ejemplo <code>C:\Users\USER NAME\Documents\Publii</code>, . Estos archivos incluyen carpetas para los temas instalados actualmente, carpetas para cada sitio web administrado actualmente por la instancia instalada de la aplicación Publii (que contienen todos los archivos clave, etiquetas, datos de publicaciones, etc.) y archivos de configuración que almacenan la configuración de opciones actual para Publii. Estos archivos pueden ser modificados por desarrolladores web con experiencia en archivos .json, .hbs y .css para modificar elementos centrales de un tema, la configuración de Publii o sitios creados.</p>
-<h3 id="formacos">Para MacOS</h3>
-<p>Al igual que con Windows, Publii separa sus archivos en MacOS en dos tipos: los archivos de la aplicación, que controlan la aplicación y sus funcionalidades, y los archivos del sitio web, que contienen todo el contenido que Publii utiliza para crear sitios web. Los archivos de la aplicación se almacenan en el área estándar para aplicaciones, <code>/Applications/Publii</code>. Estos no necesitan ser modificados excepto por desarrolladores web experimentados que buscan modificar las funciones principales de la aplicación Publii; realizar cambios en estos archivos puede provocar fallas u otras inestabilidades.</p>
-<p>Los archivos de contenido, que incluyen carpetas que contienen los archivos de los temas instalados, contenido del sitio web como etiquetas, publicaciones e imágenes, y archivos de configuración que contienen las configuraciones activas en la instancia instalada de Publii, se almacenan en una ubicación separada; <code>/Users/USER NAME/Documents/Publii/</code>. Estos archivos afectan al sitio web que genera Publii, en lugar de a la aplicación en sí; una vez más, solo deben ser modificados por usuarios con experiencia en archivos .css, .json y .hbs, como desarrolladores de temas o diseñadores web.</p>
-<h3 id="forlinux">Para Linux</h3>
-<p>La versión Linux de Publii almacena los archivos de la aplicación que proporcionan la funcionalidad y la interfaz de la aplicación en la  <code>/opt/Publii/resources/app/</code> carpeta. Los usuarios que deseen realizar cambios en la funcionalidad principal de la aplicación pueden hacerlo en estos archivos, aunque deben tener cuidado, ya que realizar dichos cambios puede provocar inestabilidad o fallas.</p>
-<p>Los archivos de contenido, que almacenan el contenido real del sitio web, incluidas las etiquetas, las publicaciones y las imágenes, así como los temas, además de los archivos de configuración que almacenan las configuraciones individuales de la aplicación del usuario, se almacenan en una ubicación diferente;  <code>/home/USERNAME/Documents/Publii</code>Los usuarios con experiencia en desarrollo web que deseen realizar cambios en los temas o tener un acceso más directo al CSS del sitio, pueden hacerlo a través de los archivos almacenados en esta ubicación.</p>
-<h2 id="changingwherepubliistoresitswebsitefiles">Cambiar el lugar donde Publii almacena los archivos de su sitio web</h2>
-<p>Puede configurar su propia ubicación de almacenamiento para los archivos del sitio web de Publii, lo que le permitirá, por ejemplo, guardar automáticamente los archivos de su sitio web en su carpeta de Dropbox para que su sitio se respalde automáticamente en la nube. Para modificar la ubicación de almacenamiento, abra <strong>la Configuración de la aplicación</strong> de Publii haciendo clic en el <strong>ícono de tres puntos</strong> en la parte superior derecha de la ventana de la aplicación y haga clic en <strong>Configuración de la aplicación</strong> :</p>
-<figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/6/files-location.svg" alt="Ubicación de los archivos de Publii" width="748" height="236" loading="lazy" data-is-external-image="true"></figure>
-<p>Esto abrirá la pantalla <strong>Configuración de la aplicación</strong> . El segundo bloque de opciones en esta sección se titula <strong>Ubicación de archivos</strong> ; haga clic en el campo <strong>Ubicación de sitios</strong> para abrir automáticamente el explorador de archivos y seleccionar la carpeta en la que desea guardar los archivos. Una vez hecho esto, haga clic en el botón <strong>Guardar configuración</strong> en la parte superior de la pantalla para guardar los cambios. Si desea volver a utilizar la ubicación de almacenamiento predeterminada, haga clic en el botón rojo <strong> "X"</strong>  junto al campo <strong>Ubicación de sitios</strong> ; esto borrará la ubicación existente y la reemplazará con la ruta predeterminada una vez que se guarden las configuraciones.</p>
-<p> </p>
-<header>
-<h1 class="post__title">Gestión de sitios web: creación, eliminación, modificación y duplicación</h1>
-</header>
-<div class="post__entry">
-<p>La primera vez que ejecute Publii, la primera pantalla que verá será la página <strong>Crear nuevo sitio web</strong> : </p>
-<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/49/creating-new-website-2.svg" alt="Gestión de sitios web: creación, eliminación, modificación y duplicación" width="748" height="564" loading="lazy" data-is-external-image="true"></figure>
-<figcaption>Creando nueva pantalla de sitio web</figcaption>
-</figure>
-<p>Aquí solo hay que seguir unos pocos pasos, pero es importante que conozcas el efecto que tendrá cada configuración:</p>
-<ol>
-<li>Primero, crea un ícono para tu sitio. Este ícono se mostrará solo en el backend de Publii para ayudarte a distinguir este sitio de cualquier otro que crees más adelante; no tendrá ningún efecto en el sitio web en vivo. Haz clic en el ícono y el color que deseas usar; se creará una vista previa a la izquierda.</li>
-<li>Ingresa el nombre del sitio web en el campo <strong>Nombre del sitio web</strong> . Este nombre se usará tanto en el backend de Publii como en tu sitio en línea, tanto en la posición del logotipo (si está configurado como texto) como en el título de la pestaña (lo que ves en la parte superior de la pestaña del navegador).</li>
-<li> Ingrese su nombre o el nombre de la persona que escribirá o publicará en su sitio en el  campo <strong>Nombre del autor</strong>  . Este nombre se utilizará en todas las publicaciones creadas y habrá una página de autor independiente disponible. Se pueden agregar autores adicionales a través de la  sección <strong>Autores</strong>  de la interfaz de Publii.</li>
-</ol>
-<p>Con estos pasos terminados, haz clic en el botón <strong>Crear sitio web</strong> ; en este punto puedes comenzar a agregar publicaciones y etiquetas, pero es recomendable que primero elijas un tema para tu sitio, y también configures los ajustes de tu servidor; puedes encontrar detalles sobre estos pasos en las secciones <a href="https://getpublii.com/docs/creating-your-website.html#non-existing-post-with-id-33">Instalación de tema</a> y <a href="https://getpublii.com/docs/server-configuration.html">Configuración del servidor</a> .</p>
-<p>Publii no impone un límite en la cantidad de sitios web que puede crear a la vez; cada instalación de Publii puede administrar una cantidad ilimitada de sitios. Para facilitar la creación, administración y cambio de sitios web, Publii incluye un  área <strong>de administración de sitios </strong> , a la que puede acceder haciendo clic en el nombre de su sitio web en la parte superior del  <strong>menú de la barra lateral izquierda.</strong></p>
-<h2 id="creatingasitefromabackup">Creación de un sitio a partir de una copia de seguridad</h2>
-<p>Si ya ha utilizado Publii en el pasado y tiene un archivo de respaldo que desea utilizar para restaurar su sitio en su nueva instalación de Publii, puede hacerlo haciendo clic en la pestaña <strong>Instalar desde respaldo </strong> en la parte superior de la  ventana emergente de la pantalla <strong>Crear nuevo sitio web</strong> :</p>
-<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/49/install-from-backup.svg" alt="Crear un sitio web a partir de un archivo de respaldo" width="748" height="564" loading="lazy" data-is-external-image="true"></figure>
-<figcaption>Creación de un nuevo sitio web a partir de la pantalla de copia de seguridad</figcaption>
-</figure>
-<p>Aparecerá un nuevo cuadro donde podrá arrastrar y soltar el archivo de respaldo, o hacer clic en el  botón <strong>Elegir archivo </strong> para abrir el explorador de archivos y elegir el archivo. Una vez seleccionado el archivo, se abrirá un cuadro de diálogo donde podrá ingresar el nombre del sitio; este será el nombre original del sitio por defecto, pero puede cambiarlo si lo desea. A continuación, haga clic en el  botón <strong>Crear sitio web </strong> para restaurar su sitio; una vez que el proceso haya terminado, el sitio web restaurado se abrirá automáticamente, listo para modificar.</p>
-<h2 id="creatingadditionalwebsites">Creación de sitios web adicionales</h2>
-<p>Aunque muchos usuarios solo administran un único sitio a través de Publii, en realidad no hay límite para la cantidad de sitios web que puedes crear y administrar en la aplicación. Si deseas crear otro sitio web, puedes hacerlo a través del  <strong>selector de sitios web</strong> , que aparece en la barra de herramientas en la parte superior de la aplicación Publii. </p>
-<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/49/website-switcher.png" alt="El selector de sitios web en la barra de herramientas" width="1456" height="959" loading="lazy" data-is-external-image="true"></figure></figure>
-<p>Al hacer clic en el nombre de su sitio web en esta sección, se abrirá una lista desplegable. Si tiene varios sitios web, todos aparecerán aquí para que pueda cambiar fácilmente entre ellos. Para crear un nuevo sitio web, abra la lista desplegable y haga clic en el  botón <strong>Agregar nuevo sitio web en la parte inferior de la lista:</strong></p>
-<p>Esto lo llevará de regreso a la  pantalla <strong>Crear un sitio web</strong> , donde puede configurar las opciones básicas para su sitio. Una vez que haya terminado, haga clic en el  botón <strong>Crear sitio web </strong> para completar la creación. Ahora puede cambiar de sitio en el que está trabajando en cualquier momento haciendo clic en él en la lista de sitios de la lista desplegable. </p>
-<p>Cada sitio web que usted crea en Publii se considera una entidad separada; la  <strong>configuración global </strong> de la aplicación Publii se aplicará a todos los sitios web en los que trabaje, pero las opciones individuales, como el tema seleccionado, el servidor y el contenido, estarán separadas y serán únicas para cada sitio web. </p>
-<h2 id="switchingwebsites">Cambiar de sitio web</h2>
-<p>Una vez que hayas añadido nuevos sitios a Publii, puedes cambiar de uno a otro en cualquier momento abriendo la  página <strong>de Administración de sitios </strong> . Los sitios web disponibles aparecerán en la ventana principal. Desde aquí, simplemente haz clic en el sitio web que deseas modificar para cambiar a él.</p>
-<p>Si tiene una gran cantidad de sitios, puede escribir el nombre del sitio web que está buscando en la  <strong>barra de búsqueda</strong> en la parte superior de la lista de sitios web; esto ordenará dinámicamente sus sitios web según su término de búsqueda.</p>
-<h2 id="duplicatingawebsite">Duplicar un sitio web</h2>
-<p>Si desea crear un duplicado de un sitio existente, abra la  pantalla <strong>de Administración de sitios</strong> y pase el mouse sobre el sitio web que desea duplicar. Verá que aparecen dos opciones a la derecha del nombre del sitio; desde allí, haga clic en el primer ícono que parece dos páginas superpuestas para crear un duplicado.</p>
-<p>Publii no permite que dos sitios web tengan el mismo nombre, ya que se crean carpetas individuales utilizando el nombre del sitio para almacenar los archivos del sitio web. Después de hacer clic en el ícono de duplicado, se abrirá una ventana emergente donde puede ingresar un nombre para su sitio duplicado; una vez hecho esto, haga clic en el  botón <strong>Clonar sitio web</strong> para crearlo.</p>
-<h2 id="deletingawebsite">Eliminar un sitio web</h2>
-<p>Para eliminar un sitio web, abra la  pantalla <strong>de Administración de sitios </strong> y pase el mouse sobre el sitio web que desea eliminar; se mostrarán dos íconos a la derecha del nombre del sitio. Haga clic en el segundo ícono, que parece una papelera, para eliminarlo.</p>
-<p>Para evitar la eliminación accidental de sitios, deberá confirmar la eliminación. Después de hacer clic en el  icono <strong>Eliminar</strong> , se abrirá una ventana emergente que le solicitará confirmación; para iniciar la eliminación, haga clic en el  botón <strong>Eliminar sitio web .</strong></p>
-</div>
 </div>
             ]]>
         </content>

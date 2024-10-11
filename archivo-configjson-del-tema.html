@@ -1,0 +1,474 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Archivo config.json del tema - Webs</title><meta name="description" content="El config.jsonarchivo desempeña un papel fundamental en la personalización del aspecto y&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html"><link rel="alternate" type="application/atom+xml" href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml"><link rel="alternate" type="application/json" href="https://gabrielgenri.github.io/ProyectoWebs/feed.json"><meta property="og:title" content="Archivo config.json del tema"><meta property="og:site_name" content="Webs"><meta property="og:description" content="El config.jsonarchivo desempeña un papel fundamental en la personalización del aspecto y&hellip;"><meta property="og:url" content="https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html"><meta property="og:type" content="article"><link rel="preload" href="https://gabrielgenri.github.io/ProyectoWebs/assets/dynamic/fonts/publicsans/publicsans.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://gabrielgenri.github.io/ProyectoWebs/assets/css/style.css?v=f4e53256588ad7ed6cf7cadf14cd270d"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabrielgenri.github.io/ProyectoWebs/archivo-configjson-del-tema.html"},"headline":"Archivo config.json del tema","datePublished":"2024-10-11T01:17","dateModified":"2024-10-11T01:17","description":"El config.jsonarchivo desempeña un papel fundamental en la personalización del aspecto y&hellip;","author":{"@type":"Person","name":"Gabriel Genri","url":"https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/"},"publisher":{"@type":"Organization","name":"Gabriel Genri"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><script>// OPEN-CLOSE navbar
+function openNav() {
+ document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+ document.getElementById("nav").style.width = "0%";
+}
+//Get the button
+var topbtn = document.getElementById("topbtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//SmoothScroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".smooth").on('click', function(event) {
+// Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+// Overlay Promo */
+function on() { document.getElementById("overlay").style.display = "block";
+}
+function off() { document.getElementById("overlay").style.display = "none";
+}
+
+
+/*
+===============================================================
+
+Hi! Welcome to my little playground!
+
+My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
+I'm a publicist, visual designer and frontend developer based in Barcelona. 
+
+Here you will find some of my personal experiments. Sometimes usefull,
+sometimes simply for fun. You are free to use them for whatever you want 
+but I would appreciate an attribution from my work. I hope you enjoy it.
+
+===============================================================
+*/
+
+/*
+=====================
+=====================
+JSON list
+=====================
+=====================
+*/
+var post=[
+  {
+    postTitle: "REDES DE MERCADEO",
+    postAbstract: "¿Cómo te puedo ayudar a lograr la Libertad Financiera con las Redes de Mercadeo?",
+    postContent: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae placeat, inventore eligendi qui deserunt asperiores error laboriosam libero blanditiis dignissimos eius molestias cumque necessitatibus est. <b>Quae velit ad cupiditate necessitatibus</b>, facere eum earum ut odio nostrum labore a explicabo quasi voluptates, consequatur obcaecati quos, quis fugiat veniam ea ipsam consequuntur illo!</p><p>Aperiam fugit nulla, praesentium doloremque harum laborum ipsam officia minima. Alias saepe cumque mollitia soluta totam facere, iusto ab officiis cum itaque! Sit sint earum sequi quae mollitia quibusdam adipisci facere explicabo libero nihil! Velit aliquam asperiores possimus eligendi dolore reprehenderit similique suscipit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-quinon.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-quinon5.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Las Preguntas que Cambiaron Mi VIda",
+    postAbstract: "14 años atrás me hice las siguientes 4 preguntas",
+    postContent: "<p>¿Me gustaría tener el estilo de vida que siempre soñé? </p><p>¿Me gustaría tener más tiempo libre y  libertad para hacer lo que quiera?</p><p>¿Busco más tranquilidad económica?</p><p>¿Como me veo en los próximos 5 a 10 años si sigo haciendo lo mismo?</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-inaem.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-inaem2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Política de Privacidad",
+    postAbstract: "Tu privacidad es importante para nosotros. En esta declaración de privacidad se explica qué datos personales recopilamos de nuestros usuarios y cómo los utilizamos. Te animamos a leer detenidamente estos términos antes de facilitar tus datos personales en esta web. Los mayores de trece años podrán registrarse en https://jmgaluppo.com como usuarios sin el previo consentimiento de sus padres o tutores.",
+    postContent: "",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-shigeru.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-shigeru4.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Quidem neque commodi",
+    postAbstract: "Aliquid sapiente harum maiores alias optio, ea vero perferendis impedit architecto culpa libero corporis.",
+    postContent: "<p>Dolorum eos dignissimos eveniet deserunt veritatis possimus magnam enim, eaque non, architecto voluptates consequuntur nulla, modi nobis sunt perferendis voluptatibus accusantium voluptatem! Delectus iure architecto rem, ex quas necessitatibus illum autem obcaecati sapiente ea inventore quisquam debitis quae numquam. Iusto mollitia suscipit iste quae tempore ipsam facere <b>quia nobis et omnis accusantium quo</b>, quod tenetur, aperiam, rem quos quas eveniet exercitationem. Rem, hic optio. Harum quis porro optio facilis totam velit quibusdam corrupti saepe similique sed aut doloribus temporibus ipsum modi rerum, ab impedit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-karuna.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-karuna2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Explicabo obcaecati",
+    postAbstract: "Iste explicabo, architecto maiores nisi eaque doloribus aspernatur esse tera corporis iure itaque animi?",
+    postContent: "<p>Voluptatem, similique. Sed doloribus quaerat ratione deleniti esse odit doloremque incidunt, aut, recusandae? Ipsam ipsum voluptas tenetur aut atque tempora ducimus, dolores qui, <b>maiores voluptatibus veniam</b>, quos inventore esse illum adipisci. Error quo officia, distinctio voluptates, possimus voluptatem dignissimos magni dolor, nobis expedita doloribus consequuntur beatae natus iusto ipsum culpa. Delectus pariatur, officia voluptatem, dolore enim cum temporibus deserunt reiciendis at quam labore aperiam, adipisci nesciunt.</p><p>Laborum placeat <b>adipisci ex porro</b>, labore impedit sed nulla perferendis architecto quis vitae laudantium animi, dolorum repudiandae incidunt eaque! Possimus corporis voluptatum aut velit similique facilis fugit quis eaque, fugiat inventore beatae minus nemo soluta quia earum, atque accusamus!</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-vinallonga.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-vinallonga1.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Ullam provident",
+    postAbstract: "Lorem ipsum dolor sit amet eveniet, consectetur adipisicing elit. Numquam repudiandae nam dolore.",
+    postContent: "<p>Possimus ipsam, aliquid voluptate ab quaerat mollitia deleniti recusandae, voluptas quisquam consequatur porro nesciunt sed commodi reprehenderit, amet earum sapiente sunt, temporibus aut <b>consectetur eligendi</b> laudantium. Cum, eius! Optio tempora unde, non quasi fugit, eos corporis iusto dolores, quam suscipit ipsum cum nesciunt incidunt atque in recusandae amet totam ea fuga! Aliquid similique exercitationem accusamus, et vitae molestiae voluptatum quo earum doloribus <b>nisi hic nesciunt</b>, blanditiis dignissimos. Quia veniam neque facere nesciunt quibusdam distinctio architecto perferendis veritatis? Laboriosam architecto culpa hic aspernatur ratione possimus nostrum mollitia, soluta aliquid reiciendis doloribus.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-urban.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-urban4.jpg",
+    postLink: "article-link1"
+  }
+];
+
+
+/*
+=====================
+=====================
+Thumbs
+=====================
+=====================
+*/
+//Loop length:
+var postLength = post.length;
+//Empty container:
+$(".posts-box").empty();
+//Loop:
+for (i=0; i<postLength; i++) {
+  //Create thumb structure:
+  var listItem =
+    '<li>'+
+      '<div class="card">'+
+        '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">'+
+          '<img src="'+post[i].postThumb+'" alt="">'+
+        '</a>'+
+        '<div>'+
+          '<h3>'+post[i].postTitle+'</h3>'+
+          '<p>'+post[i].postAbstract+'</p>'+
+        '</div>'+
+        '<div>'+
+          '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">Ver</a>'+
+        '</div>'+
+      '</div>'+
+    '</li>';
+  //Append thumb:
+  $(".posts-box").append(listItem);
+};
+
+
+/*
+=====================
+=====================
+Inner post
+=====================
+=====================
+*/
+var thisElement = 0;
+
+function innerContent(content){
+  $(".inner-img").attr("src",post[content].postImg);
+  $(".inner-title").html(post[content].postTitle);
+  $(".inner-text").html(post[content].postContent);
+};
+
+//Open post:
+$(".button").click(function(e){
+  e.preventDefault();
+  thisElement = $(this).attr("data-obj");
+  innerContent(thisElement);
+  $(".modal").css({"display":"block"});
+  dissBtn();
+});
+
+//Close post:
+$(".close-post, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+});
+
+//Next post:
+$(".next-post").click(function(e){
+  e.preventDefault();
+  if (thisElement<postLength-1) {
+    thisElement = parseInt(thisElement) + 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Prev post:
+$(".prev-post").click(function(e){
+  e.preventDefault();
+  if (thisElement>0) {
+    thisElement = parseInt(thisElement) - 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Button disable:
+function dissBtn(){
+  $(".prev-post, .next-post").removeClass("disabled");
+  if (thisElement<=0){
+    $(".prev-post").addClass("disabled");
+  }
+  else if (thisElement>=postLength-1){
+    $(".next-post").addClass("disabled");
+  };
+};
+
+
+// TESTIMONIOS Define data for the popup
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+// envio
+ function enviar_pedido_whatsapp(){
+        	var cadena_pedido="";
+
+        	cadena_pedido+="%2ANuevo Pedido%2A"+'%0A'+'%0A';
+        	
+        	//cadena_pedido+="-------------------"+'%0A';
+
+        	
+
+
+   /*     	for(var i=0;i<arra_prods_exis.length;i++){       
+
+
+        		var obj_prod=get_nombre_ref(arra_prods_exis[i]);
+
+        		if(obj_prod.nombre_producto!=""){
+        			cadena_pedido+="%2A"+obj_prod.nombre_producto+'%2A%0A';
+        		}
+        		
+        		cadena_pedido+=""+get_linea_cadena_by_ref(arra_prods_exis[i],"1");
+        		cadena_pedido+="---------------------------------"+'%0A';
+        		
+        	}
+        	cadena_pedido+="---------------------------------"+'%0A';
+        	if(valor_total_cotizacion>0){
+        		cadena_pedido+="%2A"+"TOTAL:"+"%2A%20%20"+addCommas(valor_total_cotizacion)+'%0A';
+        		cadena_pedido+="---------------------------------"+'%0A';
+        	} */
+        	
+
+        	cadena_pedido+="%2A"+"Nombres:"+"%2A%20"+encodeURIComponent($("#nombrePedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Email:"+"%2A%20"+$("#emailPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Teléfonos:"+"%2A%20"+encodeURIComponent($("#telefonoPedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Dirección:"+"%2A%20"+encodeURIComponent($("#direccionPedido").val())+'%0A';
+
+        	if($("#identificacionPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Identificación:"+"%2A%20"+encodeURIComponent($("#identificacionPedido").val())+'%0A';
+        	}
+
+
+        	if($("#vendedorPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Referido:"+"%2A%20"+encodeURIComponent($("#vendedorPedido").val())+'%0A';
+        	}
+
+        	cadena_pedido+="%2A"+"Ciudad:"+"%2A%20"+$("#ciudadPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Observación:"+"%2A%20"+encodeURIComponent($("#observacionPedido").val())+'%0A';
+
+
+        	var url_final="https://api.whatsapp.com/send?phone=5493804402424&text="+cadena_pedido;
+
+        	window.open(url_final,"_self");
+
+
+        	localStorage.setItem('nombrePedido', ''+$("#nombrePedido").val());
+        	localStorage.setItem('emailPedido', ''+$("#emailPedido").val());
+        	localStorage.setItem('telefonoPedido', ''+$("#telefonoPedido").val());
+        	localStorage.setItem('direccionPedido', ''+$("#direccionPedido").val());
+        	localStorage.setItem('ciudadPedido', ''+$("#ciudadPedido").val());
+        	localStorage.setItem('observacionPedido', ''+$("#observacionPedido").val());
+ }
+
+
+function abrir_sms(){
+			var url_enviar="";
+
+			var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+
+			if(iOS){
+				url_enviar="sms:#celular&body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				url_enviar="sms://#celular?body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			/*
+
+	 $url_share_sms="{$ruta_external}sms://#celular?body={$cadena_compartir} - {$url_compartir}";    
+    $url_share_sms_iphone="{$ruta_external}sms:#celular&body={$cadena_compartir} - {$url_compartir}";
+
+			*/
+
+
+
+			var cadena_cel="";
+			if(numero_whats!=""){
+				url_enviar = url_enviar.replace("#celular", numero_whats);
+			}else{
+				url_enviar = url_enviar.replace("#celular", "");
+			}
+
+			console.log("Prueba: "+url_enviar);
+
+			window.open(""+url_enviar+"","_self");
+			console.log("Prueba: "+url_enviar);
+		}
+
+		function compartir_whatsapp(){
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+			var cadena_compartir_whatsapp="";
+			if(numero_whats!=""){
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?phone="+numero_whats+"&text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			window.open(""+cadena_compartir_whatsapp,"_blank");
+
+		}</script></head><body class="post-template"><div class="container"><div class="left-bar"><div class="left-bar__inner"><header class="header"><a class="logo" href="https://gabrielgenri.github.io/ProyectoWebs/">Webs</a><nav class="navbar"><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle__box"><span class="navbar__toggle__inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self" aria-label="Inicio"><span>Inicio</span></a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/html-and-css.html" target="_blank" aria-label="Html y Css"><span>Html y Css</span></a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self" aria-label="Publii"><span>Publii</span></a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/google-sites.html" target="_self" aria-label="Sites"><span>Sites</span></a></li></ul></nav><a class="logo logo--atbottom" href="https://gabrielgenri.github.io/ProyectoWebs/">Webs</a></header></div></div><main class="main post"><article class="content"><div class="content__meta content__meta--attop"><div class="content__meta--attop__inner"><div class="content__maintag"><svg width="20" height="20" aria-hidden="true" focusable="false"><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#tag"/></svg> Published in <a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="metadata__maintag">Publii</a></div></div></div><div class="main__inner"><div class="content__meta"><div class="content__date"><time datetime="2024-10-11T01:17">oct. 11, 2024</time></div></div><header class="content__header"><h1 class="content__title">Archivo config.json del tema</h1></header><div class="content__entry"><header><p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">El </span><code style="font-weight: var(--font-weight-normal);">config.json</code><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">archivo desempeña un papel fundamental en la personalización del aspecto y el funcionamiento del sitio web generado por Publii. Funciona como el centro de configuración principal para el renderizador de temas y determina varios aspectos de cómo se muestra el contenido.</span></p></header><div class="post__entry"><p><span>Publii fusiona el archivo de configuración del tema con el predeterminado que se ve a continuación:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{
+    "postTemplates": {},
+    "tagTemplates": {},
+    "authorTemplates": {},
+    "menus": {},
+    "renderer": {
+        "relatedPostsNumber": 5,
+        "includeFeaturedInPosts": true,
+        "tagsIncludeFeaturedInPosts": true,
+        "authorsIncludeFeaturedInPosts": true,
+        "featuredPostsNumber": 0,
+        "tagsFeaturedPostsNumber": 0,
+        "authorsFeaturedPostsNumber": 0,      
+        "includeHandlebarsInHelpers": false,
+        "create404page": false,
+        "nameFor404page": "404.html"
+    },
+    "supportedFeatures": {
+        "authorImages": true,
+        "blockEditor": true,
+        "errorPage": true,
+        "searchPage": true,
+        "tagImages": true,
+        "tagsList": true,
+        "pages": true
+    },
+    "config": [
+        {
+            "name": "logo",
+            "label": "Website logo",
+            "value": "",
+            "type": "media",
+            "upload": true
+        },
+        {
+            "name": "postsPerPage",
+            "label": "Posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "tagsPostsPerPage",
+            "label": "Tags posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "authorsPostsPerPage",
+            "label": "Authors posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "excerptLength",
+            "label": "Excerpt length",
+            "value": 30,
+            "type": "number"
+        }
+    ],
+    "customConfig": [],
+    "postConfig": [],
+    "pageConfig": [],
+    "files": {
+        "ignoreAssets": [
+            "scss",
+            ".DS_Store"
+        ],
+        "assetsPath": "assets",
+        "partialsPath": "partials",
+        "useDynamicAssets": false
+    },
+    "customElements": []
+}</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span>Los campos </span><code>name</code><span>, </span><code>version</code><span>, </span><code>author</code><span>son OBLIGATORIOS. Los demás campos se fusionarán con el archivo </span><strong><span>config.json</span></strong><span> predeterminado si algunos campos no existen en el archivo </span><strong><span>config.json</span></strong><span> del tema .</span></p><h2 id="therenderersection"><span>La sección </span><strong><span>del renderizador</span></strong></h2><p><span>La sección </span><strong><span>de renderizador</span></strong><span> contiene valores que no se deben cambiar en las opciones del tema, pero que pueden ser modificados por el desarrollador del tema o por usuarios más avanzados. Para obtener información más detallada sobre la configuración de las opciones </span><strong><span>del renderizador</span></strong><span> , consulta el artículo de la documentación de Publii sobre </span><a href="https://getpublii.com/dev/how-to-configure-rendering-process-of-your-website/"><span>Cómo configurar el proceso de renderizado de tu sitio web</span></a><span> .</span></p><h2 id="thesupportedfeaturessection"><span>La sección de características admitidas</span></h2><p><span>La sección supportedFeatures del archivo config.json se utiliza para indicar qué funciones de Publii son compatibles con el tema. Esto permite a los usuarios identificar fácilmente si un tema ofrece la funcionalidad deseada y facilita la elección de un tema que satisfaga sus necesidades.</span></p><p><span>Para obtener más información sobre la sección Características compatibles y las funciones admitidas, consulta el artículo </span><a href="https://getpublii.com/dev/theme-supported-features/"><span>Características compatibles del tema</span></a><span> .</span></p><h2 id="theconfigsection"><span>La sección </span><strong><span>de configuración</span></strong></h2><p><span>La sección </span><strong><span>de configuración</span></strong><span> contiene algunas opciones útiles para el usuario y el renderizador de temas:</span></p><ul><li><strong><span>postsPerPage</span></strong><span> - número de publicaciones mostradas en la página de inicio y en la página de etiquetas (si no se ha configurado </span><strong><span>tags_posts_per_page ),</span></strong></li><li><strong><span>tagsPostsPerPage</span></strong><span> - número de publicaciones mostradas en las páginas de etiquetas,</span></li><li><strong><span>excerptLength</span></strong><span> - longitud de los extractos en palabras.</span></li></ul><p><span>Para las publicaciones por página, un valor de opción de 0 se define como una cantidad ilimitada (aunque técnicamente no es ilimitada; el máximo es 999 publicaciones por página) de publicaciones mostradas.</span></p><p><span>La sección de archivos le permite modificar el comportamiento del renderizador:</span></p><ul><li><strong><span>ignoreAssets</span></strong><span> : una matriz que define los recursos (archivos y directorios) que se deben ignorar al copiar activos al directorio de salida.</span></li><li><strong><span>assetsPath</span></strong><span> : especifica qué directorio contiene los activos del tema</span></li><li><strong><span>partialsPath</span></strong><span> : especifica qué directorio contiene los archivos parciales del tema</span></li><li><strong><span>useDynamicAssets</span></strong><span> : especifica si el tema usa </span><a href="https://getpublii.com/dev/dynamic-assets/"><span>activos dinámicos</span></a><span> o no.</span></li><li><strong><span>responsiveImages</span></strong><span> : especifica el atributo de tamaño y las dimensiones (y el modo de recorte) de las miniaturas creadas. Si no se define la configuración de featuredImages, todas las imágenes utilizarán la configuración de contentImages. Puede utilizar "auto" en lugar de un número si desea cambiar el tamaño de las imágenes según una dimensión.</span></li></ul><p class="msg msg--warning"><strong><span>¡ADVERTENCIA!</span></strong><span>  Los nombres de las dimensiones de las imágenes no pueden contener caracteres no latinos, espacios, comas, etc. y siempre deben estar en minúsculas.</span></p><p><span>La sección </span><strong><span>de menús</span></strong><span> opcionales es un objeto con las áreas de menú disponibles.</span></p><p class="msg msg--warning"><strong><span>¡ADVERTENCIA!</span></strong><span> Las claves de este objeto solo deben utilizar letras, ya que se utilizarán en el menú parcial como parámetro del objeto de menús.</span></p><p><span>En las secciones opcionales </span><strong><span>postTemplates/tagTemplates/authorTemplates</span></strong><span> , puede crear una colección de pares clave-valor que se usarán para generar la lista de plantillas de publicación/etiqueta/autor.</span></p><p><span>La sección opcional </span><strong><span>customElements</span></strong><span> agrega estilos personalizados para elementos específicos que se pueden previsualizar en nuestro editor de publicaciones. Al agregar un </span><code>customElements</code><span>campo, puede usar todos los elementos personalizados que ofrece el </span><a href="https://www.tinymce.com/docs/demo/format-custom/" target="_blank" rel="noopener noreferrer"><span>editor TinyMCE</span></a><span> .</span></p><h2 id="moreexamples"><span>Más ejemplos</span></h2><p><span>Un ejemplo para la sección de menús:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>"menus": {
+    "mainMenu": "Main menu", 
+    "footerMenu": "Footer menu"
+},</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span>Un ejemplo para la sección customElements:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>"customElements": [
+        {
+            "label": "Custom style",
+            "cssClasses": "custom-style",
+            "tag": "span"
+        },
+        {
+            "label": "Custom style 2",
+            "cssClasses": "custom-style-2",
+            "selector": "p"
+        }
+]</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><strong><span>La etiqueta</span></strong><span> hace que el elemento quede envuelto por el elemento especificado en la etiqueta, con las clases CSS definidas en  </span><strong><span>cssClasses </span></strong><span> agregadas. Si se configura  el </span><strong><span>selector , las </span></strong><strong><span>cssClasses</span></strong><span> especificadas  se agregarán a los elementos que coincidan con el selector proporcionado (debe usarse especialmente al aplicar estilo a párrafos).</span></p><p><span>Un ejemplo para la sección de plantillas:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>"postTemplates": {
+       "alternative": "Post alternative template (from post-alternative.hbs file)"
+},
+"pageTemplates": {
+       "alternative": "Page alternative template (from page-alternative.hbs file)"
+},
+"tagTemplates": {
+       "alternative": "Tag alternative template (from tag-alternative.hbs file)"
+},
+"authorTemplates": {
+       "alternative": "Author alternative template (from author-alternative.hbs file)"
+},</code></pre></div></div></div><footer class="content__footer"><div class="content__last-updated">This article was updated on <time datetime="2024-10-11T01:17">oct. 11, 2024</time></div><div class="content__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Farchivo-configjson-del-tema.html" class="js-share facebook tltp tltp--top" aria-label="Facebook" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#facebook"/></svg> <span>Facebook</span> </a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Farchivo-configjson-del-tema.html&amp;via=Webs&amp;text=Archivo%20config.json%20del%20tema" class="js-share twitter tltp tltp--top" aria-label="Twitter" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#twitter"/></svg> <span>Twitter</span> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Farchivo-configjson-del-tema.html&amp;media=undefined&amp;description=Archivo%20config.json%20del%20tema" class="js-share pinterest tltp tltp--top" aria-label="Pinterest" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#pinterest"/></svg> <span>Pinterest</span></a></div></footer></div></article><div class="content__section post__related"><div class="main__inner"><h3 class="content__section__title">Related post</h3><div class="post__related__wrap"><article class="c-card"><div class="c-card__meta"><div class="c-card__author"><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/">Gabriel Genri</a></div><time datetime="2024-10-11T01:17">oct. 11, 2024 </time><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="c-card-tag">Publii</a></div><header class="c-card__header"><h2 class="c-card__title"><a href="https://gabrielgenri.github.io/ProyectoWebs/como-se-representa-el-tema.html">¿Cómo se representa el tema?</a></h2><p>El proceso de renderizado de un tema tiene varios pasos; conocerlos es&hellip;</p></header></article><article class="c-card"><div class="c-card__meta"><div class="c-card__author"><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/">Gabriel Genri</a></div><time datetime="2024-10-11T01:15">oct. 11, 2024 </time><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="c-card-tag">Publii</a></div><header class="c-card__header"><h2 class="c-card__title"><a href="https://gabrielgenri.github.io/ProyectoWebs/estructura-del-tema.html">Estructura del tema</a></h2><p>Cada tema de Publii debe contener algunos archivos obligatorios, pero también se&hellip;</p></header></article></div></div></div></main><div class="right-bar"><div class="right-bar__inner"><div class="sidebar"><section class="box authors"><h3 class="box__title">Autor</h3><ul class="authors__cotainer"><li class="authors__item"><div><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/" class="authors__title">Gabriel Genri</a></div></li></ul></section><section class="box tags"><h3 class="box__title">Recomendados</h3><ul class="tags__list"><li class="tags__item"><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="btn btn--gray">Publii</a></li><li class="tags__item"><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/sites-google/" class="btn btn--gray">Sites Google</a></li></ul></section><section class="box newsletter"><h3 class="box__title">Subscribete</h3><p class="newsletter__desc">Sign up to receive email updates and to hear what's going on with us!</p><form>...</form></section><div class="box copyright">Powered by Publii - Open-Source CMS for Static Websites</div></div></div></div></div><script defer="defer" src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/scripts.min.js?v=b2d91bcadbf5db401b76eb5bb3092eb7"></script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
