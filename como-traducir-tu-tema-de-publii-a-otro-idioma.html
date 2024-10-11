@@ -1,0 +1,515 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cómo traducir tu tema de Publii a otro idioma - Webs</title><meta name="description" content="Es bastante fácil crear un sitio web en tu idioma nativo con&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gabrielgenri.github.io/ProyectoWebs/como-traducir-tu-tema-de-publii-a-otro-idioma.html"><link rel="alternate" type="application/atom+xml" href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml"><link rel="alternate" type="application/json" href="https://gabrielgenri.github.io/ProyectoWebs/feed.json"><meta property="og:title" content="Cómo traducir tu tema de Publii a otro idioma"><meta property="og:site_name" content="Webs"><meta property="og:description" content="Es bastante fácil crear un sitio web en tu idioma nativo con&hellip;"><meta property="og:url" content="https://gabrielgenri.github.io/ProyectoWebs/como-traducir-tu-tema-de-publii-a-otro-idioma.html"><meta property="og:type" content="article"><link rel="preload" href="https://gabrielgenri.github.io/ProyectoWebs/assets/dynamic/fonts/publicsans/publicsans.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://gabrielgenri.github.io/ProyectoWebs/assets/css/style.css?v=f4e53256588ad7ed6cf7cadf14cd270d"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabrielgenri.github.io/ProyectoWebs/como-traducir-tu-tema-de-publii-a-otro-idioma.html"},"headline":"Cómo traducir tu tema de Publii a otro idioma","datePublished":"2024-10-11T00:47","dateModified":"2024-10-11T00:47","description":"Es bastante fácil crear un sitio web en tu idioma nativo con&hellip;","author":{"@type":"Person","name":"Gabriel Genri","url":"https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/"},"publisher":{"@type":"Organization","name":"Gabriel Genri"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><script>// OPEN-CLOSE navbar
+function openNav() {
+ document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+ document.getElementById("nav").style.width = "0%";
+}
+//Get the button
+var topbtn = document.getElementById("topbtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//SmoothScroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".smooth").on('click', function(event) {
+// Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+// Overlay Promo */
+function on() { document.getElementById("overlay").style.display = "block";
+}
+function off() { document.getElementById("overlay").style.display = "none";
+}
+
+
+/*
+===============================================================
+
+Hi! Welcome to my little playground!
+
+My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
+I'm a publicist, visual designer and frontend developer based in Barcelona. 
+
+Here you will find some of my personal experiments. Sometimes usefull,
+sometimes simply for fun. You are free to use them for whatever you want 
+but I would appreciate an attribution from my work. I hope you enjoy it.
+
+===============================================================
+*/
+
+/*
+=====================
+=====================
+JSON list
+=====================
+=====================
+*/
+var post=[
+  {
+    postTitle: "REDES DE MERCADEO",
+    postAbstract: "¿Cómo te puedo ayudar a lograr la Libertad Financiera con las Redes de Mercadeo?",
+    postContent: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae placeat, inventore eligendi qui deserunt asperiores error laboriosam libero blanditiis dignissimos eius molestias cumque necessitatibus est. <b>Quae velit ad cupiditate necessitatibus</b>, facere eum earum ut odio nostrum labore a explicabo quasi voluptates, consequatur obcaecati quos, quis fugiat veniam ea ipsam consequuntur illo!</p><p>Aperiam fugit nulla, praesentium doloremque harum laborum ipsam officia minima. Alias saepe cumque mollitia soluta totam facere, iusto ab officiis cum itaque! Sit sint earum sequi quae mollitia quibusdam adipisci facere explicabo libero nihil! Velit aliquam asperiores possimus eligendi dolore reprehenderit similique suscipit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-quinon.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-quinon5.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Las Preguntas que Cambiaron Mi VIda",
+    postAbstract: "14 años atrás me hice las siguientes 4 preguntas",
+    postContent: "<p>¿Me gustaría tener el estilo de vida que siempre soñé? </p><p>¿Me gustaría tener más tiempo libre y  libertad para hacer lo que quiera?</p><p>¿Busco más tranquilidad económica?</p><p>¿Como me veo en los próximos 5 a 10 años si sigo haciendo lo mismo?</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-inaem.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-inaem2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Política de Privacidad",
+    postAbstract: "Tu privacidad es importante para nosotros. En esta declaración de privacidad se explica qué datos personales recopilamos de nuestros usuarios y cómo los utilizamos. Te animamos a leer detenidamente estos términos antes de facilitar tus datos personales en esta web. Los mayores de trece años podrán registrarse en https://jmgaluppo.com como usuarios sin el previo consentimiento de sus padres o tutores.",
+    postContent: "",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-shigeru.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-shigeru4.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Quidem neque commodi",
+    postAbstract: "Aliquid sapiente harum maiores alias optio, ea vero perferendis impedit architecto culpa libero corporis.",
+    postContent: "<p>Dolorum eos dignissimos eveniet deserunt veritatis possimus magnam enim, eaque non, architecto voluptates consequuntur nulla, modi nobis sunt perferendis voluptatibus accusantium voluptatem! Delectus iure architecto rem, ex quas necessitatibus illum autem obcaecati sapiente ea inventore quisquam debitis quae numquam. Iusto mollitia suscipit iste quae tempore ipsam facere <b>quia nobis et omnis accusantium quo</b>, quod tenetur, aperiam, rem quos quas eveniet exercitationem. Rem, hic optio. Harum quis porro optio facilis totam velit quibusdam corrupti saepe similique sed aut doloribus temporibus ipsum modi rerum, ab impedit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-karuna.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-karuna2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Explicabo obcaecati",
+    postAbstract: "Iste explicabo, architecto maiores nisi eaque doloribus aspernatur esse tera corporis iure itaque animi?",
+    postContent: "<p>Voluptatem, similique. Sed doloribus quaerat ratione deleniti esse odit doloremque incidunt, aut, recusandae? Ipsam ipsum voluptas tenetur aut atque tempora ducimus, dolores qui, <b>maiores voluptatibus veniam</b>, quos inventore esse illum adipisci. Error quo officia, distinctio voluptates, possimus voluptatem dignissimos magni dolor, nobis expedita doloribus consequuntur beatae natus iusto ipsum culpa. Delectus pariatur, officia voluptatem, dolore enim cum temporibus deserunt reiciendis at quam labore aperiam, adipisci nesciunt.</p><p>Laborum placeat <b>adipisci ex porro</b>, labore impedit sed nulla perferendis architecto quis vitae laudantium animi, dolorum repudiandae incidunt eaque! Possimus corporis voluptatum aut velit similique facilis fugit quis eaque, fugiat inventore beatae minus nemo soluta quia earum, atque accusamus!</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-vinallonga.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-vinallonga1.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Ullam provident",
+    postAbstract: "Lorem ipsum dolor sit amet eveniet, consectetur adipisicing elit. Numquam repudiandae nam dolore.",
+    postContent: "<p>Possimus ipsam, aliquid voluptate ab quaerat mollitia deleniti recusandae, voluptas quisquam consequatur porro nesciunt sed commodi reprehenderit, amet earum sapiente sunt, temporibus aut <b>consectetur eligendi</b> laudantium. Cum, eius! Optio tempora unde, non quasi fugit, eos corporis iusto dolores, quam suscipit ipsum cum nesciunt incidunt atque in recusandae amet totam ea fuga! Aliquid similique exercitationem accusamus, et vitae molestiae voluptatum quo earum doloribus <b>nisi hic nesciunt</b>, blanditiis dignissimos. Quia veniam neque facere nesciunt quibusdam distinctio architecto perferendis veritatis? Laboriosam architecto culpa hic aspernatur ratione possimus nostrum mollitia, soluta aliquid reiciendis doloribus.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-urban.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-urban4.jpg",
+    postLink: "article-link1"
+  }
+];
+
+
+/*
+=====================
+=====================
+Thumbs
+=====================
+=====================
+*/
+//Loop length:
+var postLength = post.length;
+//Empty container:
+$(".posts-box").empty();
+//Loop:
+for (i=0; i<postLength; i++) {
+  //Create thumb structure:
+  var listItem =
+    '<li>'+
+      '<div class="card">'+
+        '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">'+
+          '<img src="'+post[i].postThumb+'" alt="">'+
+        '</a>'+
+        '<div>'+
+          '<h3>'+post[i].postTitle+'</h3>'+
+          '<p>'+post[i].postAbstract+'</p>'+
+        '</div>'+
+        '<div>'+
+          '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">Ver</a>'+
+        '</div>'+
+      '</div>'+
+    '</li>';
+  //Append thumb:
+  $(".posts-box").append(listItem);
+};
+
+
+/*
+=====================
+=====================
+Inner post
+=====================
+=====================
+*/
+var thisElement = 0;
+
+function innerContent(content){
+  $(".inner-img").attr("src",post[content].postImg);
+  $(".inner-title").html(post[content].postTitle);
+  $(".inner-text").html(post[content].postContent);
+};
+
+//Open post:
+$(".button").click(function(e){
+  e.preventDefault();
+  thisElement = $(this).attr("data-obj");
+  innerContent(thisElement);
+  $(".modal").css({"display":"block"});
+  dissBtn();
+});
+
+//Close post:
+$(".close-post, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+});
+
+//Next post:
+$(".next-post").click(function(e){
+  e.preventDefault();
+  if (thisElement<postLength-1) {
+    thisElement = parseInt(thisElement) + 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Prev post:
+$(".prev-post").click(function(e){
+  e.preventDefault();
+  if (thisElement>0) {
+    thisElement = parseInt(thisElement) - 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Button disable:
+function dissBtn(){
+  $(".prev-post, .next-post").removeClass("disabled");
+  if (thisElement<=0){
+    $(".prev-post").addClass("disabled");
+  }
+  else if (thisElement>=postLength-1){
+    $(".next-post").addClass("disabled");
+  };
+};
+
+
+// TESTIMONIOS Define data for the popup
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+// envio
+ function enviar_pedido_whatsapp(){
+        	var cadena_pedido="";
+
+        	cadena_pedido+="%2ANuevo Pedido%2A"+'%0A'+'%0A';
+        	
+        	//cadena_pedido+="-------------------"+'%0A';
+
+        	
+
+
+   /*     	for(var i=0;i<arra_prods_exis.length;i++){       
+
+
+        		var obj_prod=get_nombre_ref(arra_prods_exis[i]);
+
+        		if(obj_prod.nombre_producto!=""){
+        			cadena_pedido+="%2A"+obj_prod.nombre_producto+'%2A%0A';
+        		}
+        		
+        		cadena_pedido+=""+get_linea_cadena_by_ref(arra_prods_exis[i],"1");
+        		cadena_pedido+="---------------------------------"+'%0A';
+        		
+        	}
+        	cadena_pedido+="---------------------------------"+'%0A';
+        	if(valor_total_cotizacion>0){
+        		cadena_pedido+="%2A"+"TOTAL:"+"%2A%20%20"+addCommas(valor_total_cotizacion)+'%0A';
+        		cadena_pedido+="---------------------------------"+'%0A';
+        	} */
+        	
+
+        	cadena_pedido+="%2A"+"Nombres:"+"%2A%20"+encodeURIComponent($("#nombrePedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Email:"+"%2A%20"+$("#emailPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Teléfonos:"+"%2A%20"+encodeURIComponent($("#telefonoPedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Dirección:"+"%2A%20"+encodeURIComponent($("#direccionPedido").val())+'%0A';
+
+        	if($("#identificacionPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Identificación:"+"%2A%20"+encodeURIComponent($("#identificacionPedido").val())+'%0A';
+        	}
+
+
+        	if($("#vendedorPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Referido:"+"%2A%20"+encodeURIComponent($("#vendedorPedido").val())+'%0A';
+        	}
+
+        	cadena_pedido+="%2A"+"Ciudad:"+"%2A%20"+$("#ciudadPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Observación:"+"%2A%20"+encodeURIComponent($("#observacionPedido").val())+'%0A';
+
+
+        	var url_final="https://api.whatsapp.com/send?phone=5493804402424&text="+cadena_pedido;
+
+        	window.open(url_final,"_self");
+
+
+        	localStorage.setItem('nombrePedido', ''+$("#nombrePedido").val());
+        	localStorage.setItem('emailPedido', ''+$("#emailPedido").val());
+        	localStorage.setItem('telefonoPedido', ''+$("#telefonoPedido").val());
+        	localStorage.setItem('direccionPedido', ''+$("#direccionPedido").val());
+        	localStorage.setItem('ciudadPedido', ''+$("#ciudadPedido").val());
+        	localStorage.setItem('observacionPedido', ''+$("#observacionPedido").val());
+ }
+
+
+function abrir_sms(){
+			var url_enviar="";
+
+			var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+
+			if(iOS){
+				url_enviar="sms:#celular&body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				url_enviar="sms://#celular?body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			/*
+
+	 $url_share_sms="{$ruta_external}sms://#celular?body={$cadena_compartir} - {$url_compartir}";    
+    $url_share_sms_iphone="{$ruta_external}sms:#celular&body={$cadena_compartir} - {$url_compartir}";
+
+			*/
+
+
+
+			var cadena_cel="";
+			if(numero_whats!=""){
+				url_enviar = url_enviar.replace("#celular", numero_whats);
+			}else{
+				url_enviar = url_enviar.replace("#celular", "");
+			}
+
+			console.log("Prueba: "+url_enviar);
+
+			window.open(""+url_enviar+"","_self");
+			console.log("Prueba: "+url_enviar);
+		}
+
+		function compartir_whatsapp(){
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+			var cadena_compartir_whatsapp="";
+			if(numero_whats!=""){
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?phone="+numero_whats+"&text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			window.open(""+cadena_compartir_whatsapp,"_blank");
+
+		}</script></head><body class="post-template"><div class="container"><div class="left-bar"><div class="left-bar__inner"><header class="header"><a class="logo" href="https://gabrielgenri.github.io/ProyectoWebs/">Webs</a><nav class="navbar"><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle__box"><span class="navbar__toggle__inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self" aria-label="Inicio"><span>Inicio</span></a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/html-and-css.html" target="_blank" aria-label="Html y Css"><span>Html y Css</span></a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self" aria-label="Publii"><span>Publii</span></a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/google-sites.html" target="_self" aria-label="Sites"><span>Sites</span></a></li></ul></nav><a class="logo logo--atbottom" href="https://gabrielgenri.github.io/ProyectoWebs/">Webs</a></header></div></div><main class="main post"><article class="content"><div class="content__meta content__meta--attop"><div class="content__meta--attop__inner"><div class="content__maintag"><svg width="20" height="20" aria-hidden="true" focusable="false"><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#tag"/></svg> Published in <a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="metadata__maintag">Publii</a></div></div></div><div class="main__inner"><div class="content__meta"><div class="content__date"><time datetime="2024-10-11T00:47">oct. 11, 2024</time></div></div><header class="content__header"><h1 class="content__title">Cómo traducir tu tema de Publii a otro idioma</h1></header><div class="content__entry"><header><p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Es bastante fácil crear un sitio web en tu idioma nativo con Publii; ¡solo crea el contenido! Pero si lo haces, te darás cuenta rápidamente de que hay un pequeño problema: los pequeños fragmentos de texto adicionales que vienen con el tema, como el texto </span><strong style="font-family: var(--editor-font-family); font-size: inherit;">de Publicado</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> el que ves en la parte superior de una publicación o las etiquetas de los botones de tus redes sociales, no aparecen en el editor de contenido ni en las opciones generales de Publii. Esto los convierte en un pequeño inconveniente en un sitio que no está en inglés, ya que siempre tendrás algunos fragmentos sueltos en inglés que arruinarán tu estética.</span></p></header><div class="post__entry"><p><span>Entonces, ¿por qué no hay opciones para cambiar estos fragmentos de texto? Esto se debe a que estos elementos se crean y definen en el código del tema, en lugar de en la aplicación principal de Publii o en el contenido producido por el usuario. Como cada tema es único, no es posible producir una opción estandarizada para modificar este texto sin restringir gravemente la creatividad de los desarrolladores, ¡algo que no queremos fomentar!</span></p><p><span>Afortunadamente, desde el lanzamiento de la versión Beta 3, Publii ha incluido una nueva característica: compatibilidad con archivos de idioma en los temas, lo que permite a los desarrolladores de temas definir el texto de su tema a través de un archivo .json, en lugar de codificar todo el texto directamente en el tema. Este archivo se puede reemplazar con un archivo de usuario, traduciendo el idioma sin tocar los archivos originales. Si no estás familiarizado con el archivo .json, verás que modificarlo y, por lo tanto, traducir el tema a tu idioma local es como editar un archivo de texto estándar y no te supondrá ningún desafío.</span></p><h2 id="thepubliithemelanguagefile"><span>El archivo de idioma del tema Publii</span></h2><p><span>Con este nuevo formato, elementos como el texto de los botones del tema se definen en un archivo de idioma que está separado del código del tema. El formato de estos archivos de idioma es </span><strong><span>themeName.lang.json</span></strong><span> y el archivo se almacenará en la carpeta del tema en la ubicación de los archivos de Publii (esto se define en la Configuración global de Publii). Por lo tanto, si quisiéramos encontrar el archivo de idioma para el nuevo tema Portfolio, primero iríamos a nuestra carpeta de archivos de Publii y luego abriríamos la carpeta </span><strong><span>themes → portfolio</span></strong><span> , donde encontraremos el archivo de idioma:</span></p><figure class="is-loaded"><img src="https://getpublii.com/docs/media/posts/27/language-file-publii-theme.png" alt="Archivo de idioma del tema Publii" width="832" height="394" loading="lazy" data-is-external-image="true"></figure><p><span>Ahora bien, para traducir el texto del tema, técnicamente podríamos simplemente abrir el archivo de idioma y editarlo directamente, pero hay un problema: cuando se actualiza el tema, el archivo de idioma se sobrescribe y se pierden todos los cambios. En cambio, necesitamos una solución más permanente, que Publii ya ofrece.</span></p><p><span>En lugar de editar el archivo directamente, podemos crear una copia del archivo que sea exclusiva para nuestro sitio web, que Publii puede usar para anular el archivo de idioma predeterminado. Veámoslo paso a paso.</span></p><h2 id="translatingapubliitheme"><span>Traduciendo un tema de Publii</span></h2><ol><li><p><span>Primero, ubique el archivo de idioma para el tema que desea traducir; como se mencionó anteriormente, este estará en la carpeta </span><strong><span>Archivos Publii → Temas → NombreDeTema , donde </span></strong><strong><span>Archivos Publii</span></strong><span> es la ruta definida en la opción </span><strong><span>Ubicación de Sitios</span></strong><span> de su Configuración Global de Publii. El nombre del archivo se llamará </span><strong><span>themeName.lang.json</span></strong><span> , donde </span><strong><span>ThemeName</span></strong><span> es el nombre del tema que está usando, por ejemplo, "portfolio.lang.json".</span></p></li><li><p><span>Crea una copia del archivo de idioma, dejando el original intacto. Coloca la copia en tu carpeta </span><strong><span>sites/siteName/input/languages , donde </span></strong><strong><span>siteName</span></strong><span> es el nombre de tu sitio tal como se define en Publii (asegúrate de que el nombre del archivo coincida exactamente con el archivo de idioma original). Es posible que tu carpeta </span><strong><span>de entrada</span></strong><span> no tenga una carpeta </span><strong><span>de idiomas</span></strong><span> ; si ese es el caso, simplemente crea la carpeta manualmente y coloca el archivo de idioma dentro.</span></p></li><li><p><span>Abra la copia del archivo de idioma con el editor de texto que prefiera; ¡incluso el Bloc de notas funcionará! Dentro, verá un código; cada línea será una categoría para ordenar el texto que se puede ignorar, o el texto de traducción. El texto de traducción tendrá este formato: </span><strong><span>"placeHolderText": "translatedText",</span></strong><span> . El texto a la izquierda de los dos puntos es el texto de marcador de posición, que podemos ignorar. El texto a la derecha de los dos puntos es el texto real que aparecerá en el sitio web.</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{
+   "partials": {
+      "cookiebar": {
+         "close": "Close"
+      },
+      "disqus": {
+         "noscript1": "Please enable JavaScript to view the",
+         "noscript2": "comments powered by Disqus."
+      },
+      "menu": {
+         "label": "Menu"
+      },
+      "pagination": {
+         "prev": "Previous",
+         "next": "Next"
+      },
+      "shareButtons": {
+         "shareWithFacebook": "Share with Facebook",
+         "shareWithTwitter": "Share with Twitter",
+         "shareWithGooglePlus": "Share with Google Plus",
+         "shareWithPinterest": "Share with Pinterest",
+         "shareWithStumbleUpon": "Share with StumbleUpon",
+         "shareWithLinkedIn": "Share with LinkedIn",
+         "shareWithBuffer": "Share with Buffer"
+      }
+   },
+   "slider": {
+      "button": "View project",
+      "slide": "Slide %s"
+   },
+   "post": {
+      "publishedBy": "By",
+      "publishedOn": "Published on",
+      "previousPost": "Previous Post",
+      "nextPost": "Next Post"
+   },
+   "common": {
+      "readmore": "View more"
+   }
+}
+</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div></li><li><p><span>Traduce cada fragmento de texto que está a la derecha de los dos puntos; no modifiques el texto de la categoría ni el texto a la izquierda de los dos puntos en cada línea, ya que se utilizan en el código del tema para indicarle a Publii qué texto reemplazar:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code> {
+   "partials": {
+      "cookiebar": {
+         "close": "Your close button text here"
+      },
+      "disqus": {
+         "noscript1": "Your enable Javascript message here",
+         "noscript2": "Your Disqus intro text here"
+      },
+      "menu": {
+         "label": "Your menu label here"
+      },
+      "pagination": {
+         "prev": "Your previous button text here",
+         "next": "Your next button text here"
+      },
+      "shareButtons": {
+         "shareWithFacebook": "Your Facebook share button text here",
+         "shareWithTwitter": "Your Twitter share button text here",
+         "shareWithGooglePlus": "Your Google+ share button text here",
+         "shareWithPinterest": "Your Pinterest share button text here",
+         "shareWithStumbleUpon": "Your StumbleUpon share button text here",
+         "shareWithLinkedIn": "Your LinkedIn share button text here",
+         "shareWithBuffer": "Your Buffer share button text here"
+      }
+   },
+   "slider": {
+      "button": "Your slide button text here",
+      "slide": "Your slide text here"
+   },
+   "post": {
+      "publishedBy": "Your published by text here",
+      "publishedOn": "Your publication date text here",
+      "previousPost": "Your previous post button text here",
+      "nextPost": "Your next post button text here"
+   },
+   "common": {
+      "readmore": "Your readmore button text here"
+   }
+}
+</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div></li><li><p><span>Una vez que haya reemplazado el texto con su propia traducción o interpretación, guarde los cambios en el archivo. Ahora, cuando Publii cree el sitio web que se cargará, el nuevo archivo de idioma que creó se utilizará para anular las opciones del archivo de idioma predeterminado y verá el texto traducido en su sitio en vivo o en vista previa.</span></p></li></ol><h2 id="foradvancedusers"><span>Para usuarios avanzados</span></h2><p><span>Hay dos cosas que los usuarios más avanzados deben tener en cuenta: no es necesario incluir todo el código del archivo de idioma original en la versión de reemplazo del archivo. En su lugar, puede incluir solo la cadena que desea cambiar. Por lo tanto, si solo deseamos cambiar la etiqueta del botón de la presentación de diapositivas de la página de inicio en el tema Portfolio, podríamos crear un archivo de idioma con el siguiente código dentro:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{
+   "partials": {   
+      "menu": {
+         "label": "Menu"
+      }
+   },
+   "slider": {
+      "button": "View project",
+      "slide": "Slide %s"
+   }
+}
+</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span>Esto anulará el texto del botón, dejando el resto intacto. En segundo lugar, es importante tener en cuenta el propósito del texto </span><strong><span>%s</span></strong><span> que se puede ver en algunos textos de traducción, como en el ejemplo anterior; "diapositiva %s". El texto </span><strong><span>%s</span></strong><span> representa una variable que se tomará de otra parte de Publii. Por ejemplo, una cadena de texto podría decir "Bienvenido a mi sitio, de %s", y en el sitio en vivo, el texto </span><strong><span>%s</span></strong><span> se reemplazará con el nombre del autor, de modo que diga "Bienvenido a mi sitio, de nombreAutor". El símbolo </span><strong><span>%s</span></strong><span> representa un número, carácter o cadena de texto que se puede reemplazar por otras variables, por lo que antes de cambiarlas es importante verificar cuál es la variable que se muestra para asegurarse de que su traducción coincida.</span></p><p><span>Puede encontrar más información sobre esto a continuación, en la </span><a href="https://getpublii.com/docs/translate-publii-theme-to-another-language.html#variable"><span>variable %s</span></a></p><h2 id="howthejsonlanguagefileworks"><span>Cómo funciona el archivo de idioma .json</span></h2><p><span>¿Ya has descubierto cómo hacer traducciones, pero te gustaría saber un poco más sobre cómo funciona? ¡Sigue leyendo! En un tema de sitio web estándar, el texto incidental está codificado, oculto en los archivos del tema, lo que dificulta su acceso. Por supuesto, si tienes un pequeño conocimiento práctico de temas o código, entonces es extremadamente fácil cambiarlo directamente en los archivos. Sin embargo, esta no es una solución viable la mayoría de las veces; la persona promedio no tendrá mucho conocimiento sobre codificación, porque no es esencial; ¡por eso existen aplicaciones como Publii, después de todo! En segundo lugar, siempre que se actualicen los archivos del tema, los cambios se sobrescribirán y el texto volverá al valor predeterminado.</span></p><p><span>Por lo tanto, es evidente que se necesita un método más sencillo y fácil de usar para traducir temas. En el caso de Publii, en lugar de codificar texto en los temas, utilizamos un archivo .json de lenguaje, que actúa como una especie de libro de códigos. Básicamente, en lugar de poner texto en el código del tema, pondremos un fragmento de texto de marcador de posición; y en el archivo de lenguaje, definiremos con qué se debe reemplazar cada fragmento de texto de marcador de posición. Luego, cuando Publii crea los archivos para el sitio web, buscará todo el texto de marcador de posición y lo reemplazará con sus respectivas traducciones del archivo de lenguaje. Piense en ello como si estuviera leyendo un fragmento de álgebra; una fórmula como "x + y = z" no significa nada por sí sola, pero si define tanto "x" como "y", entonces se puede calcular la fórmula. En un tema de Publii, "x" e "y" serían el texto de marcador de posición, que luego se define en el archivo de lenguaje.</span></p><h2 id="thelanguagefilestructure"><span>La estructura del archivo de idioma</span></h2><p><span>La mejor forma de entender el archivo de idioma es echar un vistazo a su contenido. A pesar de la extensión .json, puedes ver el archivo con prácticamente cualquier editor de texto, ¡incluso con el Bloc de notas! Abramos el archivo </span><strong><span>portfolio.lang.json</span></strong><span> , que se encuentra en la carpeta </span><strong><span>Publii → themes → portfolio</span></strong><span> :</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{
+   "partials": {
+      "cookiebar": {
+         "close": "Close"
+      },
+      "disqus": {
+         "noscript1": "Please enable JavaScript to view the",
+         "noscript2": "comments powered by Disqus."
+      },
+      "menu": {
+         "label": "Menu"
+      },
+      "pagination": {
+         "prev": "Previous",
+         "next": "Next"
+      },
+      "shareButtons": {
+         "shareWithFacebook": "Share with Facebook",
+         "shareWithTwitter": "Share with Twitter",
+         "shareWithGooglePlus": "Share with Google Plus",
+         "shareWithPinterest": "Share with Pinterest",
+         "shareWithStumbleUpon": "Share with StumbleUpon",
+         "shareWithLinkedIn": "Share with LinkedIn",
+         "shareWithBuffer": "Share with Buffer"
+      }
+   },
+   "slider": {
+      "button": "View project",
+      "slide": "Slide %s"
+   },
+   "post": {
+      "publishedBy": "By",
+      "publishedOn": "Published on",
+      "previousPost": "Previous Post",
+      "nextPost": "Next Post"
+   },
+   "common": {
+      "readmore": "View more"
+   }
+}
+</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span>Como podemos ver en el código anterior, hay varios grupos de texto separados por llaves. Cada línea de texto se puede clasificar como uno de dos tipos; ya sea como una categoría o como un marcador de posición con traducción. Se utiliza una categoría para dividir las traducciones en grupos de modo que sean fáciles de encontrar, y cada categoría puede tener subcategorías si es necesario. En el ejemplo anterior, podemos ver que la primera línea es una categoría, </span><strong><span>partials</span></strong><span> , que contiene varias subcategorías; </span><strong><span>cookiebar</span></strong><span> , </span><strong><span>disqus</span></strong><span> , </span><strong><span>menu</span></strong><span> , </span><strong><span>pagination</span></strong><span> y </span><strong><span>shareButtons</span></strong><span> . Es fácil saber cuándo una línea es una categoría, porque solo tendrá una cadena de texto ininterrumpida entre comillas seguida de dos puntos, como </span><strong><span>"newCategory":</span></strong><span> . Tenga en cuenta que no es necesario agrupar las traducciones en categorías; es solo una buena práctica para que otras personas que trabajen con el código y las traducciones puedan encontrar fácilmente lo que necesitan.</span></p><p><span>El segundo tipo de contenido es el marcador de posición con traducciones; este es el verdadero meollo del archivo. A diferencia de las categorías, las referencias y traducciones tendrán dos palabras separadas entre comillas, a la izquierda y a la derecha de los dos puntos, de esta manera: </span><strong><span>"placeholderText": "translationText"</span></strong><span> . El texto a la izquierda de los dos puntos (en este caso, "placeholderText"), es el marcador de posición que se ingresará en el código del tema para que Publii lo reemplace cuando cree el sitio web. El texto a la derecha de los dos puntos ("translationText"), es el texto que Publii usará para reemplazar el texto del marcador de posición en el sitio web completo.</span></p><h2 id="overridinglanguagefile"><span>Anulación del archivo de idioma</span></h2><p><span>Debido a que los archivos principales del tema se reemplazarán con cada actualización, se agregó una característica adicional para permitir traducciones; </span><strong><span>Overrides</span></strong><span> . Al crear un archivo con el mismo nombre que el archivo de idioma, pero colocándolo en la carpeta </span><strong><span>sites/websiteName/input/languages</span></strong><span> ​​(donde </span><strong><span>websiteName</span></strong><span> es el nombre del sitio como se define en el backend de la aplicación Publii), puede agregar sus propias traducciones que anularán el archivo de idioma, como se describe en la sección de traducción anterior en este artículo. Cuando Publii crea las páginas para su sitio, primero toma el texto de marcador de posición del archivo de idioma, pero luego verifica si hay un archivo de anulación. Si encuentra uno, buscará las cadenas de texto de traducción de reemplazo en el archivo de anulación y las usará para reemplazar el texto que tomó del archivo de idioma. Esto le permitirá modificar el texto sin tener que modificar los archivos principales ni preocuparse por perder sus cambios cuando se realice una actualización.</span></p><h2 id="variable"><span>Variable </span><strong><span>%s</span></strong></h2><p><span>El </span><strong><span>%s</span></strong><span> que a veces ves en el texto es otro fragmento de texto de marcador de posición, pero en este caso obtendrá una variable que puede ser dinámica o modificable. Digamos que un tema tiene un fragmento de texto en la página de inicio que dice "Hola de parte de la gente de websiteName", donde websiteName es el nombre del sitio web. Cada usuario que instale este tema tendrá un sitio web diferente, por lo que no pueden simplemente codificar un nombre de sitio web en particular en el tema. En su lugar, usarán un elemento </span><strong><span>%s</span></strong><span> en el archivo de idioma y luego, en el código del tema, definirán cuál debería ser la variable, como </span><strong><span>@website.name</span></strong><span> . De esta manera, cuando Publii crea el código del sitio en vivo, reemplazará automáticamente el </span><strong><span>%s</span></strong><span> con la variable del nombre del sitio web, que será diferente para cada sitio web.</span></p><p><span>Por ejemplo, en la página Etiquetas, en lugar de </span><strong><span>%s,</span></strong><span> coloquemos el número de todas las etiquetas. Para ello, utilizaremos la etiqueta </span><strong><span>{{tagsNumber}} ( </span></strong><a href="https://getpublii.com/dev/tags-page-tags/#templatespecific-tags"><span>https://getpublii.com/dev/tags-page-tags/#templatespecific-tags</span></a><span> ). </span></p><p><span>Archivo de idioma:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{
+   "tags": {
+		"pageTitle": "Tags",
+		"description": "Collection of all %s tags"	
+   },
+}
+</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span>En el archivo tags.hbs coloque lo siguiente:</span></p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{{ translate "tags.description" tagsNumber }}
+</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span>Como resultado obtendremos: "Colección de las </span><strong><span>5</span></strong><span> etiquetas", donde 5 es el número de todas las etiquetas disponibles.</span></p></div></div><footer class="content__footer"><div class="content__last-updated">This article was updated on <time datetime="2024-10-11T00:47">oct. 11, 2024</time></div><div class="content__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Fcomo-traducir-tu-tema-de-publii-a-otro-idioma.html" class="js-share facebook tltp tltp--top" aria-label="Facebook" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#facebook"/></svg> <span>Facebook</span> </a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Fcomo-traducir-tu-tema-de-publii-a-otro-idioma.html&amp;via=Webs&amp;text=C%C3%B3mo%20traducir%20tu%20tema%20de%20Publii%20a%20otro%20idioma" class="js-share twitter tltp tltp--top" aria-label="Twitter" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#twitter"/></svg> <span>Twitter</span> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Fcomo-traducir-tu-tema-de-publii-a-otro-idioma.html&amp;media=undefined&amp;description=C%C3%B3mo%20traducir%20tu%20tema%20de%20Publii%20a%20otro%20idioma" class="js-share pinterest tltp tltp--top" aria-label="Pinterest" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://gabrielgenri.github.io/ProyectoWebs/assets/svg/svg-map.svg#pinterest"/></svg> <span>Pinterest</span></a></div></footer></div></article><div class="content__section post__related"><div class="main__inner"><h3 class="content__section__title">Related post</h3><div class="post__related__wrap"><article class="c-card"><div class="c-card__meta"><div class="c-card__author"><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/">Gabriel Genri</a></div><time datetime="2024-10-10T23:03">oct. 10, 2024 </time><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="c-card-tag">Publii</a></div><header class="c-card__header"><h2 class="c-card__title"><a href="https://gabrielgenri.github.io/ProyectoWebs/complementos-publii.html">Complementos  Publii</a></h2><p>Complementos Desde el lanzamiento de la versión 0.39.0, Publii ha incluido soporte&hellip;</p></header></article><article class="c-card"><div class="c-card__meta"><div class="c-card__author"><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/">Gabriel Genri</a></div><time datetime="2024-10-10T22:59">oct. 10, 2024 </time><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="c-card-tag">Publii</a></div><header class="c-card__header"><h2 class="c-card__title"><a href="https://gabrielgenri.github.io/ProyectoWebs/publii.html">Publii</a></h2><p>Publii es una aplicación que aporta un nuevo concepto al desarrollo web:&hellip;</p></header></article></div></div></div></main><div class="right-bar"><div class="right-bar__inner"><div class="sidebar"><section class="box authors"><h3 class="box__title">Authors</h3><ul class="authors__cotainer"><li class="authors__item"><div><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/" class="authors__title">Gabriel Genri</a></div></li></ul></section><section class="box tags"><h3 class="box__title">Recommended Topics</h3><ul class="tags__list"><li class="tags__item"><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/" class="btn btn--gray">Publii</a></li><li class="tags__item"><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/sites-google/" class="btn btn--gray">Sites Google</a></li></ul></section><section class="box newsletter"><h3 class="box__title">Subscribe to Mono</h3><p class="newsletter__desc">Sign up to receive email updates and to hear what's going on with us!</p><form>...</form></section><div class="box copyright">Powered by Publii - Open-Source CMS for Static Websites</div></div></div></div></div><script defer="defer" src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/scripts.min.js?v=b2d91bcadbf5db401b76eb5bb3092eb7"></script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
