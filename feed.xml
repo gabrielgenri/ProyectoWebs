@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Webs</title>
+    <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
+    <link href="https://gabrielgenri.github.io/ProyectoWebs" />
+    <updated>2024-10-10T21:55:13-03:00</updated>
+    <author>
+        <name>Gabriel Genri</name>
+    </author>
+    <id>https://gabrielgenri.github.io/ProyectoWebs</id>
+
+    <entry>
+        <title>Webs el proyecto</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/webs-el-proyecto.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/webs-el-proyecto.html</id>
+            <category term="codigo"/>
+
+        <updated>2024-10-10T21:55:13-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Proyecto
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Proyecto</p>
+            ]]>
+        </content>
+    </entry>
+</feed>

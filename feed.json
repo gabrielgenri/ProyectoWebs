@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Webs",
+    "description": "",
+    "home_page_url": "https://gabrielgenri.github.io/ProyectoWebs",
+    "feed_url": "https://gabrielgenri.github.io/ProyectoWebs/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Gabriel Genri"
+    },
+    "items": [
+        {
+            "id": "https://gabrielgenri.github.io/ProyectoWebs/webs-el-proyecto.html",
+            "url": "https://gabrielgenri.github.io/ProyectoWebs/webs-el-proyecto.html",
+            "title": "Webs el proyecto",
+            "summary": "Proyecto",
+            "content_html": "<p>Proyecto</p>",
+            "author": {
+                "name": "Gabriel Genri"
+            },
+            "tags": [
+                   "codigo"
+            ],
+            "date_published": "2024-10-10T21:55:13-03:00",
+            "date_modified": "2024-10-10T21:55:13-03:00"
+        }
+    ]
+}
