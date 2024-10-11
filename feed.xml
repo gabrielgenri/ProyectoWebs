@@ -3,12 +3,71 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-10-10T23:08:28-03:00</updated>
+    <updated>2024-10-10T23:16:56-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
+    <entry>
+        <title>Tutoriales </title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/tutoriales.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/tutoriales.html</id>
+
+        <updated>2024-10-10T23:14:35-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Consejos para usar, editar o administrar Publii El banner de cookies integrado&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header class="page__header">
+<p class="page__desc"><span>Consejos para usar, editar o administrar Publii</span></p>
+</header>
+<ul class="list">
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/gdpr-cookie-banner-configuration.html" class="invert"><span>Configuración del banner de cookies del RGPD</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>El banner de cookies integrado de Publii proporciona una solución fácil de usar para solicitar y administrar el consentimiento y las preferencias de cookies de sus visitantes para que su sitio cumpla con el RGPD.</span></p>
+</li>
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/mailchimp-form-integration.html" class="invert"><span>Dónde encontrar la URL de acción del formulario de Mailchimp</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>Si utilizas Mailchimp para gestionar las suscripciones a tu newsletter, implementarlo en tu tema es un proceso muy sencillo. Solo necesitarás una única pieza…</span></p>
+</li>
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/how-to-embed-google-map-on-static-site.html" class="invert"><span>Cómo insertar un mapa de Google en un sitio estático</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>Los mapas de Google no son gratuitos; el precio se basa en la cantidad de veces que los usuarios cargan un mapa en un sitio web. Sin embargo,…</span></p>
+</li>
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/configure-docsearch-static-site.html" class="invert"><span>¿Cómo configurar DocSearch en un tema de Publii compatible?</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>Algunos de nuestros temas: Búsqueda de soporte de documentos de productos, documentación o preguntas y respuestas de preguntas frecuentes mediante Algolia DocSearch. Este motor de búsqueda es gratuito y funciona muy bien, ya que proporciona...</span></p>
+</li>
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/highlight-your-code-syntax-with-prism-js.html" class="invert"><span>Resalte la sintaxis de su código con PrismJS</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>Para mejorar la legibilidad del código agregado a una publicación durante el proceso de escritura, podemos usar un resaltador de sintaxis que, como su nombre indica…</span></p>
+</li>
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/make-newsletter-form-functional-and-visually-appealing.html" class="invert"><span>¿Cómo hacer que su boletín informativo sea funcional y visualmente atractivo?</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>Algunos temas de Publii, como QF Fashion y Technews, incluyen un formulario de boletín informativo en su diseño. En este artículo, explicaremos cómo puedes agregar…</span></p>
+</li>
+<li class="list__item">
+<h3 class="list__item-title"><a href="https://getpublii.com/docs/publii-on-multiple-computers-via-dropbox.html" class="invert"><span>Cómo acceder a su sitio Publii en varias computadoras a través de Dropbox</span></a></h3>
+<div class="list__item-meta"> </div>
+<p class="list__item-excerpt"><span>Publii fue diseñado originalmente para ser utilizado por un solo usuario para construir y mantener un sitio web estático, pero se agregaron funcionalidades adicionales durante la versión beta…</span></p>
+</li>
+</ul>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>El complemento DocSearch</title>
         <author>
@@ -144,6 +203,10 @@
         <content type="html">
             <![CDATA[
                 <p>Publii es una aplicación que aporta un nuevo concepto al desarrollo web: el primer CMS de sitios web estáticos para escritorio. Diseñado con la simplicidad necesaria para que lo utilicen los principiantes, pero con amplias opciones y funcionalidades que permiten a los desarrolladores web experimentados realizar modificaciones más complejas, Publii crea un sitio web estático seguro y rápido sin complicaciones. En esta guía, podrá aprender cómo funciona, desde la instalación hasta la creación.</p>
+<p class="msg msg--success"><a href="https://getpublii.com/download/" class="invert">Descargar Publii</a></p>
+<p class="msg msg--success"><a href="https://marketplace.getpublii.com/themes/" class="invert">Temas</a></p>
+<p class="msg msg--success"><a href="https://marketplace.getpublii.com/plugins/" class="invert">Complementos</a></p>
+<p class="msg msg--success"><a href="https://getpublii.com/dev/" aria-label="Enlace a la página de inicio">Documentación para desarrolladores</a></p>
 <header>
 <h1 class="post__title">Descarga e instalación</h1>
 </header>
@@ -167,65 +230,44 @@
 <p>Esto abrirá la pantalla <strong>Configuración de la aplicación</strong> . El segundo bloque de opciones en esta sección se titula <strong>Ubicación de archivos</strong> ; haga clic en el campo <strong>Ubicación de sitios</strong> para abrir automáticamente el explorador de archivos y seleccionar la carpeta en la que desea guardar los archivos. Una vez hecho esto, haga clic en el botón <strong>Guardar configuración</strong> en la parte superior de la pantalla para guardar los cambios. Si desea volver a utilizar la ubicación de almacenamiento predeterminada, haga clic en el botón rojo <strong> "X"</strong>  junto al campo <strong>Ubicación de sitios</strong> ; esto borrará la ubicación existente y la reemplazará con la ruta predeterminada una vez que se guarden las configuraciones.</p>
 <p> </p>
 <header>
-<h1 class="post__title"><span>Gestión de sitios web: creación, eliminación, modificación y duplicación</span></h1>
+<h1 class="post__title">Gestión de sitios web: creación, eliminación, modificación y duplicación</h1>
 </header>
 <div class="post__entry">
-<p><span>La primera vez que ejecute Publii, la primera pantalla que verá será la página </span><strong><span>Crear nuevo sitio web</span></strong><span> : </span></p>
+<p>La primera vez que ejecute Publii, la primera pantalla que verá será la página <strong>Crear nuevo sitio web</strong> : </p>
 <figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/49/creating-new-website-2.svg" alt="Gestión de sitios web: creación, eliminación, modificación y duplicación" width="748" height="564" loading="lazy" data-is-external-image="true"></figure>
-<figcaption><span>Creando nueva pantalla de sitio web</span></figcaption>
+<figcaption>Creando nueva pantalla de sitio web</figcaption>
 </figure>
-<p><span>Aquí solo hay que seguir unos pocos pasos, pero es importante que conozcas el efecto que tendrá cada configuración:</span></p>
+<p>Aquí solo hay que seguir unos pocos pasos, pero es importante que conozcas el efecto que tendrá cada configuración:</p>
 <ol>
-<li><span>Primero, crea un ícono para tu sitio. Este ícono se mostrará solo en el backend de Publii para ayudarte a distinguir este sitio de cualquier otro que crees más adelante; no tendrá ningún efecto en el sitio web en vivo. Haz clic en el ícono y el color que deseas usar; se creará una vista previa a la izquierda.</span></li>
-<li><span>Ingresa el nombre del sitio web en el campo </span><strong><span>Nombre del sitio web</span></strong><span> . Este nombre se usará tanto en el backend de Publii como en tu sitio en línea, tanto en la posición del logotipo (si está configurado como texto) como en el título de la pestaña (lo que ves en la parte superior de la pestaña del navegador).</span></li>
-<li><span> Ingrese su nombre o el nombre de la persona que escribirá o publicará en su sitio en el  campo </span><strong><span>Nombre del autor</span></strong><span>  . Este nombre se utilizará en todas las publicaciones creadas y habrá una página de autor independiente disponible. Se pueden agregar autores adicionales a través de la  sección </span><strong><span>Autores</span></strong><span>  de la interfaz de Publii.</span></li>
+<li>Primero, crea un ícono para tu sitio. Este ícono se mostrará solo en el backend de Publii para ayudarte a distinguir este sitio de cualquier otro que crees más adelante; no tendrá ningún efecto en el sitio web en vivo. Haz clic en el ícono y el color que deseas usar; se creará una vista previa a la izquierda.</li>
+<li>Ingresa el nombre del sitio web en el campo <strong>Nombre del sitio web</strong> . Este nombre se usará tanto en el backend de Publii como en tu sitio en línea, tanto en la posición del logotipo (si está configurado como texto) como en el título de la pestaña (lo que ves en la parte superior de la pestaña del navegador).</li>
+<li> Ingrese su nombre o el nombre de la persona que escribirá o publicará en su sitio en el  campo <strong>Nombre del autor</strong>  . Este nombre se utilizará en todas las publicaciones creadas y habrá una página de autor independiente disponible. Se pueden agregar autores adicionales a través de la  sección <strong>Autores</strong>  de la interfaz de Publii.</li>
 </ol>
-<p><span>Con estos pasos terminados, haz clic en el botón </span><strong><span>Crear sitio web</span></strong><span> ; en este punto puedes comenzar a agregar publicaciones y etiquetas, pero es recomendable que primero elijas un tema para tu sitio, y también configures los ajustes de tu servidor; puedes encontrar detalles sobre estos pasos en las secciones </span><a href="https://getpublii.com/docs/creating-your-website.html#non-existing-post-with-id-33"><span>Instalación de tema</span></a><span> y </span><a href="https://getpublii.com/docs/server-configuration.html"><span>Configuración del servidor</span></a><span> .</span></p>
-<p><span>Publii no impone un límite en la cantidad de sitios web que puede crear a la vez; cada instalación de Publii puede administrar una cantidad ilimitada de sitios. Para facilitar la creación, administración y cambio de sitios web, Publii incluye un  área </span><strong><span>de administración de sitios </span></strong><span> , a la que puede acceder haciendo clic en el nombre de su sitio web en la parte superior del  </span><strong><span>menú de la barra lateral izquierda.</span></strong></p>
-<h2 id="creatingasitefromabackup"><span>Creación de un sitio a partir de una copia de seguridad</span></h2>
-<p><span>Si ya ha utilizado Publii en el pasado y tiene un archivo de respaldo que desea utilizar para restaurar su sitio en su nueva instalación de Publii, puede hacerlo haciendo clic en la pestaña </span><strong><span>Instalar desde respaldo </span></strong><span> en la parte superior de la  ventana emergente de la pantalla </span><strong><span>Crear nuevo sitio web</span></strong><span> :</span></p>
+<p>Con estos pasos terminados, haz clic en el botón <strong>Crear sitio web</strong> ; en este punto puedes comenzar a agregar publicaciones y etiquetas, pero es recomendable que primero elijas un tema para tu sitio, y también configures los ajustes de tu servidor; puedes encontrar detalles sobre estos pasos en las secciones <a href="https://getpublii.com/docs/creating-your-website.html#non-existing-post-with-id-33">Instalación de tema</a> y <a href="https://getpublii.com/docs/server-configuration.html">Configuración del servidor</a> .</p>
+<p>Publii no impone un límite en la cantidad de sitios web que puede crear a la vez; cada instalación de Publii puede administrar una cantidad ilimitada de sitios. Para facilitar la creación, administración y cambio de sitios web, Publii incluye un  área <strong>de administración de sitios </strong> , a la que puede acceder haciendo clic en el nombre de su sitio web en la parte superior del  <strong>menú de la barra lateral izquierda.</strong></p>
+<h2 id="creatingasitefromabackup">Creación de un sitio a partir de una copia de seguridad</h2>
+<p>Si ya ha utilizado Publii en el pasado y tiene un archivo de respaldo que desea utilizar para restaurar su sitio en su nueva instalación de Publii, puede hacerlo haciendo clic en la pestaña <strong>Instalar desde respaldo </strong> en la parte superior de la  ventana emergente de la pantalla <strong>Crear nuevo sitio web</strong> :</p>
 <figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/49/install-from-backup.svg" alt="Crear un sitio web a partir de un archivo de respaldo" width="748" height="564" loading="lazy" data-is-external-image="true"></figure>
-<figcaption><span>Creación de un nuevo sitio web a partir de la pantalla de copia de seguridad</span></figcaption>
+<figcaption>Creación de un nuevo sitio web a partir de la pantalla de copia de seguridad</figcaption>
 </figure>
-<p><span>Aparecerá un nuevo cuadro donde podrá arrastrar y soltar el archivo de respaldo, o hacer clic en el  botón </span><strong><span>Elegir archivo </span></strong><span> para abrir el explorador de archivos y elegir el archivo. Una vez seleccionado el archivo, se abrirá un cuadro de diálogo donde podrá ingresar el nombre del sitio; este será el nombre original del sitio por defecto, pero puede cambiarlo si lo desea. A continuación, haga clic en el  botón </span><strong><span>Crear sitio web </span></strong><span> para restaurar su sitio; una vez que el proceso haya terminado, el sitio web restaurado se abrirá automáticamente, listo para modificar.</span></p>
-<h2 id="creatingadditionalwebsites"><span>Creación de sitios web adicionales</span></h2>
-<p><span>Aunque muchos usuarios solo administran un único sitio a través de Publii, en realidad no hay límite para la cantidad de sitios web que puedes crear y administrar en la aplicación. Si deseas crear otro sitio web, puedes hacerlo a través del  </span><strong><span>selector de sitios web</span></strong><span> , que aparece en la barra de herramientas en la parte superior de la aplicación Publii. </span></p>
+<p>Aparecerá un nuevo cuadro donde podrá arrastrar y soltar el archivo de respaldo, o hacer clic en el  botón <strong>Elegir archivo </strong> para abrir el explorador de archivos y elegir el archivo. Una vez seleccionado el archivo, se abrirá un cuadro de diálogo donde podrá ingresar el nombre del sitio; este será el nombre original del sitio por defecto, pero puede cambiarlo si lo desea. A continuación, haga clic en el  botón <strong>Crear sitio web </strong> para restaurar su sitio; una vez que el proceso haya terminado, el sitio web restaurado se abrirá automáticamente, listo para modificar.</p>
+<h2 id="creatingadditionalwebsites">Creación de sitios web adicionales</h2>
+<p>Aunque muchos usuarios solo administran un único sitio a través de Publii, en realidad no hay límite para la cantidad de sitios web que puedes crear y administrar en la aplicación. Si deseas crear otro sitio web, puedes hacerlo a través del  <strong>selector de sitios web</strong> , que aparece en la barra de herramientas en la parte superior de la aplicación Publii. </p>
 <figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/docs/media/posts/49/website-switcher.png" alt="El selector de sitios web en la barra de herramientas" width="1456" height="959" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>Al hacer clic en el nombre de su sitio web en esta sección, se abrirá una lista desplegable. Si tiene varios sitios web, todos aparecerán aquí para que pueda cambiar fácilmente entre ellos. Para crear un nuevo sitio web, abra la lista desplegable y haga clic en el  botón </span><strong><span>Agregar nuevo sitio web en la parte inferior de la lista:</span></strong></p>
-<p><span>Esto lo llevará de regreso a la  pantalla </span><strong><span>Crear un sitio web</span></strong><span> , donde puede configurar las opciones básicas para su sitio. Una vez que haya terminado, haga clic en el  botón </span><strong><span>Crear sitio web </span></strong><span> para completar la creación. Ahora puede cambiar de sitio en el que está trabajando en cualquier momento haciendo clic en él en la lista de sitios de la lista desplegable. </span></p>
-<p><span>Cada sitio web que usted crea en Publii se considera una entidad separada; la  </span><strong><span>configuración global </span></strong><span> de la aplicación Publii se aplicará a todos los sitios web en los que trabaje, pero las opciones individuales, como el tema seleccionado, el servidor y el contenido, estarán separadas y serán únicas para cada sitio web. </span></p>
-<h2 id="switchingwebsites"><span>Cambiar de sitio web</span></h2>
-<p><span>Una vez que hayas añadido nuevos sitios a Publii, puedes cambiar de uno a otro en cualquier momento abriendo la  página </span><strong><span>de Administración de sitios </span></strong><span> . Los sitios web disponibles aparecerán en la ventana principal. Desde aquí, simplemente haz clic en el sitio web que deseas modificar para cambiar a él.</span></p>
-<p><span>Si tiene una gran cantidad de sitios, puede escribir el nombre del sitio web que está buscando en la  </span><strong><span>barra de búsqueda</span></strong><span> en la parte superior de la lista de sitios web; esto ordenará dinámicamente sus sitios web según su término de búsqueda.</span></p>
-<h2 id="duplicatingawebsite"><span>Duplicar un sitio web</span></h2>
-<p><span>Si desea crear un duplicado de un sitio existente, abra la  pantalla </span><strong><span>de Administración de sitios</span></strong><span> y pase el mouse sobre el sitio web que desea duplicar. Verá que aparecen dos opciones a la derecha del nombre del sitio; desde allí, haga clic en el primer ícono que parece dos páginas superpuestas para crear un duplicado.</span></p>
-<p><span>Publii no permite que dos sitios web tengan el mismo nombre, ya que se crean carpetas individuales utilizando el nombre del sitio para almacenar los archivos del sitio web. Después de hacer clic en el ícono de duplicado, se abrirá una ventana emergente donde puede ingresar un nombre para su sitio duplicado; una vez hecho esto, haga clic en el  botón </span><strong><span>Clonar sitio web</span></strong><span> para crearlo.</span></p>
-<h2 id="deletingawebsite"><span>Eliminar un sitio web</span></h2>
-<p><span>Para eliminar un sitio web, abra la  pantalla </span><strong><span>de Administración de sitios </span></strong><span> y pase el mouse sobre el sitio web que desea eliminar; se mostrarán dos íconos a la derecha del nombre del sitio. Haga clic en el segundo ícono, que parece una papelera, para eliminarlo.</span></p>
-<p><span>Para evitar la eliminación accidental de sitios, deberá confirmar la eliminación. Después de hacer clic en el  icono </span><strong><span>Eliminar</span></strong><span> , se abrirá una ventana emergente que le solicitará confirmación; para iniciar la eliminación, haga clic en el  botón </span><strong><span>Eliminar sitio web .</span></strong></p>
+<p>Al hacer clic en el nombre de su sitio web en esta sección, se abrirá una lista desplegable. Si tiene varios sitios web, todos aparecerán aquí para que pueda cambiar fácilmente entre ellos. Para crear un nuevo sitio web, abra la lista desplegable y haga clic en el  botón <strong>Agregar nuevo sitio web en la parte inferior de la lista:</strong></p>
+<p>Esto lo llevará de regreso a la  pantalla <strong>Crear un sitio web</strong> , donde puede configurar las opciones básicas para su sitio. Una vez que haya terminado, haga clic en el  botón <strong>Crear sitio web </strong> para completar la creación. Ahora puede cambiar de sitio en el que está trabajando en cualquier momento haciendo clic en él en la lista de sitios de la lista desplegable. </p>
+<p>Cada sitio web que usted crea en Publii se considera una entidad separada; la  <strong>configuración global </strong> de la aplicación Publii se aplicará a todos los sitios web en los que trabaje, pero las opciones individuales, como el tema seleccionado, el servidor y el contenido, estarán separadas y serán únicas para cada sitio web. </p>
+<h2 id="switchingwebsites">Cambiar de sitio web</h2>
+<p>Una vez que hayas añadido nuevos sitios a Publii, puedes cambiar de uno a otro en cualquier momento abriendo la  página <strong>de Administración de sitios </strong> . Los sitios web disponibles aparecerán en la ventana principal. Desde aquí, simplemente haz clic en el sitio web que deseas modificar para cambiar a él.</p>
+<p>Si tiene una gran cantidad de sitios, puede escribir el nombre del sitio web que está buscando en la  <strong>barra de búsqueda</strong> en la parte superior de la lista de sitios web; esto ordenará dinámicamente sus sitios web según su término de búsqueda.</p>
+<h2 id="duplicatingawebsite">Duplicar un sitio web</h2>
+<p>Si desea crear un duplicado de un sitio existente, abra la  pantalla <strong>de Administración de sitios</strong> y pase el mouse sobre el sitio web que desea duplicar. Verá que aparecen dos opciones a la derecha del nombre del sitio; desde allí, haga clic en el primer ícono que parece dos páginas superpuestas para crear un duplicado.</p>
+<p>Publii no permite que dos sitios web tengan el mismo nombre, ya que se crean carpetas individuales utilizando el nombre del sitio para almacenar los archivos del sitio web. Después de hacer clic en el ícono de duplicado, se abrirá una ventana emergente donde puede ingresar un nombre para su sitio duplicado; una vez hecho esto, haga clic en el  botón <strong>Clonar sitio web</strong> para crearlo.</p>
+<h2 id="deletingawebsite">Eliminar un sitio web</h2>
+<p>Para eliminar un sitio web, abra la  pantalla <strong>de Administración de sitios </strong> y pase el mouse sobre el sitio web que desea eliminar; se mostrarán dos íconos a la derecha del nombre del sitio. Haga clic en el segundo ícono, que parece una papelera, para eliminarlo.</p>
+<p>Para evitar la eliminación accidental de sitios, deberá confirmar la eliminación. Después de hacer clic en el  icono <strong>Eliminar</strong> , se abrirá una ventana emergente que le solicitará confirmación; para iniciar la eliminación, haga clic en el  botón <strong>Eliminar sitio web .</strong></p>
 </div>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Webs el proyecto</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/webs-el-proyecto.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/webs-el-proyecto.html</id>
-            <category term="codigo"/>
-
-        <updated>2024-10-10T21:55:13-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Proyecto
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Proyecto</p>
             ]]>
         </content>
     </entry>
