@@ -3,7 +3,7 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-10-11T00:03:45-03:00</updated>
+    <updated>2024-10-11T00:27:48-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
@@ -223,16 +223,15 @@
         <updated>2024-10-10T23:08:28-03:00</updated>
             <summary>
                 <![CDATA[
-                    El complemento DocSearch DocSearch es una herramienta de búsqueda gratuita y exclusiva diseñada&hellip;
+                    DocSearch es una herramienta de búsqueda gratuita y exclusiva diseñada específicamente para documentación&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <header>
-<h1 class="post__title">El complemento DocSearch</h1>
+<p class="post__title"><a href="https://docsearch.algolia.com/" target="_blank" rel="nofollow noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">DocSearch</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> es una herramienta de búsqueda gratuita y exclusiva diseñada específicamente para documentación técnica de proyectos de código abierto o blogs técnicos. Al ofrecer opciones de búsqueda rápidas y precisas, DocSearch permite a los visitantes encontrar la información que necesitan lo más rápido posible. Con el complemento DocSearch, integrar la búsqueda en su sitio de Publii solo lleva unos minutos.</span></p>
 </header>
 <div class="post__entry">
-<p><a href="https://docsearch.algolia.com/" target="_blank" rel="nofollow noopener noreferrer">DocSearch</a> es una herramienta de búsqueda gratuita y exclusiva diseñada específicamente para documentación técnica de proyectos de código abierto o blogs técnicos. Al ofrecer opciones de búsqueda rápidas y precisas, DocSearch permite a los visitantes encontrar la información que necesitan lo más rápido posible. Con el complemento DocSearch, integrar la búsqueda en su sitio de Publii solo lleva unos minutos.</p>
 <h2 id="howdoesdocsearchwork">¿Cómo funciona DocSearch?</h2>
 <p>Al igual que otros motores de búsqueda, DocSearch utiliza un scraper para indexar el contenido de su sitio; en términos simples, el scraper lee su sitio web y almacena los datos, que luego puede cotejar para hacer una búsqueda personalizada que sea efectiva para su sitio. DocSearch está orientado específicamente a la documentación; esto significa que está diseñado para ayudar a los usuarios a encontrar respuestas de manera más efectiva a preguntas o temas específicos dentro de un ámbito limitado en lugar de buscar una relevancia más generalizada, y también ofrece una función de autocompletar para ayudar a los usuarios a localizar las secciones que serán más útiles para responder a su consulta.</p>
 <p>Con los datos recopilados, Algolia configurará automáticamente una búsqueda relevante para el contenido de su sitio y luego proporcionará métodos para integrar la búsqueda en su sitio. La funcionalidad de la búsqueda la maneja el propio DocSearch; el procesamiento de la consulta de búsqueda y la entrega de los resultados se realizan de forma independiente de la infraestructura de su sitio.</p>
