@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>Python y WebAssembly: mejora del rendimiento de las aplicaciones web - Webs</title><meta name="description" content="Wasm permite a los usuarios de Python explorar nuevas fronteras de velocidad, compatibilidad e interoperabilidad de lenguajes. Descubra cómo puede&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gabrielgenri.github.io/ProyectoWebs/python-y-webassembly-mejora-del-rendimiento-de-las-aplicaciones-web.html"><link rel="alternate" type="application/atom+xml" href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml"><link rel="alternate" type="application/json" href="https://gabrielgenri.github.io/ProyectoWebs/feed.json"><meta property="og:title" content="Python y WebAssembly: mejora del rendimiento de las aplicaciones web"><meta property="og:site_name" content="Webs"><meta property="og:description" content="Wasm permite a los usuarios de Python explorar nuevas fronteras de velocidad, compatibilidad e interoperabilidad de lenguajes. Descubra cómo puede&hellip;"><meta property="og:url" content="https://gabrielgenri.github.io/ProyectoWebs/python-y-webassembly-mejora-del-rendimiento-de-las-aplicaciones-web.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://gabrielgenri.github.io/ProyectoWebs/assets/css/fontawesome-all.min.css?v=85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://gabrielgenri.github.io/ProyectoWebs/assets/css/style.css?v=9a6c1f5a1ce9b2549a2dfd134d879080"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabrielgenri.github.io/ProyectoWebs/python-y-webassembly-mejora-del-rendimiento-de-las-aplicaciones-web.html"},"headline":"Python y WebAssembly: mejora del rendimiento de las aplicaciones web","datePublished":"2024-11-10T03:11-03:00","dateModified":"2024-11-10T03:11-03:00","description":"Wasm permite a los usuarios de Python explorar nuevas fronteras de velocidad, compatibilidad e interoperabilidad de lenguajes. Descubra cómo puede&hellip;","author":{"@type":"Person","name":"Gabriel Genri","url":"https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/"},"publisher":{"@type":"Organization","name":"Gabriel Genri"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><script>// OPEN-CLOSE navbar
+function openNav() {
+ document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+ document.getElementById("nav").style.width = "0%";
+}
+//Get the button
+var topbtn = document.getElementById("topbtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//SmoothScroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".smooth").on('click', function(event) {
+// Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+// Overlay Promo */
+function on() { document.getElementById("overlay").style.display = "block";
+}
+function off() { document.getElementById("overlay").style.display = "none";
+}
+
+
+/*
+===============================================================
+
+Hi! Welcome to my little playground!
+
+My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
+I'm a publicist, visual designer and frontend developer based in Barcelona. 
+
+Here you will find some of my personal experiments. Sometimes usefull,
+sometimes simply for fun. You are free to use them for whatever you want 
+but I would appreciate an attribution from my work. I hope you enjoy it.
+
+===============================================================
+*/
+
+/*
+=====================
+=====================
+JSON list
+=====================
+=====================
+*/
+var post=[
+  {
+    postTitle: "REDES DE MERCADEO",
+    postAbstract: "¿Cómo te puedo ayudar a lograr la Libertad Financiera con las Redes de Mercadeo?",
+    postContent: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae placeat, inventore eligendi qui deserunt asperiores error laboriosam libero blanditiis dignissimos eius molestias cumque necessitatibus est. <b>Quae velit ad cupiditate necessitatibus</b>, facere eum earum ut odio nostrum labore a explicabo quasi voluptates, consequatur obcaecati quos, quis fugiat veniam ea ipsam consequuntur illo!</p><p>Aperiam fugit nulla, praesentium doloremque harum laborum ipsam officia minima. Alias saepe cumque mollitia soluta totam facere, iusto ab officiis cum itaque! Sit sint earum sequi quae mollitia quibusdam adipisci facere explicabo libero nihil! Velit aliquam asperiores possimus eligendi dolore reprehenderit similique suscipit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-quinon.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-quinon5.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Las Preguntas que Cambiaron Mi VIda",
+    postAbstract: "14 años atrás me hice las siguientes 4 preguntas",
+    postContent: "<p>¿Me gustaría tener el estilo de vida que siempre soñé? </p><p>¿Me gustaría tener más tiempo libre y  libertad para hacer lo que quiera?</p><p>¿Busco más tranquilidad económica?</p><p>¿Como me veo en los próximos 5 a 10 años si sigo haciendo lo mismo?</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-inaem.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-inaem2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Política de Privacidad",
+    postAbstract: "Tu privacidad es importante para nosotros. En esta declaración de privacidad se explica qué datos personales recopilamos de nuestros usuarios y cómo los utilizamos. Te animamos a leer detenidamente estos términos antes de facilitar tus datos personales en esta web. Los mayores de trece años podrán registrarse en https://jmgaluppo.com como usuarios sin el previo consentimiento de sus padres o tutores.",
+    postContent: "",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-shigeru.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-shigeru4.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Quidem neque commodi",
+    postAbstract: "Aliquid sapiente harum maiores alias optio, ea vero perferendis impedit architecto culpa libero corporis.",
+    postContent: "<p>Dolorum eos dignissimos eveniet deserunt veritatis possimus magnam enim, eaque non, architecto voluptates consequuntur nulla, modi nobis sunt perferendis voluptatibus accusantium voluptatem! Delectus iure architecto rem, ex quas necessitatibus illum autem obcaecati sapiente ea inventore quisquam debitis quae numquam. Iusto mollitia suscipit iste quae tempore ipsam facere <b>quia nobis et omnis accusantium quo</b>, quod tenetur, aperiam, rem quos quas eveniet exercitationem. Rem, hic optio. Harum quis porro optio facilis totam velit quibusdam corrupti saepe similique sed aut doloribus temporibus ipsum modi rerum, ab impedit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-karuna.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-karuna2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Explicabo obcaecati",
+    postAbstract: "Iste explicabo, architecto maiores nisi eaque doloribus aspernatur esse tera corporis iure itaque animi?",
+    postContent: "<p>Voluptatem, similique. Sed doloribus quaerat ratione deleniti esse odit doloremque incidunt, aut, recusandae? Ipsam ipsum voluptas tenetur aut atque tempora ducimus, dolores qui, <b>maiores voluptatibus veniam</b>, quos inventore esse illum adipisci. Error quo officia, distinctio voluptates, possimus voluptatem dignissimos magni dolor, nobis expedita doloribus consequuntur beatae natus iusto ipsum culpa. Delectus pariatur, officia voluptatem, dolore enim cum temporibus deserunt reiciendis at quam labore aperiam, adipisci nesciunt.</p><p>Laborum placeat <b>adipisci ex porro</b>, labore impedit sed nulla perferendis architecto quis vitae laudantium animi, dolorum repudiandae incidunt eaque! Possimus corporis voluptatum aut velit similique facilis fugit quis eaque, fugiat inventore beatae minus nemo soluta quia earum, atque accusamus!</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-vinallonga.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-vinallonga1.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Ullam provident",
+    postAbstract: "Lorem ipsum dolor sit amet eveniet, consectetur adipisicing elit. Numquam repudiandae nam dolore.",
+    postContent: "<p>Possimus ipsam, aliquid voluptate ab quaerat mollitia deleniti recusandae, voluptas quisquam consequatur porro nesciunt sed commodi reprehenderit, amet earum sapiente sunt, temporibus aut <b>consectetur eligendi</b> laudantium. Cum, eius! Optio tempora unde, non quasi fugit, eos corporis iusto dolores, quam suscipit ipsum cum nesciunt incidunt atque in recusandae amet totam ea fuga! Aliquid similique exercitationem accusamus, et vitae molestiae voluptatum quo earum doloribus <b>nisi hic nesciunt</b>, blanditiis dignissimos. Quia veniam neque facere nesciunt quibusdam distinctio architecto perferendis veritatis? Laboriosam architecto culpa hic aspernatur ratione possimus nostrum mollitia, soluta aliquid reiciendis doloribus.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-urban.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-urban4.jpg",
+    postLink: "article-link1"
+  }
+];
+
+
+/*
+=====================
+=====================
+Thumbs
+=====================
+=====================
+*/
+//Loop length:
+var postLength = post.length;
+//Empty container:
+$(".posts-box").empty();
+//Loop:
+for (i=0; i<postLength; i++) {
+  //Create thumb structure:
+  var listItem =
+    '<li>'+
+      '<div class="card">'+
+        '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">'+
+          '<img src="'+post[i].postThumb+'" alt="">'+
+        '</a>'+
+        '<div>'+
+          '<h3>'+post[i].postTitle+'</h3>'+
+          '<p>'+post[i].postAbstract+'</p>'+
+        '</div>'+
+        '<div>'+
+          '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">Ver</a>'+
+        '</div>'+
+      '</div>'+
+    '</li>';
+  //Append thumb:
+  $(".posts-box").append(listItem);
+};
+
+
+/*
+=====================
+=====================
+Inner post
+=====================
+=====================
+*/
+var thisElement = 0;
+
+function innerContent(content){
+  $(".inner-img").attr("src",post[content].postImg);
+  $(".inner-title").html(post[content].postTitle);
+  $(".inner-text").html(post[content].postContent);
+};
+
+//Open post:
+$(".button").click(function(e){
+  e.preventDefault();
+  thisElement = $(this).attr("data-obj");
+  innerContent(thisElement);
+  $(".modal").css({"display":"block"});
+  dissBtn();
+});
+
+//Close post:
+$(".close-post, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+});
+
+//Next post:
+$(".next-post").click(function(e){
+  e.preventDefault();
+  if (thisElement<postLength-1) {
+    thisElement = parseInt(thisElement) + 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Prev post:
+$(".prev-post").click(function(e){
+  e.preventDefault();
+  if (thisElement>0) {
+    thisElement = parseInt(thisElement) - 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Button disable:
+function dissBtn(){
+  $(".prev-post, .next-post").removeClass("disabled");
+  if (thisElement<=0){
+    $(".prev-post").addClass("disabled");
+  }
+  else if (thisElement>=postLength-1){
+    $(".next-post").addClass("disabled");
+  };
+};
+
+
+// TESTIMONIOS Define data for the popup
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+// envio
+ function enviar_pedido_whatsapp(){
+        	var cadena_pedido="";
+
+        	cadena_pedido+="%2ANuevo Pedido%2A"+'%0A'+'%0A';
+        	
+        	//cadena_pedido+="-------------------"+'%0A';
+
+        	
+
+
+   /*     	for(var i=0;i<arra_prods_exis.length;i++){       
+
+
+        		var obj_prod=get_nombre_ref(arra_prods_exis[i]);
+
+        		if(obj_prod.nombre_producto!=""){
+        			cadena_pedido+="%2A"+obj_prod.nombre_producto+'%2A%0A';
+        		}
+        		
+        		cadena_pedido+=""+get_linea_cadena_by_ref(arra_prods_exis[i],"1");
+        		cadena_pedido+="---------------------------------"+'%0A';
+        		
+        	}
+        	cadena_pedido+="---------------------------------"+'%0A';
+        	if(valor_total_cotizacion>0){
+        		cadena_pedido+="%2A"+"TOTAL:"+"%2A%20%20"+addCommas(valor_total_cotizacion)+'%0A';
+        		cadena_pedido+="---------------------------------"+'%0A';
+        	} */
+        	
+
+        	cadena_pedido+="%2A"+"Nombres:"+"%2A%20"+encodeURIComponent($("#nombrePedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Email:"+"%2A%20"+$("#emailPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Teléfonos:"+"%2A%20"+encodeURIComponent($("#telefonoPedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Dirección:"+"%2A%20"+encodeURIComponent($("#direccionPedido").val())+'%0A';
+
+        	if($("#identificacionPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Identificación:"+"%2A%20"+encodeURIComponent($("#identificacionPedido").val())+'%0A';
+        	}
+
+
+        	if($("#vendedorPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Referido:"+"%2A%20"+encodeURIComponent($("#vendedorPedido").val())+'%0A';
+        	}
+
+        	cadena_pedido+="%2A"+"Ciudad:"+"%2A%20"+$("#ciudadPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Observación:"+"%2A%20"+encodeURIComponent($("#observacionPedido").val())+'%0A';
+
+
+        	var url_final="https://api.whatsapp.com/send?phone=5493804402424&text="+cadena_pedido;
+
+        	window.open(url_final,"_self");
+
+
+        	localStorage.setItem('nombrePedido', ''+$("#nombrePedido").val());
+        	localStorage.setItem('emailPedido', ''+$("#emailPedido").val());
+        	localStorage.setItem('telefonoPedido', ''+$("#telefonoPedido").val());
+        	localStorage.setItem('direccionPedido', ''+$("#direccionPedido").val());
+        	localStorage.setItem('ciudadPedido', ''+$("#ciudadPedido").val());
+        	localStorage.setItem('observacionPedido', ''+$("#observacionPedido").val());
+ }
+
+
+function abrir_sms(){
+			var url_enviar="";
+
+			var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+
+			if(iOS){
+				url_enviar="sms:#celular&body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				url_enviar="sms://#celular?body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			/*
+
+	 $url_share_sms="{$ruta_external}sms://#celular?body={$cadena_compartir} - {$url_compartir}";    
+    $url_share_sms_iphone="{$ruta_external}sms:#celular&body={$cadena_compartir} - {$url_compartir}";
+
+			*/
+
+
+
+			var cadena_cel="";
+			if(numero_whats!=""){
+				url_enviar = url_enviar.replace("#celular", numero_whats);
+			}else{
+				url_enviar = url_enviar.replace("#celular", "");
+			}
+
+			console.log("Prueba: "+url_enviar);
+
+			window.open(""+url_enviar+"","_self");
+			console.log("Prueba: "+url_enviar);
+		}
+
+		function compartir_whatsapp(){
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+			var cadena_compartir_whatsapp="";
+			if(numero_whats!=""){
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?phone="+numero_whats+"&text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			window.open(""+cadena_compartir_whatsapp,"_blank");
+
+		}</script></head><body class="is-preload post-template"><div id="wrapper"><div id="main"><div class="inner"><header id="header"><a class="logo" href="https://gabrielgenri.github.io/ProyectoWebs/"><strong>Webs</strong></a></header><article class="post"><header class="main post__header"><time datetime="2024-11-10T03:11" class="post__date">noviembre 10, 2024</time><h1>Python y WebAssembly: mejora del rendimiento de las aplicaciones web</h1></header><div class="post__inner post__entry"><div id="tns-post-headline"><div id="tns-post-headline-title"><div class="post-excerpt"><span>Wasm permite a los usuarios de Python explorar nuevas fronteras de velocidad, compatibilidad e interoperabilidad de lenguajes. Descubra cómo puede mejorar el desarrollo web. </span><span class="date" style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">por </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"><span class="author"><a href="https://thenewstack.io/author/robertkimani/" title="Publicaciones de Robert Kimani" class="author url fn" rel="author">Robert Kimani</a></span></span></div></div></div><div id="tns-post-body"><div class="row"><div class="copy-column"><div id="tns-post-body-content"><p><a href="https://thenewstack.io/what-is-python/" class="local-link"><span>Los desarrolladores de Python</span></a><span> aprecian desde hace mucho tiempo la versatilidad y productividad del lenguaje. Sin embargo, persisten las preocupaciones sobre las limitaciones de rendimiento de Python y la integración perfecta con otros lenguajes.</span></p><p><span>La aparición de WebAssembly (Wasm) cierra esta brecha. Wasm permite a los usuarios de Python explorar nuevas fronteras de velocidad, compatibilidad e interoperabilidad de lenguajes.</span></p><p><span>En este artículo, profundizaremos en el </span><a href="https://thenewstack.io/webassembly/" class="local-link"><span>mundo de WebAssembly</span></a><span> y su relevancia para los entusiastas de Python. Exploraremos cómo Wasm impulsa las aplicaciones Python a niveles de rendimiento casi nativos, extiende sus capacidades en distintas plataformas y ecosistemas y desbloquea una gran cantidad de posibilidades para implementaciones basadas en la web.</span></p><p><span>WebAssembly simplifica la implementación de aplicaciones Python en la web. Al compilar el código Python en un formato que se puede ejecutar directamente en el navegador, los desarrolladores pueden distribuir sin problemas sus aplicaciones Python a una amplia gama de plataformas sin necesidad de configuraciones complejas ni procesamiento del lado del servidor.</span></p><p><span>La combinación de </span><a href="https://thenewstack.io/webassembly-when-you-hate-rust-but-love-python/" class="local-link"><span>Wasm y Python</span></a><span> permite a los desarrolladores crear aplicaciones web de alto rendimiento, aprovechar el código y las bibliotecas de Python existentes y explorar nuevos dominios donde brillan la productividad y la versatilidad de Python.</span></p><div class="tns-sponsor-note injected"><div class="sponsor-note-profile" data-url="https://www.fermyon.com/?utm_content=sponsor+module" data-sponsor="fermyon"><div class="row"><div class="col col-40 sponsor-note-logo"><a href="https://www.fermyon.com/?utm_content=sponsor+module" class="sponsor-note-logo-link" target="_blank" rel="noopener"><img loading="lazy" src="https://cdn.thenewstack.io/media/3c493fe0-fermyon-logo-tns.svg" alt="" width="125" height="30" data-is-external-image="true"></a></div></div><div class="row"><div class="col sponsor-note-content"><span>Fermyon crea herramientas de desarrollo de código abierto y soluciones en la nube, lo que facilita que los equipos utilicen WebAssembly en su stack hoy y brinden increíbles ganancias de rendimiento y costos reducidos para sus empresas.</span></div></div><div class="row"><div class="col sponsor-note-cta"><span>Más información</span><svg xmlns="http://www.w3.org/2000/svg" width="23.012" height="17.268" viewbox="0 0 23.012 17.268"><path id="Path_340" data-name="Path 340" d="M14.36,0,12.816,1.508l6.067,6.067H0V9.729H18.884l-6.031,6.032L14.4,17.268l8.616-8.616Z" transform="translate(0 0)"></path></svg></div></div></div><div class="sponsor-note-rss" data-sponsor="fermyon"><div class="sponsor-note-rss-heading"><span>Lo último de Fermyon</span></div><div class="sponsor-note-rss-items sponsor-note-rss-items-fermyon" data-sponsor="fermyon"><a href="https://www.fermyon.com/blog/wasm-jobs-and-cronjobs-with-spinkube?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_campaign=tns+platform&amp;utm_content=sponsor+module" rel="nofollow noopener" target="_blank" class="sponsor-rss-link" aria-label="Trabajos de WebAssembly y CronJobs en Kubernetes con SpinKube y el activador de comando Spin" data-url="https://www.fermyon.com/blog/wasm-jobs-and-cronjobs-with-spinkube" data-sponsor="fermyon"><span>Trabajos de WebAssembly y CronJobs en Kubernetes con SpinKube y el activador de comando Spin</span><br><div class="sponsors-rss-byline"><span>5 de noviembre de 2024</span></div></a><a href="https://www.fermyon.com/blog/lightweight-kubernetes-and-wasm?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_campaign=tns+platform&amp;utm_content=sponsor+module" rel="nofollow noopener" target="_blank" class="sponsor-rss-link" aria-label="Kubernetes ligero y Wasm son una combinación perfecta" data-url="https://www.fermyon.com/blog/lightweight-kubernetes-and-wasm" data-sponsor="fermyon"><span>Kubernetes ligero y Wasm son una combinación perfecta</span><br><div class="sponsors-rss-byline"><span>29 de octubre de 2024</span></div></a><a href="https://www.fermyon.com/blog/mqtt_trigger_spinkube?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_campaign=tns+platform&amp;utm_content=sponsor+module" rel="nofollow noopener" target="_blank" class="sponsor-rss-link" aria-label="Medición de la participación de la multitud con una aplicación de IoT basada en MQTT" data-url="https://www.fermyon.com/blog/mqtt_trigger_spinkube" data-sponsor="fermyon"><span>Medición de la participación de la multitud con una aplicación de IoT basada en MQTT</span><br><div class="sponsors-rss-byline"><span>22 de octubre de 2024</span></div></a></div></div></div><h2><span>Los beneficios de usar WebAssembly con Python</span></h2><p><span>Wasm aporta una gran cantidad de beneficios cuando se combina con Python, lo que revoluciona la forma en que los desarrolladores pueden aprovechar el lenguaje. Exploremos algunas de las ventajas clave de usar WebAssembly con Python:</span></p><p><strong><span>Rendimiento mejorado.</span></strong><span> Python, si bien es muy expresivo y fácil de usar, ha sido tradicionalmente criticado por su velocidad de ejecución relativamente más lenta en comparación con los lenguajes de bajo nivel. Al </span><a href="https://thenewstack.io/webassembly/what-is-webassembly-and-why-do-you-need-it/" class="local-link"><span>usar WebAssembly</span></a><span> , el código Python se puede compilar en código binario de bajo nivel altamente optimizado que se ejecuta a una velocidad casi nativa, lo que mejora significativamente el rendimiento de la aplicación y reduce la latencia de la red.</span></p><div class="tns-trending-stories-block inline" data-context="inline"><div class="section-heading"><span>HISTORIAS DE TENDENCIA</span></div><div class="tns-trending-stories-list tns-trending-stories-list-inline tns-trending-stories-list-672db58e0d72f" data-uuid="672db58e0d72f" data-context="inline"><ol class="tns-trending-stories-ol"><li><a href="https://thenewstack.io/why-platform-engineers-are-embracing-webassembly-for-serverless/" class="trending-story-link" aria-label="Por qué los ingenieros de plataformas están adoptando WebAssembly para la computación sin servidor" data-context="inline" data-url="https://thenewstack.io/why-platform-engineers-are-embracing-webassembly-for-serverless"><span>Por qué los ingenieros de plataformas están adoptando WebAssembly para la computación sin servidor</span></a></li><li><a href="https://thenewstack.io/python-and-webassembly-elevating-performance-for-web-apps/" class="trending-story-link" aria-label="Python y WebAssembly: mejora del rendimiento de las aplicaciones web" data-context="inline" data-url="https://thenewstack.io/python-and-webassembly-elevating-performance-for-web-apps"><span>Python y WebAssembly: mejora del rendimiento de las aplicaciones web</span></a></li><li><a href="https://thenewstack.io/webassembly-what-beginners-need-to-know/" class="trending-story-link" aria-label="Desmitificando WebAssembly: lo que los principiantes deben saber" data-context="inline" data-url="https://thenewstack.io/webassembly-what-beginners-need-to-know"><span>Desmitificando WebAssembly: lo que los principiantes deben saber</span></a></li><li><a href="https://thenewstack.io/webassembly-and-go-a-guide-to-getting-started-part-1/" class="trending-story-link" aria-label="WebAssembly y Go: guía para empezar (parte 1)" data-context="inline" data-url="https://thenewstack.io/webassembly-and-go-a-guide-to-getting-started-part-1"><span>WebAssembly y Go: guía para empezar (parte 1)</span></a></li><li><a href="https://thenewstack.io/golang-for-webassembly-can-now-work-like-it-should/" class="trending-story-link" aria-label="Golang para WebAssembly ahora puede funcionar como debería hacerlo la TI" data-context="inline" data-url="https://thenewstack.io/golang-for-webassembly-can-now-work-like-it-should"><span>Golang para WebAssembly ahora puede funcionar como debería hacerlo la TI</span></a></li></ol></div></div><p><span>Esta mejora del rendimiento permite a los desarrolladores de Python abordar tareas computacionalmente intensivas, procesar grandes conjuntos de datos o crear aplicaciones en tiempo real con capacidad de respuesta mejorada.</span></p><p><strong><span>Interoperabilidad de lenguajes.</span></strong><span> WebAssembly ofrece una vía de integración perfecta entre Python y otros lenguajes como C++, </span><a href="https://thenewstack.io/using-web-assembly-written-in-rust-on-the-server-side/" class="local-link"><span>Rust</span></a><span> y Go. Al aprovechar las características de interoperabilidad de WebAssembly, los desarrolladores de Python pueden aprovechar el vasto ecosistema de bibliotecas y herramientas disponibles en estos lenguajes.</span></p><p><span>Esto permite a los desarrolladores aprovechar el rendimiento y la funcionalidad de las bases de código existentes, ampliando las capacidades de Python y permitiéndoles crear aplicaciones sofisticadas con facilidad.</span></p><p><strong><span>Independencia de la plataforma.</span></strong><span> Wasm no se limita al entorno del navegador web. Ofrece un entorno de ejecución multiplataforma, lo que permite ejecutar código Python en una amplia gama de dispositivos y sistemas operativos.</span></p><p><span>Esta compatibilidad entre plataformas permite a los desarrolladores de Python trabajar con aplicaciones de escritorio, aplicaciones móviles, </span><a href="https://thenewstack.io/what-does-it-mean-to-be-on-the-internet-of-things/" class="local-link"><span>dispositivos de Internet de las cosas (IoT)</span></a><span> y más, mediante una base de código unificada. Reduce los esfuerzos de desarrollo, simplifica el mantenimiento y amplía el alcance de las aplicaciones de Python a diversos entornos informáticos.</span></p><p><strong><span>Implementación web. </span></strong><a href="https://thenewstack.io/webassembly/what-is-webassembly/" class="local-link"><span>WebAssembly ha ganado una importante popularidad</span></a><span> como formato de implementación para aplicaciones web. Al compilar el código Python en WebAssembly, los desarrolladores pueden ejecutar Python directamente en el navegador, lo que elimina la necesidad de ejecución en el servidor o de transpilar Python a JavaScript.</span></p><p><span>Esto abre posibilidades interesantes para crear aplicaciones web completamente en Python, con interactividad perfecta del lado del cliente y carga reducida del lado del servidor.</span></p><p><strong><span>Componentes críticos para el rendimiento.</span></strong><span> Wasm es una excelente opción para integrar componentes o algoritmos críticos para el rendimiento en aplicaciones Python.</span></p><p><span>Al descargar tareas computacionalmente intensivas a </span><a href="https://thenewstack.io/webassembly/using-web-assembly-written-in-rust-on-the-server-side/" class="local-link"><span>módulos WebAssembly escritos en lenguajes como Rust</span></a><span> o C, los desarrolladores pueden lograr mejoras de rendimiento significativas sin sacrificar la productividad y la facilidad de uso que ofrece Python.</span></p><p><span>Este enfoque híbrido combina lo mejor de ambos mundos, aprovechando las abstracciones de alto nivel de Python con la velocidad y la eficiencia del código de bajo nivel.</span></p><p><strong><span>Un ecosistema y herramientas en crecimiento.</span></strong><span> El </span><a href="https://landscape.cncf.io/wasm" class="ext-link" rel="external " onclick="this.target='_blank';"><span>ecosistema de WebAssembly</span></a><span> está evolucionando rápidamente, con una comunidad próspera y una gama cada vez mayor de herramientas, bibliotecas y marcos de trabajo. Los desarrolladores de Python pueden aprovechar este vibrante ecosistema para compilar, optimizar y ejecutar su código en Wasm.</span></p><p><span>La disponibilidad de herramientas facilita la adopción y garantiza que los desarrolladores tengan los recursos necesarios para aprovechar el poder de WebAssembly de manera efectiva.</span></p><h2><span>7 pasos para compilar código Python en Wasm</span></h2><p><span>A continuación se presentan los pasos generales para compilar el código Python en WebAssembly; el proceso exacto y las herramientas pueden variar según el compilador específico y la configuración que elija. Consulte la documentación y los recursos proporcionados por el compilador que esté utilizando para obtener instrucciones detalladas y las mejores prácticas.</span></p><p><span>Además, tenga en cuenta que no todo el código Python puede ser adecuado para la compilación en WebAssembly, especialmente si depende en gran medida de características que no son compatibles con el entorno Wasm o si requiere un acceso extenso a los recursos del sistema.</span></p><ol><li aria-level="1"><strong><span>Elija un compilador WebAssembly.</span></strong><span> Hay varios compiladores disponibles que pueden convertir código Python a WebAssembly. Una opción popular es </span><a href="https://emscripten.org/?utm_source=thenewstack&amp;utm_medium=website&amp;utm_content=inline-mention&amp;utm_campaign=platform" class="ext-link" rel="external " onclick="this.target='_blank';"><span>Emscripten,</span></a><span> que proporciona una cadena de herramientas para compilar código escrito en C/C++ a WebAssembly, incluido Python a través del intérprete CPython.</span></li><li aria-level="1"><strong><span>Configurar el entorno de desarrollo.</span></strong><span> Instalar las dependencias y herramientas necesarias para el compilador elegido. Esto normalmente incluye Python, un compilador de C/C++ y el compilador WebAssembly (como Emscripten o </span><a href="https://pyodide.org/en/stable/" class="ext-link" rel="external " onclick="this.target='_blank';"><span>Pyodide</span></a><span> ). Pyodide es un entorno Python completo que se ejecuta completamente en el navegador, mientras que Emscripten es una cadena de herramientas para compilar código C y C++ en Wasm.</span></li><li aria-level="1"><strong><span>Prepare su código Python.</span></strong><span> Asegúrese de que su código Python sea compatible con el compilador. Es fundamental evitar el uso de funciones o bibliotecas de Python que no sean compatibles con el entorno WebAssembly, ya que este tiene acceso limitado a determinados recursos del sistema.</span></li><li aria-level="1"><strong><span>Compilar Python en WebAssembly</span></strong><span> . Utilice el compilador elegido para traducir el código Python en WebAssembly. El comando o proceso específico dependerá del compilador que esté utilizando. Por ejemplo, con Emscripten, normalmente invocaría el compilador con las opciones y los indicadores necesarios, especificando los archivos fuente de Python como entrada.</span></li><li aria-level="1"><strong><span>Optimice la salida de WebAssembly.</span></strong><span> Después de la compilación, es posible que deba optimizar el código Wasm resultante para mejorar el rendimiento y reducir el tamaño del archivo. El compilador puede ofrecer indicadores de optimización u opciones que se pueden aprovechar para lograrlo.</span></li><li aria-level="1"><strong><span>Integración con JavaScript.</span></strong><span> Los módulos de WebAssembly se cargan e interactúan con ellos normalmente a través de JavaScript. Deberá escribir código JavaScript que interactúe con el módulo Wasm compilado, proporcionando una interfaz para llamar funciones, pasar datos y manejar los resultados del código Python.</span></li><li aria-level="1"><strong><span>Pruebe e implemente.</span></strong><span> Una vez que se completen los pasos de compilación e integración, pruebe el módulo WebAssembly en varios entornos y escenarios para asegurarse de que se comporte como se espera. Luego, puede implementar el módulo Wasm en el destino deseado, como un servidor web o una aplicación que admita la ejecución de WebAssembly.</span></li></ol><h2><span>Carga y ejecución de módulos Wasm en Python</span></h2><p><span>Recuerda que los pasos específicos y la sintaxis necesarios para cargar y ejecutar módulos WebAssembly en Python pueden variar según la biblioteca de interfaz Wasm que hayas elegido. Nuevamente, consulta la documentación y los recursos que proporciona la biblioteca que estás usando para obtener instrucciones y ejemplos detallados.</span></p><p><strong><span>Elija una interfaz WebAssembly.</span></strong><span> Seleccione una biblioteca o un paquete de Python que proporcione la funcionalidad necesaria para cargar y ejecutar módulos WebAssembly. Algunas opciones populares incluyen </span><code>wasmtime</code><span>, </span><code>pywasm</code><span>, y </span><code>pyodide</code><span>.</span></p><p><strong><span>Instale las bibliotecas necesarias.</span></strong><span> Instale la biblioteca de interfaz WebAssembly elegida utilizando un administrador de paquetes como </span><a href="https://pypi.org/project/pip/" class="ext-link" rel="external " onclick="this.target='_blank';"><span>pip</span></a><span> . Por ejemplo, puede instalarla </span><code>wasmtime</code><span>ejecutando </span><code>$ pip install wasmtime</code><span>.</span></p><p><strong><span>Cargar el módulo WebAssembly.</span></strong><span> Utilice la biblioteca de interfaz WebAssembly para cargar el módulo Wasm en su entorno Python. Normalmente, proporcionará la ruta al archivo del módulo WebAssembly como entrada para la función de carga.</span></p><p><span>Por ejemplo, con </span><code>wasmtime</code><span>, puede utilizar la </span><code>wasmtime.wat2wasm()</code><span>función para cargar un módulo WebAssembly desde un archivo de formato de texto WebAssembly (WAT).</span></p><p><strong><span>Crear una instancia.</span></strong><span> Una vez cargado el módulo Wasm, es necesario crear una instancia del mismo para ejecutar sus funciones. Este paso implica invocar una función proporcionada por la biblioteca de interfaz de WebAssembly y pasar el módulo cargado como parámetro.</span></p><p><span>La función y la sintaxis exactas pueden variar según la biblioteca elegida. Por ejemplo, en </span><code>wasmtime</code><span>, puedes usar el </span><code>wasmtime.Instance()</code><span>constructor para crear una instancia.</span></p><p><strong><span>Llamar a funciones de WebAssembly.</span></strong><span> Después de crear la instancia, puede acceder a las funciones definidas en el módulo WebAssembly y llamarlas. La biblioteca de interfaz Wasm normalmente proporciona métodos o atributos para acceder a estas funciones.</span></p><p><span>Puede invocar las funciones mediante el objeto de instancia, pasando los argumentos necesarios. Los valores de retorno se pueden recuperar de la llamada a la función. La sintaxis y el uso específicos dependen de la biblioteca elegida.</span></p><p><strong><span>Manejar el intercambio de datos.</span></strong><span> Los módulos WebAssembly a menudo requieren el intercambio de datos entre Python y el entorno Wasm. Esto puede implicar pasar argumentos a funciones WebAssembly o recuperar resultados para Python.</span></p><p><span>La biblioteca de interfaz Wasm debe proporcionar mecanismos o funciones para gestionar el intercambio de datos entre Python y WebAssembly. Esto puede incluir la conversión de tipos de datos o la gestión de la memoria.</span></p><p><strong><span>Manejar errores y excepciones.</span></strong><span> Al trabajar con módulos WebAssembly, es importante manejar errores y excepciones de manera elegante. La biblioteca de interfaz WebAssembly elegida debe proporcionar mecanismos de manejo de errores o clases de excepción para detectar y manejar cualquier error o excepción potencial que pueda ocurrir durante la carga del módulo o la ejecución de la función.</span></p><p><strong><span>Pruebe e itere.</span></strong><span> Una vez que se complete la integración inicial, pruebe el módulo WebAssembly cargado y sus funciones dentro de su entorno Python. Verifique que el módulo se ejecute como se espera, produzca los resultados deseados y gestione los casos extremos de manera adecuada. Itere y refine su código según sea necesario.</span></p><h2><span>Casos de uso de Wasm y Python en diferentes dominios</span></h2><h3><span>Simulaciones científicas</span></h3><p><span>Python se utiliza ampliamente en informática científica y WebAssembly puede llevar sus capacidades computacionales a la web. Por ejemplo, puedes compilar código de simulación científica escrito en Python en Wasm y ejecutarlo directamente en el navegador.</span></p><p><span>Esto permite realizar simulaciones interactivas y visualmente atractivas basadas en la web, lo que permite a los usuarios explorar conceptos científicos sin necesidad de procesamiento del lado del servidor. Las bibliotecas como NumPy y SciPy se pueden utilizar en combinación con WebAssembly para lograr simulaciones científicas de alto rendimiento en el navegador.</span></p><h3><span>Modelos de aprendizaje automático</span></h3><p><span>Python es conocido por su rico ecosistema de bibliotecas de aprendizaje automático, como TensorFlow, </span><a href="https://thenewstack.io/pytorch-takes-ai-ml-back-to-its-research-open-source-roots/" class="local-link"><span>PyTorch</span></a><span> y </span><a href="https://thenewstack.io/the-ultimate-guide-to-machine-learning-frameworks/" class="local-link"><span>Scikit-learn.</span></a><span> Con WebAssembly, puedes compilar modelos de aprendizaje automático entrenados y creados en Python e implementarlos en el navegador u otros entornos.</span></p><p><span>Esto permite la inferencia del lado del cliente y las capacidades de predicción en tiempo real sin depender de las API del lado del servidor. Los beneficios de rendimiento de WebAssembly permiten la ejecución eficiente de modelos complejos, lo que permite a los desarrolladores crear aplicaciones de aprendizaje automático basadas en navegador.</span></p><h3><span>Juegos basados ​​en la web</span></h3><p><span>Python se utiliza cada vez más para el desarrollo de juegos debido a su simplicidad y versatilidad. Al aprovechar WebAssembly, los desarrolladores de juegos Python pueden llevar sus creaciones a la web sin sacrificar el rendimiento.</span></p><p><span>Al compilar la lógica de juegos escrita en Python en Wasm, los desarrolladores pueden crear juegos basados ​​en navegador con una velocidad e interactividad casi nativas. Bibliotecas como Pygame y </span><a href="https://www.panda3d.org/" class="ext-link" rel="external " onclick="this.target='_blank';"><span>Panda3D</span></a><span> , cuando se combinan con WebAssembly, brindan una plataforma poderosa para el desarrollo de juegos multiplataforma.</span></p><h3><span>Interfaces de usuario web</span></h3><p><span>Los desarrolladores de Python pueden aprovechar Wasm para crear interfaces de usuario completas y con capacidad de respuesta para aplicaciones web. Al compilar componentes o marcos de interfaz de usuario de Python en WebAssembly, como Pywebview o </span><a href="https://beeware.org/" class="ext-link" rel="external " onclick="this.target='_blank';"><span>BeeWare,</span></a><span> los desarrolladores pueden crear interfaces de usuario basadas en navegador que ofrecen la simplicidad y la productividad de Python. Esto permite una experiencia de usuario perfecta y, al mismo tiempo, conserva la potencia y la expresividad de Python para desarrollar aplicaciones web complejas.</span></p><h3><span>Procesamiento y visualización de datos</span></h3><p><span>Las bibliotecas de visualización y procesamiento de datos de Python, como Pandas, Matplotlib y Plotly, se pueden utilizar junto con WebAssembly para realizar análisis de datos y generar visualizaciones interactivas directamente en el navegador.</span></p><p><span>Al compilar código Python en Wasm, los desarrolladores pueden crear aplicaciones web que manejan grandes conjuntos de datos y brindan visualizaciones en tiempo real sin la necesidad de realizar cálculos del lado del servidor.</span></p></div></div></div></div></div><footer class="post__inner post__footer"><p class="post__last-updated">This article was updated on noviembre 10, 2024</p><div class="post__share"><h3>Share post:</h3></div><div class="post__tag"><ul><li><strong>Tagged in:</strong></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/python/">Python</a></li></ul></div><div class="post__bio"><div><h3><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/" class="invert" rel="author">Gabriel Genri</a></h3></div></div></footer></article></div></div><div id="sidebar"><div class="inner"><nav id="menu"><header class="major"><h2>Menu</h2></header><ul><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self">Inicio</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/google-sites-2.html" target="_self">Sites</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self">Publii</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/el-complemento-docsearch.html" target="_self">DocSearch</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/estilos.html" target="_self">Temas y Pulgins</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/eferer.html" target="_self">eferer</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/estilos.html" target="_self">Estilos</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/html-and-css.html" target="_self">Html y Css</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/edito-html.html" target="_self">Edito HTML</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/documentacion-para-desarrolladores.html" target="_self">EDITO</a></li></ul></nav><section><header class="major"><h2>Get in touch</h2></header><p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus,ac varius enim lorem ullamcorper dolore. Proin sed aliqu facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p><ul class="contact"><li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li><li class="icon solid fa-phone">(000) 000-0000</li><li class="icon solid fa-home">1234 Somewhere Road #8254<br>Nashville, TN 00000-0000</li></ul></section><footer id="footer"><p class="copyright">&copy; Editorial 2 - All rights reserved<br>Design by: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>, Powered by Publii</p></footer></div></div></div><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/jquery.min.js?v=7c14a783dfeb3d238ccd3edd840d82ee"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/browser.min.js?v=c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/breakpoints.min.js?v=81a479eb099e3b187613943b085923b8"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/util.min.js?v=cbdaf7c20ac2883c77ae23acfbabd47e"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/main.min.js?v=08add7f6d435054ad38ec38d7cf8be40"></script><script>var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};</script></body></html>
