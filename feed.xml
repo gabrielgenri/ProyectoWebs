@@ -3,12 +3,1151 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-11-10T03:37:51-03:00</updated>
+    <updated>2024-11-13T20:44:45-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
+    <entry>
+        <title>Gatsby</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/gatsby.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/gatsby.html</id>
+
+        <updated>2024-11-13T20:44:45-03:00</updated>
+            <summary>
+                <![CDATA[
+                    https://github.com/panr/gatsby Aprenda a utilizar Gatsby para su próximo proyecto. Ponte en marcha en 5 minutos Aprendiendo Gatsby Guías de migración&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><a href="https://github.com/panr/gatsby">https://github.com/panr/gatsby</a></p>
+<p dir="auto"><a href="https://gatsbyjs.org/docs/" rel="nofollow"><strong><span>Aprenda a utilizar Gatsby para su próximo proyecto.</span></strong></a></p>
+<div class="markdown-heading" dir="auto">
+<h2 class="heading-element" dir="auto" tabindex="-1"><span>¿Qué contiene este documento?</span></h2>
+<a id="user-content-whats-in-this-document" class="anchor" aria-label="Enlace permanente: ¿Qué contiene este documento?" href="https://github.com/panr/gatsby#whats-in-this-document"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/panr/gatsby#-get-up-and-running-in-5-minutes"><span>Ponte en marcha en 5 minutos</span></a></li>
+<li><a href="https://github.com/panr/gatsby#-learning-gatsby"><span>Aprendiendo Gatsby</span></a></li>
+<li><a href="https://github.com/panr/gatsby#-migration-guides"><span>Guías de migración</span></a></li>
+<li><a href="https://github.com/panr/gatsby#-how-to-contribute"><span>Cómo contribuir</span></a></li>
+<li><a href="https://github.com/panr/gatsby#memo-license"><span>Licencia</span></a></li>
+<li><a href="https://github.com/panr/gatsby#-thanks-to-our-contributors-and-sponsors"><span>Gracias a nuestros colaboradores y patrocinadores</span></a></li>
+</ul>
+<div class="markdown-heading" dir="auto">
+<h2 class="heading-element" dir="auto" tabindex="-1"><span>🚀 Ponte en marcha en 5 minutos</span></h2>
+<a id="user-content--get-up-and-running-in-5-minutes" class="anchor" aria-label="Enlace permanente: 🚀 Ponte en marcha en 5 minutos" href="https://github.com/panr/gatsby#-get-up-and-running-in-5-minutes"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><span>Puede poner en funcionamiento un nuevo sitio de Gatsby en su entorno de desarrollo local en 5 minutos con estos tres pasos:</span></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><strong><span>Cree un sitio Gatsby a partir de un sitio Gatsby Starter.</span></strong></p>
+<p dir="auto"><span>Configura tu blog de Gatsby con un solo comando:</span></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto">
+<pre><span class="pl-c"># install the Gatsby CLI globally</span>
+npm install -g gatsby-cli
+
+<span class="pl-c"># create a new Gatsby site using the default starter</span>
+gatsby new my-blazing-fast-site</pre>
+<div class="zeroclipboard-container"> </div>
+</div>
+</li>
+<li>
+<p dir="auto"><strong><span>Inicie el sitio en </span><code>develop</code><span>modo .</span></strong></p>
+<p dir="auto"><span>A continuación, dirígete al directorio de tu nuevo sitio e inícialo:</span></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto">
+<pre><span class="pl-c1">cd</span> my-blazing-fast-site/
+gatsby develop</pre>
+<div class="zeroclipboard-container"> </div>
+</div>
+</li>
+<li>
+<p dir="auto"><strong><span>¡Abre el código fuente y comienza a editar!</span></strong></p>
+<p dir="auto"><span>Su sitio ahora se ejecuta en </span><code>http://localhost:8000</code><span>. Abra el </span><code>my-blazing-fast-site</code><span>directorio en el editor de código que prefiera y edite </span><code>src/pages/index.js</code><span>. Guarde los cambios y el navegador se actualizará en tiempo real.</span></p>
+</li>
+</ol>
+<p dir="auto"><span>En este punto, ya tienes un sitio web de Gatsby completamente funcional. Para obtener información adicional sobre cómo puedes personalizar tu sitio de Gatsby, consulta nuestros </span><a href="https://gatsbyjs.org/plugins/" rel="nofollow"><span>complementos</span></a><span> y </span><a href="https://gatsbyjs.org/tutorial/" rel="nofollow"><span>el tutorial oficial</span></a><span> .</span></p>
+<div class="markdown-heading" dir="auto">
+<h2 class="heading-element" dir="auto" tabindex="-1"><span>🎓 Aprendiendo a interpretar a Gatsby</span></h2>
+<a id="user-content--learning-gatsby" class="anchor" aria-label="Enlace permanente: 🎓 Aprendiendo a interpretar a Gatsby" href="https://github.com/panr/gatsby#-learning-gatsby"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><span>La documentación completa de Gatsby vive </span><a href="https://gatsbyjs.org/" rel="nofollow"><span>en el sitio web</span></a><span> .</span></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><span>Para la mayoría de los desarrolladores, recomendamos comenzar con nuestro </span><a href="https://gatsbyjs.org/tutorial/" rel="nofollow"><span>tutorial detallado para crear un sitio con Gatsby</span></a><span> .</span></strong><span> Comienza sin hacer suposiciones sobre su nivel de habilidad y guía cada paso del proceso.</span></p>
+</li>
+<li>
+<p dir="auto"><strong><span>Para sumergirse directamente en los ejemplos de código, diríjase </span><a href="https://gatsbyjs.org/docs/" rel="nofollow"><span>a nuestra documentación</span></a><span> .</span></strong><span> En particular, consulte las secciones “ </span><i><span>Guías</span></i><span> ”, “ </span><i><span>Referencia de API</span></i><span> ” y “ </span><i><span>Tutoriales avanzados ” en la barra lateral.</span></i></p>
+</li>
+</ul>
+<p dir="auto"><span>Agradecemos sugerencias para mejorar nuestra documentación. Consulta la documentación </span><a href="https://gatsbyjs.org/docs/how-to-contribute/" rel="nofollow"><span>sobre cómo contribuir</span></a><span> para obtener más detalles.</span></p>
+<p dir="auto"><strong><span>Comience a aprender Gatsby: </span><a href="https://gatsbyjs.org/tutorial/" rel="nofollow"><span>siga el tutorial</span></a><span> · </span><a href="https://gatsbyjs.org/docs/" rel="nofollow"><span>Lea los documentos</span></a></strong></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>aplicaciones de escritorio multiplataforma usando Python</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/aplicaciones-de-escritorio-multiplataforma-usando-python.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/aplicaciones-de-escritorio-multiplataforma-usando-python.html</id>
+            <category term="Python"/>
+
+        <updated>2024-11-10T04:02:50-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Estas son 6 Opciones para crear aplicaciones de escritorio multiplataforma usando Python como lenguaje principal. la gran mayoria son open&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <article class="bg-neutral-950 px-3 py-4 md:px-10 mt-2 border-0 rounded">
+<article class="w-80 md:w-full prose dark:prose-invert text-slate-300 prose-headings:font-bold prose-headings:text-sky-200 prose-headings:mt-5 prose-code:text-yellow-200 prose-a:text-indigo-100 prose-a:break-all md:max-w-none prose-pre:overflow-x-auto prose-pre:shadow-md prose-pre:shadow-black prose-blockquote:text-slate-300 prose-blockquote:bg-neutral-800 prose-blockquote:px-4 prose-blockquote:py-1 prose-p:mb-5 prose-li:my-0 prose-li:p-0 prose-li:marker:text-yellow-400 prose-strong:text-sky-400 prose-p:leading-relaxed font-sans prose-img:m-auto prose-strong:font-bold">
+<p>Estas son 6 Opciones para crear aplicaciones de escritorio multiplataforma usando Python como lenguaje principal. la gran mayoria son open source y permiten crear aplicaciones pequeñas y grandes</p>
+<p>Si ya sabes las bases de Python y ahora quieres crear aplicaciones de escritorio Multiplataforma, estas son 6 Herramientas de Software (Frameworks, Bibliotecas, Sdks) relacionadsa a Python que puedes usar para crear aplicaciones de Escritorio.</p>
+<h3>Tkinter</h3>
+<p>Tkinter o <em>Tk Interface</em> es uno de los paquetes de Python más populares y tambien es la forma estandar para crear interfaces Graficas de usuario de escritorio en Python.</p>
+<p>Tkinter es la combinación de Tk; un toolkit open source para crear Widgets de elementos como botones, menus, canvas, textos, y asi. más código de Python que te permite controlar estas interfaces.</p>
+<p>Si estas empezando en python y quieres crear apps de escritorio, empezar con este toolkit es muy fácil al encontrar mucha informacion (Libros, tutoriales, cursos en Youtube, etc) y al ya estar incluido muchas veces en tu instalación de Python.</p>
+<p>Aunque tkinter solo permite crear interfaces básicas, y sus widgets pueden llegar a ser dificiles de debuggear.</p>
+<p>Tampoco posee ningun tipo de software para diseñar interfaces graficas visualmente, y aunque hay un proyecto llamado <em>Tkinter Designer</em> que convierte diseños hechos en Figma a código de Tkinter, aun asi, no es tan facil personalizar proyectos grandes.</p>
+<ul>
+<li><a href="https://github.com/ParthJadhav/Tkinter-Designer">Tkinter Designer</a> Convierte Diseños de Figma a Tkinter</li>
+<li><a href="https://en.wikipedia.org/wiki/Tk_(software)#:~:text=Tk%20is%20a%20free%20and,GUI)%20in%20many%20programming%20languages">https://en.wikipedia.org/wiki/Tk_(software)#:~:text=Tk%20is%20a%20free%20and,GUI)%20in%20many%20programming%20languages</a>.</li>
+<li><a href="https://docs.python.org/3/library/tkinter.html">https://docs.python.org/3/library/tkinter.html</a></li>
+<li><a href="https://www.reddit.com/r/learnpython/comments/8yy8jo/how_do_you_guys_pronounce_tkinter/">https://www.reddit.com/r/learnpython/comments/8yy8jo/how_do_you_guys_pronounce_tkinter/</a></li>
+</ul>
+<h3>PyQT</h3>
+<p><a href="https://doc.qt.io/qtforpython/">PyQT</a> es una de las opciones más robustas para crear aplicaciones de escritorio avanzadas en Python, esta basada en el framework Qt (desarrollado por Nokia), el cual es multiplataforma, lo que signfica que puedes desarrollar apps para Windows, Linux, Mac, y Raspberry, usando el mismo código base, ademas de ser orientado a Objetos.</p>
+<p>Qt ofrece principalmente widgets desarrollados en C++, pero ofrece bilbiotecas de otros lenguajes para interactuar con estos widgets, de aqui es donde sale PyQT.</p>
+<p>Y puedes usar un programa para diseñar visualmente tus interfaces llamado Qt Designer.</p>
+<p>Ademas posee APIs para poder usar protocolos de Red, o modulos para conectarte a bases de datos, y más.</p>
+<p>Aunque Para poder usar todas las caracteristicas de este framework se necesita una licencia, pero tambien ofrece una version gratuita, con funcionalidades limitadas.</p>
+<ul>
+<li><a href="https://doc.qt.io/qtforpython/index.html">https://doc.qt.io/qtforpython/index.html</a></li>
+<li><a href="https://www.qt.io/">Sitio Oficial de Qt</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Qt_(biblioteca)">Qt - Wikipedia</a></li>
+<li><a href="https://riverbankcomputing.com/software/pyqt/">https://riverbankcomputing.com/software/pyqt/</a></li>
+</ul>
+<h3>Kyvi</h3>
+<p>Kyvi es un framework Open Source (OpenGL ES2), para crear aplicaciones multiplataforma tanto en Desktop (Windows, Linux, Mac), moviles (iOS, Android) en incluso Rapberry Pi. Todo con una sola base de código.</p>
+<p>Todo el framework esta desarrollado combinando Cpython y Python. Aunque sus modulos son muy inestables dando errores dificil de manejar algunsa veces.</p>
+<p>Y aunque este framework te permita crear apps moviles, muchos desarrolladores actualmente no estan muy interesados en crear apps usando Python, por lo que este framework tampoco es ampliamente utilizado en ese aspecto.</p>
+<ul>
+<li><a href="https://kivy.org/doc/stable/gettingstarted/intro.html">https://kivy.org/doc/stable/gettingstarted/intro.html</a></li>
+</ul>
+<h3>WxPython</h3>
+<p>De forma similar como la bilbioteca PyQT permite usar widgets de Qt en Python, WxPython te permite usar widgets de una bibliteca llamada WxWidget, desarrollado con C++, en Python.</p>
+<p>Con WxPython puedes crear aplicaciones de escritorio multiplataforma (Windows, Linux, Mac) que tienen el Look and Feel de componentes nativos, y sin tener que reescribir código.</p>
+<p>Ademas como el modulo es Open Source, puedes usarlo para crear lo que gustes.</p>
+<ul>
+<li><a href="https://www.wxpython.org/pages/overview/">https://www.wxpython.org/pages/overview/</a></li>
+</ul>
+<ul>
+<li><a href="https://wxwidgets.org/">https://wxwidgets.org/</a></li>
+</ul>
+<h3>DearPyGUI</h3>
+<p><a href="https://github.com/hoffstadt/DearPyGui">DearPyGUI</a> es un framework para crear desde aplicaciones de escritorio pequeñas hasta muy grandes, es Open Source, y la mayor parte del código está escrito en C++. ademas no usa los componentes nativos del sistema operativo, sino que estan desarrollaos encima de APIs de Graficos como <a href="https://www.opengl.org/">OpenGL</a>.</p>
+<p>DearPyGui ofrece componentes o Widgets comunes como botones, ventanas y cajas de texto (<em>Inputs</em>), pero tambien componentes avanzados como graficos estadisticos, graficos de nodos, canvas, renderizado 3d, y mucho más. Ademas de soportar ejecución asincrona de código.</p>
+<p>Haciendolo una de las opciones más robustas para crear aplicaciones Desktop multiplataformas y profesionales.</p>
+<ul>
+<li><a href="https://github.com/hoffstadt/DearPyGui">Github de DearPyGUI</a></li>
+</ul>
+<h3>Flet</h3>
+<p><a href="https://flet.dev/">Flet</a> es un framework relativamente nuevo, permite crear aplicaciones web y desktop usando Python junto a interface de usuario llamado <strong>Flet Controls</strong> que estan desarrolladas en Flutter (Un framework de interfaces desarrollado en Dart). es decir al igual que WxPythom o PyQt, te permite manipular widgets de otro lenguaje pero en Python.</p>
+<p>En la practica usar esta biblioteca se le parece a usar tkinter, debido a su facilidad de instalacion y uso. Su documentacion aun es pequeña, pero tiene ejemplos muy sencillos de seguir, ademas que es más facil de entender que los de los frameworks anteriores.</p>
+<p>El framework ya posee modulos de autenticación, animaciones, almacenaje local (sesiones y memoria), Hot Reload, ademas de otras caracteristicas.</p>
+<p>Y Para ir a produccion te da la posiblidad de convertir tu aplicación a una app de escritorio con modulos como PyInstaller o desplegar tu proyectos en servicios de la nube como fly.io.</p>
+<p>Tambien tienen un roadmap para eventualmente crear apps moviles, ya que hacen uso de Flutter (<a href="https://flet.dev/docs/guides/python/mobile-support">https://flet.dev/docs/guides/python/mobile-support</a>)</p>
+<p>Auque el modulo aun es poco conocido, asi que habra que esperar como le va.</p>
+<ul>
+<li><a href="https://flet.dev/docs/">Documentación de Flet</a></li>
+</ul>
+<h3>Otras bibliotecas</h3>
+<p>Por cierto otros modulos que puedes usar para crear aplicaciones de escritorio en python son:</p>
+<ul>
+<li>PyGUI</li>
+<li><a href="https://pypi.org/project/PySide2/">PySide2</a></li>
+<li>PySimpleGUI, <a href="https://www.pysimplegui.org/en/latest/">https://www.pysimplegui.org/en/latest/</a></li>
+</ul>
+<ul>
+<li>PyGTK 3, <a href="https://python-gtk-3-tutorial.readthedocs.io/en/latest/">https://python-gtk-3-tutorial.readthedocs.io/en/latest/</a>
+<ul>
+<li><a href="https://glade.gnome.org/">Glade</a> es un software para diseñar interfaces graficas para GTK</li>
+</ul>
+</li>
+<li>Beware, <a href="https://beeware.org/">https://beeware.org/</a></li>
+<li>PyForms, <a href="https://pyforms.readthedocs.io/en/v4/">https://pyforms.readthedocs.io/en/v4/</a></li>
+<li>Wax, <a href="https://wiki.python.org/moin/Wax">https://wiki.python.org/moin/Wax</a></li>
+<li>libavg, <a href="https://www.libavg.de/site/">https://www.libavg.de/site/</a></li>
+</ul>
+<ul>
+<li><a href="https://github.com/python-eel/Eel">eel</a>, Framework de Python que permite crear aplicaciones de escritorio utilizando tecnologia web para las interfaces y Python en el backend, similar a Electronjs en Javascript.</li>
+<li><a href="https://github.com/Textualize/textual">Textual</a> Te permite crear TUI (Text User Interface) con Python</li>
+<li><a href="https://github.com/TomSchimansky/CustomTkinter">Custom tkinter</a> es es un proyecto que permite usar las mismas funciones de Tkinter pero ofreciendo interfaces Graficas que lucen mucho más modernas</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Como siempre escoger una opcion depende de tus necesidades, pero si buscas proyectos open Source escalables las mejores opciones con PyQT, DearPyGUI o WxPython. Flet tambien luece prometedor, pero su comunidad no es tan grande. y si buscas hacer proyectos sencillos, sin necesidad de ahondar en herramientas complicadas, tkinter sigue siendo una muy buena opcion para empezar.</p>
+<h3>Más Recursos</h3>
+<ul>
+<li><a href="https://github.com/hoffstadt/DearPyGui#features">https://github.com/hoffstadt/DearPyGui#features</a></li>
+<li><a href="https://github.com/ocornut/imgui">https://github.com/ocornut/imgui</a></li>
+<li><a href="https://dearpygui.readthedocs.io/en/latest/tutorials/first-steps.html">https://dearpygui.readthedocs.io/en/latest/tutorials/first-steps.html</a></li>
+</ul>
+</article>
+<footer><span class="text-gray-400 text-xs">Actualizado por ultima vez el<time class="ml-1" datetime="9/7/2023">9/7/2023</time></span></footer></article>
+<div class="bg-neutral-900 text-sm p-3 text-center md:text-left md:px-4 md:py-7 mt-2 rounded-md">
+<p class="my-3 text-gray-300"> </p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Introducción a Payload, un CMS y un marco de aplicaciones sin interfaz gráfica</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/introduccion-a-payload-un-cms-y-un-marco-de-aplicaciones-sin-interfaz-grafica.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/introduccion-a-payload-un-cms-y-un-marco-de-aplicaciones-sin-interfaz-grafica.html</id>
+            <category term="Publii"/>
+            <category term="Payload"/>
+
+        <updated>2024-11-10T03:59:38-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Payload CMS se describe a sí mismo con valentía como un "CMS y un marco de aplicación sin interfaz gráfica". Aunque&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div id="tns-post-headline">
+<div id="tns-post-headline-title">
+<p class="title"> </p>
+<div class="post-excerpt"><span>Echamos un vistazo a Payload, una interesante opción de marco de aplicación y CMS si no necesitas que el frontend y el backend estén vinculados.</span></div>
+</div>
+<div id="tns-post-headline-byline"><span class="date"><span>por </span></span><span><span class="author"><a href="https://thenewstack.io/author/david-eastman/" title="Posts by David Eastman" class="author url fn" rel="author">David Eastman</a></span></span><a href="https://thenewstack.io/author/david-eastman/" title="Publicaciones de David Eastman" class="author url fn" rel="author"></a></div>
+</div>
+<div id="tns-post-key-media"><br>
+<div class="image-disclosure"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Una de las cosas interesantes del desarrollo web siempre ha sido el intento de fusionar los mundos del diseño visual con el del diseño de datos. Si bien deben unirse en los sitios web y las aplicaciones web, son disciplinas bastante separadas. Los marcos como </span><a href="https://thenewstack.io/return-to-the-rails-way-installing-ruby-on-rails-in-2024/" class="local-link" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Ruby on Rails</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> constantemente saltan de un lado a otro en un esfuerzo por unirlos.</span></div>
+</div>
+<div id="tns-post-body">
+<div class="row">
+<div class="copy-column">
+<div id="tns-post-body-content">
+<p><a href="https://payloadcms.com/" class="ext-link" rel="external " onclick="this.target='_blank';"><span>Payload CMS</span></a><span> se describe a sí mismo con valentía como un "CMS y un marco de aplicación sin interfaz gráfica". Aunque no nos referimos a las interfaces de usuario como "interfaces gráficas", </span><a href="https://thenewstack.io/headless-cms-vs-no-code-website-builders/" class="local-link"><span>sin interfaz gráfica</span></a><span> solo se refiere a un marco sin interfaz gráfica exclusiva. Un sistema de gestión de contenido (CMS) es solo un marco que manipula datos estructurados. Si los datos son un blog, entonces el contenido que se administra son publicaciones, por ejemplo.</span></p>
+<p><span>La página </span><a href="https://payloadcms.com/docs/getting-started/what-is-payload" class="ext-link" rel="external " onclick="this.target='_blank';"><span>¿Qué es Payload?</span></a><span> presenta bien este dilema y, al mismo tiempo, intenta explicar su propio ángulo. Da en el clavo cuando reconoce que un CMS tiende a “vincular la presentación de su contenido al almacenamiento de su contenido”. En consecuencia, lo que Payload pretende hacer es funcionar con cualquier interfaz que desee utilizar.</span></p>
+<p><span>A día de hoy, Payload se encuentra entre algunos cambios importantes y la versión 3, por lo que la documentación anterior puede estar desactualizada. Siguiendo las instrucciones como hice yo, obtuve una versión anterior. Sin duda, esto se solucionará. Simplemente consulte su </span><a href="https://discord.com/invite/r6sCXqVk3v" class="ext-link" rel="external " onclick="this.target='_blank';"><span>canal de Discord</span></a><span> para obtener la información más reciente.</span></p>
+<h2><span>Instalación</span></h2>
+<p><span>Hasta el momento, las opciones de requisitos previos </span><a href="https://payloadcms.com/docs/getting-started/installation" class="ext-link" rel="external " onclick="this.target='_blank';"><span>de instalación</span></a><span> son un poco limitadas para las bases de datos, pero hay un ejemplo relacional y uno basado en documentos para elegir:</span></p>
+<figure class="aligncenter wp-image-22758179 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/1a832a6f-image-1024x197.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="197"><img  src="https://cdn.thenewstack.io/media/2024/09/1a832a6f-image-1024x197.png" alt="" width="1024" height="197" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/1a832a6f-image-1024x197.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="197"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>En mi confiable MacBook, instalé un </span><a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/" class="ext-link" rel="external " onclick="this.target='_blank';"><span>MongoDB</span></a><span> comunitario a través de Homebrew:</span></p>
+<figure class="aligncenter wp-image-22758169 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/9c193e71-image-1-1024x118.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="118"><img  src="https://cdn.thenewstack.io/media/2024/09/9c193e71-image-1-1024x118.png" alt="" width="1024" height="118" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/9c193e71-image-1-1024x118.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="118"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<figure class="aligncenter wp-image-22758170 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/03f012b8-image-2-1024x196.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="196"><img  src="https://cdn.thenewstack.io/media/2024/09/03f012b8-image-2-1024x196.png" alt="" width="1024" height="196" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/03f012b8-image-2-1024x196.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="196"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Luego inicié Mongo agregándolo como un servicio:</span></p>
+<figure class="aligncenter wp-image-22758171 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/2bc07cf3-image-3-1024x447.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="447"><img  src="https://cdn.thenewstack.io/media/2024/09/2bc07cf3-image-3-1024x447.png" alt="" width="1024" height="447" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/2bc07cf3-image-3-1024x447.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="447"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Podemos ver la cadena de conexión como la URL, por lo que deberíamos poder configurar la carga útil.</span></p>
+<div class="tns-trending-stories-block inline" data-context="inline">
+<div class="section-heading"><span>HISTORIAS DE TENDENCIA</span></div>
+<div class="tns-trending-stories-list tns-trending-stories-list-inline tns-trending-stories-list-672df61ce1ba8" data-uuid="672df61ce1ba8" data-context="inline">
+<ol class="tns-trending-stories-ol">
+<li><a href="https://thenewstack.io/playgrounds-for-developers-uses-and-design-patterns/" class="trending-story-link " aria-label="Áreas de juego para desarrolladores: usos y patrones de diseño" data-context="inline" data-url="https://thenewstack.io/playgrounds-for-developers-uses-and-design-patterns"><span>Áreas de juego para desarrolladores: usos y patrones de diseño</span></a></li>
+<li><a href="https://thenewstack.io/use-these-ai-workflows-to-reduce-your-technical-debt/" class="trending-story-link " aria-label="Utilice estos flujos de trabajo de IA para reducir su deuda técnica" data-context="inline" data-url="https://thenewstack.io/use-these-ai-workflows-to-reduce-your-technical-debt"><span>Utilice estos flujos de trabajo de IA para reducir su deuda técnica</span></a></li>
+<li><a href="https://thenewstack.io/introduction-to-localstack-a-drop-in-replacement-for-aws/" class="trending-story-link " aria-label="Introducción a LocalStack, un reemplazo directo para AWS" data-context="inline" data-url="https://thenewstack.io/introduction-to-localstack-a-drop-in-replacement-for-aws"><span>Introducción a LocalStack, un reemplazo directo para AWS</span></a></li>
+<li><a href="https://thenewstack.io/my-5-favorite-command-line-tools/" class="trending-story-link " aria-label="Mis 5 herramientas de línea de comandos favoritas" data-context="inline" data-url="https://thenewstack.io/my-5-favorite-command-line-tools"><span>Mis 5 herramientas de línea de comandos favoritas</span></a></li>
+<li><a href="https://thenewstack.io/an-introduction-to-zed-ai-and-how-it-compares-to-cursor-ai/" class="trending-story-link " aria-label="Introducción a Zed AI y cómo se compara con Cursor AI" data-context="inline" data-url="https://thenewstack.io/an-introduction-to-zed-ai-and-how-it-compares-to-cursor-ai"><span>Introducción a Zed AI y cómo se compara con Cursor AI</span></a></li>
+</ol>
+</div>
+</div>
+<p><span>En otra pestaña del navegador, instalé la aplicación Payload:</span></p>
+<figure class="aligncenter wp-image-22758172 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/74580164-image-4-1024x366.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="366"><img  src="https://cdn.thenewstack.io/media/2024/09/74580164-image-4-1024x366.png" alt="" width="1024" height="366" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/74580164-image-4-1024x366.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="366"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>He creado un proyecto de demostración y pronto estaremos listos para lanzarlo:</span></p>
+<figure class="aligncenter wp-image-22758173 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/207fe4cb-image-5-1024x184.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="184"><img  src="https://cdn.thenewstack.io/media/2024/09/207fe4cb-image-5-1024x184.png" alt="" width="1024" height="184" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/207fe4cb-image-5-1024x184.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="184"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Uno de los proyectos de ejemplo falló porque esperaba Discord. Como dije, debido a los próximos cambios, parte de la documentación y los videos aún no coinciden del todo. Eso es bueno, por supuesto: el proyecto es muy activo. Seleccioné la plantilla payload-demo, lo cual estuvo bien.</span></p>
+<p><span>Luego, “yarn dev” ejecuta el proyecto:</span></p>
+<figure class="aligncenter wp-image-22758174 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/e9ce4056-image-6-1024x333.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="333"><img  src="https://cdn.thenewstack.io/media/2024/09/e9ce4056-image-6-1024x333.png" alt="" width="1024" height="333" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/e9ce4056-image-6-1024x333.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="333"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Una vez conectado a MongoDB, se inicia tanto la carga útil de administración (en localhost:3000/admin) como la aplicación de demostración (marcada como aplicación Next.js, el marco React utilizado para la plantilla).</span></p>
+<h2><span>La aplicación Payload</span></h2>
+<p><span>Entrando directamente a la aplicación vemos:</span></p>
+<figure class="aligncenter wp-image-22758175 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/d8d60994-image-7-1024x569.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="569"><img  src="https://cdn.thenewstack.io/media/2024/09/d8d60994-image-7-1024x569.png" alt="" width="1024" height="569" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/d8d60994-image-7-1024x569.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="569"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>En este punto, no hay contenido, por lo que se lo dirige al panel de administración para comenzar a crear algo. El panel de administración me permite crear un rol de administrador o de usuario, con correo electrónico.</span></p>
+<p><span>El panel de control en sí mismo ayuda a explicar de qué se trata realmente Payload:</span></p>
+<figure class="aligncenter wp-image-22758176 size-full"><a href="https://cdn.thenewstack.io/media/2024/09/f522cb54-image-8.png" class="pswp-trigger no-caption" data-pswp-width="2314" data-pswp-height="1492"><img  src="https://cdn.thenewstack.io/media/2024/09/f522cb54-image-8.png" alt="" width="2314" height="1492" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/f522cb54-image-8.png" class="pswp-trigger no-caption" data-pswp-width="2314" data-pswp-height="1492"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Payload organiza todo en conjuntos de tipos en colecciones. Esto incluye páginas y usuarios. Podemos crear nuevos tipos y comenzar a usarlos inmediatamente, como lo haremos.</span></p>
+<p><span>Aquí hay una pequeña confusión: para empezar, presiona el enlace “Seed the database” (Iniciar la base de datos) y obtendrás mucho contenido de demostración. Eso limpiará todo lo que ya exista. También necesitas crear una página de “inicio”, de lo contrario solo verás la página de plantilla predeterminada de arriba, lo que quizás te haga pensar que no tienes contenido, cuando sí lo tienes.</span></p>
+<p><span>Una vez que entendí el sistema, creé un contenido simple, aunque poco inspirado, en un tipo de página:</span></p>
+<figure class="aligncenter wp-image-22758177 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/63b0b83f-image-9-1024x496.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="496"><img  src="https://cdn.thenewstack.io/media/2024/09/63b0b83f-image-9-1024x496.png" alt="" width="1024" height="496" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/63b0b83f-image-9-1024x496.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="496"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Una vez que utilice la interfaz de administración para agregar elementos a las colecciones, podrá publicar los cambios (confirmarlos). Esto actualizará automáticamente su sitio.</span></p>
+<h2><span>Haciendo todo en código</span></h2>
+<p><span>En esta etapa, no he hecho mucho más de lo que se podría hacer con, por ejemplo, </span><a href="https://thenewstack.io/jamstack-style-build-a-website-with-netlify-and-publii/" class="local-link"><span>Publii</span></a><span> , que también actúa como un CMS clásico. Sin embargo, hay dos cosas que se destacan en Payload. No solo se puede hablar con él en REST, sino que también se pueden reutilizar partes de Payload que difuminan la distinción entre quién es dueño de qué. Y se puede hacer todo en código, que es a donde vamos ahora.</span></p>
+<p><span>Por ejemplo, puedes ver que Usuarios es un tipo de colección, disponible para que lo usemos:</span></p>
+<figure class="aligncenter wp-image-22758178 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/8665f2c5-image-10-1024x269.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="269"><img  src="https://cdn.thenewstack.io/media/2024/09/8665f2c5-image-10-1024x269.png" alt="" width="1024" height="269" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/8665f2c5-image-10-1024x269.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="269"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>¿Y dónde se registran? Todo en el archivo. Primero se importan y luego (como puede ver a continuación) se agregan a las colecciones conocidas:</span><code>payload.config.ts</code></p>
+<figure class="aligncenter wp-image-22758160 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/e60fda67-image-11-1024x235.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="235"><img  src="https://cdn.thenewstack.io/media/2024/09/e60fda67-image-11-1024x235.png" alt="" width="1024" height="235" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/e60fda67-image-11-1024x235.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="235"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Dentro de la carpeta Usuarios, tenemos un archivo index.ts básico, que define el tipo de Usuarios. Si bien esto incluye una gran cantidad de Typescript, la mayor parte solo describe el acceso de administrador. Payload permite un control de acceso bastante granular:</span></p>
+<div id="crayon-672df61cbdfc8825927726" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-2">2</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-4">4</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-6">6</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-7">7</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-8">8</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-9">9</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-10">10</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-11">11</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-12">12</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-13">13</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-14">14</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-15">15</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-16">16</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-17">17</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-18">18</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-19">19</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-20">20</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-21">21</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-22">22</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-23">23</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-24">24</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-25">25</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-26">26</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-27">27</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-28">28</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-29">29</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-30">30</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-31">31</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-32">32</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-33">33</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-34">34</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-35">35</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-36">36</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-37">37</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-38">38</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-39">39</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-40">40</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-41">41</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-42">42</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-43">43</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-44">44</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-45">45</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-46">46</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-47">47</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-48">48</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-49">49</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-50">50</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-51">51</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-52">52</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-53">53</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-54">54</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-55">55</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-56">56</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-57">57</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfc8825927726-58">58</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfc8825927726-59">59</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672df61cbdfc8825927726-1" class="crayon-line"><span class="crayon-e">import</span> <span class="crayon-e">type</span> { <span class="crayon-i">CollectionConfig</span> } <span class="crayon-i">from</span> <span class="crayon-s">'payload/types'</span></div>
+<div id="crayon-672df61cbdfc8825927726-2" class="crayon-line crayon-striped-line"><span class="crayon-e">import</span> { <span class="crayon-i">admins</span> } <span class="crayon-i">from</span> <span class="crayon-s">'../../access/admins'</span></div>
+<div id="crayon-672df61cbdfc8825927726-3" class="crayon-line"><span class="crayon-e">import</span> { <span class="crayon-i">anyone</span> } <span class="crayon-i">from</span> <span class="crayon-s">'../../access/anyone'</span></div>
+<div id="crayon-672df61cbdfc8825927726-4" class="crayon-line crayon-striped-line"><span class="crayon-e">import </span><span class="crayon-e">adminsAndUser </span><span class="crayon-i">from</span> <span class="crayon-s">'./access/adminsAndUser'</span></div>
+<div id="crayon-672df61cbdfc8825927726-5" class="crayon-line"><span class="crayon-e">import</span> { <span class="crayon-i">checkRole</span> } <span class="crayon-i">from</span> <span class="crayon-s">'./checkRole'</span></div>
+<div id="crayon-672df61cbdfc8825927726-6" class="crayon-line crayon-striped-line"><span class="crayon-e">import</span> { <span class="crayon-i">ensureFirstUserIsAdmin</span> } <span class="crayon-i">from</span> <span class="crayon-s">'./hooks/ensureFirstUserIsAdmin'</span></div>
+<div id="crayon-672df61cbdfc8825927726-7" class="crayon-line"><span class="crayon-e">import</span> { <span class="crayon-i">loginAfterCreate</span> } <span class="crayon-i">from</span> <span class="crayon-s">'./hooks/loginAfterCreate'</span></div>
+<div id="crayon-672df61cbdfc8825927726-8" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672df61cbdfc8825927726-9" class="crayon-line"><span class="crayon-e">const </span><span class="crayon-v">Users:</span> <span class="crayon-i">CollectionConfig</span>={</div>
+<div id="crayon-672df61cbdfc8825927726-10" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span><span class="crayon-v">slug:</span> <span class="crayon-s">'users'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-11" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-v">admin:</span>{</div>
+<div id="crayon-672df61cbdfc8825927726-12" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span><span class="crayon-v">useAsTitle:</span> <span class="crayon-s">'name'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-13" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-v">defaultColumns:</span> [<span class="crayon-s">'name'</span>, <span class="crayon-s">'email'</span>],</div>
+<div id="crayon-672df61cbdfc8825927726-14" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-15" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-v">access:</span>{</div>
+<div id="crayon-672df61cbdfc8825927726-16" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span><span class="crayon-v">read:</span> <span class="crayon-i">adminsAndUser</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-17" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-v">create:</span> <span class="crayon-i">anyone</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-18" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span><span class="crayon-v">update:</span> <span class="crayon-i">adminsAndUser</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-19" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-v">delete:</span> <span class="crayon-i">admins</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-20" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span><span class="crayon-v">admin:</span> ({ <span class="crayon-v">req:</span> { <span class="crayon-i">user</span> } }) =<span class="crayon-h">&gt;</span> <span class="crayon-e">checkRole</span>([<span class="crayon-s">'admin'</span>], <span class="crayon-i">user</span>),</div>
+<div id="crayon-672df61cbdfc8825927726-21" class="crayon-line"><span class="crayon-h">  </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-22" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span><span class="crayon-v">hooks:</span>{</div>
+<div id="crayon-672df61cbdfc8825927726-23" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-v">afterChange:</span> [<span class="crayon-i">loginAfterCreate</span>],</div>
+<div id="crayon-672df61cbdfc8825927726-24" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-25" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-v">auth:</span> <span class="crayon-i">true</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-26" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span><span class="crayon-v">fields:</span>[</div>
+<div id="crayon-672df61cbdfc8825927726-27" class="crayon-line"><span class="crayon-h">    </span>{</div>
+<div id="crayon-672df61cbdfc8825927726-28" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">name:</span> <span class="crayon-s">'name'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-29" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-v">type:</span> <span class="crayon-s">'text'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-30" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-31" class="crayon-line"><span class="crayon-h">    </span>{</div>
+<div id="crayon-672df61cbdfc8825927726-32" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">name:</span> <span class="crayon-s">'roles'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-33" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-v">type:</span> <span class="crayon-s">'select'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-34" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">hasMany:</span> <span class="crayon-i">true</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-35" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-v">defaultValue:</span> [<span class="crayon-s">'user'</span>],</div>
+<div id="crayon-672df61cbdfc8825927726-36" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">options:</span>[</div>
+<div id="crayon-672df61cbdfc8825927726-37" class="crayon-line"><span class="crayon-h">        </span>{</div>
+<div id="crayon-672df61cbdfc8825927726-38" class="crayon-line crayon-striped-line"><span class="crayon-h">          </span><span class="crayon-v">label:</span> <span class="crayon-s">'admin'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-39" class="crayon-line"><span class="crayon-h">          </span><span class="crayon-v">value:</span> <span class="crayon-s">'admin'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-40" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-41" class="crayon-line"><span class="crayon-h">        </span>{</div>
+<div id="crayon-672df61cbdfc8825927726-42" class="crayon-line crayon-striped-line"><span class="crayon-h">          </span><span class="crayon-v">label:</span> <span class="crayon-s">'user'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-43" class="crayon-line"><span class="crayon-h">          </span><span class="crayon-v">value:</span> <span class="crayon-s">'user'</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-44" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-45" class="crayon-line"><span class="crayon-h">      </span>],</div>
+<div id="crayon-672df61cbdfc8825927726-46" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">hooks:</span>{</div>
+<div id="crayon-672df61cbdfc8825927726-47" class="crayon-line"><span class="crayon-h">        </span><span class="crayon-v">beforeChange:</span> [<span class="crayon-i">ensureFirstUserIsAdmin</span>],</div>
+<div id="crayon-672df61cbdfc8825927726-48" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-49" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-v">access:</span>{</div>
+<div id="crayon-672df61cbdfc8825927726-50" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span><span class="crayon-v">read:</span> <span class="crayon-i">admins</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-51" class="crayon-line"><span class="crayon-h">        </span><span class="crayon-v">create:</span> <span class="crayon-i">admins</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-52" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span><span class="crayon-v">update:</span> <span class="crayon-i">admins</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-53" class="crayon-line"><span class="crayon-h">      </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-54" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span>},</div>
+<div id="crayon-672df61cbdfc8825927726-55" class="crayon-line"><span class="crayon-h">  </span>],</div>
+<div id="crayon-672df61cbdfc8825927726-56" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span><span class="crayon-v">timestamps:</span> <span class="crayon-i">true</span>,</div>
+<div id="crayon-672df61cbdfc8825927726-57" class="crayon-line">}</div>
+<div id="crayon-672df61cbdfc8825927726-58" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672df61cbdfc8825927726-59" class="crayon-line"><span class="crayon-e">export </span><span class="crayon-e">default </span><span class="crayon-v">Users</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br><span>Sin embargo, vamos a reducir esto y crear nuestro propio tipo de colección, sin administrador ni ganchos.</span></p>
+<p><span>Digamos que solo queremos un tipo llamado Miembros. Crearé la carpeta adecuada y un index.ts modificado:</span></p>
+<div id="crayon-672df61cbdfd0425072428" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-2">2</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-4">4</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-6">6</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-7">7</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-8">8</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-9">9</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-10">10</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-11">11</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-12">12</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-13">13</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-14">14</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-15">15</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-16">16</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd0425072428-17">17</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd0425072428-18">18</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672df61cbdfd0425072428-1" class="crayon-line"><span class="crayon-e">import</span> <span class="crayon-e">type</span> { <span class="crayon-i">CollectionConfig</span> } <span class="crayon-i">from</span> <span class="crayon-s">'payload/types'</span></div>
+<div id="crayon-672df61cbdfd0425072428-2" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672df61cbdfd0425072428-3" class="crayon-line"><span class="crayon-e">const </span><span class="crayon-v">Members:</span> <span class="crayon-i">CollectionConfig</span>={</div>
+<div id="crayon-672df61cbdfd0425072428-4" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span><span class="crayon-v">slug:</span> <span class="crayon-s">'members'</span>,</div>
+<div id="crayon-672df61cbdfd0425072428-5" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-v">fields:</span>[</div>
+<div id="crayon-672df61cbdfd0425072428-6" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span>{<span class="crayon-h">  </span></div>
+<div id="crayon-672df61cbdfd0425072428-7" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-v">name:</span> <span class="crayon-s">'name'</span>,</div>
+<div id="crayon-672df61cbdfd0425072428-8" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">type:</span> <span class="crayon-s">'text'</span>,</div>
+<div id="crayon-672df61cbdfd0425072428-9" class="crayon-line"><span class="crayon-h">    </span>},</div>
+<div id="crayon-672df61cbdfd0425072428-10" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span>{</div>
+<div id="crayon-672df61cbdfd0425072428-11" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-v">name:</span> <span class="crayon-s">'membership'</span>,</div>
+<div id="crayon-672df61cbdfd0425072428-12" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-v">type:</span> <span class="crayon-s">'number'</span>,</div>
+<div id="crayon-672df61cbdfd0425072428-13" class="crayon-line"><span class="crayon-h">    </span>},</div>
+<div id="crayon-672df61cbdfd0425072428-14" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span>],</div>
+<div id="crayon-672df61cbdfd0425072428-15" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-v">timestamps:</span> <span class="crayon-i">true</span>,</div>
+<div id="crayon-672df61cbdfd0425072428-16" class="crayon-line crayon-striped-line">}</div>
+<div id="crayon-672df61cbdfd0425072428-17" class="crayon-line"></div>
+<div id="crayon-672df61cbdfd0425072428-18" class="crayon-line crayon-striped-line"><span class="crayon-e">export </span><span class="crayon-e">default </span><span class="crayon-v">Members</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br><span>Esto simplemente describe un tipo con un nombre y un campo de pertenencia numérico. Payload realiza una gran cantidad de trabajo a través de los diferentes campos.</span></p>
+<p><span>El servidor detectó los cambios:</span></p>
+<figure class="aligncenter wp-image-22758162 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/5d82e49d-image-13-1024x193.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="193"><img  src="https://cdn.thenewstack.io/media/2024/09/5d82e49d-image-13-1024x193.png" alt="" width="1024" height="193" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/5d82e49d-image-13-1024x193.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="193"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>E inmediatamente las colecciones reconocieron el nuevo tipo dentro del panel de administración:</span></p>
+<figure class="aligncenter wp-image-22758163 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/fb2d1728-image-14-1024x337.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="337"><img  src="https://cdn.thenewstack.io/media/2024/09/fb2d1728-image-14-1024x337.png" alt="" width="1024" height="337" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/fb2d1728-image-14-1024x337.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="337"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Y podemos manipular miembros como cualquier otro tipo de colección:</span></p>
+<figure class="aligncenter wp-image-22758166 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/a983c25e-image-17-1024x326.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="326"><img  src="https://cdn.thenewstack.io/media/2024/09/a983c25e-image-17-1024x326.png" alt="" width="1024" height="326" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/a983c25e-image-17-1024x326.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="326"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Una última cosa. Accedamos a nuestro nuevo miembro a través de REST:</span></p>
+<figure class="aligncenter wp-image-22758167 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/96d6c533-image-18-1024x355.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="355"><img  src="https://cdn.thenewstack.io/media/2024/09/96d6c533-image-18-1024x355.png" alt="" width="1024" height="355" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/96d6c533-image-18-1024x355.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="355"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Así que estamos bloqueados. Pero espere un minuto... ¿recuerda el acceso granular que eliminamos para simplificar la recopilación de miembros? Intentemos volver a poner un poco de información:</span></p>
+<div id="crayon-672df61cbdfd2216795410" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-2">2</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-4">4</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-6">6</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-7">7</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-8">8</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-9">9</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-10">10</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-11">11</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-12">12</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-13">13</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-14">14</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-15">15</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-16">16</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-17">17</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-18">18</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-19">19</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-20">20</div>
+<div class="crayon-num" data-line="crayon-672df61cbdfd2216795410-21">21</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672df61cbdfd2216795410-22">22</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672df61cbdfd2216795410-1" class="crayon-line"><span class="crayon-r">import</span> <span class="crayon-k ">type</span> { <span class="crayon-i">CollectionConfig</span> } <span class="crayon-st">from</span> <span class="crayon-s">'payload/types'</span></div>
+<div id="crayon-672df61cbdfd2216795410-2" class="crayon-line crayon-striped-line"><span class="crayon-r">import</span> { <span class="crayon-i">anyone</span> } <span class="crayon-st">from</span> <span class="crayon-s">'../../access/anyone'</span></div>
+<div id="crayon-672df61cbdfd2216795410-3" class="crayon-line"></div>
+<div id="crayon-672df61cbdfd2216795410-4" class="crayon-line crayon-striped-line"><span class="crayon-e">const </span><span class="crayon-i">Members</span>: <span class="crayon-i">CollectionConfig</span> = {</div>
+<div id="crayon-672df61cbdfd2216795410-5" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-i">slug</span>: <span class="crayon-s">'members'</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-6" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span><span class="crayon-i">access</span>: {</div>
+<div id="crayon-672df61cbdfd2216795410-7" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-i">read</span>: <span class="crayon-i">anyone</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-8" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span>},</div>
+<div id="crayon-672df61cbdfd2216795410-9" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-i">fields</span>: [</div>
+<div id="crayon-672df61cbdfd2216795410-10" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span>{</div>
+<div id="crayon-672df61cbdfd2216795410-11" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-i">name</span>: <span class="crayon-s">'name'</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-12" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-k ">type</span>: <span class="crayon-s">'text'</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-13" class="crayon-line"><span class="crayon-h">    </span>},</div>
+<div id="crayon-672df61cbdfd2216795410-14" class="crayon-line crayon-striped-line"><span class="crayon-h">    </span>{</div>
+<div id="crayon-672df61cbdfd2216795410-15" class="crayon-line"><span class="crayon-h">      </span><span class="crayon-i">name</span>: <span class="crayon-s">'memebership'</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-16" class="crayon-line crayon-striped-line"><span class="crayon-h">      </span><span class="crayon-k ">type</span>: <span class="crayon-s">'number'</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-17" class="crayon-line"><span class="crayon-h">    </span>},</div>
+<div id="crayon-672df61cbdfd2216795410-18" class="crayon-line crayon-striped-line"><span class="crayon-h">  </span>],</div>
+<div id="crayon-672df61cbdfd2216795410-19" class="crayon-line"><span class="crayon-h">  </span><span class="crayon-i">timestamps</span>: <span class="crayon-t">true</span>,</div>
+<div id="crayon-672df61cbdfd2216795410-20" class="crayon-line crayon-striped-line">}</div>
+<div id="crayon-672df61cbdfd2216795410-21" class="crayon-line"></div>
+<div id="crayon-672df61cbdfd2216795410-22" class="crayon-line crayon-striped-line"><span class="crayon-e">export </span><span class="crayon-e">default </span><span class="crayon-v">Members</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br><span>Lo único que hice fue agregar la importación para "cualquiera" y agregar ese acceso. Ahora, probemos:</span></p>
+<figure class="aligncenter wp-image-22758168 size-large"><a href="https://cdn.thenewstack.io/media/2024/09/8313cfd3-image-19-1024x378.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="378"><img  src="https://cdn.thenewstack.io/media/2024/09/8313cfd3-image-19-1024x378.png" alt="" width="1024" height="378" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/09/8313cfd3-image-19-1024x378.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="378"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg><span>Zoom</span></a></div>
+<p> </p>
+<p><span>Muy bien. Creamos una nueva colección, la vimos en la consola de administración, creamos una entrada para ella e incluso la solicitamos a través de REST. Por lo tanto, este contenido ahora está disponible para mi sitio.</span></p>
+<h2><span>Conclusión</span></h2>
+<p><span>Como dije antes, Payload está actualmente en transición a la versión 3, por lo que puede tener sentido esperar un poco antes de investigarlo. Dicho esto, la idea ya es bastante sólida si no insistes en que tu frontend y backend se casen a la fuerza.</span></p>
+</div>
+</div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Introducción a Eleventy</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/introduccion-a-eleventy.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/introduccion-a-eleventy.html</id>
+            <category term="Eleventy"/>
+
+        <updated>2024-11-10T03:51:50-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Mostramos cómo Eleventy ofrece un proceso de desarrollo web fluido y agradable que funciona con tecnologías existentes y al mismo&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div id="tns-post-headline">
+<div id="tns-post-headline-title">
+<h1 class="title"> </h1>
+<div class="post-excerpt">Mostramos cómo Eleventy ofrece un proceso de desarrollo web fluido y agradable que funciona con tecnologías existentes y al mismo tiempo lo guía hacia buenas prácticas.</div>
+</div>
+<div id="tns-post-headline-byline"><span class="date">por </span><span class="author"><a href="https://thenewstack.io/author/david-eastman/" title="Publicaciones de David Eastman" class="author url fn" rel="author">David Eastman</a></span><a href="https://thenewstack.io/author/david-eastman/" title="Publicaciones de David Eastman" class="author url fn" rel="author"></a></div>
+</div>
+<div id="tns-post-key-media"><br>
+<div class="image-disclosure"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Entré en el mundo de Jamstack y los generadores de sitios estáticos cuando lancé una página con </span><a href="https://thenewstack.io/jamstack-style-build-a-website-with-netlify-and-publii/" class="local-link" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Publii y Netlify</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> hace algún tiempo.</span></div>
+</div>
+<div id="tns-post-body">
+<div class="row">
+<div class="copy-column">
+<div id="tns-post-body-content">
+<p>Desde entonces, el término Jamstack ha sido <a href="https://thenewstack.io/is-jamstack-toast-some-developers-say-yes-netlify-says-no/" class="local-link">rechazado</a> por Netlify. Sin embargo, la mayoría de los sitios no necesitan páginas dinámicas de un servidor y pueden ser simplemente lo que la web siempre se supuso que sería: páginas enlazadas de HTML y CSS, con un poco de ayuda de JavaScript.</p>
+<p><a href="https://getpublii.com/" class="ext-link" rel="external " onclick="this.target='_blank';">Publii</a> es un creador de sitios web estáticos todo en uno, lo que es una gran solución si no quieres tocar ningún código. Pero con un poco de esfuerzo puedes producir sitios más rápidos y pulidos utilizando componentes web modernos y teniendo más control sobre el proceso.</p>
+<p><a href="https://www.11ty.dev/" class="ext-link" rel="external " onclick="this.target='_blank';">Eleventy</a> (a menudo abreviado como 11ty) es otra herramienta más en la bolsa de herramientas de JavaScript con nombres extraños. Pero, ¿ qué <a href="https://thenewstack.io/the-need-for-speed-why-eleventy-leaves-bundlers-behind/" target="_blank" class="local-link" rel="noopener">ofrece</a> como generador de sitios estáticos? Además de comprender muchos lenguajes de plantillas, observo que muchas de las ventajas que se le atribuyen son cosas que solo tienen sentido si ya estás familiarizado con las limitaciones de otros sistemas. Así que voy a profundizar y echar un vistazo, explicando a medida que avanzo. Esta publicación asume que puedes estar dispuesto a actualizar tu propio sitio, pero que no haces este tipo de cosas para ganarte la vida. (No hablaré de hacer público el sitio, ya que lo cubrí en la publicación de Netlify).</p>
+<p>Eleventy tiene lo que me gusta mucho ver: <a href="https://www.11ty.dev/docs/get-started/" class="ext-link" rel="external " onclick="this.target='_blank';">instrucciones para un inicio rápido</a> . También utiliza <a href="https://thenewstack.io/obsidian-and-the-case-for-using-more-markdown/" class="local-link">Markdown</a> directamente de fábrica. En primer lugar, supuse que tendría que actualizar mi Node.js, que parece ser la forma en que comienzo todas las cosas con JavaScript en estos días. Para mi sorpresa, después de abrir mi <a href="https://thenewstack.io/a-review-of-warp-another-rust-based-terminal/" class="local-link">terminal Warp</a>  ya tenía más de la versión 14 requerida:</p>
+<div id="crayon-672dd93f96d8c548549798" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d8c548549798-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d8c548549798-2">2</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d8c548549798-1" class="crayon-line"><span class="crayon-h">&gt;</span> <span class="crayon-i">node</span> --<span class="crayon-e">version </span></div>
+<div id="crayon-672dd93f96d8c548549798-2" class="crayon-line crayon-striped-line"><span class="crayon-i">v18</span><span class="crayon-st">.</span><span class="crayon-cn">15.0</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Bien, tal como se me indicó, creé un directorio, creé un package.json en blanco y dejé que npm instalara lo necesario:</p>
+<div id="crayon-672dd93f96d97096684716" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d97096684716-1"><code>1</code></div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d97096684716-2"><code>2</code></div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d97096684716-1" class="crayon-line"><code><span class="crayon-h">&gt;</span> <span class="crayon-e">npm </span><span class="crayon-i">install</span> @<span class="crayon-cn">11ty</span>/<span class="crayon-i">eleventy</span> --<span class="crayon-i">save</span>-<span class="crayon-e">dev </span></code></div>
+<div id="crayon-672dd93f96d97096684716-2" class="crayon-line crayon-striped-line"><code><span class="crayon-i">added</span> <span class="crayon-cn">214</span> <span class="crayon-i">packages</span>, <span class="crayon-e">and </span><span class="crayon-i">audited</span> <span class="crayon-cn">215</span> <span class="crayon-e">packages </span><span class="crayon-i">in</span> <span class="crayon-cn">18s</span></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Genial. Ahora crearemos dos tipos diferentes de archivo de contenido (o plantilla) y veremos qué hace Eleventy con ellos. Como se me indicó, los produje en la línea de comandos.</p>
+<div id="crayon-672dd93f96d99004456258" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d99004456258-1"><code>1</code></div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d99004456258-1" class="crayon-line"><code><span class="crayon-r">echo</span> <span class="crayon-s">'&lt;!doctype html&gt;&lt;title&gt;Page title&lt;/title&gt;&lt;p&gt;Hi&lt;/p&gt;'</span> <span class="crayon-h">&gt;</span> <span class="crayon-i">index</span><span class="crayon-st">.</span><span class="crayon-v">html</span></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Este primer ejemplo es HTML puro, que tal como está no necesita ningún procesamiento adicional.</p>
+<div id="crayon-672dd93f96d9a061170843" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d9a061170843-1"><code>1</code></div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d9a061170843-1" class="crayon-line"><code><span class="crayon-r">echo</span> <span class="crayon-s">'# Page header'</span> <span class="crayon-h">&gt;</span> <span class="crayon-i">README</span><span class="crayon-st">.</span><span class="crayon-v">md</span></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Y esto es Markdown. Ejecutemos Eleventy y veamos qué hace:</p>
+<div id="attachment_22729473" class="wp-caption aligncenter"><a href="https://cdn.thenewstack.io/media/2024/01/ea4b2b8f-untitled-1024x200.png" class="pswp-trigger" data-pswp-width="1024" data-pswp-height="200"><figure class="wp-image-22729473 size-large"><img  src="https://cdn.thenewstack.io/media/2024/01/ea4b2b8f-untitled-1024x200.png" alt="" width="1024" height="200" loading="lazy" aria-describedby="caption-attachment-22729473" data-is-external-image="true"></figure>
+<div class="pswp-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</div>
+</a>
+<p id="caption-attachment-22729473" class="wp-caption-text">corriendo 11ty</p>
+</div>
+<p>Creó un directorio <strong>de salida</strong> _site , convirtió el Markdown a HTML y envió el <em>index.html</em> directamente allí. Si observamos el nuevo directorio <em>_site</em> , se confirma que:</p>
+<figure class="aligncenter wp-image-22729471 size-full"><a href="https://cdn.thenewstack.io/media/2024/01/5e3ca6df-untitled-1.png" class="pswp-trigger no-caption" data-pswp-width="762" data-pswp-height="318"><img  src="https://cdn.thenewstack.io/media/2024/01/5e3ca6df-untitled-1.png" alt="" width="762" height="318" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/01/5e3ca6df-untitled-1.png" class="pswp-trigger no-caption" data-pswp-width="762" data-pswp-height="318"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</a></div>
+<p> </p>
+<p>Por lo tanto, trató la salida de mi archivo <a href="http://readme.md/" class="ext-link" rel="external " onclick="this.target='_blank';">README.md</a> como una nueva ruta, con su propia página de índice predeterminada. También pareció utilizar <a href="https://www.11ty.dev/docs/languages/liquid/" class="ext-link" rel="external " onclick="this.target='_blank';">Liquid</a> , un <a href="https://liquidjs.com/tutorials/intro-to-liquid.html" class="ext-link" rel="external " onclick="this.target='_blank';">lenguaje de plantillas</a> , para determinar qué hacer con los archivos.</p>
+<div class="tns-trending-stories-block inline" data-context="inline">
+<div class="section-heading">HISTORIAS DE TENDENCIA</div>
+<div class="tns-trending-stories-list tns-trending-stories-list-inline tns-trending-stories-list-672dd93fbb2fd" data-uuid="672dd93fbb2fd" data-context="inline">
+<ol class="tns-trending-stories-ol">
+<li><a href="https://thenewstack.io/vercel-makes-changes-to-next-js-to-simplify-self-hosting/" class="trending-story-link " aria-label="Vercel realiza cambios en Next.js para simplificar el alojamiento propio" data-context="inline" data-url="https://thenewstack.io/vercel-makes-changes-to-next-js-to-simplify-self-hosting">Vercel realiza cambios en Next.js para simplificar el alojamiento propio</a></li>
+<li><a href="https://thenewstack.io/opennext-gets-closer-to-making-next-js-truly-portable/" class="trending-story-link " aria-label="OpenNext se acerca a hacer que Next.js sea verdaderamente portable" data-context="inline" data-url="https://thenewstack.io/opennext-gets-closer-to-making-next-js-truly-portable">OpenNext se acerca a hacer que Next.js sea verdaderamente portable</a></li>
+<li><a href="https://thenewstack.io/how-microsoft-edge-is-replacing-react-with-web-components/" class="trending-story-link " aria-label="Cómo Microsoft Edge está reemplazando a React con componentes web" data-context="inline" data-url="https://thenewstack.io/how-microsoft-edge-is-replacing-react-with-web-components">Cómo Microsoft Edge está reemplazando a React con componentes web</a></li>
+<li><a href="https://thenewstack.io/github-unveils-ai-tool-for-micro-apps-and-improves-copilot/" class="trending-story-link " aria-label="GitHub presenta una herramienta de inteligencia artificial para microaplicaciones y mejora Copilot" data-context="inline" data-url="https://thenewstack.io/github-unveils-ai-tool-for-micro-apps-and-improves-copilot">GitHub presenta una herramienta de inteligencia artificial para microaplicaciones y mejora Copilot</a></li>
+<li><a href="https://thenewstack.io/whats-next-for-flutter-after-layoffs-hit-google-team/" class="trending-story-link " aria-label="¿Qué sigue para Flutter después de los despidos en el equipo de Google?" data-context="inline" data-url="https://thenewstack.io/whats-next-for-flutter-after-layoffs-hit-google-team">¿Qué sigue para Flutter después de los despidos en el equipo de Google?</a></li>
+</ol>
+</div>
+</div>
+<p>Ahora veamos el sitio en un servidor local:</p>
+<div id="crayon-672dd93f96d9b322952154" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d9b322952154-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9b322952154-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96d9b322952154-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9b322952154-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96d9b322952154-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9b322952154-6">6</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d9b322952154-1" class="crayon-line"><span class="crayon-i">npx</span> @<span class="crayon-cn">11ty</span>/<span class="crayon-i">eleventy</span> --<span class="crayon-i">serve</span></div>
+<div id="crayon-672dd93f96d9b322952154-2" class="crayon-line crayon-striped-line">[<span class="crayon-cn">11ty</span>] <span class="crayon-e">Writing </span><span class="crayon-i">_site</span>/<span class="crayon-i">README</span>/<span class="crayon-i">index</span>.<span class="crayon-e">html </span><span class="crayon-st">from</span> ./<span class="crayon-i">README</span>.<span class="crayon-e">md</span> (<span class="crayon-i">liquid</span>)</div>
+<div id="crayon-672dd93f96d9b322952154-3" class="crayon-line">[<span class="crayon-cn">11ty</span>] <span class="crayon-e">Writing </span><span class="crayon-i">_site</span>/<span class="crayon-i">index</span>.<span class="crayon-e">html </span><span class="crayon-st">from</span> ./<span class="crayon-i">index</span>.<span class="crayon-e">html</span> (<span class="crayon-i">liquid</span>)</div>
+<div id="crayon-672dd93f96d9b322952154-4" class="crayon-line crayon-striped-line">[<span class="crayon-cn">11ty</span>] <span class="crayon-i">Wrote</span> <span class="crayon-cn">2</span> <span class="crayon-e">files </span><span class="crayon-st">in</span> <span class="crayon-cn">0.51</span> <span class="crayon-e">seconds</span> (<span class="crayon-i">v2</span>.<span class="crayon-cn">0.1</span>)</div>
+<div id="crayon-672dd93f96d9b322952154-5" class="crayon-line">[<span class="crayon-cn">11ty</span>] <span class="crayon-i">Watching</span>…</div>
+<div id="crayon-672dd93f96d9b322952154-6" class="crayon-line crayon-striped-line">[<span class="crayon-cn">11ty</span>] <span class="crayon-e">Server </span><span class="crayon-e">at </span><span class="crayon-i">http</span>://<span class="crayon-i">localhost</span>:<span class="crayon-cn">8080</span>/</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Como era de esperar, obtenemos una página en http://localhost:8080 con un solo “Hola” y una página en http://localhost:8080/README con las palabras “Encabezado de página” entre &lt;h1&gt;. Puedes dejar este proceso para que “cargue en caliente” las páginas nuevas y presionar Ctrl+C cuando quieras reiniciar.</p>
+<p>De esta forma, es fácil poner en funcionamiento los conceptos básicos y los resultados son una estructura de salida sensata. Y todo esto fue lo que se explica en la guía. (También podríamos haber creado un directorio de origen de entrada).</p>
+<h2>Lenguajes de plantilla y Front Matter</h2>
+<p>Ahora, lo interesante. En el caso de un sitio web personal, queremos que nuestras páginas compartan un diseño. Queremos mantener nuestro contenido en Markdown y dejar que Eleventy haga el sitio por nosotros. Hay dos conceptos útiles que Eleventy utiliza para hacer esto.</p>
+<p><strong>Los lenguajes de plantilla</strong> permiten intercalar el lenguaje de salida deseado (HTML para un sitio web) con instrucciones de código. Por lo general, debemos diferenciar entre líneas que dicen “esto es código, déjelo así” y líneas que dicen “coloque el resultado de esto en la pantalla”. Como vimos, Eleventy usa la plantilla <a href="https://shopify.github.io/liquid/basics/types/" class="ext-link" rel="external " onclick="this.target='_blank';">Liquid de manera predeterminada.</a></p>
+<p>Así que aquí hay un Liquid simple, que muestra todos los bits:</p>
+<div id="crayon-672dd93f96d9d468370056" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d9d468370056-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9d468370056-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96d9d468370056-3">3</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d9d468370056-1" class="crayon-line">{%ifusername%}</div>
+<div id="crayon-672dd93f96d9d468370056-2" class="crayon-line crayon-striped-line">Hello <span class="crayon-r ">&lt;b&gt;</span><span class="crayon-i ">{{ username }}</span><span class="crayon-r ">&lt;/b&gt;</span>!</div>
+<div id="crayon-672dd93f96d9d468370056-3" class="crayon-line">{% endif %}</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Esta es una declaración <em>condicional if</em> simple que envuelve algo de HTML, que incluye una referencia. De modo que los bits de código verifican la existencia de una variable llamada <em>username</em> . Si esa variable existe, imprimimos este username como sugiere el HTML, usando los corchetes dobles para indicar que queremos el resultado en la pantalla. Puedo poner esto directamente en mi archivo de plantilla <strong>de origen</strong> index.html page y ejecutarlo.</p>
+<p>Sin embargo, estará en blanco porque el nombre de usuario no existe. Pero puedo asignar uno:</p>
+<div id="crayon-672dd93f96d9f792605157" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96d9f792605157-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9f792605157-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96d9f792605157-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9f792605157-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96d9f792605157-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96d9f792605157-6">6</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96d9f792605157-1" class="crayon-line"><span class="crayon-n">&lt;!doctype html&gt;</span></div>
+<div id="crayon-672dd93f96d9f792605157-2" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;title&gt;</span><span class="crayon-i ">Page title</span><span class="crayon-r ">&lt;/title&gt;</span></div>
+<div id="crayon-672dd93f96d9f792605157-3" class="crayon-line"><span class="crayon-i ">{% assign username = "David"%}</span></div>
+<div id="crayon-672dd93f96d9f792605157-4" class="crayon-line crayon-striped-line"><span class="crayon-i ">{% if username %}</span></div>
+<div id="crayon-672dd93f96d9f792605157-5" class="crayon-line"><span class="crayon-i ">Hello </span><span class="crayon-r ">&lt;b&gt;</span><span class="crayon-i ">{{ username }}</span><span class="crayon-r ">&lt;/b&gt;</span>!</div>
+<div id="crayon-672dd93f96d9f792605157-6" class="crayon-line crayon-striped-line">{% endif %}</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Si guardas y aún mantienes el servidor en funcionamiento, verás esto en tu navegador:</p>
+<div id="attachment_22729472" class="wp-caption aligncenter"><a href="https://cdn.thenewstack.io/media/2024/01/0b4d132d-untitled-2.png" class="pswp-trigger" data-pswp-width="534" data-pswp-height="166"><figure class="wp-image-22729472 size-full"><img  src="https://cdn.thenewstack.io/media/2024/01/0b4d132d-untitled-2.png" alt="" width="534" height="166" loading="lazy" aria-describedby="caption-attachment-22729472" data-is-external-image="true"></figure>
+<div class="pswp-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</div>
+</a>
+<p id="caption-attachment-22729472" class="wp-caption-text">Un poco de líquido</p>
+</div>
+<p>Ahora, pasamos sin problemas al otro concepto útil que comparten todas las plantillas: <strong>front matter</strong> . Esto nos permite definir variables (o metadatos) en cualquier plantilla, como hicimos para Liquid. Si modificamos nuevamente el <em>index.html </em> de la fuente , la declaración front matter también declara a David como nombre de usuario:</p>
+<div id="crayon-672dd93f96da1623657461" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96da1623657461-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da1623657461-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da1623657461-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da1623657461-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da1623657461-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da1623657461-6">6</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da1623657461-7">7</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da1623657461-8">8</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da1623657461-9">9</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96da1623657461-1" class="crayon-line">---</div>
+<div id="crayon-672dd93f96da1623657461-2" class="crayon-line crayon-striped-line">username: <span class="crayon-s ">"David"</span></div>
+<div id="crayon-672dd93f96da1623657461-3" class="crayon-line">---</div>
+<div id="crayon-672dd93f96da1623657461-4" class="crayon-line crayon-striped-line"><span class="crayon-n">&lt;!doctype html&gt;</span></div>
+<div id="crayon-672dd93f96da1623657461-5" class="crayon-line"><span class="crayon-r ">&lt;title&gt;</span><span class="crayon-i ">Page title</span><span class="crayon-r ">&lt;/title&gt;</span></div>
+<div id="crayon-672dd93f96da1623657461-6" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672dd93f96da1623657461-7" class="crayon-line"><span class="crayon-i ">{% if username %}</span></div>
+<div id="crayon-672dd93f96da1623657461-8" class="crayon-line crayon-striped-line"><span class="crayon-i ">Hello </span><span class="crayon-r ">&lt;b&gt;</span><span class="crayon-i ">{{ username }}</span><span class="crayon-r ">&lt;/b&gt;</span>!</div>
+<div id="crayon-672dd93f96da1623657461-9" class="crayon-line">{% endif %}</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Y también podemos hacerlo en Markdown.</p>
+<h2>Creando el sitio web</h2>
+<p>Bien, volvamos a nuestro sitio web. Un recordatorio:</p>
+<ul>
+<li>Queremos que las páginas de nuestro sitio web utilicen un diseño.</li>
+<li>Pero sólo queremos escribir contenido en Markdown, no hackear HTML.</li>
+</ul>
+<p>En primer lugar, le pedí a ChatGPT que “creara una plantilla HTML con una bonita imagen de un gato”.</p>
+<p>El resultado fue el siguiente:</p>
+<div id="crayon-672dd93f96da2753668251" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-6">6</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-7">7</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-8">8</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-9">9</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-10">10</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-11">11</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-12">12</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-13">13</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-14">14</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-15">15</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-16">16</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-17">17</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-18">18</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-19">19</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-20">20</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-21">21</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-22">22</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-23">23</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-24">24</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-25">25</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-26">26</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-27">27</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-28">28</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-29">29</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-30">30</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-31">31</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-32">32</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-33">33</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-34">34</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-35">35</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-36">36</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-37">37</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-38">38</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-39">39</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-40">40</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-41">41</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-42">42</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-43">43</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-44">44</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-45">45</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-46">46</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-47">47</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-48">48</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-49">49</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-50">50</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da2753668251-51">51</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da2753668251-52">52</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96da2753668251-1" class="crayon-line"><span class="crayon-n">&lt;!DOCTYPE html&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-2" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;html </span><span class="crayon-e ">lang</span>=<span class="crayon-s ">"en"</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-3" class="crayon-line"><span class="crayon-r ">&lt;head&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-4" class="crayon-line crayon-striped-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;meta </span><span class="crayon-e ">charset</span>=<span class="crayon-s ">"UTF-8"</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-5" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;meta </span><span class="crayon-e ">name</span>=<span class="crayon-s ">"viewport"</span> <span class="crayon-e ">content</span>=<span class="crayon-s ">"width=device-width, initial-scale=1.0"</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-6" class="crayon-line crayon-striped-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;title&gt;</span><span class="crayon-i ">Nice Cat Page</span><span class="crayon-r ">&lt;/title&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-7" class="crayon-line"><span class="crayon-i ">    <span class="crayon-ta">&lt;style&gt;</span></span></div>
+<div id="crayon-672dd93f96da2753668251-8" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span><span class="crayon-k ">body </span>{</div>
+<div id="crayon-672dd93f96da2753668251-9" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">font-family</span>: <span class="crayon-i ">Arial,</span> <span class="crayon-i ">sans-serif</span>;</div>
+<div id="crayon-672dd93f96da2753668251-10" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">text-align</span>: <span class="crayon-i ">center</span>;</div>
+<div id="crayon-672dd93f96da2753668251-11" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">background-color</span>: <span class="crayon-i ">#f8f8f8</span>;</div>
+<div id="crayon-672dd93f96da2753668251-12" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">margin</span>: <span class="crayon-i ">0</span>;</div>
+<div id="crayon-672dd93f96da2753668251-13" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">padding</span>: <span class="crayon-i ">0</span>;</div>
+<div id="crayon-672dd93f96da2753668251-14" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span>}</div>
+<div id="crayon-672dd93f96da2753668251-15" class="crayon-line"></div>
+<div id="crayon-672dd93f96da2753668251-16" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span><span class="crayon-k ">header </span>{</div>
+<div id="crayon-672dd93f96da2753668251-17" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">background-color</span>: <span class="crayon-i ">#333</span>;</div>
+<div id="crayon-672dd93f96da2753668251-18" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">color</span>: <span class="crayon-i ">white</span>;</div>
+<div id="crayon-672dd93f96da2753668251-19" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">padding</span>: <span class="crayon-i ">10px</span>;</div>
+<div id="crayon-672dd93f96da2753668251-20" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span>}</div>
+<div id="crayon-672dd93f96da2753668251-21" class="crayon-line"></div>
+<div id="crayon-672dd93f96da2753668251-22" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span><span class="crayon-k ">img </span>{</div>
+<div id="crayon-672dd93f96da2753668251-23" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">max-width</span>: <span class="crayon-i ">100%</span>;</div>
+<div id="crayon-672dd93f96da2753668251-24" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">height</span>: <span class="crayon-i ">auto</span>;</div>
+<div id="crayon-672dd93f96da2753668251-25" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">border-radius</span>: <span class="crayon-i ">8px</span>;</div>
+<div id="crayon-672dd93f96da2753668251-26" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">margin-top</span>: <span class="crayon-i ">20px</span>;</div>
+<div id="crayon-672dd93f96da2753668251-27" class="crayon-line"><span class="crayon-h">        </span>}</div>
+<div id="crayon-672dd93f96da2753668251-28" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672dd93f96da2753668251-29" class="crayon-line"><span class="crayon-h">        </span><span class="crayon-k ">footer </span>{</div>
+<div id="crayon-672dd93f96da2753668251-30" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">background-color</span>: <span class="crayon-i ">#333</span>;</div>
+<div id="crayon-672dd93f96da2753668251-31" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">color</span>: <span class="crayon-i ">white</span>;</div>
+<div id="crayon-672dd93f96da2753668251-32" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">padding</span>: <span class="crayon-i ">10px</span>;</div>
+<div id="crayon-672dd93f96da2753668251-33" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">position</span>: <span class="crayon-i ">fixed</span>;</div>
+<div id="crayon-672dd93f96da2753668251-34" class="crayon-line crayon-striped-line"><span class="crayon-h">            </span><span class="crayon-e ">bottom</span>: <span class="crayon-i ">0</span>;</div>
+<div id="crayon-672dd93f96da2753668251-35" class="crayon-line"><span class="crayon-h">            </span><span class="crayon-e ">width</span>: <span class="crayon-i ">100%</span>;</div>
+<div id="crayon-672dd93f96da2753668251-36" class="crayon-line crayon-striped-line"><span class="crayon-h">        </span>}</div>
+<div id="crayon-672dd93f96da2753668251-37" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-ta">&lt;/style&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-38" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;/head&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-39" class="crayon-line"><span class="crayon-r ">&lt;body&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-40" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672dd93f96da2753668251-41" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;header&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-42" class="crayon-line crayon-striped-line"><span class="crayon-i ">        </span><span class="crayon-r ">&lt;h1&gt;</span><span class="crayon-i ">Nice Cat Page</span><span class="crayon-r ">&lt;/h1&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-43" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;/header&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-44" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672dd93f96da2753668251-45" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;img </span><span class="crayon-e ">src</span>=<span class="crayon-s ">"https://placekitten.com/800/400"</span> <span class="crayon-e ">alt</span>=<span class="crayon-s ">"A nice cat"</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-46" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672dd93f96da2753668251-47" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;footer&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-48" class="crayon-line crayon-striped-line"><span class="crayon-i ">        </span><span class="crayon-r ">&lt;p&gt;</span><span class="crayon-i ">&amp;copy; 2024 Nice Cat Page. All rights reserved.</span><span class="crayon-r ">&lt;/p&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-49" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;/footer&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-50" class="crayon-line crayon-striped-line"></div>
+<div id="crayon-672dd93f96da2753668251-51" class="crayon-line"><span class="crayon-r ">&lt;/body&gt;</span></div>
+<div id="crayon-672dd93f96da2753668251-52" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;/html&gt;</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Si reemplazo nuestra página <em>index.html</em> con esta, inmediatamente vemos una linda página con un gato:</p>
+<figure class="aligncenter wp-image-22729470 size-large"><a href="https://cdn.thenewstack.io/media/2024/01/3eea7275-untitled-3-1024x733.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="733"><img  src="https://cdn.thenewstack.io/media/2024/01/3eea7275-untitled-3-1024x733.png" alt="" width="1024" height="733" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/01/3eea7275-untitled-3-1024x733.png" class="pswp-trigger no-caption" data-pswp-width="1024" data-pswp-height="733"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</a></div>
+<p> </p>
+<p>Pero queremos que esta sea nuestra página de diseño. Queremos que el título real de nuestra página aparezca donde aparece "Página de lindos gatos" y queremos colocar contenido de texto real justo debajo del gato.</p>
+<p>Así que cambiemos el nombre de esta página del gato <em>a layout.html</em> y modifiquémosla para incluir las variables de plantilla Liquid que deseamos. Aquí...</p>
+<div id="crayon-672dd93f96da3912420872" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96da3912420872-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da3912420872-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da3912420872-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da3912420872-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da3912420872-5">5</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96da3912420872-1" class="crayon-line">..</div>
+<div id="crayon-672dd93f96da3912420872-2" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;header&gt;</span></div>
+<div id="crayon-672dd93f96da3912420872-3" class="crayon-line"><span class="crayon-i ">   </span><span class="crayon-r ">&lt;h1&gt;</span><span class="crayon-i ">{{ title }}</span><span class="crayon-r ">&lt;/h1&gt;</span></div>
+<div id="crayon-672dd93f96da3912420872-4" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;/header&gt;</span></div>
+<div id="crayon-672dd93f96da3912420872-5" class="crayon-line">..</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>…y aquí:</p>
+<div id="crayon-672dd93f96da5100752181" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96da5100752181-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da5100752181-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da5100752181-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da5100752181-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da5100752181-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da5100752181-6">6</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da5100752181-7">7</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96da5100752181-1" class="crayon-line">..</div>
+<div id="crayon-672dd93f96da5100752181-2" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;img </span><span class="crayon-e ">src</span>=<span class="crayon-s ">"https://placekitten.com/800/400"</span> <span class="crayon-e ">alt</span>=<span class="crayon-s ">"A nice cat"</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-672dd93f96da5100752181-3" class="crayon-line"><span class="crayon-i ">        {{content}}</span></div>
+<div id="crayon-672dd93f96da5100752181-4" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;footer&gt;</span></div>
+<div id="crayon-672dd93f96da5100752181-5" class="crayon-line"><span class="crayon-i ">    </span><span class="crayon-r ">&lt;p&gt;</span><span class="crayon-i ">&amp;copy; 2024 Nice Cat Page. All rights reserved.</span><span class="crayon-r ">&lt;/p&gt;</span></div>
+<div id="crayon-672dd93f96da5100752181-6" class="crayon-line crayon-striped-line"><span class="crayon-r ">&lt;/footer&gt;</span></div>
+<div id="crayon-672dd93f96da5100752181-7" class="crayon-line">..</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>A diferencia del <em>título variable,</em> el <em>contenido</em> variable es un elemento especial que Eleventy rastrea. Entiende que, cuando se utiliza un diseño, todo el contenido de la página va en este lugar.</p>
+<p>Pero si simplemente seguimos con esto, Eleventy pensará que la página de diseño es solo una ruta como README. Por lo tanto, la colocamos en una carpeta especial llamada <strong>_includes</strong> que no se creará, pero se puede hacer referencia a ella. Si limpiamos el directorio _site <em>(</em> las páginas antiguas permanecerán) e ignoramos el enorme directorio <em>node-modules</em> , debería tener esto:</p>
+<figure class="alignnone size-medium wp-image-22729468"><a href="https://cdn.thenewstack.io/media/2024/01/f9776109-untitled-4-300x190.png" class="pswp-trigger no-caption" data-pswp-width="300" data-pswp-height="190"><img  src="https://cdn.thenewstack.io/media/2024/01/f9776109-untitled-4-300x190.png" alt="" width="300" height="190" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/01/f9776109-untitled-4-300x190.png" class="pswp-trigger no-caption" data-pswp-width="300" data-pswp-height="190"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</a></div>
+<p> </p>
+<p>Como no se abre el archivo index.html, no se mostrará nada. Lo único que tenemos es el README antiguo.</p>
+<p>Ahora, vamos a crear un index.md, a contarle el título, el contenido y el diseño. Para ello, utilizamos front matter:</p>
+<div id="crayon-672dd93f96da6294747584" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap"> </div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-672dd93f96da6294747584-1">1</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da6294747584-2">2</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da6294747584-3">3</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da6294747584-4">4</div>
+<div class="crayon-num" data-line="crayon-672dd93f96da6294747584-5">5</div>
+<div class="crayon-num crayon-striped-num" data-line="crayon-672dd93f96da6294747584-6">6</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-672dd93f96da6294747584-1" class="crayon-line">---</div>
+<div id="crayon-672dd93f96da6294747584-2" class="crayon-line crayon-striped-line">layout: <span class="crayon-s ">"layout.html"</span></div>
+<div id="crayon-672dd93f96da6294747584-3" class="crayon-line">title: <span class="crayon-s ">"Davids Website"</span></div>
+<div id="crayon-672dd93f96da6294747584-4" class="crayon-line crayon-striped-line">---</div>
+<div id="crayon-672dd93f96da6294747584-5" class="crayon-line"></div>
+<div id="crayon-672dd93f96da6294747584-6" class="crayon-line crayon-striped-line">Hi there, I like cats!!</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>Simple.</p>
+<p>El resultado generado es este como página de índice:</p>
+<div id="attachment_22729469" class="wp-caption alignnone"><a href="https://cdn.thenewstack.io/media/2024/01/007a3a57-untitled-5-1024x624.png" class="pswp-trigger" data-pswp-width="1024" data-pswp-height="624"><figure class="wp-image-22729469 size-large"><img  src="https://cdn.thenewstack.io/media/2024/01/007a3a57-untitled-5-1024x624.png" alt="" width="1024" height="624" loading="lazy" aria-describedby="caption-attachment-22729469" data-is-external-image="true"></figure>
+<div class="pswp-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</div>
+</a>
+<p id="caption-attachment-22729469" class="wp-caption-text">Nuevo gatito, nuevo peligro</p>
+</div>
+<p>Tenga en cuenta que se sirve un gatito en un lugar diferente.</p>
+<p>Y el diseño final del directorio es:</p>
+<figure class="alignnone size-medium wp-image-22729467"><a href="https://cdn.thenewstack.io/media/2024/01/aa60e3af-untitled-6-300x199.png" class="pswp-trigger no-caption" data-pswp-width="300" data-pswp-height="199"><img  src="https://cdn.thenewstack.io/media/2024/01/aa60e3af-untitled-6-300x199.png" alt="" width="300" height="199" loading="lazy" data-is-external-image="true"></figure></a></p>
+<div class="pswp-zoom-icon"><a href="https://cdn.thenewstack.io/media/2024/01/aa60e3af-untitled-6-300x199.png" class="pswp-trigger no-caption" data-pswp-width="300" data-pswp-height="199"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewbox="0 0 24 24"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5zm-4.5 8h4v-4h1v4h4v1h-4v4h-1v-4h-4v-1z"></path></svg>Zoom</a></div>
+<p> </p>
+<p>Esto debería ser suficiente para despertar en usted el entusiasmo por escribir su propio sitio, o tal vez para desanimarlo. Sin embargo, deberá profundizar más para obtener todos los componentes interesantes de un sitio moderno, y lo haré en una publicación posterior. La moraleja, por ahora, es que Eleventy nos brinda un proceso agradable y fluido que funciona con las tecnologías existentes y al mismo tiempo nos guía hacia las buenas prácticas.</p>
+</div>
+</div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Frameworks de Python que debes conocer</title>
         <author>
@@ -2220,426 +3359,6 @@ CMD ["python", "main.py"]
 </div>
 </div>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Configuración y uso de Python</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/configuracion-y-uso-de-python.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/configuracion-y-uso-de-python.html</id>
-            <category term="Python"/>
-
-        <updated>2024-11-10T02:38:08-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Esta parte de la documentación está dedicada a información general sobre la configuración del entorno Python en diferentes plataformas, la&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Esta parte de la documentación está dedicada a información general sobre la configuración del entorno Python en diferentes plataformas, la invocación del intérprete y cosas que facilitan el trabajo con Python.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html">1. Línea de comandos y entorno</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#command-line">1.1. Línea de comando</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#interface-options">1.1.1. Opciones de interfaz</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#generic-options">1.1.2. Opciones genéricas</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#miscellaneous-options">1.1.3. Opciones diversas</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#options-you-shouldn-t-use">1.1.4. Opciones que no debe usar</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#environment-variables">1.2. Variables de entorno</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/cmdline.html#debug-mode-variables">1.2.1. Variables de modo de depuración</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html">2. Uso de Python en plataformas Unix</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#getting-and-installing-the-latest-version-of-python">2.1. Obteniendo e instalando la última versión de Python</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#on-linux">2.1.1. En Linux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#on-freebsd-and-openbsd">2.1.2. En FreeBSD y OpenBSD</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#on-opensolaris">2.1.3. En OpenSolaris</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#building-python">2.2. Construyendo Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#python-related-paths-and-files">2.3. Rutas y archivos relacionados con Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#miscellaneous">2.4. Miscelánea</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/unix.html#custom-openssl">2.5. OpenSSL personalizado</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html">3. Configurar Python</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#configure-options">3.1. Configurar opciones</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#general-options">3.1.1. Opciones generales</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#webassembly-options">3.1.2. Opciones de WebAssembly</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#install-options">3.1.3. Opciones de instalación</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#performance-options">3.1.4. Opciones de desempeño</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#python-debug-build">3.1.5. Compilación de depuración de Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#debug-options">3.1.6. Opciones de depuración</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#linker-options">3.1.7. Opciones del enlazador</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#libraries-options">3.1.8. Opciones de bibliotecas</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#security-options">3.1.9. Opciones de seguridad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#macos-options">3.1.10. Opciones macOS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#cross-compiling-options">3.1.11. Opciones de compilación cruzada</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#python-build-system">3.2. Sistema de compilación Python</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#main-files-of-the-build-system">3.2.1. Archivos principales del sistema de compilación</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#main-build-steps">3.2.2. Pasos principales de compilación</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#main-makefile-targets">3.2.3. Objetivos principales de Makefile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#c-extensions">3.2.4. Extensiones C</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#compiler-and-linker-flags">3.3. Banderas de compilador y vinculación</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#preprocessor-flags">3.3.1. Banderas del preprocesador</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#compiler-flags">3.3.2. Banderas del compilador</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/configure.html#linker-flags">3.3.3. Banderas de vinculación</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html">4. Uso de Python en Windows</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#the-full-installer">4.1. El instalador completo</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#installation-steps">4.1.1. Pasos para la instalación</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#removing-the-max-path-limitation">4.1.2. Quitar el límite de MAX_PATH</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#installing-without-ui">4.1.3. Instalación sin interfaz de usuario</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#installing-without-downloading">4.1.4. Instalación sin descargas</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#modifying-an-install">4.1.5. Modificar una instalación</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#the-microsoft-store-package">4.2. El paquete Microsoft Store</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#known-issues">4.2.1. Problemas conocidos</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#redirection-of-local-data-registry-and-temporary-paths">4.2.1.1. Redirección de datos locales, registro y rutas temporales</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#the-nuget-org-packages">4.3. El paquete de nuget.org</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#the-embeddable-package">4.4. El paquete incrustable</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#python-application">4.4.1. Aplicación Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#embedding-python">4.4.2. Incrustar Python</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#alternative-bundles">4.5. Distribuciones alternativas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#configuring-python">4.6. Configuración de Python</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#excursus-setting-environment-variables">4.6.1. Excurso: configurar variables de entorno</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#finding-the-python-executable">4.6.2. Encontrar el ejecutable de Python</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#utf-8-mode">4.7. Modo UTF-8</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#python-launcher-for-windows">4.8. Lanzador de Python para Windows</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#getting-started">4.8.1. Comenzar</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#from-the-command-line">4.8.1.1. Desde la línea de comandos</a></li>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#virtual-environments">4.8.1.2. Entornos virtuales</a></li>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#from-a-script">4.8.1.3. Desde un script</a></li>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#from-file-associations">4.8.1.4. Desde asociaciones de archivos</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#shebang-lines">4.8.2. Líneas shebang</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#arguments-in-shebang-lines">4.8.3. Argumentos en líneas shebang</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#customization">4.8.4. Personalización</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#customization-via-ini-files">4.8.4.1. Personalización con archivos INI</a></li>
-<li class="toctree-l4"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#customizing-default-python-versions">4.8.4.2. Personalizar las versiones de Python predeterminadas</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#diagnostics">4.8.5. Diagnóstico</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#dry-run">4.8.6. Ejecución en seco</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#install-on-demand">4.8.7. Instalación bajo demanda</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#return-codes">4.8.8. Códigos de retorno</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#finding-modules">4.9. Encontrar módulos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#additional-modules">4.10. Módulos adicionales</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#pywin32">4.10.1. PyWin32</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#cx-freeze">4.10.2. cx_Freeze</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#compiling-python-on-windows">4.11. Compilar Python en Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/windows.html#other-platforms">4.12. Otras plataformas</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html">5. Usando Python en un Mac</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#getting-and-installing-python">5.1. Getting and Installing Python</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#how-to-run-a-python-script">5.1.1. Cómo ejecutar un <em>script</em> de Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#running-scripts-with-a-gui">5.1.2. Ejecutar scripts con una GUI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#configuration">5.1.3. Configuración</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#the-ide">5.2. El IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#installing-additional-python-packages">5.3. Instalación de paquetes adicionales de Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#gui-programming">5.4. GUI Programming</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#distributing-python-applications">5.5. Distributing Python Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/es/3.11/using/mac.html#other-resources">5.6. Otros recursos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/es/3.11/using/editors.html">6. Editores e IDEs</a></li>
-</ul>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Anulaciones de temas</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/anulaciones-de-temas.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/anulaciones-de-temas.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-11-10T01:25:06-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Antes de entrar en el tema "¿Cómo?" y "¿Por qué?", ​​deberíamos familiarizarnos con los conceptos básicos sobre la estructura de&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Antes de entrar en el tema "¿Cómo?" y "¿Por qué?", ​​deberíamos familiarizarnos con los conceptos básicos sobre la estructura de temas de Publii, ya que esto nos ayudará a ver más claramente los beneficios de las modificaciones. Si has revisado un poco los archivos de tu sitio web de Publii (es mucho más fácil hacerlo con las opciones de ubicación de archivos del sitio web que se agregaron en la </span><a href="https://getpublii.com/blog/publii-beta-3.html" target="_blank" rel="noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">versión Beta 3 de Publii</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> ), es posible que hayas visto que hay varios tipos de archivos que se incluyen en la creación de un tema:</span></p>
-</header>
-<div class="post__entry">
-<ul>
-<li><strong>Archivos .hbs</strong> : para que los temas de nuestra aplicación sean más fáciles de entender, se crean con Handlebars, que funciona junto con HTML para crear la estructura de un tema. Esto hace que el código del tema sea más comprensible para los principiantes sin sacrificar la flexibilidad para las personas con un poco más de experiencia.</li>
-<li><strong>Archivos .css</strong> : Handlebars nos brinda la estructura, pero es CSS el que nos brinda el estilo. El código CSS se utiliza para establecer la posición de los elementos, darles color, forma y estilo; todo lo que le da carácter a un tema.</li>
-<li><strong>Archivos .js</strong> : Javascript es la columna vertebral de las funciones más complejas que encontrará en la web moderna; si está interactuando con un sitio web más allá de completar formularios y hacer clic en enlaces, entonces Javascript probablemente esté detrás de ello.</li>
-<li><strong>Archivos .json</strong> : los archivos JSON son, básicamente, archivos de texto que se utilizan para almacenar datos; se utilizan en los temas de Publii para almacenar configuraciones, traducciones de temas y similares.</li>
-</ul>
-<p>Es posible que te encuentres con algunos tipos de archivos más, pero los que se mencionaron anteriormente son, con diferencia, los más comunes y esenciales. Ahora que sabemos qué tipo de archivos hay en los temas, podemos echar un vistazo a lo que pueden hacer las modificaciones.</p>
-<h2 id="whatarethemefileoverrides">¿Qué son las anulaciones de archivos de tema?</h2>
-<p>Como vimos en la última sección, cada parte de un tema determinado está controlada por un tipo de archivo en particular; entonces, ¿qué sucede si queremos realizar cambios en el estilo base o agregar algunos elementos nuevos a la estructura? La respuesta lógica aquí es que puedes usar los archivos existentes; ¿necesitas cambiar el estilo? Abre el archivo CSS correcto y agrega los cambios. Este método funcionará, pero no pasará mucho tiempo hasta que te topes con algunos problemas.</p>
-<p>El mayor problema son las actualizaciones. Digamos que agregas tu propio código a uno de los archivos de tema. Una vez que se lanza una actualización de ese tema, hay una buena posibilidad de que el archivo modificado sea reemplazado durante el proceso de actualización, lo que lo revierte al valor predeterminado y elimina cualquier cambio que hayas agregado antes. Luego está el problema del seguimiento de los cambios. Con tantos archivos que componen un tema, puede ser fácil olvidar exactamente qué archivo se ha modificado con nuestro propio código. Este problema se agrava aún más si varias personas trabajan en el proyecto de forma independiente.</p>
-<p>Las anulaciones brindan una solución a ambos problemas, ya que permiten a los usuarios de Publii crear archivos de anulación, que son esencialmente copias de los archivos de tema existentes que se almacenan por separado y que "anularán" o reemplazarán el archivo original. En pocas palabras, cuando Publii crea el diseño de la página utilizando los archivos de tema, verificará si hay archivos en la ubicación de anulación y reemplazará los archivos de tema existentes con estas anulaciones.</p>
-<p>Al crear una ubicación separada para los archivos de modificación, es posible realizar un seguimiento exacto de los archivos que se han modificado y mantener una ubicación central que no cambie para insertar su propio código en un tema. Y como Publii ignora las carpetas de modificación excepto cuando se crea el sitio web, podrá mantener una copia de seguridad de sus modificaciones incluso durante las actualizaciones de la aplicación. De esta manera, puede aplicar su propio código a un tema sin el riesgo de perder los cambios en las actualizaciones o tener problemas para realizar un seguimiento de los archivos que se han modificado.</p>
-<h2 id="howtouseoverridefiles">Cómo utilizar archivos de anulación</h2>
-<p>Crear archivos de anulación es muy sencillo; solo siga estos pasos:</p>
-<ol>
-<li>Localice el directorio de temas de su sitio web; este estará en la ruta especificada en la opción <strong>Ubicación del sitio en su </strong><strong>Configuración global</strong> de Publii ; por defecto será <strong>C:\Users\yourUserName\Documents\Publii\sites</strong> .</li>
-<li>Dentro de este directorio verás carpetas para cada uno de tus sitios web de Publii; cada sitio web puede tener sus propias modificaciones, así que abre la carpeta del sitio que deseas cambiar. Verás tres carpetas: <strong>input</strong> , <strong>output</strong> y <strong>preview</strong> ; la carpeta themes estará en la carpeta <strong>input</strong> , así que ábrela y, por último, abre la carpeta <strong>themes</strong> ; esta contiene los temas actualmente instalados para el sitio web elegido.</li>
-<li>Ahora necesitamos encontrar la carpeta que contiene el tema para el que queremos crear una anulación y anotar el nombre de la carpeta del tema. Luego, necesitaremos crear una nueva carpeta en el directorio de temas, pero nómbrala <strong>themeName-override</strong> ; por ejemplo, si quisieras modificar el tema Simple, que está en una carpeta llamada <strong>simple</strong> , entonces crearías una carpeta llamada <strong>simple-override</strong> en el directorio de temas de tu carpeta de entrada, por ejemplo  <strong>Documents\Publii\sites\your-siteName\input\themes</strong>
-<pre><code>- simple-override
-  |- index.hbs</code></pre>
-</li>
-<li>¡Ahora estás listo para comenzar a sobrescribir archivos! Puedes sobrescribir prácticamente cualquier archivo del tema simplemente creando una copia en tu nuevo directorio de sobreescritura; copia y pega el archivo desde la ubicación del tema original en la carpeta de sobreescritura; si el archivo original estaba en una subcarpeta de los archivos del tema, entonces la copia de sobreescritura también debería colocarse en una carpeta con el mismo nombre. Por ejemplo, si quisiéramos sobrescribir el archivo <strong>main.css , que está en la carpeta </strong><strong>themeName\assets\css</strong> , entonces necesitaríamos crear una carpeta <strong>assets</strong> en nuestro directorio <strong>themeName-override , luego crear un directorio </strong><strong>css</strong> dentro de ese y, finalmente, crear una copia del archivo <strong>main.css</strong> en la carpeta <strong>css</strong> .</li>
-<li>Una vez hecho esto, Publii utilizará el archivo copiado en el directorio de reemplazo para crear el sitio web en lugar del archivo original, por lo que puede comenzar a agregar su propio código al archivo según sea necesario. Recuerde que solo debe agregar los archivos que desea reemplazar en la carpeta de reemplazo; si no se encuentra un archivo en particular en la carpeta de reemplazo, se utilizará automáticamente el archivo original.</li>
-</ol>
-<h2 id="importantpointstoremember">Puntos importantes para recordar</h2>
-<p>Anular archivos es un proceso muy sencillo como vimos en la sección anterior, pero hay algunas cosas importantes a tener en cuenta al utilizar esta función:</p>
-<ul>
-<li>Si desea anular el archivo <strong>language.json</strong> , es recomendable utilizar el directorio <strong>de idiomas</strong> , ya que esto fusionará el archivo de anulación con el archivo original; puede encontrar detalles sobre cómo hacer esto en nuestra <a href="https://getpublii.com/blog/translate-publii-theme-to-another-language.html" target="_blank" rel="noopener noreferrer">Guía de traducción de temas de Publii</a> .</li>
-<li>Si desea crear un archivo .hbs vacío en el directorio, asegúrese de que contenga al menos un espacio en blanco; si el archivo se deja completamente vacío, recibirá un error al intentar crear su sitio web.</li>
-<li>La versión anulada de su tema no aparecerá en la lista de temas en la configuración básica, solo será visible la versión original del tema.</li>
-<li>El nombre del tema reemplazado no se puede cambiar respecto al original, pero puedes modificar las opciones de configuración.</li>
-<li>Es posible agregar ayudantes adicionales a través del archivo <strong>helpers.js</strong> si es necesario; esto incluye ayudantes que no estaban en la versión original del tema.</li>
-<li>Actualmente, el archivo <strong>miniatura.png</strong> del tema no se puede anular, ya que solo se usa en la pantalla de configuración de la aplicación, donde solo son visibles los archivos del directorio del tema original.</li>
-<li>Si desea insertar archivos adicionales al tema, colóquelos en el directorio de <strong>activos</strong> .</li>
-</ul>
-<p>Con eso en mente, ya estás listo para comenzar; ¡diviértete agregando tus propios toques personales a los temas que encuentres en Publii, y si tienes alguna pregunta sobre la guía anterior, no dudes en contactarnos en los comentarios a continuación!</p>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Mejorar los temas con fuentes cargadas localmente</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/mejorar-los-temas-con-fuentes-cargadas-localmente.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/mejorar-los-temas-con-fuentes-cargadas-localmente.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-11-10T01:22:13-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Mejorar los temas con fuentes cargadas localmente Los temas son lo que realmente hace que su sitio web se destaque,&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2><span>Mejorar los temas con fuentes cargadas localmente</span></h2>
-<p><span>Los temas son lo que realmente hace que su sitio web se destaque, por lo que es importante que sigamos presentando nuevas funciones de temas para que realmente destaquen. En esta versión, la característica destacada de los temas, además de la incorporación de compatibilidad con comentarios a través de complementos, es la nueva función </span><strong><span>DynamicAssets</span></strong><span> agregada para desarrolladores que cambia por completo la forma en que Publii maneja las fuentes. Entonces, ¿qué significa eso para nuestros usuarios?</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/fonts-loaded-locally-2.webp" alt="Fuentes de Google cargadas localmente" width="2160" height="733" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>Las versiones anteriores de Publii utilizaban fuentes de Google preseleccionadas, que ofrecían algunas opciones interesantes, pero no siempre eran la solución de carga más rápida. Además, dado que el almacenamiento en caché de recursos en sitios y dominios ya no funciona, no podemos confiar en que los usuarios ya tengan las fuentes elegidas en la memoria caché de su navegador; siempre será necesario descargar los archivos de fuentes cuando visite su sitio por primera vez, lo que aumenta el tiempo de carga.</span></p>
-<p><span>Ahora, con esta nueva función, Publii incluye un conjunto de más de </span><strong><span>40 fuentes variables</span></strong><span> para que nuestros usuarios elijan, y solo las fuentes especificadas se implementarán en el servidor. Esto significa que nuestra solución de fuentes ahora </span><strong><span>cumple al 100 % con el RGPD,</span></strong><span> ya que las fuentes se cargan directamente desde su servidor en lugar de una CDN de terceros, y tiene enormes beneficios en los resultados de velocidad de la página (cerca de 100/100).</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/page-speed.webp" alt="Velocidad de la página de las fuentes de Google cargadas localmente" width="2160" height="1030" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>Si quieres saber todos los detalles de esta nueva función, puedes consultar nuestro artículo sobre las fuentes Publii aquí: </span><a href="https://getpublii.com/docs/fonts.html" target="_blank" rel="noopener noreferrer"><span>https://getpublii.com/docs/fonts.html</span></a></p>
-<p><span>Este cambio también trae consigo algunas otras novedades interesantes. Se pueden elegir dos fuentes y asignarlas a los encabezados, el contenido del cuerpo, el logotipo y el menú de forma individual. Como alternativa, también se puede asignar una tercera opción llamada </span><strong><span>system-ui</span></strong><span> , que utiliza la fuente base asignada al navegador del usuario.</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/font-options-2.webp" alt="Opciones de fuente" width="2160" height="873" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>Otro beneficio de las fuentes variables es que </span><strong><span>solo es necesario cargar un único archivo de fuente</span></strong><span> para cada fuente, en lugar de archivos separados para las versiones normal y negrita de la fuente. Y como son variables, puedes </span><strong><span>usar cualquier grosor de fuente en todo el rango,</span></strong><span> es decir, en lugar de solo un grosor normal, como 400 para la versión normal, y un grosor mayor, como 600 para la versión negrita, puedes configurar cualquier grosor de fuente intermedio, como, por ejemplo, 478. Esto les da a nuestros usuarios un control muy específico sobre cómo se verá y se verá exactamente el contenido de su sitio en la página.</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/font-weight.webp" alt="Peso de fuente en rango completo" width="2160" height="540" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>También hemos realizado algunas mejoras en los temas individuales que están disponibles para Publii; puedes leer un registro de cambios completo para cada tema en su página respectiva en el mercado, pero por ahora nos gustaría mencionar que </span><strong><span>el tema Simple ahora tiene un modo oscuro</span></strong><span> .</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/simle-dark-mode.webp" alt="Tema simple con modo oscuro" width="2160" height="1541" loading="lazy" data-is-external-image="true"></figure></figure>
-<h2><span>Otros cambios para los usuarios</span></h2>
-<p><span>Hay algunas otras novedades en esta versión de Publii que vale la pena mencionar:</span></p>
-<p><span>El </span><strong><span>protocolo "dweb"</span></strong><span> (que es "dweb" y no "dweeb", si es que usted es un producto de los años 80), se refiere a la "Web distribuida", es el protocolo utilizado por la "Web distribuida", que descentraliza la web y la distribuye a través de una red peer-to-peer. Con este soporte añadido, ahora puede seleccionar "dweb" como el protocolo para la dirección de su sitio web, si así lo desea.</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/dweb-protocol.webp" alt="Protocolo Dweb" width="2160" height="1018" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>Al cambiar la ubicación de los sitios a través de la opción </span><strong><span>Ubicación de archivos</span></strong><span> , se agrega un botón para </span><strong><span>cambiar la ubicación de almacenamiento de los "sitios" sin copiar los archivos de los sitios existentes</span></strong><span> a la nueva ubicación; útil si desea comenzar de nuevo sin perder los archivos originales del sitio.</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/file-location.webp" alt="Ubicación del archivo del sitio" width="2160" height="667" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><span>El administrador de archivos Publii ahora admite los formatos de imagen </span><strong><span>AVIF</span></strong><span> , </span><strong><span>webP y TIFF</span></strong><span>  .</span></p>
-<p><span>Finalmente, se ha agregado una nueva posición para su </span><strong><span>HTML personalizado</span></strong><span> ; </span><strong><span>@commentsCustomCode</span></strong><span> , que permite a los usuarios agregar código HTML personalizado al área donde se muestran los comentarios, ya sea utilizando su propia solución o una de las soluciones existentes proporcionadas por los complementos de Publii.</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/comments-custom-code.webp" alt="Comentarios Código personalizado" width="2160" height="1016" loading="lazy" data-is-external-image="true"></figure></figure>
-<p><br><span>La versión 0.39 también incluye una serie de mejoras específicamente para desarrolladores:</span></p>
-<h2><span>Vista previa avanzada</span></h2>
-<p><span>Se ha añadido una opción a la sección </span><strong><span>Configuración de la aplicación → Opciones para desarrolladores</span></strong><span> de Publii, </span><strong><span>Habilitar vista previa avanzada</span></strong><span> . Cuando está habilitada, al hacer clic en el botón </span><strong><span>Obtener vista previa de los cambios</span></strong><span> se mostrarán los archivos del sitio, pero no se abrirá el navegador para mostrar la vista previa.</span></p>
-<figure class="post__image post__image--wide shadow"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/73/preview-changes-2.webp" alt="Habilitar vista previa avanzada" width="2160" height="1493" loading="lazy" data-is-external-image="true"></figure></figure>
-<h2><span>Nuevas variables, ayudantes y opciones</span></h2>
-<p><span>Esta actualización incluye una serie de nuevas variables, ayudantes, etc. que ayudarán a los desarrolladores a aprovechar aún más sus sitios basados ​​en Publii:</span></p>
-<ul>
-<li><span>Se agregaron nuevas variables globales: </span><strong><span>@website.rootUrl</span></strong><span> , </span><strong><span>@website.mediaFileUrl</span></strong><span> , </span><strong><span>@website.tagsUrl</span></strong><span> y </span><strong><span>@website.baseUrl</span></strong><span> .</span></li>
-<li><span>Se agregaron nuevos ayudantes: </span><strong><span>getAuthor</span></strong><span> y </span><strong><span>getAuthors</span></strong><span> .</span></li>
-<li><span>Se agregó el nuevo ayudante </span><strong><span>'asset'</span></strong><span> , que devuelve rutas de activos.</span></li>
-<li><span>El banner de cookies de Publii ahora emite eventos personalizados para </span><strong><span>document.body</span></strong><span> , lo que permite que los complementos reaccionen a las acciones de consentimiento del usuario.</span></li>
-<li><span>Se agregó una nueva opción para temas, </span><strong><span>files.useDynamicAssets</span></strong><span> , y soporte para el nuevo archivo </span><strong><span>dynamic-assets-mapping.js</span></strong><span> , que permite a los desarrolladores de temas evitar implementar archivos incluidos con un tema.</span></li>
-</ul>
-<h2><span>Otras mejoras</span></h2>
-<p><span>Como siempre, no solo hay un montón de nuevas funciones; también hemos realizado pequeñas mejoras en varias áreas para que Publii sea más fácil de usar que nunca. A continuación, puede encontrar una lista completa de estas incorporaciones:</span></p>
-<ul>
-<li><span>Se modificó el comportamiento de implementación manual; los archivos ahora se guardan en un directorio separado (por ejemplo, [SITENAME]-files) en lugar de borrar la URL de destino.</span></li>
-<li><span>Detección mejorada de directorios de sitios faltantes.</span></li>
-<li><span>Se mejoraron los indicadores para los procesos de creación de copias de seguridad y duplicación de sitios, para que sean más claros de entender.</span></li>
-<li><span>Detección mejorada de títulos de publicaciones vacías.</span></li>
-<li><span>Se permite el uso de </span><strong><span>postConfig</span></strong><span> y </span><strong><span>themeConfig</span></strong><span> con los archivos </span><strong><span>visual-overrides.js</span></strong><span> y </span><strong><span>theme.variables.js</span></strong><span> .</span></li>
-<li><span>Se permitió que el asistente de fecha devolviera texto sin formato.</span></li>
-<li><span>La regeneración de miniaturas ahora se puede cancelar a través de la configuración del sitio.</span></li>
-<li><span>Mejor manejo de clases CSS en galerías.</span></li>
-<li><span>Se mejoró el comportamiento de la información sobre herramientas en el editor de bloques al crear un nuevo bloque.</span></li>
-<li><span>Se mejoró el manejo de los parámetros de filas/columnas para el campo de área de texto que se configuran en las opciones.</span></li>
-<li><span>Se fusionó el editor de bloques con el núcleo de Publii.</span></li>
-<li><span>Se actualizaron varias dependencias.</span></li>
-<li><span>Electron actualizado a 17.*</span></li>
-<li><span>Mejoras generales del código.</span></li>
-</ul>
-<h2><span>Corrección de errores</span></h2>
-<p><span>Errores. No podemos vivir con ellos, no podemos vivir con ellos. Por eso, hemos hecho un esfuerzo para eliminar varios errores que nuestros usuarios han informado. A continuación, se incluye una lista completa:</span></p>
-<ul>
-<li><span>Se solucionó el problema con el cambio de ubicación de los sitios.</span></li>
-<li><span>Se solucionó el problema con la incrustación de imágenes en el editor Markdown.</span></li>
-<li><span>Se corrigieron problemas con el editor de bloques.</span></li>
-<li><span>Se solucionó el problema al usar varias cuentas de Netlify.</span></li>
-<li><span>Se solucionó el problema al utilizar el generador de tabla de contenido en el editor de bloques.</span></li>
-<li><span>Se solucionó el problema de promesas no manejadas al usar SFTP.</span></li>
-<li><span>Se solucionó el problema con el comportamiento de la lista de etiquetas en los listados de etiquetas.</span></li>
-<li><span>Se solucionó el problema con la compresión CSS que causaba que algunos selectores CSS se rompieran.</span></li>
-<li><span>Se solucionó el problema con la barra de desplazamiento en el editor Markdown.</span></li>
-<li><span>Se corrigieron inconsistencias en la función 'Leer más'.</span></li>
-<li><span>Se solucionó un problema que ocurría con la compatibilidad con certificados SSL.</span></li>
-<li><span>Se solucionó el problema con los datos del autor faltantes en JSON-LD.</span></li>
-<li><span>Se solucionó el problema con las casillas de verificación en el administrador de menú al eliminar elementos en masa.</span></li>
-<li><span>Se solucionó el problema con los archivos de puntos faltantes al implementar manualmente.</span></li>
-</ul>
-<p><span>Ha sido un largo camino hasta esta actualización, pero esperamos que los frutos de nuestro trabajo sean suficientes. Nos gustaría agradecer a nuestra comunidad por su paciencia y apoyo; con su orientación, podemos mejorar Publii y convertirla en una aplicación verdaderamente fácil de usar, estable y versátil. Esperamos ofrecer más actualizaciones excelentes en el futuro; asegúrese de estar atento, ya que lanzaremos varios complementos durante el próximo año y finalizaremos la API del complemento para que quede perfecto.</span></p>
-<p><span>Mientras tanto, si quieres seguir el desarrollo, puedes visitar </span><a href="https://github.com/GetPublii/Publii" target="_blank" rel="nofollow noopener"><span>la página de GitHub</span></a><span> de Publii . Y si tienes alguna pregunta, necesitas ayuda con la aplicación o quieres informar un error o sugerir una función que te gustaría ver en el futuro, visita los </span><a href="https://forum.getpublii.com/" target="_blank" rel="nofollow noopener"><span>foros de Publii</span></a><span> y háznoslo saber.</span></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Ahora es posible traducir temas</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/ahora-es-posible-traducir-temas.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/ahora-es-posible-traducir-temas.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-11-10T01:15:54-03:00</updated>
-            <summary>
-                <![CDATA[
-                    ¡Nuevo tema de Portfolio ideal para la pasarela! Nuestro último lanzamiento de tema ofrece un estilo increíblemente elegante que es&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2><span>¡Nuevo tema de Portfolio ideal para la pasarela!</span></h2>
-<p><span>Nuestro último lanzamiento de tema ofrece un estilo increíblemente elegante que es perfecto para personas creativas que priorizan lo visual. El enfoque principal de este tema son las fotos y las imágenes, y cada aspecto del diseño del tema ayudará a mostrar su trabajo de fotografía o diseño.</span></p>
-<p><span>Dado que el nuevo tema está centrado en los portafolios, la página principal evita simplemente enumerar grandes grupos de vistas previas de artículos; en su lugar, una presentación de diapositivas en la página principal permite a los usuarios moverse entre las vistas previas de cada publicación mediante la rueda de desplazamiento, el tacto o las teclas de flecha, y cada vista previa ocupa todo el espacio de la pantalla para que cada imagen sea el centro de atención. Este tema también cuenta con dos diseños de etiquetas para mostrar sus publicaciones que son perfectos para portafolios: un diseño de cuadrícula estándar o un diseño de triple imagen que es un poco menos uniforme.</span></p>
-<figure class="post__image undefined"><figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/portfolio-theme.jpg" alt="Tema de portafolio para Publii" width="832" height="581" loading="lazy" data-is-external-image="true"></figure>
-<figcaption><span>Nuevo tema de cartera: </span><a href="https://marketplace.getpublii.com/product/portfolio/" target="_blank" rel="nofollow noopener noreferrer"><span>demostración en vivo</span></a></figcaption>
-</figure>
-<p><span>Las opciones de personalización de este tema son amplias para satisfacer las necesidades de los diseñadores; define tamaños de imágenes en las vistas previas, expande o contrae los bordes entre imágenes y aprovecha las nuevas opciones de publicación para establecer qué elementos adicionales, como una biografía, aparecen en tus publicaciones. Sin embargo, el contenido de texto no se ignora; las adiciones tipográficas especiales incluyen texto descentrado que se puede desplazar hacia la izquierda desde la columna de texto central, lo que se ve muy bien con citas, así como texto de introducción que se destaca al comienzo de la publicación.</span></p>
-<p><span>Entonces, si te gusta la fotografía, el diseño visual, el arte o la arquitectura, el tema Portfolio es una de las mejores formas de mostrar tu trabajo en un diseño distintivo y hermoso sin sacrificar la velocidad de carga.</span></p>
-<h2><span>Se agregó compatibilidad con AWS S3</span></h2>
-<p><span>El mundo está más interconectado que nunca y esto se demuestra en el crecimiento del almacenamiento en la nube. Desde usuarios individuales que guardan sus fotos hasta grandes empresas que ejecutan sus aplicaciones multipropósito en grandes clústeres de servidores que permiten a sus empleados conectarse desde cualquier parte del mundo, la nube parece haber llegado para quedarse. En esta versión de Publii, se ha agregado compatibilidad con una de las soluciones en la nube más populares, AWS S3 de Amazon, lo que proporciona una opción alternativa de alojamiento y almacenamiento para su sitio web estático.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/amazon-s3.png" alt="Publii es compatible con Amazon S3" width="1031" height="850" loading="lazy" data-is-external-image="true"></figure>
-<h2><span>Realice una copia de seguridad y restaure los archivos de su sitio web</span></h2>
-<p><span>Perder su trabajo no es ninguna broma; después de pasar cientos de horas perfeccionando su sitio web y produciendo contenido que le encantará a su audiencia, la idea de perderlo todo por una caída del servidor no merece la pena.</span></p>
-<p><span>Publii ya era un poco más fácil de mantener seguro que otras herramientas de sitios web estáticos; al ser una aplicación local, los archivos siempre estaban en tu computadora y en tu servidor. Sin embargo, siempre hay lugar para mejorar, y la tercera versión beta incluye una nueva función de copia de seguridad y restauración para una mayor tranquilidad.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/backup.png" alt="Opción de copia de seguridad del sitio web de Publii" width="832" height="300" loading="lazy" data-is-external-image="true"></figure>
-<p><span>En el menú principal de Publii, verás que hay una nueva opción: </span><strong><span>Copias de seguridad</span></strong><span> . En esta área puedes crear instantáneamente una copia de seguridad de tu sitio web actual con un solo clic en el botón </span><strong><span>Crear copia de seguridad</span></strong><span> ; el archivo recién creado se agregará a la lista de copias de seguridad disponibles junto con información adicional útil, como la fecha de creación y el tamaño del archivo. Cuando quieras restaurar tu sitio web a partir de una copia de seguridad, solo tienes que hacer clic en el botón </span><strong><span>Restaurar</span></strong><span> junto a la copia de seguridad que deseas cargar en las listas; solo recuerda que restaurar a partir de una copia de seguridad sobrescribirá todos tus archivos, así que si no has hecho una copia de seguridad de ninguna publicación que quieras conservar, ¡asegúrate de hacerlo primero!</span></p>
-<p><span>Por supuesto, probablemente haya otra pregunta que realmente necesite respuesta: ¿dónde se almacenan sus copias de seguridad? Al igual que los archivos de sitios web locales, se ha agregado una nueva opción a la </span><strong><span>Configuración global</span></strong><span> llamada </span><strong><span>Ubicación de copias de seguridad</span></strong><span> , donde puede definir la ruta donde se deben guardar sus copias de seguridad, lo que facilita guardarlos en su DropBox, OneDrive u otra carpeta de almacenamiento en la nube para una mayor seguridad en caso de desastre.</span></p>
-<h2><span>Obtén control total sobre el diseño de tus publicaciones</span></h2>
-<p><span>La parte clave de cualquier publicación que hagas será el contenido; sin contenido atractivo que sea relevante para tu audiencia, no conseguirás visitas. Sin embargo, esto no significa que no debas prestar atención a otras áreas; echa un vistazo a casi cualquier artículo de cualquier sitio web popular y verás una multitud de oportunidades de participación, como comentarios, biografías de autores, opciones para compartir en redes sociales y similares, que contribuyen a ayudar al sitio a establecer una identidad y comenzar a expandirse por la web.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/post-options.png" alt="Opciones de diseño de publicaciones" width="832" height="782" loading="lazy" data-is-external-image="true"></figure>
-<p><span>Pero no todas las publicaciones necesitan todos los extras posibles. Por este motivo, la última versión beta de Publii incluye compatibilidad con temas para agregar opciones de publicación personalizadas, que encontrará en el área </span><strong><span>de Configuración personalizada</span></strong><span> para todos los temas integrados de Publii. Aquí puede decidir si desea mostrar extras como botones de redes sociales, nombre del autor, navegación y etiquetas de publicaciones, y mucho más. Además de las configuraciones globales que se aplican a todas las publicaciones, también puede anular individualmente las configuraciones globales en cada publicación a través de la pantalla Editar publicación, por lo que si agregó una publicación informativa simple que no necesita todos los extras habituales, puede configurarla con facilidad.</span></p>
-<h2><span>Establezca la ubicación de los archivos de su sitio web local</span></h2>
-<p><span>Cada uno tiene su propia forma de hacer las cosas cuando se trata de administrar archivos; algunas personas simplemente dejan las ubicaciones predeterminadas cada vez que instalan una aplicación, mientras que otras tienen estructuras de carpetas meticulosas que las ayudan a estar al tanto de sus archivos; es seguro decir que esta nueva característica es específicamente para el último tipo.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/files-location.png" alt="Ubicación de los archivos del sitio web local" width="832" height="242" loading="lazy" data-is-external-image="true"></figure>
-<p><span>Las versiones anteriores de Publii utilizaban ubicaciones de archivos predeterminadas para almacenar los archivos de los sitios web, colocando una carpeta Publii en la sección Documentos del sistema operativo. La versión beta 3 elimina esta restricción y agrega una nueva opción en la </span><em><span>sección Configuración</span></em><span> de la aplicación Publii que permite a los usuarios definir dónde se deben almacenar los archivos de los sitios web que crean con la aplicación en su computadora; perfecto para aquellos con un enfoque estructurado. Esta flexibilidad también significa que puede configurar fácilmente los archivos de su sitio web para que se guarden automáticamente en su servicio favorito basado en la nube, como </span><strong><span>Dropbox</span></strong><span> , lo que le brinda acceso a los archivos actualizados de su sitio web donde quiera que vaya, incluso si está trabajando en una computadora separada. </span></p>
-<h2><span>SFTP con soporte de claves agregado</span></h2>
-<p><span>A todos nos vendría bien un poco más de seguridad; dado que los sitios web creados con Publii son estáticos y la aplicación se ejecuta localmente, ya es mucho más seguro que el CMS promedio. Sin embargo, esto hace que sea aún más importante garantizar que las pocas vías potenciales de ataque sean lo más seguras posible.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/publii-sftp-key.png" alt="SFTP con claves" width="871" height="768" loading="lazy" data-is-external-image="true"></figure>
-<p><span>Las versiones anteriores de Publii incluían compatibilidad con la carga a través del FTP estándar, que transfiere datos en texto sin formato, así como el SFTP más seguro, que cifra los datos enviados a través de la conexión para que no se puedan leer en tránsito. El uso de SFTP es una forma segura de proteger sus credenciales de FTP, pero la tercera versión beta de Publii incluye otra forma de aumentar aún más la seguridad: SFTP con claves.</span></p>
-<p><span>Si no estás muy familiarizado con el aspecto técnico del desarrollo web, probablemente te estés preguntando cuál es el beneficio de la compatibilidad con claves para las conexiones SFTP. La respuesta es que crea otra capa de seguridad que protege tus datos. La conexión FTP básica envía datos como texto, por lo que si el flujo de datos se intercepta de alguna manera, un pirata informático podría obtener información como nombres de usuario y contraseñas. SFTP </span><em><span>encripta</span></em><span> los datos antes de enviarlos; básicamente, codifica los datos para que no se puedan leer, los envía y luego los descifra cuando llegan al final de su recorrido, lo que evita que alguien que intercepte el flujo de datos obtenga información útil de ellos.</span></p>
-<p><span>Con el soporte de claves, los datos se cifran como con el SFTP estándar, pero la conexión también requerirá una clave privada especial que sea exclusiva de su sistema. Si alguna vez vio una película de espías, a menudo hay una escena en la que se requieren dos llaves para abrir una puerta de seguridad; el soporte de claves es algo similar, pero en formato digital; si el usuario no tiene una clave que coincida con la del servidor, los datos no se enviarán. Si tener la mejor forma de protección para su sitio web es una prioridad para usted, entonces el soporte de claves es justo lo que necesita.</span></p>
-<h2><span>Se agregó compatibilidad con plantillas a las páginas de etiquetas</span></h2>
-<p><span>Las plantillas son una excelente manera de diversificar tu contenido; el tema adecuado puede incluir múltiples diseños que puedes usar para tus publicaciones. Sin embargo, anteriormente las páginas de etiquetas no recibían mucha atención; las plantillas solo se podían crear para publicaciones de Publii. Esto se ha corregido en la versión beta 3, que incluye opciones para asignar plantillas de etiquetas en la pantalla de administración de etiquetas y soporte para agregar plantillas de etiquetas a los temas.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/tags-template.png" alt="Plantilla de etiqueta de publicación" width="832" height="476" loading="lazy" data-is-external-image="true"></figure>
-<h2><span>Ahora es posible traducir temas</span></h2>
-<p><span>El inglés puede ser un idioma global, pero no todos los sitios web necesitan ser globales; a menudo, su sitio web estará dirigido a un grupo de usuarios de nicho o tratará exclusivamente con contenido orientado más localmente y que no necesita viajar. Si su audiencia no habla inglés, entonces le alegrará saber que los temas de Publii ahora incluyen un archivo de idioma para que pueda traducir fácilmente los elementos a su idioma local.</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/language-file.png" alt="Localización de temas de Publii" width="832" height="784" loading="lazy" data-is-external-image="true"></figure>
-<p><span>El archivo de idioma que puedes modificar es un json que se puede encontrar en la carpeta del tema principal, con un nombre de archivo similar a 'themeName.lang.json', por ejemplo, si estás usando el tema Mercury, entonces el archivo de idioma será 'mercury.lang.json', y está en la carpeta </span><strong><span>themes→mercury en la ubicación de los archivos de tu sitio Publii.</span></strong></p>
-<h2><span>Configuración básica de visualización de publicaciones más flexible</span></h2>
-<p><span>Hemos añadido compatibilidad con ceros y menos unos a la configuración básica de las publicaciones de Publii. Sabemos que esto no suena especialmente interesante en el papel, pero mejora algunas de las funciones básicas de Publii. Una de las opciones más básicas que puedes cambiar es la cantidad de publicaciones por página, ya sea en la página del autor, en una etiqueta o en una lista de la página principal. Sin embargo, antes las únicas opciones eran mostrar una cantidad definida de publicaciones o mostrar todas las publicaciones configurando la cantidad de publicaciones en "0".</span></p>
-<figure class="is-loaded"><img  src="https://getpublii.com/blog/media/posts/9/basic-settings.png" alt="Configuraciones básicas flexibles" width="832" height="368" loading="lazy" data-is-external-image="true"></figure>
-<p><span>Desde un punto de vista informático, esta función tiene mucho sentido, pero no es muy intuitiva; sin mencionar el hecho de que a veces no querrás que se muestre ninguna publicación, como si solo quieres que la página de biografía del autor muestre información general sin enlaces a las publicaciones. En la versión beta 3, se modificaron estas configuraciones para que un "0" en cualquier configuración de "publicaciones por página" no muestre ninguna publicación, mientras que "-1" mostrará todas las publicaciones.</span></p>
-<h3><span>Un bonito conjunto de mejoras en la calidad de vida.</span></h3>
-<p><span>No todo son grandes novedades; la versión beta 3 de Publii también incluye un sólido conjunto de toques adicionales para que el uso diario de la aplicación sea más sencillo y fácil de usar, entre los que se incluyen:</span></p>
-<ul>
-<li><span>Enlaces AMP y canónicos mejorados.</span></li>
-<li><span>Se crearon mejores mensajes de error para la prueba de conexión para ayudar a identificar áreas problemáticas.</span></li>
-<li><span>Se implementó un registro mejorado para la implementación de FTP/SFTP.</span></li>
-<li><span>Se agregaron muchas mejoras menores al módulo de implementación.</span></li>
-<li><span>Estilo de código mejorado en elementos previos.</span></li>
-<li><span>Añade la capacidad de crear separadores con notas en las opciones del tema.</span></li>
-<li><span>Se agregaron mensajes de alerta cuando el usuario intenta probar la conexión al servidor sin completar todos los campos obligatorios.</span></li>
-<li><span>Temas actualizados para admitir las opciones de visualización de publicaciones y la nueva API de traducciones.</span></li>
-</ul>
-<h3><span>Aplastando insectos</span></h3>
-<p><span>A nadie le gustan los errores, por lo que le alegrará saber que nuestro equipo ha puesto mucho esfuerzo en solucionar una amplia gama de áreas problemáticas en esta versión, entre las que se incluyen:</span></p>
-<ul>
-<li><span>Se solucionó el problema que podía provocar un proceso de carga FTP bloqueado.</span></li>
-<li><span>Se solucionó el problema con las vistas previas de medios en el editor de publicaciones.</span></li>
-<li><span>Se solucionó el problema del elemento de menú "Salir" que no funcionaba en la barra de menú de la aplicación (MacOS).</span></li>
-<li><span>Se corrigió el recuento de publicaciones en las páginas de etiquetas.</span></li>
-<li><span>Se solucionó el fallo que se producía al cancelar la carga de FTP.</span></li>
-<li><span>Se corrigió la adición innecesaria de un atributo de clase vacío al agregar una imagen sin una clase especificada.</span></li>
-<li><span>Se solucionó el problema cuando el campo de clase no se configuraba durante la edición de una imagen dentro del elemento de figura.</span></li>
-<li><span>Se corrigieron problemas con el menú fijo en algunos temas.</span></li>
-</ul>
-<h3><span>Ayúdanos a mejorar Publii</span></h3>
-<p><span>Aún estamos en el proceso de agregar funciones y otras mejoras a Publii; ¡por eso es una versión beta, después de todo! Pero para asegurarnos de que sea la mejor aplicación posible, necesitamos tus comentarios. Ya sea que tengas una idea para una función que te gustaría ver, hayas encontrado algunos errores que quieres solucionar o simplemente necesites ayuda para familiarizarte con las amplias opciones de Publii, no dudes en visitar nuestra </span><a href="https://publii.ticksy.com/" target="_blank" rel="noopener noreferrer"><span>página de soporte de la comunidad</span></a><span> y contarnos qué está pasando; ¡siempre agradecemos cada comentario que recibimos!</span></p>
             ]]>
         </content>
     </entry>
