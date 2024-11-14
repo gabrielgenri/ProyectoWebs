@@ -3,7 +3,7 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-11-13T22:26:28-03:00</updated>
+    <updated>2024-11-14T01:04:24-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
@@ -16,17 +16,20 @@
         </author>
         <link href="https://gabrielgenri.github.io/ProyectoWebs/los-buscadores.html"/>
         <id>https://gabrielgenri.github.io/ProyectoWebs/los-buscadores.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg" medium="image" />
             <category term="Publii"/>
             <category term="HTML"/>
 
         <updated>2024-11-13T22:22:40-03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg" alt="" />
                     Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. Para ello, siga&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. <a href="https://getpublii.com/docs/google-custom-search.html" target="_blank" rel="noopener noreferrer">Para ello, siga estos pasos:</a></p>
 <p> </p>
 <p>Los buscadores en Google - <a href="https://programmablesearchengine.google.com/controlpanel/all" target="_blank" rel="noopener noreferrer">Ver </a></p>

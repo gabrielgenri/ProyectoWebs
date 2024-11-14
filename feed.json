@@ -15,6 +15,7 @@
             "title": "Creando una búsqueda personalizada en Google",
             "summary": "Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. Para ello, siga&hellip;",
             "content_html": "<p>Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. <a href=\"https://getpublii.com/docs/google-custom-search.html\" target=\"_blank\" rel=\"noopener noreferrer\">Para ello, siga estos pasos:</a></p>\n<p> </p>\n<p>Los buscadores en Google - <a href=\"https://programmablesearchengine.google.com/controlpanel/all\" target=\"_blank\" rel=\"noopener noreferrer\">Ver </a></p>",
+            "image": "https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg",
             "author": {
                 "name": "Gabriel Genri"
             },
@@ -23,7 +24,7 @@
                    "HTML"
             ],
             "date_published": "2024-11-13T22:22:40-03:00",
-            "date_modified": "2024-11-13T22:26:28-03:00"
+            "date_modified": "2024-11-14T01:04:24-03:00"
         },
         {
             "id": "https://gabrielgenri.github.io/ProyectoWebs/html-and-css-2.html",
