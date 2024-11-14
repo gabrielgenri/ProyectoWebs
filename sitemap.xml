@@ -89,10 +89,6 @@
 <lastmod>2024-11-13T21:31:07-03:00</lastmod>
 </url>
 <url>
-<loc>https://gabrielgenri.github.io/ProyectoWebs/html-and-css.html</loc>
-<lastmod>2024-11-13T21:29:29-03:00</lastmod>
-</url>
-<url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/informacion-sobre-los-anuncios-de-facebook.html</loc>
 <lastmod>2024-11-13T21:19:22-03:00</lastmod>
 </url>
@@ -129,6 +125,10 @@
 <image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/45/background4.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/search.html</loc>
+<lastmod>2024-11-13T22:01:18-03:00</lastmod>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/search1.html</loc>
