@@ -3,14 +3,14 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-11-13T22:22:40-03:00</updated>
+    <updated>2024-11-13T22:26:28-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
     <entry>
-        <title>los buscadores</title>
+        <title>Creando una búsqueda personalizada en Google</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
@@ -22,13 +22,14 @@
         <updated>2024-11-13T22:22:40-03:00</updated>
             <summary>
                 <![CDATA[
-                    los buscadores https://programmablesearchengine.google.com/controlpanel/all
+                    Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. Para ello, siga&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>los buscadores</p>
-<p>https://programmablesearchengine.google.com/controlpanel/all</p>
+                <p>Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. <a href="https://getpublii.com/docs/google-custom-search.html" target="_blank" rel="noopener noreferrer">Para ello, siga estos pasos:</a></p>
+<p> </p>
+<p>Los buscadores en Google - <a href="https://programmablesearchengine.google.com/controlpanel/all" target="_blank" rel="noopener noreferrer">Ver </a></p>
             ]]>
         </content>
     </entry>
