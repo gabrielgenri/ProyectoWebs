@@ -3,7 +3,7 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-11-13T23:44:25-03:00</updated>
+    <updated>2024-11-13T22:26:28-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
@@ -22,7 +22,7 @@
         <updated>2024-11-13T22:22:40-03:00</updated>
             <summary>
                 <![CDATA[
-                    Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. Para ello, siga&hellip;
+                    Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. Para ello, siga estos pasos: Los buscadores en Google - Ver 
                 ]]>
             </summary>
         <content type="html">
@@ -45,7 +45,7 @@
         <updated>2024-11-13T21:31:07-03:00</updated>
             <summary>
                 <![CDATA[
-                    HTML &amp; CSS es una guía sencilla y completa dedicada a ayudar a los principiantes a aprender HTML y CSS. Esta&hellip;
+                    HTML &amp; CSS es una guía sencilla y completa dedicada a ayudar a los principiantes a aprender HTML y CSS. Esta guía describe los conceptos básicos y aborda todos los elementos comunes del diseño y desarrollo de front-end. HTML es la base de todas las páginas&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -72,7 +72,7 @@
         <updated>2024-11-13T21:22:09-03:00</updated>
             <summary>
                 <![CDATA[
-                    Súmate a millones de blogueros Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito&hellip;
+                    Súmate a millones de blogueros Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito aquí sobre lo que les apasiona. Crea tu blog Tanto si quieres compartir tus conocimientos como dar las últimas noticias o decir lo que se&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -140,7 +140,7 @@
         <updated>2024-11-13T21:19:22-03:00</updated>
             <summary>
                 <![CDATA[
-                    Información sobre los anuncios de facebook A continuación, puedes obtener más información sobre cómo se usan los datos para mostrarte&hellip;
+                    Información sobre los anuncios de facebook A continuación, puedes obtener más información sobre cómo se usan los datos para mostrarte anuncios sin que los anunciantes sepan quién eres, los controles que tienes para determinar qué anuncios se te muestran, por qué ves un anuncio concreto&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -169,7 +169,7 @@
         <updated>2024-11-13T21:16:26-03:00</updated>
             <summary>
                 <![CDATA[
-                    Creación de un sitio de GitHub Pages Publii incluye soporte para páginas de Github, que te brindan un espacio para&hellip;
+                    Creación de un sitio de GitHub Pages Publii incluye soporte para páginas de Github, que te brindan un espacio para crear un sitio web que puedes usar para destacar tus proyectos de Github o para ti mismo. Desafortunadamente, hay poca funcionalidad para crear un sitio&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -197,7 +197,7 @@
         <updated>2024-11-13T21:15:17-03:00</updated>
             <summary>
                 <![CDATA[
-                    Documentación para desarrolladores Publii https://getpublii.com/dev/ Si estás interesado en crear un nuevo tema o quieres aprender a modificar uno de&hellip;
+                    Documentación para desarrolladores Publii https://getpublii.com/dev/ Si estás interesado en crear un nuevo tema o quieres aprender a modificar uno de los temas de Publii existentes para adaptarlo a tus necesidades, ¡este es el lugar adecuado para ti! Publii presenta sus temas utilizando Handlebars , lo que ofrece gran flexibilidad&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -222,7 +222,7 @@
         <updated>2024-11-13T21:13:49-03:00</updated>
             <summary>
                 <![CDATA[
-                    WebAssembly (abreviado Wasm ) es un formato de instrucciones binarias para una máquina virtual basada en pila. Wasm está diseñado como un&hellip;
+                    WebAssembly (abreviado Wasm ) es un formato de instrucciones binarias para una máquina virtual basada en pila. Wasm está diseñado como un objetivo de compilación portátil para lenguajes de programación, lo que permite la implementación en la web para aplicaciones de cliente y servidor. https://docs.python.org/es/3.11/using/configure.html#webassembly-options 3.1.2. Opciones&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -279,7 +279,7 @@
         <updated>2024-11-13T21:10:54-03:00</updated>
             <summary>
                 <![CDATA[
-                    Google Sites es una aplicación web que forma parte del paquete Google Workspace. Te permite crear un sitio web tú&hellip;
+                    Google Sites es una aplicación web que forma parte del paquete Google Workspace. Te permite crear un sitio web tú mismo sin necesidad de recurrir a un diseñador web, un programador o alguien del departamento de TI de tu empresa. Taller Sites Google
                 ]]>
             </summary>
         <content type="html">
@@ -302,7 +302,7 @@
         <updated>2024-11-13T20:44:45-03:00</updated>
             <summary>
                 <![CDATA[
-                    Aprenda a utilizar Gatsby para su próximo proyecto. https://github.com/panr/gatsby Ponte en marcha en 5 minutos Aprendiendo Gatsby Guías de migración&hellip;
+                    Aprenda a utilizar Gatsby para su próximo proyecto. https://github.com/panr/gatsby Ponte en marcha en 5 minutos Aprendiendo Gatsby Guías de migración Cómo contribuir Licencia Gracias a nuestros colaboradores y patrocinadores 🚀 Ponte en marcha en 5 minutos Puede poner en funcionamiento un nuevo sitio de Gatsby&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -381,7 +381,7 @@ gatsby develop</pre>
         <updated>2024-11-10T04:02:50-03:00</updated>
             <summary>
                 <![CDATA[
-                    Estas son 6 Opciones para crear aplicaciones de escritorio multiplataforma usando Python como lenguaje principal. la gran mayoria son open&hellip;
+                    Estas son 6 Opciones para crear aplicaciones de escritorio multiplataforma usando Python como lenguaje principal. la gran mayoria son open source y permiten crear aplicaciones pequeñas y grandes Si ya sabes las bases de Python y ahora quieres crear aplicaciones de escritorio Multiplataforma, estas son&hellip;
                 ]]>
             </summary>
         <content type="html">
