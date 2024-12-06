@@ -3,12 +3,299 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-11-14T01:05:32-03:00</updated>
+    <updated>2024-12-06T20:40:53-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
+    <entry>
+        <title> Handlebars introducción</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/handlebars-introduccion.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/handlebars-introduccion.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-12-06T20:40:53-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Publii utiliza Handlebars para la creación de temas. Hemos preparado algunos archivos predefinidos que deben incluirse en un tema básico.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Publii utiliza Handlebars para la creación de temas. Hemos preparado algunos archivos predefinidos que deben incluirse en un tema básico. También hay algunos archivos adicionales que se pueden agregar a un tema para lograr diferentes diseños para una página específica, como páginas de etiquetas, páginas de autores, publicaciones, etc.</span></p>
+</header>
+<div class="post__entry">
+<p><span>Este artículo es una introducción a los elementos de sintaxis de Handlebars más comunes que son necesarios para crear un tema en Publii.</span></p>
+<h2 id="howarehandlebarsfilesrendered"><span>¿Cómo se renderizan los archivos Handlebars?</span></h2>
+<p><span>Los manejadores compilan archivos </span><strong><span>*.hbs</span></strong><span> y usan el contexto para representar variables dentro del archivo de plantilla.</span></p>
+<p><span>Un contexto es un objeto que contiene datos relacionados con una vista actual.</span></p>
+<p><span>Funciona de la siguiente manera:</span></p>
+<p><strong><span>Archivo *.hbs</span></strong><span> + </span><strong><span>contexto</span></strong><span> =  </span><strong><span>salida final</span></strong></p>
+<p><span>Por ejemplo, si el contexto es un objeto como:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "message": "Hello World!"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Y el archivo *.hbs tiene la siguiente estructura:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>&lt;div&gt;{{message}}&lt;/div&gt;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Luego recibiremos como salida el siguiente código:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>&lt;div&gt;Hello World!&lt;/div&gt;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<h2 id="codeblocksandcontext"><span>Bloques de código y contexto</span></h2>
+<p><span>El contexto puede ser un objeto con valores anidados, es decir: </span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+  "message": {
+    "text1": "Lorem",
+    "text2": "Ipsum"
+  }
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>En este caso, tenemos dos formas de acceder a los datos del objeto:</span><br><br><span>1) Acceder directamente al campo específico:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>&lt;div&gt;{{message.text1}}&lt;/div&gt; </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>2) Acceda al campo específico utilizando bloques de código:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#message}}
+   &lt;div&gt;{{text1}}&lt;/div&gt;
+{{/message}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Los bloques de código suelen ser más útiles, ya que crean una estructura natural del contenido de los archivos *.hbs. Pero a veces necesitará acceder en el bloque a un campo que se encuentra uno o más niveles por encima del nivel actual de anidación.</span><br><br><span>En este caso, debe utilizar el prefijo </span><strong><span>../</span></strong><span>  . En el ejemplo, si tenemos el siguiente contexto:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+  config: {
+    option1: "value1"
+  },
+  message: {
+    text1: "lorem"
+  }
+} </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Si vamos a utilizar el método de bloques de código para acceder a las variables de campos anidados y necesitamos acceder al campo config.option1, tendremos que utilizar la siguiente sintaxis:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#message}}
+   &lt;div&gt;{{text1}}&lt;/div&gt;
+   &lt;div&gt;{{../config.option1}}&lt;/div&gt;
+{{/message}} </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<h2 id="conditionalcodeblocks"><span>Bloques de código condicional</span></h2>
+<p><span>Los manillares tienen dos tipos de bloques: bloques en línea y bloques condicionales.</span></p>
+<p><span>Los bloques condicionales pueden tener dos salidas según la condición: si es verdadera o falsa.</span><br><br><span>El ejemplo más simple de bloque de código condicional es el bloque </span><strong><span>if</span></strong><span> :</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#if field}}
+    Text displayed if field in context is true
+{{else}}
+    Text displayed if field in context is false
+{{/if}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Si desea lograr un comportamiento inverso, puede utilizar un bloque condicional </span><strong><span>a menos que :</span></strong></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#unless field}}
+    Text displayed if field in context is false
+{{else}}
+    Text displayed if field in context is true
+{{/unless} </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Por supuesto, puedes usar muchos más bloques condicionales. Lo principal que debes recordar es que debes abrirlo con la </span><code>{{#NAME CONDITION}}</code><span>sintaxis y cerrarlo con </span><code>{{/NAME}}</code><span>el fragmento.</span></p>
+<h2 id="loops"><span>Bucles</span></h2>
+<p><span>Puedes iterar matrices y objetos con el  asistente </span><strong><span>#each</span></strong><br><br><span>. Por lo tanto, si tienes una matriz de matrices para cada persona del proyecto, puedes usar la siguiente sintaxis:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#each persons}}
+    {{name}} - {{email}}
+{{/each}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span> Se puede utilizar en el siguiente contexto:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+   persons: [
+     {
+       name: "John",
+       email: "john@doe.com"
+     },
+     {
+       name: "Adam",
+       email: "adam@adam-and-eve.com"
+     }
+  ] 
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>El ayudante </span><strong><span>#each</span></strong><span> generará una lista de todas las personas en una lista.</span></p>
+<h2 id="comments"><span>Comentarios</span></h2>
+<p><span>Puedes incluir comentarios dentro de tus archivos *.hbs que no se mostrarán en la salida HTML final. La sintaxis de los comentarios en Handlebars es muy sencilla:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{! Your comment here !}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<h2 id="customelements"><span>Elementos personalizados</span></h2>
+<p><span>Para los manillares, puedes definir dos elementos personalizados:</span></p>
+<ul>
+<li><span>ayudantes personalizados,</span></li>
+<li><span>Parciales personalizados</span></li>
+</ul>
+<p><span>Los asistentes personalizados se pueden utilizar para operaciones simples y bloques condicionales. Por lo general, se utilizan para hacer cosas que son imposibles con los asistentes disponibles. </span></p>
+<p><span>Puede utilizar ayudantes personalizados para:</span></p>
+<ul>
+<li><span>Filtrar contenido</span></li>
+<li><span>Agregue funciones adicionales (como imágenes borrosas para carga diferida)</span></li>
+<li><span>Generar salida HTML parametrizada usando una sola línea de código</span></li>
+</ul>
+<p><span>Los parciales se pueden utilizar para las partes comunes de los temas. Se utilizan para reutilizar el código base. Gracias a los parciales, puedes realizar cambios en tu tema en un solo lugar. Por eso, recomendamos encarecidamente utilizar parciales para las partes reutilizadas del tema: esto facilitará mucho el mantenimiento del tema.</span><br><br><span>Por ejemplo, los parciales de temas integrados de Publii se pueden utilizar para:</span></p>
+<ul>
+<li><span>Encabezado de página,</span></li>
+<li><span>Pie de página,</span></li>
+<li><span>Bloque de compartir en redes sociales,</span></li>
+<li><span>Paginación,</span></li>
+<li><span>Menú</span></li>
+</ul>
+<h2 id="globalvariables"><span>Variables globales</span></h2>
+<p><span>Algunos elementos son comunes a todas las vistas y se utilizan junto con el contexto normal de la vista.</span><br><br><span>Se denominan variables globales y se anteponen con el carácter </span><strong><span>@</span></strong><span> . Puede encontrar una lista completa de estas variables en la página de </span><a href="https://getpublii.com/dev/introduction-global-variables/"><span>variables globales</span></a><span> .</span></p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>¿Cómo crear plantillas personalizadas?</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-crear-plantillas-personalizadas.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-crear-plantillas-personalizadas.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-12-06T20:35:06-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Publii ofrece la posibilidad de crear plantillas personalizadas para publicaciones, páginas, etiquetas y autores. Para crear una plantilla de publicación&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header><header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Publii ofrece la posibilidad de crear plantillas personalizadas para publicaciones, páginas, etiquetas y autores. Para crear una plantilla de publicación personalizada, siga estos pasos:</span></p>
+</header>
+<div class="post__entry">
+<ol>
+<li><span>Cree un archivo </span><strong><span>post-TEMPLATE_SLUG.hbs</span></strong><span> ,</span></li>
+<li><span>En el archivo config.json del tema, agregue la siguiente entrada:</span></li>
+</ol>
+</div>
+</header>
+<div class="post__entry">
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>
+"postTemplates": {
+   "TEMPLATE_SLUG": "Human readable template name"
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copy</a></div>
+</div>
+</div>
+<p class="msg msg--warning"><strong>WARNING!</strong> Please use lowercase slugs without any special and non-latin chars. Also, avoid using the <strong>DEFAULT</strong> slug as it is used exclusively for posts which are using the default post template from the <strong>post.hbs</strong> file.</p>
+<p>If custom post templates are available, then a dropdown option will appear under the Advanced settings in the post editor.</p>
+<h2 id="custompagetemplates">Custom page templates</h2>
+<p>To create a custom page template, follow these steps:</p>
+<ol>
+<li>Create a <strong>page-TEMPLATE_SLUG.hbs</strong> file,</li>
+<li>Add the following entry to the theme's config.json file:</li>
+</ol>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>
+"pageTemplates": {
+   "TEMPLATE_SLUG": "Human readable template name"
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copy</a></div>
+</div>
+</div>
+<p>If custom page templates are available then the dropdown option will be activated in the page editor.</p>
+<h2 id="customauthortemplates">Custom author templates</h2>
+<p>To create a custom author template, follow these steps:</p>
+<ol>
+<li>Create a <strong>author-TEMPLATE_SLUG.hbs</strong> file,</li>
+<li>Add the following entry to the theme's config.json file:</li>
+</ol>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>
+"authorTemplates": {
+   "TEMPLATE_SLUG": "Human readable template name"
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copy</a></div>
+</div>
+</div>
+<p>If custom author templates are available then the dropdown option will be activated in the author add/edit form.</p>
+<h2 id="customtagtemplates">Custom tag templates</h2>
+<p>To create a custom post template, follow these steps:</p>
+<ol>
+<li>Create a <strong>tag-TEMPLATE_SLUG.hbs</strong> file,</li>
+<li>Add the following entry to the theme's config.json file:</li>
+</ol>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>
+"tagTemplates": {
+   "TEMPLATE_SLUG": "Human readable template name"
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copy</a></div>
+</div>
+</div>
+<p>If custom tag templates are available a dropdown option will be activated in the tag add/edit form.</p>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Creando una búsqueda personalizada en Google</title>
         <author>
@@ -289,204 +576,6 @@
             <![CDATA[
                 <p>Google Sites es una aplicación web que forma parte del paquete Google Workspace. Te permite crear un sitio web tú mismo sin necesidad de recurrir a un diseñador web, un programador o alguien del departamento de TI de tu empresa.</p>
 <p class="align-center"><br><a href="https://sites.google.com/view/tallerwebestaticas/SitesGoogle" target="_blank" rel="noopener" class="btn btn--light">Taller Sites Google</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gatsby</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/gatsby.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/gatsby.html</id>
-            <category term="Gatsby"/>
-            <category term="CMS"/>
-
-        <updated>2024-11-13T20:44:45-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Aprenda a utilizar Gatsby para su próximo proyecto. https://github.com/panr/gatsby Ponte en marcha en 5 minutos Aprendiendo Gatsby Guías de migración&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p dir="auto"><a href="https://gatsbyjs.org/docs/" rel="nofollow"><strong>Aprenda a utilizar Gatsby para su próximo proyecto.</strong></a></p>
-<p class="msg msg--success" dir="auto"><a href="https://github.com/panr/gatsby">https://github.com/panr/gatsby</a></p>
-<div class="markdown-heading" dir="auto">
-<h2 class="heading-element" dir="auto" tabindex="-1">¿Qué contiene este documento?</h2>
-<a id="user-content-whats-in-this-document" class="anchor" aria-label="Enlace permanente: ¿Qué contiene este documento?" href="https://github.com/panr/gatsby#whats-in-this-document"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
-<ul dir="auto">
-<li><a href="https://github.com/panr/gatsby#-get-up-and-running-in-5-minutes">Ponte en marcha en 5 minutos</a></li>
-<li><a href="https://github.com/panr/gatsby#-learning-gatsby">Aprendiendo Gatsby</a></li>
-<li><a href="https://github.com/panr/gatsby#-migration-guides">Guías de migración</a></li>
-<li><a href="https://github.com/panr/gatsby#-how-to-contribute">Cómo contribuir</a></li>
-<li><a href="https://github.com/panr/gatsby#memo-license">Licencia</a></li>
-<li><a href="https://github.com/panr/gatsby#-thanks-to-our-contributors-and-sponsors">Gracias a nuestros colaboradores y patrocinadores</a></li>
-</ul>
-<div class="markdown-heading" dir="auto">
-<h2 class="heading-element" dir="auto" tabindex="-1">🚀 Ponte en marcha en 5 minutos</h2>
-<a id="user-content--get-up-and-running-in-5-minutes" class="anchor" aria-label="Enlace permanente: 🚀 Ponte en marcha en 5 minutos" href="https://github.com/panr/gatsby#-get-up-and-running-in-5-minutes"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
-<p dir="auto">Puede poner en funcionamiento un nuevo sitio de Gatsby en su entorno de desarrollo local en 5 minutos con estos tres pasos:</p>
-<ol dir="auto">
-<li>
-<p dir="auto"><strong>Cree un sitio Gatsby a partir de un sitio Gatsby Starter.</strong></p>
-<p dir="auto">Configura tu blog de Gatsby con un solo comando:</p>
-<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto">
-<pre><span class="pl-c"># install the Gatsby CLI globally</span>
-npm install -g gatsby-cli
-
-<span class="pl-c"># create a new Gatsby site using the default starter</span>
-gatsby new my-blazing-fast-site</pre>
-<div class="zeroclipboard-container"> </div>
-</div>
-</li>
-<li>
-<p dir="auto"><strong>Inicie el sitio en <code>develop</code>modo .</strong></p>
-<p dir="auto">A continuación, dirígete al directorio de tu nuevo sitio e inícialo:</p>
-<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto">
-<pre><span class="pl-c1">cd</span> my-blazing-fast-site/
-gatsby develop</pre>
-<div class="zeroclipboard-container"> </div>
-</div>
-</li>
-<li>
-<p dir="auto"><strong>¡Abre el código fuente y comienza a editar!</strong></p>
-<p dir="auto">Su sitio ahora se ejecuta en <code>http://localhost:8000</code>. Abra el <code>my-blazing-fast-site</code>directorio en el editor de código que prefiera y edite <code>src/pages/index.js</code>. Guarde los cambios y el navegador se actualizará en tiempo real.</p>
-</li>
-</ol>
-<p dir="auto">En este punto, ya tienes un sitio web de Gatsby completamente funcional. Para obtener información adicional sobre cómo puedes personalizar tu sitio de Gatsby, consulta nuestros <a href="https://gatsbyjs.org/plugins/" rel="nofollow">complementos</a> y <a href="https://gatsbyjs.org/tutorial/" rel="nofollow">el tutorial oficial</a> .</p>
-<div class="markdown-heading" dir="auto">
-<h2 class="heading-element" dir="auto" tabindex="-1">🎓 Aprendiendo a interpretar a Gatsby</h2>
-<a id="user-content--learning-gatsby" class="anchor" aria-label="Enlace permanente: 🎓 Aprendiendo a interpretar a Gatsby" href="https://github.com/panr/gatsby#-learning-gatsby"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
-<p dir="auto">La documentación completa de Gatsby vive <a href="https://gatsbyjs.org/" rel="nofollow">en el sitio web</a> .</p>
-<ul dir="auto">
-<li>
-<p dir="auto"><strong>Para la mayoría de los desarrolladores, recomendamos comenzar con nuestro <a href="https://gatsbyjs.org/tutorial/" rel="nofollow">tutorial detallado para crear un sitio con Gatsby</a> .</strong> Comienza sin hacer suposiciones sobre su nivel de habilidad y guía cada paso del proceso.</p>
-</li>
-<li>
-<p dir="auto"><strong>Para sumergirse directamente en los ejemplos de código, diríjase <a href="https://gatsbyjs.org/docs/" rel="nofollow">a nuestra documentación</a> .</strong> En particular, consulte las secciones “ <i>Guías</i> ”, “ <i>Referencia de API</i> ” y “ <i>Tutoriales avanzados ” en la barra lateral.</i></p>
-</li>
-</ul>
-<p dir="auto">Agradecemos sugerencias para mejorar nuestra documentación. Consulta la documentación <a href="https://gatsbyjs.org/docs/how-to-contribute/" rel="nofollow">sobre cómo contribuir</a> para obtener más detalles.</p>
-<p dir="auto"><strong>Comience a aprender Gatsby: <a href="https://gatsbyjs.org/tutorial/" rel="nofollow">siga el tutorial</a> · <a href="https://gatsbyjs.org/docs/" rel="nofollow">Lea los documentos</a></strong></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>aplicaciones de escritorio multiplataforma usando Python</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/aplicaciones-de-escritorio-multiplataforma-usando-python.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/aplicaciones-de-escritorio-multiplataforma-usando-python.html</id>
-            <category term="Python"/>
-
-        <updated>2024-11-10T04:02:50-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Estas son 6 Opciones para crear aplicaciones de escritorio multiplataforma usando Python como lenguaje principal. la gran mayoria son open&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <article class="bg-neutral-950 px-3 py-4 md:px-10 mt-2 border-0 rounded">
-<article class="w-80 md:w-full prose dark:prose-invert text-slate-300 prose-headings:font-bold prose-headings:text-sky-200 prose-headings:mt-5 prose-code:text-yellow-200 prose-a:text-indigo-100 prose-a:break-all md:max-w-none prose-pre:overflow-x-auto prose-pre:shadow-md prose-pre:shadow-black prose-blockquote:text-slate-300 prose-blockquote:bg-neutral-800 prose-blockquote:px-4 prose-blockquote:py-1 prose-p:mb-5 prose-li:my-0 prose-li:p-0 prose-li:marker:text-yellow-400 prose-strong:text-sky-400 prose-p:leading-relaxed font-sans prose-img:m-auto prose-strong:font-bold">
-<p>Estas son 6 Opciones para crear aplicaciones de escritorio multiplataforma usando Python como lenguaje principal. la gran mayoria son open source y permiten crear aplicaciones pequeñas y grandes</p>
-<p>Si ya sabes las bases de Python y ahora quieres crear aplicaciones de escritorio Multiplataforma, estas son 6 Herramientas de Software (Frameworks, Bibliotecas, Sdks) relacionadsa a Python que puedes usar para crear aplicaciones de Escritorio.</p>
-<h3>Tkinter</h3>
-<p>Tkinter o <em>Tk Interface</em> es uno de los paquetes de Python más populares y tambien es la forma estandar para crear interfaces Graficas de usuario de escritorio en Python.</p>
-<p>Tkinter es la combinación de Tk; un toolkit open source para crear Widgets de elementos como botones, menus, canvas, textos, y asi. más código de Python que te permite controlar estas interfaces.</p>
-<p>Si estas empezando en python y quieres crear apps de escritorio, empezar con este toolkit es muy fácil al encontrar mucha informacion (Libros, tutoriales, cursos en Youtube, etc) y al ya estar incluido muchas veces en tu instalación de Python.</p>
-<p>Aunque tkinter solo permite crear interfaces básicas, y sus widgets pueden llegar a ser dificiles de debuggear.</p>
-<p>Tampoco posee ningun tipo de software para diseñar interfaces graficas visualmente, y aunque hay un proyecto llamado <em>Tkinter Designer</em> que convierte diseños hechos en Figma a código de Tkinter, aun asi, no es tan facil personalizar proyectos grandes.</p>
-<ul>
-<li><a href="https://github.com/ParthJadhav/Tkinter-Designer">Tkinter Designer</a> Convierte Diseños de Figma a Tkinter</li>
-<li><a href="https://en.wikipedia.org/wiki/Tk_(software)#:~:text=Tk%20is%20a%20free%20and,GUI)%20in%20many%20programming%20languages">https://en.wikipedia.org/wiki/Tk_(software)#:~:text=Tk%20is%20a%20free%20and,GUI)%20in%20many%20programming%20languages</a>.</li>
-<li><a href="https://docs.python.org/3/library/tkinter.html">https://docs.python.org/3/library/tkinter.html</a></li>
-<li><a href="https://www.reddit.com/r/learnpython/comments/8yy8jo/how_do_you_guys_pronounce_tkinter/">https://www.reddit.com/r/learnpython/comments/8yy8jo/how_do_you_guys_pronounce_tkinter/</a></li>
-</ul>
-<h3>PyQT</h3>
-<p><a href="https://doc.qt.io/qtforpython/">PyQT</a> es una de las opciones más robustas para crear aplicaciones de escritorio avanzadas en Python, esta basada en el framework Qt (desarrollado por Nokia), el cual es multiplataforma, lo que signfica que puedes desarrollar apps para Windows, Linux, Mac, y Raspberry, usando el mismo código base, ademas de ser orientado a Objetos.</p>
-<p>Qt ofrece principalmente widgets desarrollados en C++, pero ofrece bilbiotecas de otros lenguajes para interactuar con estos widgets, de aqui es donde sale PyQT.</p>
-<p>Y puedes usar un programa para diseñar visualmente tus interfaces llamado Qt Designer.</p>
-<p>Ademas posee APIs para poder usar protocolos de Red, o modulos para conectarte a bases de datos, y más.</p>
-<p>Aunque Para poder usar todas las caracteristicas de este framework se necesita una licencia, pero tambien ofrece una version gratuita, con funcionalidades limitadas.</p>
-<ul>
-<li><a href="https://doc.qt.io/qtforpython/index.html">https://doc.qt.io/qtforpython/index.html</a></li>
-<li><a href="https://www.qt.io/">Sitio Oficial de Qt</a></li>
-<li><a href="https://es.wikipedia.org/wiki/Qt_(biblioteca)">Qt - Wikipedia</a></li>
-<li><a href="https://riverbankcomputing.com/software/pyqt/">https://riverbankcomputing.com/software/pyqt/</a></li>
-</ul>
-<h3>Kyvi</h3>
-<p>Kyvi es un framework Open Source (OpenGL ES2), para crear aplicaciones multiplataforma tanto en Desktop (Windows, Linux, Mac), moviles (iOS, Android) en incluso Rapberry Pi. Todo con una sola base de código.</p>
-<p>Todo el framework esta desarrollado combinando Cpython y Python. Aunque sus modulos son muy inestables dando errores dificil de manejar algunsa veces.</p>
-<p>Y aunque este framework te permita crear apps moviles, muchos desarrolladores actualmente no estan muy interesados en crear apps usando Python, por lo que este framework tampoco es ampliamente utilizado en ese aspecto.</p>
-<ul>
-<li><a href="https://kivy.org/doc/stable/gettingstarted/intro.html">https://kivy.org/doc/stable/gettingstarted/intro.html</a></li>
-</ul>
-<h3>WxPython</h3>
-<p>De forma similar como la bilbioteca PyQT permite usar widgets de Qt en Python, WxPython te permite usar widgets de una bibliteca llamada WxWidget, desarrollado con C++, en Python.</p>
-<p>Con WxPython puedes crear aplicaciones de escritorio multiplataforma (Windows, Linux, Mac) que tienen el Look and Feel de componentes nativos, y sin tener que reescribir código.</p>
-<p>Ademas como el modulo es Open Source, puedes usarlo para crear lo que gustes.</p>
-<ul>
-<li><a href="https://www.wxpython.org/pages/overview/">https://www.wxpython.org/pages/overview/</a></li>
-</ul>
-<ul>
-<li><a href="https://wxwidgets.org/">https://wxwidgets.org/</a></li>
-</ul>
-<h3>DearPyGUI</h3>
-<p><a href="https://github.com/hoffstadt/DearPyGui">DearPyGUI</a> es un framework para crear desde aplicaciones de escritorio pequeñas hasta muy grandes, es Open Source, y la mayor parte del código está escrito en C++. ademas no usa los componentes nativos del sistema operativo, sino que estan desarrollaos encima de APIs de Graficos como <a href="https://www.opengl.org/">OpenGL</a>.</p>
-<p>DearPyGui ofrece componentes o Widgets comunes como botones, ventanas y cajas de texto (<em>Inputs</em>), pero tambien componentes avanzados como graficos estadisticos, graficos de nodos, canvas, renderizado 3d, y mucho más. Ademas de soportar ejecución asincrona de código.</p>
-<p>Haciendolo una de las opciones más robustas para crear aplicaciones Desktop multiplataformas y profesionales.</p>
-<ul>
-<li><a href="https://github.com/hoffstadt/DearPyGui">Github de DearPyGUI</a></li>
-</ul>
-<h3>Flet</h3>
-<p><a href="https://flet.dev/">Flet</a> es un framework relativamente nuevo, permite crear aplicaciones web y desktop usando Python junto a interface de usuario llamado <strong>Flet Controls</strong> que estan desarrolladas en Flutter (Un framework de interfaces desarrollado en Dart). es decir al igual que WxPythom o PyQt, te permite manipular widgets de otro lenguaje pero en Python.</p>
-<p>En la practica usar esta biblioteca se le parece a usar tkinter, debido a su facilidad de instalacion y uso. Su documentacion aun es pequeña, pero tiene ejemplos muy sencillos de seguir, ademas que es más facil de entender que los de los frameworks anteriores.</p>
-<p>El framework ya posee modulos de autenticación, animaciones, almacenaje local (sesiones y memoria), Hot Reload, ademas de otras caracteristicas.</p>
-<p>Y Para ir a produccion te da la posiblidad de convertir tu aplicación a una app de escritorio con modulos como PyInstaller o desplegar tu proyectos en servicios de la nube como fly.io.</p>
-<p>Tambien tienen un roadmap para eventualmente crear apps moviles, ya que hacen uso de Flutter (<a href="https://flet.dev/docs/guides/python/mobile-support">https://flet.dev/docs/guides/python/mobile-support</a>)</p>
-<p>Auque el modulo aun es poco conocido, asi que habra que esperar como le va.</p>
-<ul>
-<li><a href="https://flet.dev/docs/">Documentación de Flet</a></li>
-</ul>
-<h3>Otras bibliotecas</h3>
-<p>Por cierto otros modulos que puedes usar para crear aplicaciones de escritorio en python son:</p>
-<ul>
-<li>PyGUI</li>
-<li><a href="https://pypi.org/project/PySide2/">PySide2</a></li>
-<li>PySimpleGUI, <a href="https://www.pysimplegui.org/en/latest/">https://www.pysimplegui.org/en/latest/</a></li>
-</ul>
-<ul>
-<li>PyGTK 3, <a href="https://python-gtk-3-tutorial.readthedocs.io/en/latest/">https://python-gtk-3-tutorial.readthedocs.io/en/latest/</a>
-<ul>
-<li><a href="https://glade.gnome.org/">Glade</a> es un software para diseñar interfaces graficas para GTK</li>
-</ul>
-</li>
-<li>Beware, <a href="https://beeware.org/">https://beeware.org/</a></li>
-<li>PyForms, <a href="https://pyforms.readthedocs.io/en/v4/">https://pyforms.readthedocs.io/en/v4/</a></li>
-<li>Wax, <a href="https://wiki.python.org/moin/Wax">https://wiki.python.org/moin/Wax</a></li>
-<li>libavg, <a href="https://www.libavg.de/site/">https://www.libavg.de/site/</a></li>
-</ul>
-<ul>
-<li><a href="https://github.com/python-eel/Eel">eel</a>, Framework de Python que permite crear aplicaciones de escritorio utilizando tecnologia web para las interfaces y Python en el backend, similar a Electronjs en Javascript.</li>
-<li><a href="https://github.com/Textualize/textual">Textual</a> Te permite crear TUI (Text User Interface) con Python</li>
-<li><a href="https://github.com/TomSchimansky/CustomTkinter">Custom tkinter</a> es es un proyecto que permite usar las mismas funciones de Tkinter pero ofreciendo interfaces Graficas que lucen mucho más modernas</li>
-</ul>
-<h3>Conclusion</h3>
-<p>Como siempre escoger una opcion depende de tus necesidades, pero si buscas proyectos open Source escalables las mejores opciones con PyQT, DearPyGUI o WxPython. Flet tambien luece prometedor, pero su comunidad no es tan grande. y si buscas hacer proyectos sencillos, sin necesidad de ahondar en herramientas complicadas, tkinter sigue siendo una muy buena opcion para empezar.</p>
-<h3>Más Recursos</h3>
-<ul>
-<li><a href="https://github.com/hoffstadt/DearPyGui#features">https://github.com/hoffstadt/DearPyGui#features</a></li>
-<li><a href="https://github.com/ocornut/imgui">https://github.com/ocornut/imgui</a></li>
-<li><a href="https://dearpygui.readthedocs.io/en/latest/tutorials/first-steps.html">https://dearpygui.readthedocs.io/en/latest/tutorials/first-steps.html</a></li>
-</ul>
-</article>
-<footer><span class="text-gray-400 text-xs">Actualizado por ultima vez el<time class="ml-1" datetime="9/7/2023">9/7/2023</time></span></footer></article>
-<div class="bg-neutral-900 text-sm p-3 text-center md:text-left md:px-4 md:py-7 mt-2 rounded-md">
-<p class="my-3 text-gray-300"> </p>
-</div>
             ]]>
         </content>
     </entry>
