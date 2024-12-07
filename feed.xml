@@ -3,579 +3,2472 @@
     <title>Webs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-12-06T20:40:53-03:00</updated>
+    <updated>2024-12-06T21:38:19-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
     <entry>
-        <title> Handlebars introducción</title>
+        <title>API de configuración de temas</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/handlebars-introduccion.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/handlebars-introduccion.html</id>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/api-de-configuracion-de-temas.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/api-de-configuracion-de-temas.html</id>
             <category term="Publii"/>
 
-        <updated>2024-12-06T20:40:53-03:00</updated>
+        <updated>2024-12-06T21:27:03-03:00</updated>
             <summary>
                 <![CDATA[
-                    Publii utiliza Handlebars para la creación de temas. Hemos preparado algunos archivos predefinidos que deben incluirse en un tema básico.
+                    Casi todos los temas necesitan opciones configurables para satisfacer las necesidades de los usuarios. Publii te permite crear opciones relacionadas&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Publii utiliza Handlebars para la creación de temas. Hemos preparado algunos archivos predefinidos que deben incluirse en un tema básico. También hay algunos archivos adicionales que se pueden agregar a un tema para lograr diferentes diseños para una página específica, como páginas de etiquetas, páginas de autores, publicaciones, etc.</span></p>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Casi todos los temas necesitan opciones configurables para satisfacer las necesidades de los usuarios. Publii te permite crear opciones relacionadas con el tema y las publicaciones que permiten a los usuarios personalizar el diseño del tema y las publicaciones.</span></p>
 </header>
 <div class="post__entry">
-<p><span>Este artículo es una introducción a los elementos de sintaxis de Handlebars más comunes que son necesarios para crear un tema en Publii.</span></p>
-<h2 id="howarehandlebarsfilesrendered"><span>¿Cómo se renderizan los archivos Handlebars?</span></h2>
-<p><span>Los manejadores compilan archivos </span><strong><span>*.hbs</span></strong><span> y usan el contexto para representar variables dentro del archivo de plantilla.</span></p>
-<p><span>Un contexto es un objeto que contiene datos relacionados con una vista actual.</span></p>
-<p><span>Funciona de la siguiente manera:</span></p>
-<p><strong><span>Archivo *.hbs</span></strong><span> + </span><strong><span>contexto</span></strong><span> =  </span><strong><span>salida final</span></strong></p>
-<p><span>Por ejemplo, si el contexto es un objeto como:</span></p>
+<h2 id="wheretofindthemesettings">¿Dónde encontrar la configuración del tema?</h2>
+<p>Los ajustes de tema están disponibles en el elemento de menú "Tema" de la barra lateral de Publii. En esta vista, encontrará las áreas "Ajustes básicos" y "Ajustes personalizados".</p>
+<p>El área de configuración básica está definida por Publii y no se puede modificar por tema. El área de configuración personalizada es totalmente configurable por el desarrollador del tema. Todas las configuraciones personalizadas se agruparán en pestañas con opciones.</p>
+<figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/108/custom-settings.svg" alt="API de configuración de temas" width="748" height="207" loading="lazy" data-is-external-image="true"></figure>
+<h2 id="wheretofindpostsettings">¿Dónde encontrar la configuración de las publicaciones?</h2>
+<p>Las configuraciones de las publicaciones (si están disponibles en el tema) se ubican como una última pestaña en las configuraciones personalizadas en la vista de configuraciones del tema. En esta pestaña llamada "Opciones de publicaciones", el usuario puede definir valores globales para las configuraciones de las publicaciones a fin de evitar modificaciones innecesarias de cada publicación para lograr una configuración específica.</p>
+<p>Por ejemplo, si el usuario desea desactivar la visualización de la fecha de creación para todas las publicaciones, puede hacerlo en la pestaña "Opciones de publicación". Pero si algunas publicaciones necesitan tener una fecha de creación, es posible habilitarla en el editor de publicaciones en la pestaña "Otras opciones" de la barra lateral del editor de publicaciones.</p>
+<p>Cada opción en esa pestaña normalmente tiene tres valores:</p>
+<ul>
+<li>Utilizar configuración global</li>
+<li>Desactivado</li>
+<li>Activado</li>
+</ul>
+<p>El uso de la configuración global es la configuración predeterminada.</p>
+<h2 id="howtocreatethemesettings">¿Cómo crear configuraciones de tema?</h2>
+<p>La configuración del tema se puede definir en el archivo <a href="https://getpublii.com/dev/theme-configjson-file/" target="_blank" rel="noopener noreferrer">config.json</a> en el campo <strong>customConfig</strong> .</p>
+<p>La configuración del tema le permite utilizar los siguientes campos:</p>
+<ul>
+<li><a href="https://getpublii.com/dev/text-input/">Campo de entrada de texto</a></li>
+<li><a href="https://getpublii.com/dev/textarea/">Campo de área de texto</a></li>
+<li><a href="https://getpublii.com/dev/dropdown/">Campo desplegable</a></li>
+<li><a href="https://getpublii.com/dev/wysiwyg/">Campo WYSIWYG</a></li>
+<li><a href="https://getpublii.com/dev/color-picker/">Campo selector de color</a></li>
+<li><a href="https://getpublii.com/dev/image-upload/">Campo de carga de imagen</a></li>
+<li><a href="https://getpublii.com/dev/small-image-upload/">Campo de carga de imagen pequeño</a></li>
+<li><a href="https://getpublii.com/dev/radio-buttons/">Botones de radio</a></li>
+<li><a href="https://getpublii.com/dev/switcher/">Campo conmutador</a></li>
+<li><a href="https://getpublii.com/dev/range-slider/">Campo deslizante de rango</a></li>
+<li><a href="https://getpublii.com/dev/separator/">Campo separador</a></li>
+<li><a href="https://getpublii.com/dev/posts-dropdown/">Campo desplegable de publicaciones</a></li>
+<li><a href="https://getpublii.com/dev/tags-dropdown/">Campo desplegable de etiquetas</a></li>
+<li><a href="https://getpublii.com/dev/authors-dropdown/">Campo desplegable de autores</a></li>
+</ul>
+<h2 id="howtocreatepostsettings">¿Cómo crear configuraciones de publicaciones?</h2>
+<p>Las configuraciones de las publicaciones se pueden definir de la misma manera que las configuraciones del tema, pero deben ubicarse en el campo <strong>postConfig</strong> . </p>
+<p>En este momento la configuración de publicaciones le permite utilizar los siguientes campos:</p>
+<ul>
+<li><a href="https://getpublii.com/dev/dropdown/">Campo desplegable</a></li>
+<li><a href="https://getpublii.com/dev/text-input/">Campo de entrada de texto</a></li>
+<li><a href="https://getpublii.com/dev/textarea/">Campo de área de texto</a></li>
+<li><a href="https://getpublii.com/dev/color-picker/">Campo selector de color</a></li>
+</ul>
+<p>Los campos de configuración de publicaciones en este momento no admiten el parámetro <strong>de grupo</strong> que se utiliza para crear pestañas para las configuraciones personalizadas del tema.</p>
+<h2 id="howlooksastructureofthefieldunderconfigjsonfile">¿Cómo se ve la estructura del campo en el archivo config.json?</h2>
+<p>Todos los campos utilizan una estructura común de definición de campo:</p>
+<ul>
+<li><strong>nombre</strong> : nombre del campo utilizado para recuperar un valor del campo</li>
+<li><strong>Etiqueta</strong> : etiqueta utilizada para reconocer fácilmente un campo en la interfaz de usuario de Publii.</li>
+<li><strong>grupo</strong> : campo utilizado para agrupar campos (solo para los campos de configuración del tema). Todos los campos con el mismo valor se colocarán en las mismas pestañas; ese valor también es una etiqueta de pestaña.</li>
+<li><strong>Nota</strong> : utilice este campo para agregar información adicional para el usuario. Le permite utilizar el código HTML como valor.</li>
+<li><strong>valor</strong> : valor predeterminado del campo</li>
+<li><strong>tipo</strong> : tipo del campo</li>
+<li><strong>dependencias</strong> : matriz de reglas utilizadas para especificar si el campo debe mostrarse o no</li>
+<li><strong>customCssClasses</strong> : define uno o más nombres de clases CSS personalizados que se aplicarán al campo</li>
+<li><strong>[other]</strong> : otros campos relacionados con el campo: lea la documentación de un campo específico para obtener más detalles al respecto</li>
+</ul>
+<p>A continuación se muestra un ejemplo del campo utilizado para los efectos de carga diferida en nuestros temas:</p>
 <div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>{
-    "message": "Hello World!"
-}</code></pre>
+<pre class="language-json" tabindex="0"><code>  {
+      "name": "lazyLoadEffect",
+      "label": "Lazy load effects",
+      "group": "Additional",
+      "note": "This option works only if the 'Media lazy load' option is enabled in the Website Speed tab under Site Settings",
+      "value": "fadein",
+      "type": "select",
+      "options": [
+          {
+              "label": "Fade in",
+              "value": "fadein"
+          },
+          {
+              "label": "None",
+              "value": "none"
+          }
+      ]
+  }</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>Y el archivo *.hbs tiene la siguiente estructura:</span></p>
+<p>El campo anterior estará disponible bajo el tema:</p>
 <div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>&lt;div&gt;{{message}}&lt;/div&gt;</code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{ @config.custom.lazyLoadEffect }}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>Luego recibiremos como salida el siguiente código:</span></p>
+<p>Ese campo se mostrará en la configuración del tema en la pestaña "Adicional" como un campo desplegable con tres opciones:</p>
+<ul>
+<li>Encadenar</li>
+<li>Desenfocar</li>
+<li>Sin LQIP</li>
+</ul>
+<p>El valor predeterminado será "Aparición gradual". Debajo del campo, el usuario verá una nota adicional con un enlace a la documentación externa.</p>
+<p>Ese campo se mostrará en la interfaz de usuario solo si la opción <strong>lazyLoad</strong> se establece como verdadera.</p>
+<div class="post__entry">
+<h2 id="howtoaccessoptionvaluesofthethemesettingsinthetheme">¿Cómo acceder a los valores de las opciones de configuración del tema en el tema?</h2>
+<p>Se puede acceder fácilmente a cada valor de opción de tema a través de la variable global <a href="https://getpublii.com/dev/config-global-variable/">@config</a> . Esa variable contiene el campo <strong>personalizado , que es un objeto donde la clave es el campo </strong><strong>de nombre</strong>  utilizado en la definición de la opción.</p>
+<p>Por ejemplo, si desea acceder a un valor de la opción que utiliza como nombre el valor <strong>headerColor</strong> , debe escribir en su tema:</p>
 <div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>&lt;div&gt;Hello World!&lt;/div&gt;</code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{ @config.custom.headerColor }}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<h2 id="codeblocksandcontext"><span>Bloques de código y contexto</span></h2>
-<p><span>El contexto puede ser un objeto con valores anidados, es decir: </span></p>
+<p>El código anterior generará el valor de la opción <strong>headerColor</strong> .</p>
+<h2 id="howtoaccessoptionvaluesofthepostsettingsinthetheme">¿Cómo acceder a los valores de las opciones de configuración de la publicación en el tema?</h2>
+<p>Las opciones de configuración de la publicación son accesibles de dos maneras:</p>
+<ul>
+<li>a través de la sintaxis <strong>@config.post.*</strong> que funciona de la misma manera que la sintaxis <strong>@config.custom.*</strong> para la opción de tema</li>
+<li>a través  del objeto <strong>postViewConfig</strong> en el <a href="https://getpublii.com/dev/post-tags/">elemento de publicación</a> . </li>
+</ul>
+<p class="msg msg--warning">¡Atención! La sintaxis <strong>@config.post.*</strong> solo funciona con plantillas de publicaciones individuales. En las páginas con listas de publicaciones, debe utilizar el objeto <strong>postViewConfig</strong> .</p>
+<p>Por ejemplo, para obtener el valor de la opción de publicación definida con el nombre <strong>headerColor,</strong> puede utilizar en el archivo <strong>post.hbs</strong> (y también en cualquier <a href="https://getpublii.com/dev/how-to-create-custom-templates/">plantilla de publicación personalizada</a> ) la siguiente sintaxis:</p>
 <div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>{
-  "message": {
-    "text1": "Lorem",
-    "text2": "Ipsum"
-  }
-}</code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{ @config.post.headerColor }}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>En este caso, tenemos dos formas de acceder a los datos del objeto:</span><br><br><span>1) Acceder directamente al campo específico:</span></p>
+<p>Si desea obtener el mismo valor en la lista de publicaciones (por ejemplo, en la página de inicio), debe utilizar:</p>
 <div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>&lt;div&gt;{{message.text1}}&lt;/div&gt; </code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{ postViewConfig.headerColor }}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>2) Acceda al campo específico utilizando bloques de código:</span></p>
+<p>Dentro del contexto del artículo de publicación:</p>
 <div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#message}}
-   &lt;div&gt;{{text1}}&lt;/div&gt;
-{{/message}}</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Los bloques de código suelen ser más útiles, ya que crean una estructura natural del contenido de los archivos *.hbs. Pero a veces necesitará acceder en el bloque a un campo que se encuentra uno o más niveles por encima del nivel actual de anidación.</span><br><br><span>En este caso, debe utilizar el prefijo </span><strong><span>../</span></strong><span>  . En el ejemplo, si tenemos el siguiente contexto:</span></p>
-<div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>{
-  config: {
-    option1: "value1"
-  },
-  message: {
-    text1: "lorem"
-  }
-} </code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Si vamos a utilizar el método de bloques de código para acceder a las variables de campos anidados y necesitamos acceder al campo config.option1, tendremos que utilizar la siguiente sintaxis:</span></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#message}}
-   &lt;div&gt;{{text1}}&lt;/div&gt;
-   &lt;div&gt;{{../config.option1}}&lt;/div&gt;
-{{/message}} </code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<h2 id="conditionalcodeblocks"><span>Bloques de código condicional</span></h2>
-<p><span>Los manillares tienen dos tipos de bloques: bloques en línea y bloques condicionales.</span></p>
-<p><span>Los bloques condicionales pueden tener dos salidas según la condición: si es verdadera o falsa.</span><br><br><span>El ejemplo más simple de bloque de código condicional es el bloque </span><strong><span>if</span></strong><span> :</span></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#if field}}
-    Text displayed if field in context is true
-{{else}}
-    Text displayed if field in context is false
-{{/if}</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Si desea lograr un comportamiento inverso, puede utilizar un bloque condicional </span><strong><span>a menos que :</span></strong></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#unless field}}
-    Text displayed if field in context is false
-{{else}}
-    Text displayed if field in context is true
-{{/unless} </code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Por supuesto, puedes usar muchos más bloques condicionales. Lo principal que debes recordar es que debes abrirlo con la </span><code>{{#NAME CONDITION}}</code><span>sintaxis y cerrarlo con </span><code>{{/NAME}}</code><span>el fragmento.</span></p>
-<h2 id="loops"><span>Bucles</span></h2>
-<p><span>Puedes iterar matrices y objetos con el  asistente </span><strong><span>#each</span></strong><br><br><span>. Por lo tanto, si tienes una matriz de matrices para cada persona del proyecto, puedes usar la siguiente sintaxis:</span></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#each persons}}
-    {{name}} - {{email}}
+<pre class="language-handlebars" tabindex="0"><code>{{#each posts}}
+    &lt;h2 style="color: {{ postViewConfig.headercolor }};"&gt;
+        {{ title }}
+    &lt;/h2&gt;
 {{/each}}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span> Se puede utilizar en el siguiente contexto:</span></p>
+<p>El código anterior mostrará la lista de publicaciones con el uso del color de texto especificado por publicación.</p>
+<h2 id="howtocreateposttemplaterelatedpostsettings">¿Cómo crear configuraciones de publicaciones relacionadas con plantillas de publicaciones?</h2>
+<p>Es posible crear opciones de publicación que se mostrarán solo si se utiliza la plantilla de publicación específica (si las plantillas de publicación están disponibles en su tema).</p>
+<p>Debes utilizar el parámetro <strong>postTemplates</strong> . Puede definirse como un nombre de plantilla de publicación único:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code> 
+{
+     "name": "displayAuthor",
+     "label": "Display author name",
+     "value": 1,
+     "type": "select",
+     "postTemplates": "alternative",
+     "options": [
+          {
+              "label": "Enabled",
+              "value": 1
+          },
+          {
+              "label": "Disabled",
+              "value": 0
+          }
+    ]
+}  </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>o como nombres de plantillas de publicaciones múltiples (separados por coma):</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>...
+"postTemplates": "alternative,test,portfolio", 
+...</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Si necesita ocultar opciones de publicación específicas para los nombres de plantillas de publicación indicados, anteponga el valor del parámetro postTemplates con un signo de exclamación:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>...
+"postTemplates": "!alternative,test,portfolio", 
+...</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>En el ejemplo anterior, la configuración de publicación especificada no se mostrará para las plantillas de publicaciones alternativas y de cartera.</p>
+<h2 id="internallinkingbetweenoptions">Enlace interno entre opciones</h2>
+<p>Es posible crear enlaces internos entre opciones utilizando campos de nota.</p>
+<p>Para crear enlaces internos, cree enlaces con el atributo <strong>data-internal-link</strong> :</p>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>&lt;a href="#" data-internal-link="Fonts"&gt;Link A&lt;/a&gt;
+&lt;a href="#" data-internal-link="Fonts#headings"&gt;Link B&lt;/a&gt;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p><strong>El enlace A</strong> conducirá a un grupo llamado Fuentes, mientras que <strong>el enlace B</strong> conducirá a una opción que contiene un campo de anclaje configurado como "encabezados":</p>
 <div class="code-toolbar">
 <pre class="language-json" tabindex="0"><code>{
-   persons: [
-     {
-       name: "John",
-       email: "john@doe.com"
-     },
-     {
-       name: "Adam",
-       email: "adam@adam-and-eve.com"
-     }
-  ] 
+     "anchor": "headings",
+     "name": "separator",
+     "type": "separator",
+     "label": "Headings",
+     "group": "Fonts",
+     "note": "Please note: not all of the font weights are working with the fonts listed above.",
+     "size": "big"
 }</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p><span>El ayudante </span><strong><span>#each</span></strong><span> generará una lista de todas las personas en una lista.</span></p>
-<h2 id="comments"><span>Comentarios</span></h2>
-<p><span>Puedes incluir comentarios dentro de tus archivos *.hbs que no se mostrarán en la salida HTML final. La sintaxis de los comentarios en Handlebars es muy sencilla:</span></p>
+<h2 id="customcssclassesforfields">Clases CSS personalizadas para campos</h2>
+<p>Para mejorar la flexibilidad y la personalización de la interfaz de usuario de Publii, hemos introducido el <code>customCssClasses</code>atributo para campos dentro de complementos, temas y repetidores. Esta función permite a los desarrolladores asignar una o más clases CSS personalizadas a un campo específico, lo que proporciona un mayor control sobre el estilo de los componentes de la interfaz de usuario individuales.</p>
+<h3 id="addingasinglecustomcssclass">Cómo agregar una única clase CSS personalizada</h3>
+<p>Para agregar una sola clase CSS personalizada a un campo, use la <code>customCssClasses</code>propiedad en la configuración JSON del campo. Especifique el nombre de la clase como el valor de esta propiedad. Por ejemplo:</p>
 <div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{! Your comment here !}}</code></pre>
+<pre class="language-json" tabindex="0"><code>{
+  "name": "exampleField",
+  "label": "Example Field",
+  "type": "text",
+  "customCssClasses": "unique-class-name"
+}
+</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<h2 id="customelements"><span>Elementos personalizados</span></h2>
-<p><span>Para los manillares, puedes definir dos elementos personalizados:</span></p>
+<p>Esto aplicará la <code>unique-class-name</code>clase CSS al <code>exampleField</code>elemento en la interfaz de usuario de Publii.</p>
+<h3 id="addingmultiplecustomcssclasses">Cómo agregar múltiples clases CSS personalizadas</h3>
+<p>También puedes asignar varias clases CSS a un campo separando los nombres de clase con un espacio. Esto permite una personalización aún más detallada del estilo del campo. Por ejemplo:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+  "name": "exampleField",
+  "label": "Example Field",
+  "type": "text",
+  "customCssClasses": "unique1-class-name unique2-class-name unique3-class-name"
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>En este ejemplo, <code>exampleField</code>se aplicarán tres clases CSS independientes al elemento: <code>unique1-class-name</code>, <code>unique2-class-name</code>y <code>unique3-class-name</code>. Esto permite aplicar varias reglas de estilo al mismo campo para lograr efectos visuales más complejos y variados.</p>
+<h3 id="usagenotes">Notas de uso</h3>
 <ul>
-<li><span>ayudantes personalizados,</span></li>
-<li><span>Parciales personalizados</span></li>
+<li>Asegúrate de que las clases CSS personalizadas que definas estén declaradas correctamente en los archivos CSS de tu tema o complemento. Las clases no definidas no afectarán la apariencia del campo.</li>
+<li>El <code>customCssClasses</code>atributo se puede utilizar con cualquier tipo de campo, lo que proporciona una herramienta versátil para la personalización de la interfaz de usuario en todo su sitio Publii.</li>
+<li>La combinación de varias clases permite un enfoque granular y en capas para el estilo, creando una interfaz más refinada y fácil de usar.</li>
 </ul>
-<p><span>Los asistentes personalizados se pueden utilizar para operaciones simples y bloques condicionales. Por lo general, se utilizan para hacer cosas que son imposibles con los asistentes disponibles. </span></p>
-<p><span>Puede utilizar ayudantes personalizados para:</span></p>
+<p>Al aprovechar este <code>customCssClasses</code>atributo, los desarrolladores pueden mejorar significativamente la apariencia y la experiencia del usuario de la interfaz de configuración de temas de Publii. Este atributo permite agregar una o más clases CSS personalizadas a campos de configuración individuales, lo que proporciona un método directo para aplicar opciones de estilo específicas. Dicha personalización garantiza que la interfaz de configuración de temas se alinee perfectamente con la visión de diseño del desarrollador, lo que facilita una experiencia de configuración del usuario más intuitiva y visualmente coherente. Esta capacidad subraya la flexibilidad y adaptabilidad de Publii, lo que permite a los desarrolladores crear paneles de configuración de temas altamente personalizados y fáciles de usar.</p>
+<h2 id="enhancingthemesettingsuiwithcustomcss">Mejorar la interfaz de usuario de configuración del tema con CSS personalizado</h2>
+<p>Publii presenta una potente función que permite a los desarrolladores de temas personalizar aún más la apariencia de las opciones del tema mediante clases CSS personalizadas. Esta mejora no se limita únicamente a los temas, sino que se extiende a los complementos y repetidores, lo que garantiza una interfaz de usuario uniforme y visualmente atractiva.</p>
+<p>Con la <code>customThemeOptionsCss</code>función habilitada en la configuración <a href="https://getpublii.com/dev/theme-supported-features/">supportedFeatures</a> , Publii ahora permite cargar un archivo theme-options.css directamente desde el directorio principal del tema. Este archivo CSS dedicado proporciona un enfoque centralizado para diseñar la configuración del tema, lo que facilita a los desarrolladores la gestión y actualización de la presentación visual de las opciones configurables de su tema.</p>
+<p>El <code>theme-options.css</code>archivo debe colocarse en el directorio principal del tema, siguiendo esta ruta: </p>
+<div class="code-toolbar">
+<pre class="language-markdown" tabindex="0"><code>\Documents\Publii\sites\your-siteName\input\themes\your-theme-name\</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Por ejemplo, si su tema se llama <strong>Simple</strong> , la estructura se vería así:</p>
+<div class="code-toolbar">
+<pre class="language-markdown" tabindex="0"><code>- input
+  |- themes
+     |- simple
+        |- theme-options.css
+        |- index.hbs
+        ...
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Esta ruta de archivo garantiza que el <code>theme-options.css</code>archivo se cargue correctamente y se aplique a la configuración del tema en la interfaz de Publii. Para utilizar esta función, debe habilitarla explícitamente en la configuración de su tema. Incluya el siguiente código en <code>config.json</code>el archivo de su tema en la sección <a href="https://getpublii.com/dev/theme-supported-features/">supportedFeatures</a> :</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"supportedFeatures": {
+    "customThemeOptionsCss": true
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"> </div>
+<div><header>
+<h1 class="post__title">Entrada de texto</h1>
+</header>
+<div class="post__entry">
+<p>La entrada de texto es el tipo de campo predeterminado que se utiliza si el tipo de campo especificado no coincide con los demás campos disponibles. Se mostrará el campo de entrada estándar.</p>
+<p>La sintaxis del campo de entrada de texto más sencilla es la siguiente:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "fieldName",
+    "label": "Field name",
+    "group": "Group name",
+    "value": "default value",
+    "type": "text",
+    "disabled": false
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/110/text-input.svg" alt="Entrada de texto" width="748" height="124.043" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Si utiliza un valor de tipo que no coincide con otros tipos de campos, ese valor se utilizará como un atributo de tipo en el elemento HTML de entrada representado.</p>
+<p>Esto le permite crear campos como "número", "oculto", "correo electrónico", "www", etc.</p>
+<h2 id="customparameters">Parámetros personalizados</h2>
+<p>El campo de entrada de texto admite algunos otros parámetros compatibles con la sintaxis del elemento de entrada HTML:</p>
 <ul>
-<li><span>Filtrar contenido</span></li>
-<li><span>Agregue funciones adicionales (como imágenes borrosas para carga diferida)</span></li>
-<li><span>Generar salida HTML parametrizada usando una sola línea de código</span></li>
+<li>mín.</li>
+<li>máximo</li>
+<li>tamaño</li>
+<li>paso</li>
+<li>patrón</li>
+<li>marcador de posición</li>
 </ul>
-<p><span>Los parciales se pueden utilizar para las partes comunes de los temas. Se utilizan para reutilizar el código base. Gracias a los parciales, puedes realizar cambios en tu tema en un solo lugar. Por eso, recomendamos encarecidamente utilizar parciales para las partes reutilizadas del tema: esto facilitará mucho el mantenimiento del tema.</span><br><br><span>Por ejemplo, los parciales de temas integrados de Publii se pueden utilizar para:</span></p>
+<p>Además, hay disponible un parámetro adicional que permite crear una breve descripción del campo de entrada de texto:</p>
 <ul>
-<li><span>Encabezado de página,</span></li>
-<li><span>Pie de página,</span></li>
-<li><span>Bloque de compartir en redes sociales,</span></li>
-<li><span>Paginación,</span></li>
-<li><span>Menú</span></li>
+<li>nota</li>
 </ul>
-<h2 id="globalvariables"><span>Variables globales</span></h2>
-<p><span>Algunos elementos son comunes a todas las vistas y se utilizan junto con el contexto normal de la vista.</span><br><br><span>Se denominan variables globales y se anteponen con el carácter </span><strong><span>@</span></strong><span> . Puede encontrar una lista completa de estas variables en la página de </span><a href="https://getpublii.com/dev/introduction-global-variables/"><span>variables globales</span></a><span> .</span></p>
+<h4>Ejemplo:</h4>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "pageWidth",
+    "label": "Page width",
+    "group": "Layout",
+    "value": "63rem",
+    "note": "Use of „rem” units recommended; also use others (px, vw)",
+    "type": "text"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/110/text.svg" alt="Entrada de texto" width="748" height="154" loading="lazy" data-is-external-image="true"></figure></figure>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"><header>
+<h1 class="post__title">Área de texto</h1>
+</header>
+<div class="post__entry">
+<p>El campo de área de texto se puede utilizar cuando desea permitir que el usuario ingrese más de una línea de texto.</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "copyrightNote",
+    "label": "Copyright note",
+    "group": "Footer",
+    "value": "",
+    "type": "textarea",
+    "rows": 50,
+    "cols": 100,
+    "disabled": false
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El código anterior generará el campo disponible como <strong>@config.custom.copyrightNote</strong>  en la pestaña Pie de página de la configuración personalizada del tema. El elemento <strong>textarea</strong> generado tendrá los atributos <strong>rows</strong> y <strong>cols</strong> establecidos en los valores proporcionados.</p>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/111/textarea.svg" alt="Área de texto" width="748" height="205.898" loading="lazy" data-is-external-image="true"></figure></figure>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"> </div>
+<div><header>
+<h1 class="post__title">Menú desplegable</h1>
+</header>
+<div class="post__entry">
+<p>Si desea permitir que un usuario seleccione un valor de la lista predefinida, puede utilizar la lista desplegable o los <a href="https://getpublii.com/dev/radio-buttons/">botones de opción</a> .</p>
+<p>El campo desplegable tiene un parámetro especial para definir los valores de las opciones disponibles y sus etiquetas:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "layoutFrontpage",
+    "label": "Frontpage layout",
+    "group": "Layout",
+    "value": "cols-3",
+    "type": "select",
+    "options": [
+        {
+            "label": "1 column",
+            "value": "cols-1",
+            "disabled": false
+        },
+        {
+            "label": "2 columns",
+            "value": "cols-2",
+            "disabled": false         
+        },
+        {
+            "label": "3 columns",
+            "value": "cols-3",
+            "disabled": false
+        }
+    ]
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El código anterior generará una lista de selección con tres opciones:</p>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/123/dropdown.svg" alt="Menú desplegable - Lista de selección" width="748" height="124.109" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Puedes hacer que algunas opciones no estén disponibles utilizando el campo <strong>deshabilitado para cada opción.</strong></p>
+<p>También es posible agrupar campos utilizando el <code>&lt;optgroup&gt;</code>elemento: para lograrlo, simplemente use el <code>group</code>parámetro para opciones:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"options": [
+        {
+            "label": "1 column",
+            "value": "cols-1",
+            "group": "GROUP 1"
+        },
+        {
+            "label": "2 columns",
+            "value": "cols-2",
+            "group": "GROUP 2"       
+        },
+        {
+            "label": "3 columns",
+            "value": "cols-3"
+        }
+]</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>En el caso anterior, la primera opción estará en el GRUPO 1, la segunda opción estará en el GRUPO 2 y la tercera opción permanecerá sin agrupar.</p>
+<p>Si necesita agregar más opciones al grupo indicado, simplemente use el mismo nombre de grupo para estas opciones. Las opciones usarán el mismo orden que en la estructura JSON.</p>
+<p> </p>
+</div>
+</div>
+</div>
+</footer></div>
+<div><header>
+<h1 class="post__title">Selector de color</h1>
+</header>
+<div class="post__entry">
+<p>El selector de color permite al usuario seleccionar fácilmente un valor de color en lugar de utilizar un color hexadecimal manualmente.</p>
+<p>La sintaxis básica del selector de color es muy simple:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "primaryColor",
+    "label": "Primary color",
+    "group": "Colors",
+    "value": "#E7AE12",
+    "type": "colorpicker",
+    "outputFormat": "HEX"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Las opciones disponibles:</p>
+<ul>
+<li>RGBA o HEX <em>(predeterminado)</em></li>
+<li>RGBA</li>
+<li>HSLA</li>
+</ul>
+<p>Cuando se selecciona RGBA o HSLA, no se puede cambiar el formato en el control: siempre habrá entradas para RGBA o HSLA.</p>
+<p>El código anterior generará una interfaz de usuario de selector de color con la etiqueta "Color primario" y el color predeterminado establecido en <strong>#E7AE12</strong></p>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/113/color-picker.svg" alt="Selector de color" width="748" height="386" loading="lazy" data-is-external-image="true"></figure></figure>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"> </div>
+<div><header>
+<h1 class="post__title">Carga de imagen</h1>
+</header>
+<div class="post__entry">
+<p>Cuando desee permitir que sus usuarios carguen algunas imágenes adicionales, puede utilizar el campo de carga de imágenes.</p>
+<p>Ese campo utiliza la sintaxis más simple posible:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "logo",
+    "label": "Website logo",
+    "value": "",
+    "type": "upload"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/114/image-uploader.svg" alt="Cargador de imágenes HTML" width="749" height="386" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Si desea permitir que los usuarios carguen imágenes pequeñas utilizando una interfaz de usuario más pequeña, considere utilizar el <a href="https://getpublii.com/dev/small-image-upload/">campo de carga de imágenes pequeñas</a> .</p>
+<p> </p>
+</div>
+</div>
+<div><header>
+<h1 class="post__title">Carga de imagen pequeña</h1>
+</header>
+<div class="post__entry">
+<p>Cuando desee permitir que sus usuarios carguen algunas imágenes adicionales con el uso de la interfaz de carga de imágenes pequeñas, puede utilizar el campo de carga de imágenes pequeñas.</p>
+<p>Ese campo utiliza la sintaxis más simple posible:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "favicon",
+    "label": "Website favicon",
+    "note": "The ideal size of a favicon is 16x16 pixels.",
+    "value": "",
+    "type": "smallupload"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/115/small-file-uploader.svg" alt="Cargador de archivos pequeños" width="748" height="154" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Si desea permitir que los usuarios carguen imágenes más grandes utilizando una interfaz de usuario más grande, considere utilizar el <a href="https://getpublii.com/dev/image-upload/">campo de carga de imágenes</a> .</p>
+<header>
+<h1 class="post__title">Botones de radio</h1>
+</header>
+<div class="post__entry">
+<p>Si desea permitir que un usuario seleccione un valor de la lista predefinida, puede utilizar botones de opción o la <a href="https://getpublii.com/dev/dropdown/">lista desplegable</a> .</p>
+<p>Los botones de opción tienen un parámetro especial para definir los valores de las opciones disponibles y sus etiquetas:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "layoutFrontpage",
+    "label": "Frontpage layout",
+    "group": "Layout",
+    "value": "cols-3",
+    "type": "radio",
+    "options": [
+        {
+            "label": "1 column",
+            "value": "cols-1",
+            "disabled": false
+        },
+        {
+            "label": "2 columns",
+            "value": "cols-2",
+            "disabled": false
+        },
+        {
+            "label": "3 columns",
+            "value": "cols-3",
+            "disabled": false
+        }
+    ]
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El código anterior generará una lista de botones de opción con tres opciones:</p>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/116/radio-buttons.svg" alt="Botones de radio" width="748" height="124.109" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Puede deshabilitar algunas opciones utilizando el campo <strong>deshabilitado</strong> para cada opción.</p>
+<header>
+<h1 class="post__title">Conmutador</h1>
+</header>
+<div class="post__entry">
+<p>Para situaciones en las que desea permitir a los usuarios simplemente habilitar o deshabilitar algunas opciones, puede considerar el campo conmutador que permite solo dos valores: <strong>verdadero</strong> o <strong>falso</strong> :</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "lazyLoad",
+    "label": "Lazyload",
+    "group": "Additional",
+    "note": "Enables lazyloading images that are currently not viewed, thus saving bandwidth.",
+    "value": true,
+    "type": "checkbox"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/117/switcher.svg" alt="Conmutador HTML" width="748" height="156" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Los campos del conmutador son excelentes para manejar la visualización condicional de otras opciones con el uso del parámetro <strong>de dependencias</strong> descrito en <a href="https://getpublii.com/dev/theme-settings-api/">la API de configuración del tema</a> .</p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer></div>
+</div>
+</footer></div>
+<div><header>
+<h1 class="post__title">Control deslizante de rango</h1>
+</header>
+<div class="post__entry">
+<p>Si desea permitir que los usuarios especifiquen un valor que esté dentro de un rango específico, puede considerar el uso del campo deslizante de rango.</p>
+<p>Gracias al uso de los parámetros <strong>min</strong> , <strong>max</strong> y <strong>step</strong> puedes limitar fácilmente los valores disponibles:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "fontSize",
+    "label": "Font size",
+    "group": "Fonts",
+    "note": "The font-size of the root element in REM unit",
+    "value": "1.1",
+    "type": "range",
+    "min": 1,
+    "max": 3,
+    "step": 0.05 
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El código anterior creará un control deslizante de rango que permite a los usuarios seleccionar un valor entre <strong>1</strong> y <strong>3</strong> con un paso mínimo igual a <strong>0,05</strong> .</p>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/118/range-slider.svg" alt="Control deslizante de rango" width="748" height="133.927" loading="lazy" data-is-external-image="true"></figure></figure>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"><header>
+<h1 class="post__title">Reloj de repetición</h1>
+</header>
+<div class="post__entry">
+<p>El campo Repetidor permite la adición dinámica de una lista de elementos, cada uno de los cuales consta de varios campos. Es especialmente útil en casos en los que se necesita una cantidad variable de entradas, cada una con la misma estructura. A continuación, se incluye una guía detallada sobre su configuración y sus capacidades.</p>
+<h2 id="configuration">Configuración</h2>
+<p>El campo Repetidor se define de la siguiente manera:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+  "name": "test",
+  "label": "Repeater Test",
+  "group": "Global Changes",
+  "type": "repeater",
+  "value": [],
+  "maxCount": 10,
+  "translations": {
+    "addItem": "Add Item",
+    "duplicateItem": "Duplicate Item",
+    "emptyState": "Click the button to add the first item",
+    "removeItem": "Remove Item"
+  },
+  "hasEmptyState": true,
+  "hideLabels": false,
+  "structure": [
+    {
+      "name": "field1",
+      "label": "Field 1",
+      "type": "text",
+      "placeholder": "Fill it",
+      "spellcheck": true,
+      "value": "",
+      "width": 25,
+      "dependencies": [
+        {
+          "field": "use_global_setting",
+          "type": "pluginOption",
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "name": "field2",
+      "label": "Field 2",
+      "type": "number",
+      "placeholder": "Fill it",
+      "spellcheck": true,
+      "value": 0,
+      "width": 25
+    },
+    {
+      "name": "field3",
+      "label": "Field 3",
+      "type": "textarea",
+      "placeholder": "Fill it",
+      "spellcheck": true,
+      "value": "",
+      "width": 50,
+      "dependencies": [
+        {
+          "field": "field1",
+          "type": "option",
+          "value": "specific value"
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<h3 id="fieldproperties">Propiedades del campo</h3>
+<p>A continuación, se incluye un desglose completo de las propiedades de campo disponibles en la configuración del repetidor. Estas propiedades son fundamentales para definir la estructura y el comportamiento de cada campo del repetidor. Abarcan todo, desde la configuración básica, como la asignación de nombres y el etiquetado de los campos, hasta configuraciones más avanzadas, como marcadores de posición de entrada, valores predeterminados y dependencias condicionales. </p>
+<ul>
+<li><strong>estructura</strong> : define la estructura de los campos dentro de cada elemento repetidor. Admite las siguientes propiedades:
+<ul>
+<li><strong>nombre</strong> : Nombre del campo.</li>
+<li><strong>etiqueta</strong> : Etiqueta de campo para visualización.</li>
+<li><strong>tipo</strong> : tipo de campo. Los tipos admitidos incluyen <code>text</code>, <code>number</code>, <code>textarea</code>, <code>dropdown</code>, <code>checkbox</code>, <code>radio</code>, <code>posts-dropdown</code>, <code>tags-dropdown</code>, <code>authors-dropdown</code>, <code>colorpicker</code>.</li>
+<li><strong>opciones</strong> : Matriz de objetos <code>{ label: X, value: Y }</code>para <code>dropdown</code>o <code>radio</code>tipos.</li>
+<li><strong>marcador de posición</strong> : marcador de texto para <code>text</code>, <code>number</code>, <code>email</code>, <code>url</code>, y <code>textarea</code>.</li>
+<li><strong>corrector ortográfico</strong> : activa el corrector ortográfico.</li>
+<li><strong>múltiple</strong> : permite selecciones múltiples para menús desplegables relacionados con publicaciones, etiquetas y autores.</li>
+<li><strong>filas</strong> : Número de filas para <code>textarea</code>.</li>
+<li><strong>min</strong> , <strong>max</strong> , <strong>step</strong> : Atributos para <code>number</code>y <code>range</code>tipos.</li>
+<li><strong>allowed-post-status</strong> : filtra publicaciones por estado para <code>posts-dropdown</code>.</li>
+<li><strong>ancho</strong> : Ancho del campo como porcentaje.</li>
+<li><strong>outputFormat</strong> : Formato para el <code>colorpicker</code>.</li>
+<li><strong>valor</strong> : valor predeterminado.</li>
+</ul>
+</li>
+<li><strong>maxCount</strong> : cantidad máxima de elementos permitidos. El valor predeterminado es <code>-1</code>ilimitado.</li>
+<li><strong>Traducciones</strong> : Traducciones personalizadas para elementos de la interfaz de usuario, como botones para agregar, duplicar y eliminar.</li>
+<li><strong>hasEmptyState</strong> : muestra un mensaje de estado vacío cuando no hay elementos presentes.</li>
+<li><strong>hideLabels</strong> : Opción para ocultar las etiquetas de campo para todos los elementos excepto la primera fila.</li>
+</ul>
+<h3 id="dependenciesinrepeaterfield">Dependencias en el campo repetidor</h3>
+<p>El campo Repetidor admite dependencias, lo que permite la visualización o el ocultamiento dinámico de campos en función de los valores de otros campos dentro del mismo elemento repetidor o de las opciones de tema globales. Esta funcionalidad mejora la interactividad y la adaptabilidad de los elementos del formulario, lo que proporciona una experiencia de usuario personalizada en función de la entrada. Hay dos tipos de dependencias:</p>
+<ol>
+<li>
+<p><strong>Dependencia de opción externa</strong> ( <code>externalOption</code>): este tipo de dependencia permite que un campo dentro de un repetidor dependa de un valor de opción externa. Si <code>pluginOption</code>se cumple la condición establecida por la dependencia, el campo se vuelve visible u oculto según la lógica especificada.</p>
+</li>
+<li>
+<p><strong>Dependencia de opción</strong> : hace referencia a las dependencias entre campos dentro del mismo elemento repetidor. A diferencia del <code>externalOption</code>tipo, no especifica un tipo de dependencia, lo que implica que se trata de una dependencia entre repetidores. Permite mostrar u ocultar campos en función de los valores de otros campos dentro del mismo elemento.</p>
+</li>
+</ol>
+<h4>Ejemplo de configuración</h4>
+<p>Para ilustrarlo, considere el siguiente fragmento de configuración JSON que demuestra ambos tipos de dependencias:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+  "name": "use_in_text",
+  "label": "Use in post text",
+  "type": "checkbox",
+  "value": true,
+  "width": 33,
+  "dependencies": [
+    {
+      "field": "wrapper",
+      "type": "externalOption",
+      "value": "custom"
+    }
+  ]
+},
+{
+  "name": "use_in_title",
+  "label": "Use in post title",
+  "type": "checkbox",
+  "value": false,
+  "width": 33,
+  "dependencies": [
+    {
+      "field": "use_in_text",
+      "type": "option",
+      "value": "true"
+    }
+  ]
+}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<h4>Explicación de la lógica de dependencia</h4>
+<ul>
+<li>
+<p><strong>Dependencia de opción externa</strong> : el campo <code>use_in_text</code>solo es visible si la opción externa <code>wrapper</code>está configurada en <code>custom</code>. Esto demuestra cómo un campo dentro de un repetidor puede depender de una configuración externa.</p>
+</li>
+<li>
+<p><strong>Dependencia entre repetidores</strong> : la visibilidad de <code>use_in_title</code>depende de que la <code>use_in_text</code>casilla de verificación esté marcada ( <code>true</code>). Esto muestra la dependencia de un campo con otro dentro del mismo elemento repetidor.</p>
+</li>
+</ul>
+<h2 id="implementingintheme">Implementando en el tema</h2>
+<p>Después de configurar el campo repetidor en la configuración del tema, el siguiente paso es mostrar los elementos agregados en el sitio web. Esta sección explica cómo mostrar el contenido de un campo repetidor llamado "prueba" en un tema de Publii mediante la plantilla Handlebars.</p>
+<h3 id="renderingrepeaterfieldcontent">Representación del contenido del campo repetidor</h3>
+<p>Para mostrar cada elemento del repetidor en su tema, utilizará el <code>each</code>bucle Handlebars. Este método itera sobre los elementos del campo repetidor, lo que le permite acceder y representar los valores de los campos individuales.</p>
+<p>A continuación se muestra un fragmento de código de muestra que demuestra cómo recorrer los elementos en el campo repetidor "prueba" y mostrar el contenido de <code>field1</code>, <code>field2</code>, y <code>field3</code>dentro de su tema, por ejemplo, en <code>index.hbs</code>el archivo:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#each @config.custom.test}}
+  &lt;div class="custom-repeater-item"&gt;
+    &lt;div class="field"&gt;
+      &lt;span class="label"&gt;Field 1:&lt;/span&gt;
+      &lt;span class="value"&gt;{{field1}}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;span class="label"&gt;Field 2:&lt;/span&gt;
+      &lt;span class="value"&gt;{{field2}}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;span class="label"&gt;Field 3:&lt;/span&gt;
+      &lt;p class="value"&gt;{{field3}}&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+{{/each}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<h4>Puntos clave:</h4>
+<ul>
+<li><strong>Iteración</strong> : <code>{{#each @config.custom.test}}</code>itera sobre los elementos repetidores, lo que permite el acceso a los campos de cada elemento.</li>
+<li><strong>Acceso al campo</strong> : Dentro del bucle, <code>{{field1}}</code>, <code>{{field2}}</code>, <code>{{field3}}</code>se utilizan para insertar los valores de los campos correspondientes.</li>
+<li><strong>Estructura HTML</strong> : el ejemplo utiliza etiquetas <code>div</code>y <code>span</code>elementos para estructurar la salida, que se puede personalizar según los requisitos de diseño de su tema.</li>
+</ul>
+<header>
+<h1 class="post__title">Separador</h1>
+</header>
+<div class="post__entry">
+<p>El campo separador se puede utilizar para crear notas adicionales para grupos de opciones o se puede utilizar como separador entre grupos de configuraciones más pequeños.</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+    "name": "separator",
+    "type": "separator",
+    "label": "Separator label",
+    "note": "Separator description text",
+    "group": "Menu",
+    "size": "small"
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/119/separator.svg" alt="Separadores" width="748" height="154" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>Los tamaños disponibles del campo separador:</p>
+<ul>
+<li>pequeño</li>
+<li>medio</li>
+<li>grande</li>
+</ul>
+<p> </p>
+<div class="msg msg--highlight"><strong>Consejos y trucos:</strong>
+<ol>
+<li>En algunos casos, es posible que desee utilizar solo la línea de puntos; para lograr esto, deje el parámetro <strong>de etiqueta</strong>  vacío.</li>
+<li>Los tres tipos de separadores vienen con márgenes superiores e inferiores; para eliminar estos espacios, deje el parámetro <strong>de tamaño</strong> vacío.</li>
+</ol>
+</div>
+<p class="msg msg--info">Puede utilizar el mismo nombre para todos los separadores de su tema, ya que no se almacenan en el archivo de configuración del tema.</p>
+<p> </p>
+<header>
+<h1 class="post__title">Menú desplegable de publicaciones</h1>
+</header>
+<div class="post__entry">
+<p>El menú desplegable de publicaciones se puede utilizar en situaciones en las que desea permitir que los usuarios de su tema utilicen una relación específica con la publicación determinada.</p>
+<p>Se puede utilizar, por ejemplo, para especificar la página de política de privacidad:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code> 
+{
+     "name": "privacyPolicyPage",
+     "label": "Privacy Policy",
+     "group": "GDPR",
+     "value": "",
+     "allowedPostStatus": ["any"],
+     "type": "posts-dropdown",
+     "multiple": false
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/120/posts-dropdown.svg" alt="Lista desplegable de publicaciones" width="748" height="262.879" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>El menú desplegable de publicaciones devuelve los ID de las publicaciones seleccionadas como un valor, por lo que debe conectarse con el uso del asistente <a href="https://getpublii.com/dev/getpost-helper/">getPost</a> o <a href="https://getpublii.com/dev/getposts-helper/">getPosts . Si la opción </a><strong>múltiple</strong> se establece en verdadero, se devuelve una cadena con los ID separados por comas.</p>
+<p>El parámetro <strong>allowedPostStatus</strong> permite los siguientes valores:</p>
+<ul>
+<li>any</li>
+<li>draft</li>
+<li>hidden</li>
+<li>featured</li>
+<li>published</li>
+<li>excluded</li>
+</ul>
+<p>El valor any significa cualquier otro estado de publicación, por lo que no es necesario especificar ningún otro estado en la matriz con valores de estados de publicación.</p>
+<header>
+<h1 class="post__title">Páginas desplegables</h1>
+</header>
+<div class="post__entry">
+<p>El menú desplegable de páginas se puede utilizar en situaciones en las que desea permitir que los usuarios de su tema utilicen una relación específica con la página determinada.</p>
+<p>Se puede utilizar, por ejemplo, para especificar la página de política de privacidad:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code> 
+{
+     "name": "privacyPolicyPage",
+     "label": "Privacy Policy",
+     "group": "GDPR",
+     "value": "",
+     "type": "pages-dropdown",
+     "multiple": false
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El menú desplegable de páginas devuelve los ID de las páginas seleccionadas como valor, por lo que debe conectarse con el uso del asistente getPage o getPages. Si la opción <strong>múltiple</strong> se establece en verdadero, se devuelve una cadena con los ID separados por comas.</p>
+<header>
+<h1 class="post__title">Etiquetas desplegables</h1>
+</header>
+<div class="post__entry">
+<p>El menú desplegable de etiquetas se puede utilizar en situaciones en las que desea permitir que los usuarios utilicen una relación específica con la etiqueta dada.</p>
+<p>Se puede utilizar, por ejemplo, para especificar la etiqueta que se utilizará para crear una lista de publicaciones:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code> 
+{
+     "name": "listingTag",
+     "label": "Post listing",
+     "group": "Layout",
+     "note": "Creates a list of posts with the selected tag",
+     "value": "",
+     "type": "tags-dropdown",
+     "multiple": false
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/121/tags-dropdown.svg" alt="Lista desplegable de etiquetas" width="748" height="263" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>El menú desplegable de etiquetas devuelve el ID de la etiqueta seleccionada como un valor, por lo que debe conectarse con el uso de los asistentes  <a href="https://getpublii.com/dev/getpostsbytags-helper/">getPostsByTag</a>  o <a href="https://getpublii.com/dev/getpostbytags-helper/">getPostByTag . Si la opción </a><strong>múltiple</strong>  se establece en  <strong>true</strong> , se devuelve una cadena con los ID separados por comas.</p>
+<header>
+<h1 class="post__title">Menú desplegable de autores</h1>
+</header>
+<div class="post__entry">
+<p>El menú desplegable de autores se puede utilizar en situaciones en las que desea permitir que los usuarios de su tema utilicen una relación específica con el autor determinado.</p>
+<p>Se puede utilizar, por ejemplo, para especificar un autor que se utilizará para crear la lista de publicaciones:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code> 
+{
+     "name": "listingAuthor",
+     "label": "Post listing",
+     "group": "Layout",
+     "note": "Creates a list of posts from the selected author",
+     "value": "",
+     "type": "authors-dropdown",
+     "multiple": false
+}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<figure class="post__image"><figure class="is-loaded"><img  src="https://getpublii.com/dev/media/posts/122/authors-dropdown.svg" alt="Lista desplegable de autores" width="748" height="297.25" loading="lazy" data-is-external-image="true"></figure></figure>
+<p>El menú desplegable de autores devuelve el ID de la etiqueta seleccionada como valor. Si la opción <strong>múltiple</strong> se establece en <strong>true</strong> , se devuelve una cadena con los ID separados por comas.</p>
+<p> </p>
+</div>
+</div>
+</div>
+<p> </p>
+</div>
+</div>
+<p> </p>
+</div>
+</div>
+<div> </div>
+<div> </div>
+</div>
+</footer></div>
+</div>
+</footer></div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>API del editor de publicaciones</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/api-del-editor-de-publicaciones.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/api-del-editor-de-publicaciones.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-12-06T21:24:53-03:00</updated>
+            <summary>
+                <![CDATA[
+                    El editor de publicaciones de Publii se basa en el editor TinyMCE y le permite agregar algunas modificaciones según el tema&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">El editor de publicaciones de Publii se basa en el editor </span><a href="https://www.tiny.cloud/" target="_blank" rel="nofollow noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">TinyMCE</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> y le permite agregar algunas modificaciones según el tema utilizado o anulaciones de configuración.</span></p>
+</header>
+<div class="post__entry">
+<h2 id="customposteditorcssstyles">Estilos CSS del editor de publicaciones personalizado</h2>
+<p>Para brindar la mejor experiencia a los usuarios del tema, los desarrolladores del tema pueden querer agregar estilos CSS personalizados al editor de publicaciones. Si desea agregar estilos CSS personalizados, simplemente cree un </p>
+<div>
+<div><strong>El archivo assets/css/editor.css</strong> de tu tema. Ese archivo se cargará después del archivo CSS del editor de publicaciones predeterminado, por lo que podrás anular cualquier regla CSS predeterminada del editor de publicaciones.</div>
+</div>
+<h2 id="changingposteditordefaultconfiguration">Cambiar la configuración predeterminada del editor de publicaciones</h2>
+<p>Siempre intentamos crear las mejores soluciones para la mayoría de los usuarios de Publii, pero entendemos que el editor de publicaciones es una herramienta compleja y que las necesidades de los usuarios pueden ser muy diferentes. Por eso, permitimos que los usuarios anulen la configuración predeterminada de TinyMCE mediante <a href="https://getpublii.com/dev/how-to-add-custom-config-or-js-for-post-editor/" target="_blank" rel="nofollow noopener noreferrer">un archivo de configuración personalizado o scripts JS personalizados</a> . </p>
+<h2 id="customformats">Formatos personalizados</h2>
+<p>Los desarrolladores de temas pueden agregar formatos personalizados que les permiten crear estructuras HTML personalizadas que se pueden insertar fácilmente en el editor de publicaciones. Estos formatos están disponibles en la lista desplegable "Formatos" de la interfaz de usuario del editor de publicaciones y también en la barra de herramientas en línea del editor de publicaciones en la lista desplegable "Seleccionar estilo".</p>
+<p>Para agregar formatos personalizados a su tema, simplemente cree en el archivo config.json del tema un campo llamado "customElements".</p>
+<p>Ejemplo de campo customElements que crea cuatro formatos personalizados: "Información", "Resaltado", "Éxito" y "Letra capital": </p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"customElements": [
+    {
+        "label": "Info",
+        "cssClasses": "msg msg--info",
+        "selector": "p"
+    },
+    {
+        "label": "Highlight",
+        "cssClasses": "msg msg--highlight ",
+        "selector": "p"
+    },
+    {
+        "label": "Success",
+        "cssClasses": "msg msg--success",
+        "selector": "p"
+    },
+    {
+        "label": "Drop cap",
+        "cssClasses": "dropcap",
+        "selector": "p"
+    }
+] </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Como puede ver, cada elemento de formato personalizado está representado por un objeto que contiene tres campos:</p>
+<ul>
+<li><strong>etiqueta</strong> : es un nombre de formato que se muestra en las listas desplegables en el editor de publicaciones,</li>
+<li><strong>cssClasses</strong> : es una lista de clases CSS utilizadas en el elemento inyectado; puede aplicarles estilo en el archivo editor.css personalizado descrito anteriormente.</li>
+<li><strong>selector</strong> : es un nombre de etiqueta utilizado para envolver el contenido del formato personalizado.</li>
+</ul>
+<p>También es posible limitar la visibilidad de los formatos personalizados a editores específicos. </p>
+<p>Publii utiliza el editor TinyMCE en dos lugares: en el editor de publicaciones y en la configuración del tema. Utiliza dos campos adicionales para las definiciones de formatos personalizados:</p>
+<ul>
+<li><strong>postEditor</strong> : si es verdadero, permitirá que el formato personalizado se muestre en el editor de publicaciones.</li>
+<li><strong>themeSettings</strong> : si es verdadero, permitirá que el formato personalizado se muestre en los editores WYSIWYG de configuración del tema.</li>
+</ul>
+<p>Puedes especificar dónde se mostrarán:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"customElements": [
+    {
+        "label": "Info", 
+        "cssClasses": "msg msg--info",
+        "selector": "p",
+        "postEditor": true, // will display under post editor
+        "themeSettings": false // won't display under theme settings
+    },
+    {
+        "label": "Highlight",
+        "cssClasses": "msg msg--highlight ",
+        "selector": "p",
+        "postEditor": false, // won't display under post editor
+        "themeSettings": true // will display under theme settings
+    },
+    {
+        "label": "Success",
+        "cssClasses": "msg msg--success",
+        "selector": "p",
+        "postEditor": false // won't display under post editor and theme settings
+    },
+    {
+        "label": "Drop cap",
+        "cssClasses": "dropcap",
+        "selector": "p",
+        "themeSettings": true // will display under post editor and theme settings as postEditor when not exists is treated as true
+    }
+]</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El valor predeterminado para el campo <strong>postEditor</strong> es <strong>true</strong> . Para el campo <strong>themeSettings</strong> , el valor predeterminado es <strong>false</strong> . Esto significa que los formatos personalizados sin estos valores definidos se mostrarán solo en el editor de publicaciones.</p>
 </div>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>¿Cómo crear plantillas personalizadas?</title>
+        <title>Creación de parciales personalizados</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-crear-plantillas-personalizadas.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/como-crear-plantillas-personalizadas.html</id>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/creacion-de-parciales-personalizados.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/creacion-de-parciales-personalizados.html</id>
             <category term="Publii"/>
 
-        <updated>2024-12-06T20:35:06-03:00</updated>
+        <updated>2024-12-06T21:19:18-03:00</updated>
             <summary>
                 <![CDATA[
-                    Publii ofrece la posibilidad de crear plantillas personalizadas para publicaciones, páginas, etiquetas y autores. Para crear una plantilla de publicación&hellip;
+                    Introducción - parciales Los parciales son fragmentos comunes de su sitio web que se colocan en archivos separados para facilitar&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <header><header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Publii ofrece la posibilidad de crear plantillas personalizadas para publicaciones, páginas, etiquetas y autores. Para crear una plantilla de publicación personalizada, siga estos pasos:</span></p>
+<h1 class="post__title">Introducción - parciales</h1>
 </header>
 <div class="post__entry">
-<ol>
-<li><span>Cree un archivo </span><strong><span>post-TEMPLATE_SLUG.hbs</span></strong><span> ,</span></li>
-<li><span>En el archivo config.json del tema, agregue la siguiente entrada:</span></li>
-</ol>
+<p>Los parciales son fragmentos comunes de su sitio web que se colocan en archivos separados para facilitar su reutilización.</p>
+<p>Se encuentran en el directorio <strong>de parciales</strong> de su tema.</p>
+<p>Partial se carga utilizando la siguiente sintaxis:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{&gt; header}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
+</div>
+<p>El código anterior carga el archivo <strong>partials/header.hbs</strong> .</p>
+<p>Cada tema de Publii utiliza al menos 4 parciales:</p>
+<ul>
+<li><a href="https://getpublii.com/dev/headerhbs-partial/">header.hbs</a> - para el comienzo de cada página de su sitio web,</li>
+<li><a href="https://getpublii.com/dev/footerhbs-partial/">footer.hbs</a> - para el final de cada página de su sitio web,</li>
+<li><a href="https://getpublii.com/dev/menuhbs-partial/">menu.hbs</a> - para la estructura del menú,</li>
+<li><a href="https://getpublii.com/dev/paginationhbs-partial/">pagination.hbs</a> - para la estructura de paginación</li>
+</ul>
+<p>Los <strong>archivos menu.hbs</strong> y <strong>pagination.hbs</strong> son opcionales para los temas tal como están definidos en Publii y estos archivos predeterminados se utilizan si estos archivos no existen en el tema.</p>
+<p>También puedes definir <a href="https://getpublii.com/dev/creating-custom-partials/">tus parciales personalizados</a> : también deben colocarse en el directorio <strong>de parciales</strong> .</p>
+</div>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Los desarrolladores de temas pueden crear partes personalizadas en sus temas. Esto resulta útil si desea reutilizar su código en muchas vistas.</span></p>
 </header>
 <div class="post__entry">
+<p>Para crear un elemento parcial personalizado, simplemente cree un archivo <strong>*.hbs</strong> en el directorio de elementos parciales del tema. El nombre del archivo parcial se utilizará en el código del tema.</p>
+<p>Por ejemplo, si creas el archivo <strong>partials/cookiebar.hbs</strong>  en tu tema, podrás usarlo en otros archivos como:</p>
 <div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>
-"postTemplates": {
-   "TEMPLATE_SLUG": "Human readable template name"
-}
-</code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{&gt; cookiebar}}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a>Copy</a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p class="msg msg--warning"><strong>WARNING!</strong> Please use lowercase slugs without any special and non-latin chars. Also, avoid using the <strong>DEFAULT</strong> slug as it is used exclusively for posts which are using the default post template from the <strong>post.hbs</strong> file.</p>
-<p>If custom post templates are available, then a dropdown option will appear under the Advanced settings in the post editor.</p>
-<h2 id="custompagetemplates">Custom page templates</h2>
-<p>To create a custom page template, follow these steps:</p>
-<ol>
-<li>Create a <strong>page-TEMPLATE_SLUG.hbs</strong> file,</li>
-<li>Add the following entry to the theme's config.json file:</li>
-</ol>
+<p>También es posible crear parciales que tengan parámetros: esto es especialmente útil cuando tienes problemas con el contexto.</p>
+<p>Analicemos la siguiente situación:</p>
+<p>Tenemos el siguiente contexto para una vista:</p>
 <div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>
-"pageTemplates": {
-   "TEMPLATE_SLUG": "Human readable template name"
-}
-</code></pre>
+<pre class="language-json" tabindex="0"><code>{
+    config: {
+        optionValue: true 
+    },
+    pages: [
+       { title: "Lorem" },
+       { title: "Ipsum" }
+    ]
+}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a>Copy</a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p>If custom page templates are available then the dropdown option will be activated in the page editor.</p>
-<h2 id="customauthortemplates">Custom author templates</h2>
-<p>To create a custom author template, follow these steps:</p>
-<ol>
-<li>Create a <strong>author-TEMPLATE_SLUG.hbs</strong> file,</li>
-<li>Add the following entry to the theme's config.json file:</li>
-</ol>
+<p>Y cargamos nuestro parcial en el archivo principal de la siguiente manera:</p>
 <div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>
-"authorTemplates": {
-   "TEMPLATE_SLUG": "Human readable template name"
-}
-</code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{#each pages}}
+    {{&gt; page}}
+{{/each}}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a>Copy</a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p>If custom author templates are available then the dropdown option will be activated in the author add/edit form.</p>
-<h2 id="customtagtemplates">Custom tag templates</h2>
-<p>To create a custom post template, follow these steps:</p>
-<ol>
-<li>Create a <strong>tag-TEMPLATE_SLUG.hbs</strong> file,</li>
-<li>Add the following entry to the theme's config.json file:</li>
-</ol>
+<p>Podemos acceder <code>{{title}}</code>en nuestro parcial, pero <code>{{config}}</code>no está disponible incluso si usamos <code>{{../config}}</code>.</p>
+<p>La solución es crear un parámetro para nuestro parcial:</p>
 <div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>
-"tagTemplates": {
-   "TEMPLATE_SLUG": "Human readable template name"
-}
-</code></pre>
+<pre class="language-handlebars" tabindex="0"><code>{{#each pages}}
+    {{&gt; page config=../config}}
+{{/each}}</code></pre>
 <div class="toolbar">
-<div class="toolbar-item"><a>Copy</a></div>
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
 </div>
-<p>If custom tag templates are available a dropdown option will be activated in the tag add/edit form.</p>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Creando una búsqueda personalizada en Google</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/los-buscadores.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/los-buscadores.html</id>
-        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg" medium="image" />
-            <category term="Publii"/>
-            <category term="HTML"/>
-
-        <updated>2024-11-13T22:22:40-03:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg" alt="" />
-                    Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. Para ello, siga&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/47/gallery01.jpg" class="type:primaryImage" alt="" /></p>
-                <p>Antes de poder habilitar y configurar el complemento, deberá crear su búsqueda personalizada a través de Google. <a href="https://getpublii.com/docs/google-custom-search.html" target="_blank" rel="noopener noreferrer">Para ello, siga estos pasos:</a></p>
-<p> </p>
-<p>Los buscadores en Google - <a href="https://programmablesearchengine.google.com/controlpanel/all" target="_blank" rel="noopener noreferrer">Ver </a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>HTML &amp; CSS</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/html-and-css-2.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/html-and-css-2.html</id>
-            <category term="HTML"/>
-
-        <updated>2024-11-13T21:31:07-03:00</updated>
-            <summary>
-                <![CDATA[
-                    HTML &amp; CSS es una guía sencilla y completa dedicada a ayudar a los principiantes a aprender HTML y CSS. Esta&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header class="main">
-<p><a href="https://learn.shayhowe.com/html-css/" target="_blank" rel="noopener" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"><strong>HTML &amp; CSS</strong></a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> es una guía sencilla y completa dedicada a ayudar a los principiantes a aprender HTML y CSS. Esta guía describe los conceptos básicos y aborda todos los elementos comunes del diseño y desarrollo de front-end.</span></p>
+<p>En el ejemplo anterior podremos acceder <code>{{config}}</code>a nuestro parcial.</p>
+<header>
+<h1 class="post__title">pie de página.hbs parcial</h1>
 </header>
-<div class="page__entry">
-<p>HTML es la base de todas las páginas web. Define la estructura de una página, mientras que CSS define su estilo. HTML y CSS son el comienzo de todo lo que necesitas saber para crear tu primera página web. Aprende ambos y comienza a crear sitios web increíbles en <a href="https://www.codecademy.com/catalog/language/html-css" target="_blank" rel="noopener"><strong>codecademy</strong></a></p>
-<p><strong>El mejor lugar para crear, probar y descubrir código front-end.</strong><br><a href="https://codepen.io/" target="_blank" rel="noopener"><strong>CodePen</strong></a> es un entorno de desarrollo social para diseñadores y desarrolladores front-end. Cree e implemente un sitio web, muestre su trabajo, cree casos de prueba para aprender y depurar, y encuentre inspiración.</p>
+<div class="post__entry">
+<p>Esta parte se utiliza como final para los archivos *.hbs de su tema, en cada archivo que debe mostrar el pie de página de su sitio web:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{&gt; footer}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Secciones Pruebas</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/secciones-pruebas.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/secciones-pruebas.html</id>
-            <category term="HTML"/>
-
-        <updated>2024-11-13T21:22:09-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Súmate a millones de blogueros Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <section class="content main__inner verde" tabindex="0"><header class="millions--header">
-<h2><span style="color: #ecf0f1;">Súmate a millones de blogueros</span></h2>
-<p><span style="color: #ecf0f1;">Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito aquí sobre lo que les apasiona.</span></p>
-<p class="align-center"><a href="/go/createyourblog?hl=es" class="cta dark ga-map-cta btn" style="font-family: var(--editor-font-family); font-weight: var(--font-weight-normal);">Crea tu blog</a></p>
+</div>
+<header>
+<h1 class="post__title">encabezado.hbs parcial</h1>
 </header>
-<div class="background millions__background">
-<div class="millions--map"> </div>
-<div class="millions--markers"> </div>
+<div class="post__entry">
+<p>Esta parte se utiliza como inicio de los archivos *.hbs de su tema en cada archivo que mostrará el encabezado de su sitio web:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{&gt; header}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
-</section>
-<section class="naranja-suave" tabindex="0"><header class="millions--header">
-<h2>Súmate a millones de blogueros</h2>
-<p>Tanto si quieres compartir tus conocimientos como dar las últimas noticias o decir lo que se te pase por la cabeza, en Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito aquí sobre lo que les apasiona.</p>
-<a href="/go/createyourblog?hl=es" class="cta dark ga-map-cta btn btn--light">Crea tu blog</a></header>
-<div class="background millions__background">
-<div class="millions--map"> </div>
-<div class="millions--markers"> </div>
 </div>
-</section>
-<section class="azul" tabindex="0"><header class="millions--header">
-<h2>Súmate a millones de blogueros</h2>
-<p>Tanto si quieres compartir tus conocimientos como dar las últimas noticias o decir lo que se te pase por la cabeza, en Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito aquí sobre lo que les apasiona.</p>
-<a href="/go/createyourblog?hl=es" class="cta dark ga-map-cta btn btn--dark">Crea tu blog</a></header>
-<div class="background millions__background">
-<div class="millions--map"> </div>
-<div class="millions--markers"> </div>
+<p>Con esta solución no necesitarás duplicar código ni aplicar cambios en varios archivos.</p>
+<header>
+<h1 class="post__title">menú.hbs parcial</h1>
+</header>
+<div class="post__entry">
+<p>El menú parcial se utiliza para mostrar los menús en su sitio web.<br>Este parcial debe tener un parámetro con una estructura del menú que se va a mostrar:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{&gt; menu menus.mainMenu}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
 </div>
-</section>
-<section class="rojo" tabindex="0"><header class="millions--header">
-<h2>Súmate a millones de blogueros</h2>
-<p>Tanto si quieres compartir tus conocimientos como dar las últimas noticias o decir lo que se te pase por la cabeza, en Blogger estás muy bien acompañado. Regístrate para saber por qué millones de personas han escrito aquí sobre lo que les apasiona.</p>
-<a href="/go/createyourblog?hl=es" class="cta dark ga-map-cta btn btn--bordered">Crea tu blog</a></header>
-<div class="background millions__background">
-<div class="millions--map"> </div>
-<div class="millions--markers"> </div>
 </div>
-</section>
-<section class="verde"><header class="header">
-<h2><span style="color: #34495e;">Súmate a millones de blogueros</span></h2>
-<p><span style="color: #34495e;">Tanto si quieres compartir tus conocimientos como dar las últimas noticias.</span></p>
+<p>El código anterior mostrará el menú principal del sitio web.</p>
+<p>No has incluido partials/menu.hbs en tu tema. En este caso, Publii cargará el siguiente archivo menu.hbs predeterminado:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{#unless level}}
+&lt;nav&gt;
+{{/unless}}
+    &lt;ul{{#if level}} class="submenu submenu-level-{{level}}"{{else}} class="menu menu-level-1"{{/if}}&gt;
+        {{#each items}}
+            &lt;li{{menuItemClasses}}&gt;
+            {{#if link}}
+            &lt;a href="{{menuUrl}}"{{#if title}} title="{{title}}"{{/if}}{{#if target}} target="{{target}}"{{/if}}{{#if rel}} rel="{{rel}}"{{/if}}&gt;{{label}}&lt;/a&gt;
+            {{else}}
+            &lt;span{{#if title}} title="{{title}}"{{/if}}&gt;{{label}}&lt;/span&gt;
+            {{/if}}
+
+            {{#if items}}
+                {{&gt; menu}}
+            {{/if}}
+        &lt;/li&gt;
+        {{/each}}
+    &lt;/ul&gt;
+{{#unless level}}
+&lt;/nav&gt;
+{{/unless}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"> </div>
+<div><header>
+<h1 class="post__title">paginacion.hbs parcial</h1>
+</header>
+<div class="post__entry">
+<p>La paginación parcial es responsable de representar los enlaces de paginación en la página de inicio de su sitio web, las páginas de etiquetas y las páginas de autor:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{&gt; pagination}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Si no ha incluido un <strong>partials/pagination.hbs</strong> en su tema, Publii cargará el siguiente archivo <strong>pagination.hbs predeterminado:</strong></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#if @pagination}}
+    &lt;ul&gt;
+        {{#if @pagination.previousPage}}
+            &lt;li&gt;
+                &lt;a href="{{@pagination.previousPageUrl}}"&gt;PREV&lt;/a&gt;
+            &lt;/li&gt;
+        {{/if}}
+
+        {{#each @pagination.pages}}
+            &lt;li&gt;
+                {{#isCurrentPage @pagination.currentPage this}}
+                    &lt;strong&gt;
+                        {{this}}
+                    &lt;/strong&gt;
+                {{else}}
+                    &lt;a href="{{pageUrl @pagination.context this}}"&gt;
+                        {{this}}
+                    &lt;/a&gt;
+                {{/isCurrentPage}}
+            &lt;/li&gt;
+        {{/each}}
+
+        {{#if @pagination.nextPage}}
+            &lt;li&gt;
+                &lt;a href="{{@pagination.nextPageUrl}}"&gt;NEXT&lt;/a&gt;
+            &lt;/li&gt;
+        {{/if}}
+    &lt;/ul&gt;
+
+    &lt;small&gt;
+        Page {{@pagination.currentPage}} of {{@pagination.totalPages}}
+    &lt;/small&gt;
+{{/if}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"> </div>
+<div> </div>
+</div>
+</footer></div>
+<div> </div>
+</div>
+</footer></div>
 <p> </p>
-<a href="/go/createyourblog?hl=es" class="btn btn--light">Crea tu blog</a></header>
-<div class="background">
-<div class="millions--map"> </div>
-<div class="millions--markers"> </div>
 </div>
-</section>
-<p class="msg msg--success">jjj</p>
+</div>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>Información sobre los anuncios de facebook</title>
+        <title>Introducción - etiquetas</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/informacion-sobre-los-anuncios-de-facebook.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/informacion-sobre-los-anuncios-de-facebook.html</id>
-            <category term="HTML"/>
-
-        <updated>2024-11-13T21:19:22-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Información sobre los anuncios de facebook A continuación, puedes obtener más información sobre cómo se usan los datos para mostrarte&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2>Información sobre los anuncios de <a href="https://www.facebook.com/ads/about/?__cft__[0]=AZW3Nctf6IVZvTSkuLmhuBNDhPCsETSzjOKGyEpCyMlAXPtlglJwv9f5P0WnwTfJroju0CaM9nTiPubn27mKjbTHv3C030K2LtB4YRBkfaVWm2sMpp5vYKqDCMC5eg_4i-gBwczXhalRC21tAS7TonjOrMiWvT32U07GvOtULJeKvrH5kxklfJcTAtLk7-UCn9ywuXFYDYQQ06pbpJl9E9HTqKOUKerBBmXFOdKtvK8zNQgTvTQP28yqoq7nXeHWzl1CbbO766w4Lqfc_I_xLHuks7x9Na8vjflmH3Bz_3ZVpofDt1M13KHNdTSVNRYaIcQe_K6ebYBLiA0kYW04knRhBsEMrGY8umD1iyGJ9xHz0w" target="_blank" rel="noopener noreferrer">facebook</a><br><br></h2>
-<div class="_5q3g">
-<div>
-<div class="_5q3k">A continuación, puedes obtener más información sobre cómo se usan los datos para mostrarte anuncios sin que los anunciantes sepan quién eres, los controles que tienes para determinar qué anuncios se te muestran, por qué ves un anuncio concreto y otras preguntas frecuentes.</div>
-</div>
-</div>
-<div class="_5q3l"> </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Creación de un sitio de GitHub Pages</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/creacion-de-un-sitio-de-github-pages-2.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/creacion-de-un-sitio-de-github-pages-2.html</id>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/introduccion-etiquetas.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/introduccion-etiquetas.html</id>
             <category term="Publii"/>
-            <category term="Github"/>
-            <category term="CMS"/>
 
-        <updated>2024-11-13T21:16:26-03:00</updated>
+        <updated>2024-12-06T21:03:48-03:00</updated>
             <summary>
                 <![CDATA[
-                    Creación de un sitio de GitHub Pages Publii incluye soporte para páginas de Github, que te brindan un espacio para&hellip;
+                    Cada tipo de archivo de plantilla *.hbs disponible tiene acceso a una lista específica de etiquetas Handlebars. Los hemos dividido en&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <header>
-<h1 class="post__title">Creación de un sitio de GitHub Pages</h1>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Cada tipo de archivo de plantilla </span><strong style="font-family: var(--editor-font-family); font-size: inherit;">*.hbs</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> disponible tiene acceso a una lista específica de etiquetas Handlebars.</span></p>
 </header>
 <div class="post__entry">
-<p>Publii incluye soporte para páginas de Github, que te brindan un espacio para crear un sitio web que puedes usar para destacar tus proyectos de Github o para ti mismo. Desafortunadamente, hay poca funcionalidad para crear un sitio web a menos que tengas algunos conocimientos y estés dispuesto a aprender herramientas difíciles de configurar como Jekyll, pero gracias a Publii podrás crear un sitio web impresionante y con todas las funciones en solo unos minutos, que es muy fácil de actualizar y mantener.</p>
-<p><a href="https://gabrielgenri.github.io/ProyectoWebs/creacion-de-un-sitio-de-github-pages.html">Crear una página de Github no lleva mucho tiempo, pero hay algunos pasos que debemos cubrir.</a></p>
+<p>Los hemos dividido en dos grupos: etiquetas relacionadas con plantillas y etiquetas comunes.</p>
+<p>Las etiquetas relacionadas con la plantilla solo están disponibles en un archivo de plantilla específico cuando las etiquetas comunes están disponibles en el mismo formato para otras plantillas.</p>
+<p>Publii utiliza algunos archivos de plantilla Handlebars para representar su sitio web:</p>
+<ul>
+<li><a href="https://getpublii.com/dev/homepage-tags/">index.hbs</a> - para la página de inicio y su paginación,</li>
+<li><a href="https://getpublii.com/dev/post-page-tags/">post.hbs</a> - para páginas de publicaciones individuales,</li>
+<li><a href="https://getpublii.com/dev/page-template-tags/">page.hbs</a> - para páginas individuales,</li>
+<li><a href="https://getpublii.com/dev/tag-page-tags/">tag.hbs</a> - para listar publicaciones etiquetadas y su paginación,</li>
+<li><a href="https://getpublii.com/dev/tags-page-tags/">tags.hbs</a> - para lista de etiquetas,</li>
+<li><a href="https://getpublii.com/dev/author-page-tags/">author.hbs</a> - para listar las publicaciones del autor y su paginación</li>
+<li><a href="https://getpublii.com/dev/feed-tags/">feed-xml.hbs y feed-json.hbs</a> : para la salida de archivos feed.xml y feed.json,</li>
+<li><a href="https://getpublii.com/dev/search-page-tags/">search.hbs </a><em>(opcional)</em> - para la página de búsqueda,</li>
+<li><a href="https://getpublii.com/dev/404-error-page-tags/">404.hbs </a><em>(opcional)</em> - para la página de error 404</li>
+</ul>
+<p>Además, para las publicaciones, las etiquetas y las páginas de autores, puedes crear y usar plantillas. En este caso, los nombres de los archivos contendrán un slug relacionado con la plantilla específica. Puedes leer más sobre esto <a href="https://getpublii.com/dev/how-to-create-custom-templates/">aquí</a> .</p>
+<header>
+<h1 class="post__title">Etiquetas de publicación</h1>
+</header>
+<div class="post__entry">
+<p>Los elementos de la publicación representan publicaciones escritas en Publii:</p>
+<ul>
+<li><strong>{{id}}</strong> - ID de la publicación</li>
+<li><strong>{{title}}</strong> - título de la publicación</li>
+<li><strong>{{featuredImage}}</strong> - <a href="https://getpublii.com/dev/featured-image-tags/">elemento de imagen destacado</a></li>
+<li><strong>{{tags}}</strong> - matriz de <a href="https://getpublii.com/dev/tag-tags/">elementos de etiqueta</a></li>
+<li><strong>{{hiddenTags}}</strong> - matriz de <a href="https://getpublii.com/dev/tag-tags/">elementos de etiqueta</a> que están marcados como ocultos</li>
+<li><strong>{{author}}</strong> - <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{slug}}</strong> - slug de publicación utilizado en la URL</li>
+<li><strong>{{url}}</strong> - URL de la página de publicación</li>
+<li><strong>{{text}}</strong> - publicar texto completo</li>
+<li><strong>{{excerpt}}</strong> - texto del extracto de la publicación</li>
+<li><strong>{{createdAt}}</strong> - fecha de creación de la publicación</li>
+<li><strong>{{modifiedAt}}</strong> - fecha de modificación posterior</li>
+<li><strong>{{status}}</strong> - estado de la publicación (oculta, borrador, destacada)</li>
+<li><strong>{{template}}</strong> - nombre de la plantilla utilizada en la publicación</li>
+<li><strong>{{isFeatured}}</strong> - verdadero si la publicación está destacada</li>
+<li><strong>{{isHidden}}</strong> - verdadero si la publicación está oculta</li>
+<li><strong>{{hasGallery}}</strong> - verdadero si la publicación contiene una galería</li>
+<li><strong>{{hasCustomExcerpt}}</strong> : verdadero si la publicación contiene un contenido de extracto personalizado</li>
+<li><strong>{{mainTag}}</strong> : elemento <a href="https://getpublii.com/dev/tag-tags/" target="_blank" rel="noopener noreferrer">de etiqueta</a> seleccionado como etiqueta principal de una publicación específica. Si no hay una etiqueta principal, este campo devuelve la primera etiqueta (usando orden alfabético). Este elemento estará vacío solo si la publicación no tiene etiquetas</li>
+<li><strong>{{postViewConfig}}</strong> - objeto con configuración adicional relacionada con la vista de publicación (si está disponible en el tema)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de página</h1>
+</header>
+<div class="post__entry">
+<p>El elemento de página representa páginas creadas en Publii:</p>
+<ul>
+<li><strong>{{id}}</strong> - ID de la página</li>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{featuredImage}}</strong> - <a href="https://getpublii.com/dev/featured-image-tags/">elemento de imagen destacado</a></li>
+<li><strong>{{author}}</strong> - <a href="https://getpublii.com/dev/author-tags/">elemento del autor de la página</a></li>
+<li><strong>{{slug}}</strong> - slug de página utilizado en la URL</li>
+<li><strong>{{url}}</strong> - URL de la página</li>
+<li><strong>{{text}}</strong> - texto completo de la página</li>
+<li><strong>{{excerpt}}</strong> - texto de un extracto de la página</li>
+<li><strong>{{createdAt}}</strong> - fecha de creación de la página</li>
+<li><strong>{{modifiedAt}}</strong> - fecha de modificación de la página</li>
+<li><strong>{{status}}</strong> - estado de la página (borrador)</li>
+<li><strong>{{template}}</strong> - nombre de la plantilla utilizada en la página</li>
+<li><strong>{{hasGallery}}</strong> - verdadero si la página contiene una galería</li>
+<li><strong>{{hasCustomExcerpt}}</strong> : verdadero si la página contiene un contenido de extracto personalizado</li>
+<li><strong>{{pageViewConfig}}</strong> : objeto con configuración adicional relacionada con la vista de página (si está disponible en el tema)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de etiquetas</h1>
+</header>
+<div class="post__entry">
+<p>El elemento de etiqueta representa las etiquetas conectadas con las publicaciones:</p>
+<ul>
+<li><strong>{{id}}</strong> - ID de etiqueta</li>
+<li><strong>{{name}}</strong> - nombre de la etiqueta</li>
+<li><strong>{{featuredImage}}</strong> - <a href="https://getpublii.com/dev/featured-image-tags/">elemento de imagen destacado</a></li>
+<li><strong>{{slug}}</strong> - etiqueta slug utilizada en la URL</li>
+<li><strong>{{{description}}}</strong> - descripción de la etiqueta</li>
+<li><strong>{{additionalData}}</strong> : datos adicionales sobre la etiqueta como objeto JSON (plantilla, meta título, meta descripción, etc.)</li>
+<li><strong>{{postsNumber}}</strong> - número de publicaciones relacionadas con la etiqueta</li>
+<li><strong>{{url}}</strong> - URL de la página de la etiqueta</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de autor</h1>
+</header>
+<div class="post__entry">
+<p>El elemento de autor representa datos relacionados con el autor de la publicación:</p>
+<ul>
+<li><strong>{{id}}</strong> - ID del autor</li>
+<li><strong>{{name}}</strong> - nombre del autor</li>
+<li><strong>{{username}}</strong> - nombre de usuario del autor</li>
+<li><strong>{{featuredImage}}</strong> - <a href="https://getpublii.com/dev/featured-image-tags/">elemento de imagen destacado</a></li>
+<li><strong>{{avatar}}</strong> - URL del avatar del autor</li>
+<li><strong>{{avatarImage}}</strong> - datos del avatar del autor
+<ul>
+<li><strong>{{alt}}</strong> - texto alternativo del avatar (nombre del autor)</li>
+<li><strong>{{height}}</strong> - altura del avatar en píxeles</li>
+<li><strong>{{url}}</strong> - URL de la imagen del avatar</li>
+<li><strong>{{width}}</strong> - ancho del avatar en píxeles</li>
+</ul>
+</li>
+<li><strong>{{email}}</strong> - correo electrónico del autor</li>
+<li><strong>{{{description}}}</strong> - descripción del autor</li>
+<li><strong>{{postsNumber}}</strong> - número de publicaciones escritas por el autor</li>
+<li><strong>{{url}}</strong> - URL de la página del autor</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de imágenes destacadas</h1>
+</header>
+<div class="post__entry">
+<p>El elemento de imagen destacada representa datos relacionados con las imágenes destacadas de la publicación:</p>
+<ul>
+<li><strong>{{id}}</strong> - ID de imagen destacada</li>
+<li><strong>{{url}}</strong> - URL de la imagen destacada</li>
+<li><strong>{{urlDIMENSION_NAME}}</strong> - URL de la versión redimensionada (especificada por la variable <em>DIMENSION_NAME , por ejemplo, </em><strong>urlLarge</strong> )</li>
+<li><strong>{{alt}}</strong> - texto alternativo de la imagen destacada</li>
+<li><strong>{{caption}}</strong> - texto del título de la imagen destacada</li>
+<li><strong>{{credits}}</strong> - texto de créditos de la imagen destacada</li>
+<li><strong>{{height}}</strong> - altura de la imagen destacada en píxeles</li>
+<li><strong>{{width}}</strong> - ancho de la imagen destacada en píxeles</li>
+<li><strong>{{srcset}}</strong> - valor del atributo <strong>srcset de la imagen destacada</strong></li>
+<li><strong>{{sizes}}</strong> - valor del atributo de <strong>tamaños de imágenes destacadas</strong></li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de la página de inicio</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en el archivo <strong>index.hbs</strong> .</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<ul>
+<li><strong>{{#posts}}</strong> - matriz de los últimos <a href="https://getpublii.com/dev/post-tags/">elementos de la publicación</a></li>
+</ul>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{pages}}</strong> - matriz de <a href="https://getpublii.com/dev/page-tags/">elementos de página</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de la página de publicación</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en los archivos <strong>post.hbs</strong> y <strong>post-TEMPLATE_NAME.hbs</strong>  .</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<ul>
+<li><strong>{{#post}} - </strong><a href="https://getpublii.com/dev/post-tags/">elemento de publicación</a> mostrado<a href="https://getpublii.com/dev/post-tags/"></a></li>
+<li><strong>{{#nextPost}}</strong> - <a href="https://getpublii.com/dev/post-tags/">el elemento de publicación</a> está disponible solo en las publicaciones que no están ocultas</li>
+<li><strong>{{#nextSimilarPost}}</strong> : <a href="https://getpublii.com/dev/post-tags/">el elemento de publicación</a> está disponible solo en las publicaciones que no están ocultas y están en las mismas etiquetas</li>
+<li><strong>{{#previousPost}}</strong> - <a href="https://getpublii.com/dev/post-tags/">el elemento de publicación</a> está disponible solo en las publicaciones que no están ocultas</li>
+<li><strong>{{#previousSimilarPost}}</strong> : <a href="https://getpublii.com/dev/post-tags/">el elemento de publicación</a> está disponible solo en las publicaciones que no están ocultas y están en las mismas etiquetas</li>
+<li><strong>{{#relatedPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones</a> con un título similar o de las mismas etiquetas</li>
+</ul>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{canonicalUrl}}</strong> - URL canónica para la página de publicación</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{pages}}</strong> - matriz de <a href="https://getpublii.com/dev/page-tags/">elementos de página</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de plantilla de página</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en los archivos <strong>page.hbs</strong> y <strong>page-TEMPLATE_NAME.hbs</strong>  .</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<ul>
+<li><strong>{{#page}} - </strong><a href="https://getpublii.com/dev/page-tags/">elemento de la página</a> mostrada<a href="https://getpublii.com/dev/page-tags/"></a></li>
+</ul>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{canonicalUrl}}</strong> - URL canónica para la página de publicación</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de la página de etiquetas</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en los archivos <strong>tag.hbs</strong> y <strong>tag-TEMPLATE_NAME.hbs</strong> .</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<ul>
+<li><strong>{{#tag}}</strong> - <a href="https://getpublii.com/dev/tag-tags/">elemento de etiqueta mostrado</a></li>
+<li><strong>{{#posts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de la publicación</a> conectados con la etiqueta que se muestra actualmente</li>
+</ul>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{pages}}</strong> - matriz de <a href="https://getpublii.com/dev/page-tags/">elementos de página</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de la página Etiquetas</h1>
+</header>
+<div class="post__entry">
+<p>A continuación, encontrará una lista de todas las etiquetas handlebars disponibles en el archivo <strong>tags.hbs</strong> que se utiliza para enumerar todas las etiquetas dentro de su sitio web. Recuerde que el archivo <strong>tags.hbs</strong> es opcional y se utilizará únicamente en los temas <a href="https://getpublii.com/dev/theme-supported-features/">que declaren su compatibilidad con él</a> .</p>
+<h2 id="templatespecific-tags">Etiquetas específicas de la plantilla</h2>
+<ul>
+<li><strong>{{#tags}}</strong> - matriz de <a href="https://getpublii.com/dev/tag-tags/">elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{tagsNumber}}</strong> - número total de etiquetas en la colección <strong>{{#tags}}</strong></li>
+</ul>
+<h2 id="common-tags">Etiquetas comunes</h2>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{#hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de la página del autor</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en los archivos <strong>author.hbs</strong> y <strong>author-TEMPLATE_NAME.hbs</strong> .</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<ul>
+<li><strong>{{#author}}</strong> - <a href="https://getpublii.com/dev/author-tags/">elemento de autor que se muestra actualmente</a></li>
+<li><strong>{{#posts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones</a> conectados con un autor actual</li>
+</ul>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{pages}}</strong> - matriz de <a href="https://getpublii.com/dev/page-tags/">elementos de página</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Buscar etiquetas de la página</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en el archivo <strong>search.hbs .</strong></p>
+<p class="msg msg--info">La página de búsqueda se genera solo si el indicador: " <em>createSearchPage" </em> está establecido en <strong>verdadero</strong> en el archivo <a href="https://getpublii.com/dev/how-to-configure-rendering-process-of-your-website/">config.json</a> (sección del renderizador).</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<p>Esta plantilla no utiliza ninguna etiqueta específica de plantilla.</p>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{pages}}</strong> - matriz de <a href="https://getpublii.com/dev/page-tags/">elementos de página</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de página de error 404</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles en el archivo <strong>404.hbs</strong> .</p>
+<p class="msg msg--info">La página de error 404 se genera solo si el indicador: " <em>create404page" </em> está establecido en <strong>verdadero</strong> en el archivo <a href="https://getpublii.com/dev/how-to-configure-rendering-process-of-your-website/">config.json</a> (sección del renderizador).</p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<p>Esta plantilla no utiliza ninguna etiqueta específica de plantilla.</p>
+<h3 id="commontags">Etiquetas comunes</h3>
+<ul>
+<li><strong>{{title}}</strong> - título de la página</li>
+<li><strong>{{metaTitleRaw}}</strong> - metatítulo en formato original</li>
+<li><strong>{{metaDescriptionRaw}}</strong> - meta descripción en formato original</li>
+<li><strong>{{metaRobotsRaw}}</strong> : valor de los meta robots en formato sin procesar</li>
+<li><strong>{{#featuredPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones destacadas</a></li>
+<li><strong>{{hiddenPosts}}</strong> - matriz de <a href="https://getpublii.com/dev/post-tags/">elementos de publicaciones ocultas</a></li>
+<li><strong>{{pages}}</strong> - matriz de <a href="https://getpublii.com/dev/page-tags/">elementos de página</a></li>
+<li><strong>{{#tags}}</strong> - matriz de todos <a href="https://getpublii.com/dev/tag-tags/">los elementos de etiqueta</a> disponibles en el sitio web</li>
+<li><strong>{{#siteOwner}}</strong> - información sobre el autor principal como <a href="https://getpublii.com/dev/author-tags/">autor del artículo</a></li>
+<li><strong>{{#authors}}</strong> - matriz de todos <a href="https://getpublii.com/dev/author-tags/">los elementos de autor</a> en el sitio web (si está habilitada la visualización de autores sin publicaciones, también contendrá autores sin publicaciones)</li>
+<li><strong>{{menus}}</strong> - matriz de menús asignados (la clave es el nombre de una posición del menú)</li>
+<li><strong>{{unassignedMenus}}</strong> - matriz de menús no asignados (la clave es un fragmento del nombre del menú)</li>
+</ul>
+<header>
+<h1 class="post__title">Etiquetas de feed</h1>
+</header>
+<div class="post__entry">
+<p>A continuación encontrará una lista de todas las etiquetas de manillar disponibles para los archivos <strong>feed-xml.hbs</strong> y <strong>feed-json.hbs</strong></p>
+<h3 id="templatespecifictags">Etiquetas específicas de la plantilla</h3>
+<ul>
+<li><strong>{{siteName}}</strong> - nombre del sitio web</li>
+<li><strong>{{siteDomain}}</strong> - dominio del sitio web</li>
+<li><strong>{{siteLastUpdate}}</strong> - fecha de la última actualización</li>
+<li><strong>{{siteAuthor}}</strong> - nombre del autor principal</li>
+<li><strong>{{#posts}}</strong> - lista de las publicaciones
+<ul>
+<li><strong>{{title}}</strong> - título de la publicación</li>
+<li><strong>{{url}}</strong> - URL de la publicación </li>
+<li><strong>{{excerpt}}</strong> - texto de introducción de la publicación</li>
+<li><strong>{{text}}</strong> - publicar texto completo</li>
+<li><strong>{{author}}</strong> - nombre del autor de la publicación</li>
+<li><strong>{{modifiedAt}}</strong> - fecha de modificación posterior</li>
+<li><strong>{{#categories}}</strong> - lista de categorías de publicaciones
+<ul>
+<li><strong>{{name}}</strong> - nombre de la categoría</li>
+</ul>
+</li>
+<li><strong>{{thumbnail}}</strong> - URL de la miniatura de la publicación</li>
+</ul>
+</li>
+</ul>
+<h3 id="commontags">Etiquetas comunes</h3>
+<p>Esta plantilla no utiliza ninguna etiqueta común.</p>
+<header>
+<h1 class="post__title">introducción - variables globales</h1>
+</header>
+<div class="post__entry">
+<p>Durante la representación del sitio web, tiene acceso a algunas variables globales que almacenan objetos con datos útiles adicionales.</p>
+<ul>
+<li><a href="https://getpublii.com/dev/config-global-variable/">@config</a> : le brinda acceso a la configuración de temas y publicaciones.</li>
+<li><a href="https://getpublii.com/dev/customcommentscode-global-variable/">@customCommentsCode</a> : le permite admitir <a href="https://marketplace.getpublii.com/plugins/">complementos de comentarios de Publii</a> .</li>
+<li><a href="https://getpublii.com/dev/customsearchinput-global-variable/">@customSearchInput</a> y <a href="https://getpublii.com/dev/customsearchcontent-global-variable/">@customSearchContent</a> : le permiten admitir <a href="https://marketplace.getpublii.com/plugins/">complementos de búsqueda de Publii</a></li>
+<li><a href="https://getpublii.com/dev/customhtml-global-variable/">@customHTML</a> : le brinda acceso al código HTML personalizado desde la sección <strong>Herramientas -&gt; HTML personalizado</strong> .</li>
+<li><a href="https://getpublii.com/dev/pagination-global-variable/">@pagination</a> : se puede utilizar para crear paginación en etiquetas, autores y página de inicio.</li>
+<li><a href="https://getpublii.com/dev/renderer-global-variable/">@renderer</a> : contiene datos adicionales para el proceso de renderizado,</li>
+<li><a href="https://getpublii.com/dev/utils-global-variable/">@utils</a> - contiene valores útiles adicionales,</li>
+<li><a href="https://getpublii.com/dev/website-global-variable/">@website</a> : almacena información útil sobre su sitio</li>
+</ul>
+<header>
+<h1 class="post__title">Variable global @config</h1>
+</header>
+<div class="post__entry">
+<p>Los valores de las opciones de tema están disponibles en la variable global <strong>@config</strong> . Hay tres grupos de configuraciones:</p>
+<ul>
+<li><strong>@config.basic.</strong> * - configuración básica del tema (la misma para todos los temas)</li>
+<li><strong>@config.custom.</strong> * - configuraciones del tema definidas por el autor del tema,</li>
+<li><strong>@config.site.*</strong> - configuración del sitio web definida en la pestaña "Configuración del sitio" en Publii,</li>
+<li><strong>@config.post.</strong> * - configuración del tema de vista de publicación (disponible solo en las páginas de publicación individuales para temas que lo admiten)</li>
+</ul>
+<header>
+<h1 class="post__title">Variable global @customHTML</h1>
+</header>
+<div class="post__entry">
+<p>La variable global <strong>@customHTML</strong> contiene un objeto con código HTML personalizado definido por el autor del tema. Para crear áreas HTML personalizadas en su tema, debe agregar la sección customHTML en la sección de renderizador del archivo config.json del tema:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"renderer": {
+    "renderRelatedPosts": false,
+    "renderSimilarPosts": false,
+    "renderPrevNextPosts": false,
+    "createContentStructure": false,
+    "customHTML": {
+        "beforePost": "Before every post",
+        "afterPost": "After every post"
+    }
+},</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>El código anterior creará dos nuevas secciones HTML personalizadas: <strong>beforePost</strong> y <strong>afterPost</strong> ; están disponibles a través de las variables <strong>@customHTML.beforePost</strong> y <strong>@customHTML.afterPost</strong> .</p>
+<p>El código HTML personalizado para estas secciones se puede definir en la sección <em>Herramientas -&gt; HTML personalizado</em> de Publii.</p>
+<header>
+<h1 class="post__title">Variable global @customCommentsCode</h1>
+</header>
+<div class="post__entry">
+<p>Cuando desee agregar soporte para <a href="https://marketplace.getpublii.com/plugins/">complementos de comentarios de Publii</a> , es necesario agregar soporte para las características <code>customComments</code>menos <a href="https://getpublii.com/dev/theme-supported-features/">compatibles</a> del tema.</p>
+<p>Para agregar soporte para complementos de comentarios, debe agregar el siguiente fragmento de código en el lugar donde deben mostrarse los comentarios:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{{@customCommentsCode}}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Por ejemplo, nuestro <a href="https://marketplace.getpublii.com/themes/simple/">tema Simple</a> implementa esta función en el archivo <strong>post.hbs</strong> de la siguiente manera:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{#if @config.post.displayComments}}
+&lt;div class="post__comments"&gt;
+    &lt;div class="wrapper"&gt;
+        {{{@commentsCustomCode}}}
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/if}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Esto significa que los comentarios se muestran solo si están habilitados para la publicación determinada o globalmente en la configuración del tema (si la publicación usa un valor de configuración global).</p>
+<header>
+<h1 class="post__title">Variable global @customSearchContent</h1>
+</header>
+<div class="post__entry">
+<p>Algunos de los <a href="https://marketplace.getpublii.com/plugins/">complementos de búsqueda de Publii</a>  pueden generar resultados de búsqueda como un área separada. Para gestionar correctamente esta función, debe implementar dos cambios en su tema:</p>
+<h2 id="1-add-support-for-customsearch">1. Agregar soporte para búsqueda personalizada</h2>
+<p>Simplemente agregue <code>customSearch</code>debajo de su tema la sección <a href="https://getpublii.com/dev/theme-supported-features/">Características compatibles</a> .</p>
+<h2 id="2-implement-customsearchcontent-global-variable">2. Implementar la variable global @customSearchContent</h2>
+<p>En la forma más sencilla, solo debes agregar el siguiente código en tu tema al archivo <strong>search.hbs</strong> :</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{{@customSearchContent}}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Luego, los complementos que usan esta variable global mostrarán sus resultados de búsqueda.</p>
+<header>
+<h1 class="post__title">Variable global @customSearchInput</h1>
+</header>
+<div class="post__entry">
+<p>Algunos de los <a href="https://marketplace.getpublii.com/plugins/">complementos de búsqueda de Publii</a>  generan un campo de entrada de búsqueda. Para gestionar correctamente esta función, debes implementar dos cambios en tu tema:</p>
+<h2 id="1-add-support-for-customsearch">1. Agregar soporte para búsqueda personalizada</h2>
+<p>Simplemente agregue <code>customSearch</code>debajo de su tema la sección <a href="https://getpublii.com/dev/theme-supported-features/">Características compatibles</a> .</p>
+<h2 id="2-implement-customsearchinput-global-variable">2. Implementar la variable global @customSearchInput</h2>
+<p>En la forma más sencilla solo debes agregar el siguiente código en tu tema:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{{@customSearchInput}}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Por ejemplo, nuestro <a href="https://marketplace.getpublii.com/themes/simple/">tema Simple</a> implementa esta función de la siguiente manera:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-handlebars" tabindex="0"><code>{{#if @config.custom.searchFeature}}
+&lt;div class="search"&gt;
+    &lt;div class="search__overlay js-search-overlay"&gt;
+        &lt;div class="search__overlay-inner"&gt;
+            {{{@customSearchInput}}} 
+            &lt;button class="search__close js-search-close" aria-label="{{ translate 'search.close' }}"&gt;
+                {{ translate 'search.close' }}
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="search__btn js-search-btn" aria-label="{{ translate 'search.search' }}"&gt;
+        &lt;svg role="presentation" focusable="false"&gt;
+            &lt;use xlink:href="{{@website.assetsUrl}}/svg/svg-map.svg#search"/&gt;
+        &lt;/svg&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+{{/if}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Utiliza una interfaz de usuario adicional que se puede manejar con algunos de los complementos de búsqueda.</p>
+<header>
+<h1 class="post__title">Variable global @pagination</h1>
+</header>
+<div class="post__entry">
+<p>Las páginas de inicio, de etiquetas y de autor admiten la paginación. Se basa en algunas variables globales y ayudantes. Puede utilizar la paginación no solo para crear enlaces de paginación, sino también para un enlace con <code>rel="prev"</code>o <code>rel="next"</code>atributos.</p>
+<ul>
+<li><strong>@pagination</strong> : variable que se utiliza para detectar si la paginación está disponible en la vista específica. Si es falso, no hay paginación en la vista actual.</li>
+<li><strong>@pagination.context</strong> - contexto de la paginación. Cadena vacía para la página de inicio, slug de etiqueta para las páginas de etiqueta, slug de autor para las páginas de autor,</li>
+<li><strong>@pagination.pages</strong> - matriz con números para cada página disponible,</li>
+<li><strong>@pagination.totalPosts</strong> - número total de publicaciones,</li>
+<li><strong>@pagination.totalPages</strong> - número total de páginas de paginación,</li>
+<li><strong>@pagination.currentPage</strong> - número de la página actual,</li>
+<li><strong>@pagination.postsPerPage</strong> - número de publicaciones por página,</li>
+<li><strong>@pagination.nextPage</strong> - número de la siguiente página (o falso si no existe),</li>
+<li><strong>@pagination.previousPage</strong> - número de la página anterior (o falso si no existe),</li>
+<li><strong>@pagination.nextPageUrl</strong> - URL a la siguiente página (o falso si no existe ninguna),</li>
+<li><strong>@pagination.previousPageUrl</strong> - URL a la página anterior (o falso si no existe ninguna).</li>
+</ul>
+<p>Un ejemplo de paginación para motores de búsqueda con uso de las variables de paginación globales:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#if @pagination}}
+   {{#if @pagination.previousPage}}
+   &lt;link rel="prev" href="{{@pagination.previousPageUrl}}"&gt;
+   {{/if}}
+   {{#if @pagination.nextPage}}
+   &lt;link rel="next" href="{{@pagination.nextPageUrl}}"&gt;
+   {{/if}}
+{{/if}}
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Un ejemplo de un enlace de paginación está disponible en <strong>Partials -&gt; pagination.hbs</strong></p>
+<header>
+<h1 class="post__title">Variable global @renderer</h1>
+</header>
+<div class="post__entry">
+<p>El motor de renderizado ofrece variables globales adicionales que pueden ser útiles en algunos casos, por ejemplo, si desea mostrar algunas secciones solo en la primera o última página de los listados de publicaciones.</p>
+<ul>
+<li><strong>@renderer.isFirstPage</strong> : verdadero si la página mostrada es la primera página del listado, falso en caso contrario.</li>
+<li><strong>@renderer.isLastPage</strong> : verdadero si la página mostrada es la última página del listado, falso en caso contrario.</li>
+<li><strong>@renderer.previewMode</strong> : verdadero si la página se muestra en la vista previa</li>
+<li><strong>@renderer.ampMode</strong> : verdadero si la página mostrada está en modo amplificador</li>
+</ul>
+<header>
+<h1 class="post__title">@utils variable global</h1>
+</header>
+<div class="post__entry">
+<p> La  variable global <strong>@utils</strong>  se ha creado para almacenar valores útiles. </p>
+<p>En este momento <strong>@utils</strong> contiene solo dos campos:</p>
+<p><strong>currentYear</strong> que se puede utilizar para crear pies de página que contendrán el valor del año adecuado después de la sincronización del sitio web:</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>Copyright by X {{@utils.currentYear}}. All rights reserved.</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p><strong>buildDate</strong> : devuelve la marca de tiempo de compilación, que se puede utilizar para generar la fecha legible por humanos junto con el asistente <a href="https://getpublii.com/dev/date-helper/" target="_blank" rel="noopener noreferrer">de fecha</a> :</p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{date @utils.buildDate 'YYYY-MM-DD HH:mm'}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"> </div>
+<div><header>
+<h1 class="post__title">Variable global @website</h1>
+</header>
+<div class="post__entry">
+<p>Cada sitio web contiene datos útiles bajo la variable global <strong>@website</strong> .</p>
+<ul>
+<li><strong>@website.url</strong> - URL del sitio (puede contener index.html al final en algunos casos, como durante la configuración del sitio web o en el modo de vista previa),</li>
+<li><strong>@website.baseUrl</strong> - URL del sitio sin index.html al final</li>
+<li><strong>@website.rootUrl</strong> - alias para <strong>@website.baseUrl</strong> ,</li>
+<li><strong>@website.tagsUrl</strong> - URL de la página con todas las etiquetas,</li>
+<li><strong>@website.searchUrl</strong> - URL para la página de búsqueda,</li>
+<li><strong>@website.errorUrl</strong> - URL de la página de error,</li>
+<li><strong>@website.assetsUrl</strong> : URL para el directorio de activos del tema (el directorio de activos se define en el archivo config.json del tema),</li>
+<li><strong>@website.mediaFilesUrl</strong> - URL al directorio <strong>/media/files/</strong> ,</li>
+<li><strong>@website.pageUrl</strong> - URL de la página mostrada actualmente,</li>
+<li><strong>@website.name</strong> - nombre del sitio,</li>
+<li><strong>@website.logo</strong> - logotipo del sitio (alias para <strong>@config.basic.logo</strong> ),</li>
+<li><strong>@website.logoSize</strong> - objeto con el tamaño del logotipo en píxeles; puede acceder al ancho a través de <strong>@website.logoSize.width</strong> y a la altura a través de <strong>@website.logoSize.height</strong></li>
+<li><strong>@website.lastUpdate</strong> : marca de tiempo de la última representación del sitio web,</li>
+<li><strong>@website.contentStructure</strong> - objeto con la estructura del contenido del sitio web (explicado a continuación),</li>
+<li><strong>@website.language</strong> : código de idioma del sitio web según la configuración del mismo. Se puede utilizar en los atributos <strong>lang .</strong></li>
+<li><strong>@website.postsOrdering</strong> : orden de las publicaciones en los listados (valores devueltos: <strong>asc</strong> o <strong>desc</strong> ), se puede utilizar para el manejo adecuado del orden de paginación.</li>
+</ul>
+<h2 id="contentstructure">Estructura del contenido</h2>
+<p>La variable global <strong>@website.contentStructure</strong> contiene el siguiente objeto:</p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+   posts: [post item],
+   pages: [page item],
+   pagesStructure: {
+      page ID:  [subpage ID1, subpage ID2 ...]
+   },
+   tags: [{
+       tag item
+       posts: [the same structure as in the posts above]
+   }],
+   authors: [{
+       author item
+       posts: [the same structure as in the posts above]
+   }]
+}  
+</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a>Copiar</a></div>
+</div>
+</div>
+<p>Esto es útil si desea generar algunas partes de su sitio web automáticamente, como la estructura del menú principal, que se actualiza con nuevas publicaciones/etiquetas/autores.</p>
+<p> </p>
+</div>
+</div>
+</div>
+</footer></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>Documentación para desarrolladores Publii </title>
+        <title>Anulaciones visuales CSS</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/documentacion-para-desarrolladores-publii.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/documentacion-para-desarrolladores-publii.html</id>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/anulaciones-visuales-css.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/anulaciones-visuales-css.html</id>
             <category term="Publii"/>
-            <category term="CMS"/>
 
-        <updated>2024-11-13T21:15:17-03:00</updated>
+        <updated>2024-12-06T21:02:00-03:00</updated>
             <summary>
                 <![CDATA[
-                    Documentación para desarrolladores Publii https://getpublii.com/dev/ Si estás interesado en crear un nuevo tema o quieres aprender a modificar uno de&hellip;
+                    Casi todos los temas tienen opciones que no se pueden implementar con una simple adición de clase CSS, como opciones&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p class="post__title">Documentación para desarrolladores Publii <br><a href="#INTERNAL_LINK#/null/undefined" target="_blank" rel="noopener noreferrer">https://getpublii.com/dev/</a></p>
-<p>Si estás interesado en crear un nuevo tema o quieres aprender a modificar uno de los <a href="https://marketplace.getpublii.com/">temas de Publii</a> existentes para adaptarlo a tus necesidades, ¡este es el lugar adecuado para ti!</p>
-<p>Publii presenta sus temas utilizando <a href="https://handlebarsjs.com/" target="_blank" rel="nofollow noopener noreferrer">Handlebars</a> , lo que ofrece gran flexibilidad y oportunidades para crear diversas páginas en su sitio web.</p>
-<p>Recomendamos a los principiantes que comiencen con el tutorial <a href="https://getpublii.com/dev/how-to-install-a-new-theme/">Cómo instalar un tema nuevo</a> en Publii y luego con nuestra <a href="https://getpublii.com/dev/handlebars-introduction-for-publii-theme-developers/">introducción a Handlebars</a> . Ambos les brindarán los conceptos básicos de la creación de temas en Publii.</p>
-<p>Si está creando un tema personalizado, tanto los artículos sobre el archivo <a href="https://getpublii.com/dev/theme-configjson-file/">config.json del tema</a> como la <a href="https://getpublii.com/dev/theme-structure/">estructura del tema</a> serán útiles.</p>
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Casi todos los temas tienen opciones que no se pueden implementar con una simple adición de clase CSS, como opciones de color que permiten al usuario seleccionar el color desde el selector de color.</span></p>
+</header>
+<div class="post__entry">
+<p><span>Como usar el atributo de estilo no es una solución elegante, hemos creado una alternativa que le permite crear código CSS personalizado sobre la marcha durante el proceso de representación del sitio web.</span></p>
+<p><span>Para ello, cree un archivo </span><strong><span>visual-override.js</span></strong><span> en el directorio de su tema y cree una función que se utilizará para generar código CSS adicional según los parámetros de opciones:</span></p>
+<div class="code-toolbar">
+<pre class="language-javascript" tabindex="0"><code>/*
+ * Custom function used to generate the output of the override.css file
+ */
+
+var generateOverride = function(themeConfig, postConfig, commonConfig, pageConfig) {
+    return `
+        body {
+            background: ${themeConfig.primaryColor};
+            font-size: ${themeConfig.fontSize}px;
+        }
+    `;
+};
+
+module.exports = generateOverride;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Su función debe poder utilizar cuatro argumentos:</span></p>
+<ul>
+<li><strong><span>themeConfig</span></strong><span> : contiene un objeto con todos los valores de las opciones de su tema personalizado</span></li>
+<li><strong><span>postConfig</span></strong><span> : contiene opciones que son específicas de la publicación.</span></li>
+<li><strong><span>commonConfig</span></strong><span> : contiene otras opciones como la longitud del extracto, publicaciones por página, etc.</span></li>
+<li><strong><span>pageConfig</span></strong><span> : contiene opciones que son específicas de la página.</span></li>
+</ul>
+<p><span>La función debe devolver el código CSS que se vinculará con el archivo CSS principal del tema.</span></p>
+<p><span>Recomendamos utilizar cadenas multilínea de JavaScript para una mejor legibilidad del código.</span></p>
+</div>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>WebAssembly</title>
+        <title>¿Cómo crear ayudantes de manillar personalizados?</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/webassembly-2.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/webassembly-2.html</id>
-            <category term="Python"/>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-crear-ayudantes-de-manillar-personalizados.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-crear-ayudantes-de-manillar-personalizados.html</id>
+            <category term="Publii"/>
 
-        <updated>2024-11-13T21:13:49-03:00</updated>
+        <updated>2024-12-06T21:00:13-03:00</updated>
             <summary>
                 <![CDATA[
-                    WebAssembly (abreviado Wasm ) es un formato de instrucciones binarias para una máquina virtual basada en pila. Wasm está diseñado como un&hellip;
+                    Al crear su tema, es posible que desee ampliar la cantidad de ayudantes; Publii ofrece a los desarrolladores de temas&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <section>
-<div class="container">
-<p class="lead"><strong>WebAssembly (abreviado <i>Wasm</i> ) es un formato de instrucciones binarias para una máquina virtual basada en pila. Wasm está diseñado como un objetivo de compilación portátil para lenguajes de programación, lo que permite la implementación en la web para aplicaciones de cliente y servidor.</strong></p>
-<p> </p>
-<div class="flash flash-warn">La documentación de referencia para desarrolladores de Wasm se puede encontrar en <a href="https://developer.mozilla.org/en-US/docs/WebAssembly">las páginas de WebAssembly de MDN</a> . Los estándares abiertos para WebAssembly se desarrollan en un <a href="https://www.w3.org/community/webassembly/">grupo comunitario del W3C</a> (que incluye representantes de todos los navegadores principales) así como en un <a href="https://www.w3.org/wasm/">grupo de trabajo del W3C</a> .</div>
-<div> </div>
-<div>
-<section class="page-section-spacious flush-bottom">
-<div class="container-narrow">
-<pre class="msg msg--highlight "><a href="https://docs.python.org/es/3.11/using/configure.html#webassembly-options" target="_blank" rel="noopener noreferrer">https://docs.python.org/es/3.11/using/configure.html#webassembly-options</a><br><br><br><strong>3.1.2. Opciones de WebAssembly</strong><br>--with-emscripten-target=[browser|node]<br>Establezca el tipo de compilación para wasm32-emscripten.<br><br>browser (predeterminado): precarga mínima stdlib, MEMFS predeterminado.<br><br>node: soporte para NODERAWFS y pthread.<br><br>Nuevo en la versión 3.11.<br><br>--enable-wasm-dynamic-linking<br>Active la compatibilidad con enlaces dinámicos para WASM.<br><br>La vinculación dinámica habilita dlopen. El tamaño del archivo del ejecutable aumenta debido a la eliminación limitada de código muerto y características adicionales.<br><br>Nuevo en la versión 3.11.<br><br>--enable-wasm-pthreads<br>Active la compatibilidad con pthreads para WASM.<br><br>Nuevo en la versión 3.11.</pre>
-<p> </p>
-</div>
-</section>
-</div>
-<div class="row">
-<div class="bubble col-xs-12 col-md-6">
-<h3>Eficiente y rápido</h3>
-<p>La <a href="https://webassembly.org/docs/semantics/">máquina de pila</a> Wasm está diseñada para codificarse en un <a href="https://webassembly.org/docs/binary-encoding/">formato binario</a> eficiente en términos de tamaño y tiempo de carga . WebAssembly apunta a ejecutarse a velocidad nativa aprovechando <a href="https://webassembly.org/docs/portability/#assumptions-for-efficient-execution">las capacidades de hardware comunes</a> disponibles en una amplia gama de plataformas.</p>
-</div>
-<div class="bubble col-xs-12 col-md-6">
-<h3>Seguro</h3>
-<p><a href="https://webassembly.org/docs/semantics/#linear-memory">WebAssembly describe un entorno de ejecución</a> protegido con memoria y que puede implementarse incluso dentro de máquinas virtuales JavaScript existentes. Cuando <a href="https://webassembly.org/docs/web/">se integra en la web</a> , WebAssembly aplicará las políticas de seguridad de permisos y del mismo origen del navegador.</p>
-</div>
-</div>
-<div class="row">
-<div class="bubble col-xs-12 col-md-6">
-<h3>Abierto y depurable</h3>
-<p>WebAssembly está diseñado para imprimirse en <a href="https://webassembly.org/docs/text-format/">formato de texto</a> para depurar, probar, experimentar, optimizar, aprender, enseñar y escribir programas a mano. El formato de texto se utilizará al <a href="https://webassembly.org/docs/faq/#will-webassembly-support-view-source-on-the-web">visualizar el código fuente</a> de los módulos Wasm en la web.</p>
-</div>
-<div class="bubble col-xs-12 col-md-6">
-<h3>Parte de la plataforma web abierta</h3>
-<p>WebAssembly está diseñado para mantener la naturaleza de compatibilidad con versiones anteriores, probada en cuanto a funciones y sin versiones <a href="https://webassembly.org/docs/web/">de la web</a> . Los módulos de WebAssembly podrán llamar dentro y fuera del contexto de JavaScript y acceder a la funcionalidad del navegador a través de las mismas API web accesibles desde JavaScript. WebAssembly también admite incrustaciones <a href="https://webassembly.org/docs/non-web/">que no sean web</a> .</p>
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Al crear su tema, es posible que desee ampliar la cantidad de ayudantes; Publii ofrece a los desarrolladores de temas la posibilidad de crear ayudantes personalizados según sus necesidades. Son útiles si necesita simplificar el código de su tema.</span></p>
+</header>
+<div class="post__entry">
+<p><span>Por ejemplo, puede crear un ayudante personalizado que reemplazará múltiples condiciones con una única verificación condicional.</span></p>
+<p><span>Para crear ayudantes personalizados en su tema, simplemente cree un archivo </span><strong><span>helpers.js</span></strong><span> en el directorio del tema; aquí puede agregar sus funciones ayudantes personalizadas.</span></p>
+<p><span>A continuación se muestra un ejemplo de código que crea dos ayudantes personalizados súper simples que aceptan un argumento:</span></p>
+<div class="code-toolbar">
+<pre class="language-javascript" tabindex="0"><code>/*
+ * Custom theme helpers for Handlebars.js
+ */
+
+let themeHelpers = {
+    test1: function(value) {
+        return "TEST1 " + value;
+    },
+    test2: function(value) {
+        return "TEST2 " + value;
+    }
+};
+
+module.exports = themeHelpers;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
 </div>
 </div>
+<p><span>Como puede ver, todas las funciones auxiliares están envueltas dentro de un objeto que se exporta desde el archivo </span><strong><span>helpers.js</span></strong><span> al renderizador.</span></p>
+<p><span>También es posible utilizar la instancia del objeto </span><strong><span>Handlebars</span></strong><span> : este escenario requerirá que el campo  se  </span><code>includeHandlebarsInHelpers</code><span> establezca como </span><strong><span>verdadero</span></strong><code>renderer</code><span>  en la sección de configuración del tema.</span></p>
+<p><span>Luego el archivo </span><strong><span>helpers.js</span></strong><span> se puede escribir como:</span></p>
+<div class="code-toolbar">
+<pre class="language-javascript" tabindex="0"><code>module.exports = function (Handlebars) {
+	return {
+	    functionName: function(arg) {
+	        // ...
+	        return new Handlebars.SafeString(arg);
+	    }
+	};
+  };</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
 </div>
-</section>
+</div>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"><time datetime="2017-08-05T00:03"><span>5 de agosto de 2017</span></time><span>Actualizado el:</span><time datetime="2024-02-08T12:58"><span>8 de febrero de 2024</span></time></div>
+</div>
+</footer>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>Google Sites</title>
+        <title>¿Cómo mostrar publicaciones conectadas con un nombre de etiqueta específico?</title>
         <author>
             <name>Gabriel Genri</name>
         </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/google-sites-3.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/google-sites-3.html</id>
-            <category term="Sites"/>
-            <category term="CMS"/>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-mostrar-publicaciones-conectadas-con-un-nombre-de-etiqueta-especifico.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-mostrar-publicaciones-conectadas-con-un-nombre-de-etiqueta-especifico.html</id>
+            <category term="Publii"/>
 
-        <updated>2024-11-13T21:10:54-03:00</updated>
+        <updated>2024-12-06T20:58:43-03:00</updated>
             <summary>
                 <![CDATA[
-                    Google Sites es una aplicación web que forma parte del paquete Google Workspace. Te permite crear un sitio web tú&hellip;
+                    A veces, es necesario crear secciones en el sitio web que se utilizarán para mostrar publicaciones de etiquetas específicas. Con&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Google Sites es una aplicación web que forma parte del paquete Google Workspace. Te permite crear un sitio web tú mismo sin necesidad de recurrir a un diseñador web, un programador o alguien del departamento de TI de tu empresa.</p>
-<p class="align-center"><br><a href="https://sites.google.com/view/tallerwebestaticas/SitesGoogle" target="_blank" rel="noopener" class="btn btn--light">Taller Sites Google</a></p>
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">A veces, es necesario crear secciones en el sitio web que se utilizarán para mostrar publicaciones de etiquetas específicas. Con el nuevo motor de renderizado, introducido en Publii v.0.18.2, finalmente es posible.</span></p>
+</header>
+<div class="post__entry">
+<p><span>Todo lo que necesitamos es una representación activa de la variable global </span><strong><span>@website.contentStructure</span></strong><span> (se puede deshabilitar en su tema para una representación más rápida del sitio web).</span></p>
+<p><span>Para representar publicaciones conectadas con una etiqueta seleccionada necesitamos usar el siguiente código:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#each @website.contentStructure.tags}}
+  {{#checkIf this.name '==' 'TAGNAME'}}
+    {{#if this.postsNumber}}
+    {{#each this.posts}}
+      {{title}}
+    {{/each}}
+    {{else}}
+      There are no posts connected with TAGNAME :(
+    {{/if}}
+  {{/checkIf}}
+{{/each}}
+  </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Si desea limitar el número de publicaciones renderizadas, recuerde que puede utilizar la variable </span><strong><span>@index :</span></strong></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{#each @website.contentStructure.tags}}
+  {{#checkIf this.name '==' 'TAGNAME'}}
+    {{#if this.postsNumber}}
+    {{#each this.posts}}
+      {{#checkIf @index '&lt;' 5}}
+        {{title}}
+      {{/checkIf}}
+    {{/each}}
+    {{else}}
+      There are no posts connected with TAGNAME :(
+    {{/if}}
+  {{/checkIf}}
+{{/each}}
+ </code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>El código anterior mostrará hasta cinco publicaciones conectadas con un nombre de etiqueta específico.</span></p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>¿Cómo agregar configuración personalizada o JS para el editor de publicaciones?</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-agregar-configuracion-personalizada-o-js-para-el-editor-de-publicaciones.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-agregar-configuracion-personalizada-o-js-para-el-editor-de-publicaciones.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-12-06T20:57:41-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Si desea permitir algunas etiquetas personalizadas en el editor TinyMCE, desde Publii v.0.38.0 puede hacerlo en la configuración del sitio .
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div class="post__entry">
+<p class="msg msg--highlight"><span>Si desea permitir algunas etiquetas personalizadas en el editor TinyMCE, desde Publii v.0.38.0 puede hacerlo en </span><a href="https://getpublii.com/docs/website-settings.html#editors"><span>la configuración del sitio</span></a><span> .</span></p>
+<p><span>En Publii 0.18.2 hemos agregado una nueva característica: puedes agregar configuración personalizada y JS al editor de publicaciones directamente desde tu tema.</span></p>
+<p><span>En el archivo config.json de su tema, agregue la siguiente sección:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"extensions": {
+        "postEditorConfigOverride": true,
+        "postEditorCustomScript": true
+ },</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Luego, agregue en el directorio raíz del tema los siguientes archivos:</span></p>
+<ul>
+<li><strong><span>tinymce.override.json</span></strong><span> : le permitirá anular la configuración predeterminada de TinyMCE,</span></li>
+<li><strong><span>tinymce.script.js</span></strong><span> : ejecutará su código JS después de la inicialización del editor de publicaciones.</span></li>
+</ul>
+<p><span>Recuerde que también puede anular la configuración de TinyMCE globalmente colocando el archivo </span><strong><span>tinymce.override.json en el directorio </span></strong><strong><span>de configuración</span></strong><span> de Publii : esta anulación es anulada por la anulación del tema si existe.</span></p>
+<p><span>Puedes modificar ambas barras de herramientas del editor añadiendo o quitando las opciones disponibles. Por defecto, las barras de herramientas incluyen las siguientes opciones:</span></p>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>toolbar1: "bold italic underline strikethrough link unlink blockquote alignleft aligncenter alignright bullist numlist image gallery media table toc"
+
+toolbar2: "styleselect formatselect searchreplace hr readmore removeformat undo redo restoredraft sourcecode "</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Por ejemplo, puedes eliminar la segunda barra de herramientas del editor colocando en el archivo TinyMCE.override.json el siguiente código:</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>{
+   "toolbar2": ""
+  }</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Puedes encontrar una lista de todas las opciones de edición de TinyMCE disponibles </span><a href="https://www.tiny.cloud/docs/configure/content-formatting/#built-informats" target="_blank" rel="nofollow noopener noreferrer"><span>aquí</span></a><span> . No garantizamos que todas ellas funcionen con Publii.</span></p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Cómo crear una lista de publicaciones a partir de etiquetas específicas</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-crear-una-lista-de-publicaciones-a-partir-de-etiquetas-especificas.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-crear-una-lista-de-publicaciones-a-partir-de-etiquetas-especificas.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-12-06T20:56:10-03:00</updated>
+            <summary>
+                <![CDATA[
+                    A veces, puede que necesites mostrar una lista de publicaciones de una o varias etiquetas específicas en un artículo. Es&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">A veces, puede que necesites mostrar una lista de publicaciones de una o varias etiquetas específicas en un artículo. Es posible hacerlo mediante un código corto: </span><strong style="font-family: var(--editor-font-family); font-size: inherit;">[posts tags="x,y,z" count="5"]</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> . Para implementar esto, tenemos que seguir algunos pasos de codificación, como se muestra a continuación:</span></p>
+</header>
+<div class="post__entry">
+<p><span>Habilitamos la opción createContentStructure en la sección de renderizado del archivo </span><strong><span>config.json</span></strong><span> :</span></p>
+<div class="code-toolbar">
+<pre class="language-json" tabindex="0"><code>"renderer": {
+		"relatedPostsNumber": 3,
+		"createContentStructure": true,
+		...
+	    },</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Ahora tenemos que crear/agregar el siguiente código a nuestro archivo </span><strong><span>helpers.js</span></strong><span> :</span></p>
+<div class="code-toolbar">
+<pre class="language-javascript" tabindex="0"><code>/*
+ * Custom theme helpers for Handlebars.js
+ */
+let themeHelpers = {
+    parseShortcode: function(postText, content) {
+     let allTags = content.data.website.contentStructure.tags;
+     let matches = postText.match(/\[posts tags="(.*?)" count="(.*?)"\]/gmi);
+     
+     if(!matches) {
+     return postText;
+     }
+     
+     for(let i = 0; i &lt; matches.length; i++) {
+     let tags = matches[i].match(/tags="(.*?)"/);
+     let count = matches[i].match(/count="(.*?)"/);
+     count = count[1];
+ let tagNames = tags[1].split(',');
+ let posts = [];
+ let output = '';
+ 
+ for(let j = 0; j &lt; tagNames.length; j++) {
+ for(let k = 0; k &lt; allTags.length; k++) {
+ if(allTags[k].slug === tagNames[j]) {
+ for(let l = 0; l &lt; allTags[k].posts.length; l++) {
+ posts.push(allTags[k].posts[l]);
+ }
+ }
+ }
+ }
+ 
+ posts = [...new Set(posts)];
+ posts.sort((a, b) =&gt; parseInt(a.createdAt) - parseInt(b.createdAt));
+     posts = posts.slice(0, count);
+     
+     if(posts.length) {
+     output = '&lt;ol&gt;';
+     
+     for(let j = 0; j &lt; posts.length; j++) {
+     output += '&lt;li&gt;&lt;a href="' + posts[j].url + '"&gt;' + posts[j].title + '&lt;/a&gt;&lt;/li&gt;';
+     }
+     output += '&lt;/ol&gt;';
+     }
+     postText = postText.replace(matches[i], output);
+     }
+      return postText;
+    }
+};
+module.exports = themeHelpers;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Si su archivo de ayudantes existente incluye otros fragmentos de código, deberá combinarlos de la siguiente manera:</span></p>
+<div class="code-toolbar">
+<pre class="language-javascript" tabindex="0"><code>/*
+ * Custom theme helpers for Handlebars.js
+ */
+
+let themeHelpers = {
+ lazyLoadForContentImages: function(postText) {
+ let modifiedPostText = postText;
+ // Select all images from the content
+ modifiedPostText = modifiedPostText.replace(/&lt;img[a-zA-Z0-9\s\"\'\=\-]*?src="(.*?)".*?&gt;/gmi, function(match, url) {
+ // Create *-xs image path
+ let image = url.split('.');
+
+ if(
+ url.indexOf('/gallery/') === -1 &amp;&amp; (
+ image[image.length - 1] === 'jpeg' ||
+ image[image.length - 1] === 'jpg' ||
+ image[image.length - 1] === 'png' ||
+ image[image.length - 1] === 'JPEG' ||
+ image[image.length - 1] === 'JPG' ||
+ image[image.length - 1] === 'PNG'
+ )
+ ) {
+ let xsImage = image.slice(0, image.length - 1).join('.') + '-xs.' + image[image.length - 1];
+ xsImage = xsImage.split('/');
+ xsImage[xsImage.length - 2] = xsImage[xsImage.length - 2] + '/responsive';
+ xsImage = xsImage.join('/');
+ // Replace src attribute with *-xs image path
+ match = match.replace(/src=".*?"/gi, 'src="' + xsImage + '"');
+ // change srcset to data-srcset
+ match = match.replace('srcset="', 'data-srcset="');
+ // replace sizes with data-sizes
+ match = match.replace(/sizes=".*?"/i, 'data-sizes="auto"');
+ // add necessary CSS classes
+ if(match.indexOf('class="') &gt; -1) {
+ match = match.replace('class="', 'class="lazyload blur-up ');
+ } else {
+ match = match.replace('&lt;img', '&lt;img class="lazyload blur-up"');
+ }
+ }
+ // return modified &lt;img&gt; tag
+ return match;
+ });
+
+ return modifiedPostText;
+ },
+ 
+ parseShortcode: function(postText, content) {
+ let allTags = content.data.website.contentStructure.tags;
+ let matches = postText.match(/\[posts tags="(.*?)" count="(.*?)"\]/gmi);
+ 
+ if(!matches) {
+ return postText;
+ }
+ 
+ for(let i = 0; i &lt; matches.length; i++) {
+ let tags = matches[i].match(/tags="(.*?)"/);
+ let count = matches[i].match(/count="(.*?)"/);
+ count = count[1];
+ let tagNames = tags[1].split(',');
+ let posts = [];
+ let output = '';
+ 
+ for(let j = 0; j &lt; tagNames.length; j++) {
+ for(let k = 0; k &lt; allTags.length; k++) {
+ if(allTags[k].slug === tagNames[j]) {
+ for(let l = 0; l &lt; allTags[k].posts.length; l++) {
+ posts.push(allTags[k].posts[l]);
+ }
+ }
+ }
+ }
+ 
+ posts = [...new Set(posts)];
+ posts.sort((a, b) =&gt; parseInt(a.createdAt) - parseInt(b.createdAt));
+ posts = posts.slice(0, count);
+ 
+ if(posts.length) {
+ output = '&lt;ol&gt;';
+ 
+ for(let j = 0; j &lt; posts.length; j++) {
+ output += '&lt;li&gt;&lt;a href="' + posts[j].url + '"&gt;' + posts[j].title + '&lt;/a&gt;&lt;/li&gt;';
+ }
+ output += '&lt;/ol&gt;';
+ }
+ postText = postText.replace(matches[i], output);
+ }
+ return postText;
+ }
+};
+
+module.exports = themeHelpers;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Ahora tenemos que agregar el ayudante a los lugares donde debe aparecer el contenido con shortcode, así que, por ejemplo, vamos al archivo post.habs y lo editamos de la siguiente manera:</span></p>
+<p><span>Cambiar el </span><code>{{{text}}}</code><span>a</span><code>{{{parseShortcode text}}}</code></p>
+<p><span>Consejos: Puedes encontrar en nuestros temas otro ayudante </span><code>{{{lazyLoadForContentImages text}}}</code><span>  para cargar la imagen de la publicación con carga diferida, por lo que tenemos que conectar ambos ayudantes entre sí. Afortunadamente, Handlebars ofrece soporte para subexpresiones, lo que te permite invocar múltiples ayudantes dentro de un solo mustache. Es muy fácil de hacer:</span></p>
+<div class="code-toolbar">
+<pre class="language-handlebars" tabindex="0"><code>{{{parseShortcode (lazyLoadForContentImages text)}}}</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Finalmente, abra/cree una publicación y agréguele el siguiente código corto: </span><strong><span>[posts tags="x,y,z" count="5"]</span></strong><span>  donde x,y,z son los nombres de las etiquetas separados por una coma y el 5 es el número de etiquetas mostradas.</span></p>
+<p><span>Una cosa interesante a tener en cuenta aquí es que si las etiquetas especificadas contienen la misma publicación, esa publicación solo se mostrará una vez en la lista, en lugar de tener duplicados en la lista.</span></p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>¿Cómo implementar la compatibilidad con ventanas emergentes de cookies GDPR en su tema?</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-implementar-la-compatibilidad-con-ventanas-emergentes-de-cookies-gdpr-en-su-tema.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/como-implementar-la-compatibilidad-con-ventanas-emergentes-de-cookies-gdpr-en-su-tema.html</id>
+            <category term="Publii"/>
+
+        <updated>2024-12-06T20:53:56-03:00</updated>
+            <summary>
+                <![CDATA[
+                    Si desea agregar compatibilidad con la ventana emergente de cookies GDPR a su tema Publii, deberá realizar algunos cambios simples&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <header>
+<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Si desea agregar compatibilidad con la ventana emergente de cookies GDPR a su tema Publii, deberá realizar algunos cambios simples pero necesarios en su tema:</span></p>
+</header>
+<div class="post__entry">
+<ol>
+<li><span>Agregue el </span><code>{{{ publiiFooter }}}</code><span>ayudante antes de la etiqueta &lt;/body&gt; en el código de su tema; si está usando un </span><a href="https://marketplace.getpublii.com/"><span>tema Publii</span></a><span> predeterminado como base, puede omitir este paso, pero deberá asegurarse de que el tema esté actualizado a la última versión.</span></li>
+<li><span>Busque y catalogue todos los scripts que sus usuarios deberán consentir para ejecutarse y sepárelos en grupos según su función específica, por ejemplo, análisis, marketing, etc.</span></li>
+<li><span>Para cada script que se deba bloquear de forma predeterminada (antes de que se dé el consentimiento), agregue un </span><code>type</code><span>atributo con el </span><code>{{ gdprScriptBlocker "group-name" }}</code><span>valor. Por ejemplo, si desea bloquear un script del grupo de análisis, deberá utilizar:</span>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>&lt;script src="analytics.js" type="{{ gdprScriptBlocker "analytics"}}"&gt;&lt;/script&gt;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+</li>
+<li><span>Una vez que hayas agregado esto a todos los scripts relevantes, crea una nueva publicación en Publii que funcionará como tu página de Política de privacidad. Te recomendamos que la conviertas en una publicación oculta para que no aparezca en las listas de publicaciones, solo en los enlaces de la ventana emergente o de los enlaces agregados a tus menús.</span></li>
+<li><span>En la sección </span><strong><span>Configuración del sitio</span></strong><span> de Publii, abra la pestaña </span><strong><span>GDPR y habilite la opción </span></strong><strong><span>Agregar banner de cookies GDPR</span></strong><span> . Luego, configure el contenido emergente (descripción, etiquetas, etc.) y seleccione su página de Política de privacidad de la lista en la opción </span><strong><span>Página de política de privacidad</span></strong><span> .</span></li>
+<li><span>A continuación, defina los grupos de scripts que se gestionarán mediante la ventana emergente de cookies. Para cada grupo de scripts, puede definir un nombre de grupo y un ID. Los usuarios verán el nombre del grupo como una casilla de verificación disponible en la ventana emergente, mientras que el ID debe ser el mismo que el parámetro </span><strong><span>de nombre de grupo</span></strong><span> que configuró en el asistente </span><strong><span>{{ gdprScriptBlocker }}</span></strong><span> para ese grupo en particular.</span></li>
+<li><span>(Opcional) Si está utilizando la opción </span><strong><span>Acceder a la ventana emergente como un enlace personalizado</span></strong><span> , asegúrese de agregar un elemento de menú o un elemento de sitio web común que pueda usarse como enlace para mostrar la ventana emergente de cookies de GDPR; recuerde que este enlace debe ser un ancla.</span></li>
+</ol>
+<p><span>Su ventana emergente ya está configurada y lista para usar.</span></p>
+<h2 id="advancedintegration"><span>Integración avanzada</span></h2>
+<p><span>Desde Publii v.0.39, el banner de cookies envía eventos personalizados para </span><strong><span>document.body</span></strong><span> después de recibir el consentimiento para grupos de cookies específicos.</span></p>
+<p><span>Por lo tanto, es posible ejecutar scripts después de recibir el consentimiento del usuario. Estos eventos utilizan los siguientes nombres:</span></p>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>publii-cookie-banner-unblock-GROUPNAME</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Entonces, para </span><strong><span>el análisis</span></strong><span> será:</span></p>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>publii-cookie-banner-unblock-analytics</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+<p><span>Este evento se envía cuando el usuario da su consentimiento y también cuando se ha guardado el consentimiento y se carga nuevamente el sitio web.</span></p>
+<p><span>Algunos complementos utilizan esta función para integrarse con el banner de cookies mediante el nombre del grupo de banners de cookies.</span></p>
+<p><span>Por ejemplo, el complemento Comentarios de Facebook que utiliza estos eventos oculta información sobre el consentimiento requerido:</span></p>
+<div class="code-toolbar">
+<pre class="language-html" tabindex="0"><code>&lt;script type="text/javascript"&gt;
+   document.body.addEventListener('publii-cookie-banner-unblock-${this.config.cookieBannerGroup.trim()}', function () 
+   {document.getElementById('fbcomments-no-consent-info').style.display = 'none';}, false);
+&lt;/script&gt;`;</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><a><span>Copiar</span></a></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="post__footer-top">
+<div class="post__meta"><time datetime="2018-05-17T11:59"><span>17 de mayo de 2018</span></time><span>Actualizado el:</span><time datetime="2024-02-08T10:31"><span>8 de febrero de 2024</span></time></div>
+</div>
+</footer>
             ]]>
         </content>
     </entry>
