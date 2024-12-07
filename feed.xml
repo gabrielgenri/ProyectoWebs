@@ -3,12 +3,81 @@
     <title>ProyectoWebs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-12-06T21:38:19-03:00</updated>
+    <updated>2024-12-07T16:39:18-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
+    <entry>
+        <title>OFERTA TRES</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/oferta-tres.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/oferta-tres.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/71/WebsiteFeature-Image.jpg" medium="image" />
+
+        <updated>2024-12-07T16:39:08-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/71/WebsiteFeature-Image.jpg" alt="" />
+                    Esta es una oferta. Aquí va su descripción y se etiqueta como Oferta con imagen destacada en formato 9:16. 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/71/WebsiteFeature-Image.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Esta es una oferta. Aquí va su descripción y se etiqueta como Oferta con imagen destacada en formato 9:16. </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>OFERTA DOS</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/oferta-dos.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/oferta-dos.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/70/Stone-Featured.jpg" medium="image" />
+
+        <updated>2024-12-07T16:38:42-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/70/Stone-Featured.jpg" alt="" />
+                    Esta es una oferta. Aquí va su descripción y se etiqueta como Oferta con imagen destacada en formato 9:16. 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/70/Stone-Featured.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Esta es una oferta. Aquí va su descripción y se etiqueta como Oferta con imagen destacada en formato 9:16. </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>OFERTA UNO</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/oferta-uno.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/oferta-uno.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/69/Arch-Featured.jpg" medium="image" />
+
+        <updated>2024-12-07T16:38:18-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/69/Arch-Featured.jpg" alt="" />
+                    Esta es una oferta. Aquí va su descripción y se etiqueta como Oferta con imagen destacada en formato 9:16. 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/69/Arch-Featured.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Esta es una oferta. Aquí va su descripción y se etiqueta como Oferta con imagen destacada en formato 9:16. </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>API de configuración de temas</title>
         <author>
@@ -16,16 +85,19 @@
         </author>
         <link href="https://gabrielgenri.github.io/ProyectoWebs/api-de-configuracion-de-temas.html"/>
         <id>https://gabrielgenri.github.io/ProyectoWebs/api-de-configuracion-de-temas.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/67/11.jpg" medium="image" />
             <category term="Publii"/>
 
         <updated>2024-12-06T21:27:03-03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/67/11.jpg" alt="" />
                     Casi todos los temas necesitan opciones configurables para satisfacer las necesidades de los usuarios. Publii te permite crear opciones relacionadas&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/67/11.jpg" class="type:primaryImage" alt="" /></p>
                 <header>
 <p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Casi todos los temas necesitan opciones configurables para satisfacer las necesidades de los usuarios. Publii te permite crear opciones relacionadas con el tema y las publicaciones que permiten a los usuarios personalizar el diseño del tema y las publicaciones.</span></p>
 </header>
@@ -975,16 +1047,19 @@
         </author>
         <link href="https://gabrielgenri.github.io/ProyectoWebs/api-del-editor-de-publicaciones.html"/>
         <id>https://gabrielgenri.github.io/ProyectoWebs/api-del-editor-de-publicaciones.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/66/gallery13.jpg" medium="image" />
             <category term="Publii"/>
 
         <updated>2024-12-06T21:24:53-03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/66/gallery13.jpg" alt="" />
                     El editor de publicaciones de Publii se basa en el editor TinyMCE y le permite agregar algunas modificaciones según el tema&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/66/gallery13.jpg" class="type:primaryImage" alt="" /></p>
                 <header>
 <p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">El editor de publicaciones de Publii se basa en el editor </span><a href="https://www.tiny.cloud/" target="_blank" rel="nofollow noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">TinyMCE</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> y le permite agregar algunas modificaciones según el tema utilizado o anulaciones de configuración.</span></p>
 </header>
@@ -1085,16 +1160,19 @@
         </author>
         <link href="https://gabrielgenri.github.io/ProyectoWebs/creacion-de-parciales-personalizados.html"/>
         <id>https://gabrielgenri.github.io/ProyectoWebs/creacion-de-parciales-personalizados.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/daniela-diaz-u0lqnabx2he-unsplash.jpg" medium="image" />
             <category term="Publii"/>
 
         <updated>2024-12-06T21:19:18-03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/daniela-diaz-u0lqnabx2he-unsplash.jpg" alt="" />
                     Introducción - parciales Los parciales son fragmentos comunes de su sitio web que se colocan en archivos separados para facilitar&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/daniela-diaz-u0lqnabx2he-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 <header><header>
 <h1 class="post__title">Introducción - parciales</h1>
 </header>
@@ -2137,338 +2215,6 @@ module.exports = themeHelpers;</code></pre>
 </div>
 <p><span>El código anterior mostrará hasta cinco publicaciones conectadas con un nombre de etiqueta específico.</span></p>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>¿Cómo agregar configuración personalizada o JS para el editor de publicaciones?</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-agregar-configuracion-personalizada-o-js-para-el-editor-de-publicaciones.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/como-agregar-configuracion-personalizada-o-js-para-el-editor-de-publicaciones.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-12-06T20:57:41-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Si desea permitir algunas etiquetas personalizadas en el editor TinyMCE, desde Publii v.0.38.0 puede hacerlo en la configuración del sitio .
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div class="post__entry">
-<p class="msg msg--highlight"><span>Si desea permitir algunas etiquetas personalizadas en el editor TinyMCE, desde Publii v.0.38.0 puede hacerlo en </span><a href="https://getpublii.com/docs/website-settings.html#editors"><span>la configuración del sitio</span></a><span> .</span></p>
-<p><span>En Publii 0.18.2 hemos agregado una nueva característica: puedes agregar configuración personalizada y JS al editor de publicaciones directamente desde tu tema.</span></p>
-<p><span>En el archivo config.json de su tema, agregue la siguiente sección:</span></p>
-<div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>"extensions": {
-        "postEditorConfigOverride": true,
-        "postEditorCustomScript": true
- },</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Luego, agregue en el directorio raíz del tema los siguientes archivos:</span></p>
-<ul>
-<li><strong><span>tinymce.override.json</span></strong><span> : le permitirá anular la configuración predeterminada de TinyMCE,</span></li>
-<li><strong><span>tinymce.script.js</span></strong><span> : ejecutará su código JS después de la inicialización del editor de publicaciones.</span></li>
-</ul>
-<p><span>Recuerde que también puede anular la configuración de TinyMCE globalmente colocando el archivo </span><strong><span>tinymce.override.json en el directorio </span></strong><strong><span>de configuración</span></strong><span> de Publii : esta anulación es anulada por la anulación del tema si existe.</span></p>
-<p><span>Puedes modificar ambas barras de herramientas del editor añadiendo o quitando las opciones disponibles. Por defecto, las barras de herramientas incluyen las siguientes opciones:</span></p>
-<div class="code-toolbar">
-<pre class="language-html" tabindex="0"><code>toolbar1: "bold italic underline strikethrough link unlink blockquote alignleft aligncenter alignright bullist numlist image gallery media table toc"
-
-toolbar2: "styleselect formatselect searchreplace hr readmore removeformat undo redo restoredraft sourcecode "</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Por ejemplo, puedes eliminar la segunda barra de herramientas del editor colocando en el archivo TinyMCE.override.json el siguiente código:</span></p>
-<div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>{
-   "toolbar2": ""
-  }</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Puedes encontrar una lista de todas las opciones de edición de TinyMCE disponibles </span><a href="https://www.tiny.cloud/docs/configure/content-formatting/#built-informats" target="_blank" rel="nofollow noopener noreferrer"><span>aquí</span></a><span> . No garantizamos que todas ellas funcionen con Publii.</span></p>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Cómo crear una lista de publicaciones a partir de etiquetas específicas</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-crear-una-lista-de-publicaciones-a-partir-de-etiquetas-especificas.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/como-crear-una-lista-de-publicaciones-a-partir-de-etiquetas-especificas.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-12-06T20:56:10-03:00</updated>
-            <summary>
-                <![CDATA[
-                    A veces, puede que necesites mostrar una lista de publicaciones de una o varias etiquetas específicas en un artículo. Es&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">A veces, puede que necesites mostrar una lista de publicaciones de una o varias etiquetas específicas en un artículo. Es posible hacerlo mediante un código corto: </span><strong style="font-family: var(--editor-font-family); font-size: inherit;">[posts tags="x,y,z" count="5"]</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> . Para implementar esto, tenemos que seguir algunos pasos de codificación, como se muestra a continuación:</span></p>
-</header>
-<div class="post__entry">
-<p><span>Habilitamos la opción createContentStructure en la sección de renderizado del archivo </span><strong><span>config.json</span></strong><span> :</span></p>
-<div class="code-toolbar">
-<pre class="language-json" tabindex="0"><code>"renderer": {
-		"relatedPostsNumber": 3,
-		"createContentStructure": true,
-		...
-	    },</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Ahora tenemos que crear/agregar el siguiente código a nuestro archivo </span><strong><span>helpers.js</span></strong><span> :</span></p>
-<div class="code-toolbar">
-<pre class="language-javascript" tabindex="0"><code>/*
- * Custom theme helpers for Handlebars.js
- */
-let themeHelpers = {
-    parseShortcode: function(postText, content) {
-     let allTags = content.data.website.contentStructure.tags;
-     let matches = postText.match(/\[posts tags="(.*?)" count="(.*?)"\]/gmi);
-     
-     if(!matches) {
-     return postText;
-     }
-     
-     for(let i = 0; i &lt; matches.length; i++) {
-     let tags = matches[i].match(/tags="(.*?)"/);
-     let count = matches[i].match(/count="(.*?)"/);
-     count = count[1];
- let tagNames = tags[1].split(',');
- let posts = [];
- let output = '';
- 
- for(let j = 0; j &lt; tagNames.length; j++) {
- for(let k = 0; k &lt; allTags.length; k++) {
- if(allTags[k].slug === tagNames[j]) {
- for(let l = 0; l &lt; allTags[k].posts.length; l++) {
- posts.push(allTags[k].posts[l]);
- }
- }
- }
- }
- 
- posts = [...new Set(posts)];
- posts.sort((a, b) =&gt; parseInt(a.createdAt) - parseInt(b.createdAt));
-     posts = posts.slice(0, count);
-     
-     if(posts.length) {
-     output = '&lt;ol&gt;';
-     
-     for(let j = 0; j &lt; posts.length; j++) {
-     output += '&lt;li&gt;&lt;a href="' + posts[j].url + '"&gt;' + posts[j].title + '&lt;/a&gt;&lt;/li&gt;';
-     }
-     output += '&lt;/ol&gt;';
-     }
-     postText = postText.replace(matches[i], output);
-     }
-      return postText;
-    }
-};
-module.exports = themeHelpers;</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Si su archivo de ayudantes existente incluye otros fragmentos de código, deberá combinarlos de la siguiente manera:</span></p>
-<div class="code-toolbar">
-<pre class="language-javascript" tabindex="0"><code>/*
- * Custom theme helpers for Handlebars.js
- */
-
-let themeHelpers = {
- lazyLoadForContentImages: function(postText) {
- let modifiedPostText = postText;
- // Select all images from the content
- modifiedPostText = modifiedPostText.replace(/&lt;img[a-zA-Z0-9\s\"\'\=\-]*?src="(.*?)".*?&gt;/gmi, function(match, url) {
- // Create *-xs image path
- let image = url.split('.');
-
- if(
- url.indexOf('/gallery/') === -1 &amp;&amp; (
- image[image.length - 1] === 'jpeg' ||
- image[image.length - 1] === 'jpg' ||
- image[image.length - 1] === 'png' ||
- image[image.length - 1] === 'JPEG' ||
- image[image.length - 1] === 'JPG' ||
- image[image.length - 1] === 'PNG'
- )
- ) {
- let xsImage = image.slice(0, image.length - 1).join('.') + '-xs.' + image[image.length - 1];
- xsImage = xsImage.split('/');
- xsImage[xsImage.length - 2] = xsImage[xsImage.length - 2] + '/responsive';
- xsImage = xsImage.join('/');
- // Replace src attribute with *-xs image path
- match = match.replace(/src=".*?"/gi, 'src="' + xsImage + '"');
- // change srcset to data-srcset
- match = match.replace('srcset="', 'data-srcset="');
- // replace sizes with data-sizes
- match = match.replace(/sizes=".*?"/i, 'data-sizes="auto"');
- // add necessary CSS classes
- if(match.indexOf('class="') &gt; -1) {
- match = match.replace('class="', 'class="lazyload blur-up ');
- } else {
- match = match.replace('&lt;img', '&lt;img class="lazyload blur-up"');
- }
- }
- // return modified &lt;img&gt; tag
- return match;
- });
-
- return modifiedPostText;
- },
- 
- parseShortcode: function(postText, content) {
- let allTags = content.data.website.contentStructure.tags;
- let matches = postText.match(/\[posts tags="(.*?)" count="(.*?)"\]/gmi);
- 
- if(!matches) {
- return postText;
- }
- 
- for(let i = 0; i &lt; matches.length; i++) {
- let tags = matches[i].match(/tags="(.*?)"/);
- let count = matches[i].match(/count="(.*?)"/);
- count = count[1];
- let tagNames = tags[1].split(',');
- let posts = [];
- let output = '';
- 
- for(let j = 0; j &lt; tagNames.length; j++) {
- for(let k = 0; k &lt; allTags.length; k++) {
- if(allTags[k].slug === tagNames[j]) {
- for(let l = 0; l &lt; allTags[k].posts.length; l++) {
- posts.push(allTags[k].posts[l]);
- }
- }
- }
- }
- 
- posts = [...new Set(posts)];
- posts.sort((a, b) =&gt; parseInt(a.createdAt) - parseInt(b.createdAt));
- posts = posts.slice(0, count);
- 
- if(posts.length) {
- output = '&lt;ol&gt;';
- 
- for(let j = 0; j &lt; posts.length; j++) {
- output += '&lt;li&gt;&lt;a href="' + posts[j].url + '"&gt;' + posts[j].title + '&lt;/a&gt;&lt;/li&gt;';
- }
- output += '&lt;/ol&gt;';
- }
- postText = postText.replace(matches[i], output);
- }
- return postText;
- }
-};
-
-module.exports = themeHelpers;</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Ahora tenemos que agregar el ayudante a los lugares donde debe aparecer el contenido con shortcode, así que, por ejemplo, vamos al archivo post.habs y lo editamos de la siguiente manera:</span></p>
-<p><span>Cambiar el </span><code>{{{text}}}</code><span>a</span><code>{{{parseShortcode text}}}</code></p>
-<p><span>Consejos: Puedes encontrar en nuestros temas otro ayudante </span><code>{{{lazyLoadForContentImages text}}}</code><span>  para cargar la imagen de la publicación con carga diferida, por lo que tenemos que conectar ambos ayudantes entre sí. Afortunadamente, Handlebars ofrece soporte para subexpresiones, lo que te permite invocar múltiples ayudantes dentro de un solo mustache. Es muy fácil de hacer:</span></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{{parseShortcode (lazyLoadForContentImages text)}}}</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Finalmente, abra/cree una publicación y agréguele el siguiente código corto: </span><strong><span>[posts tags="x,y,z" count="5"]</span></strong><span>  donde x,y,z son los nombres de las etiquetas separados por una coma y el 5 es el número de etiquetas mostradas.</span></p>
-<p><span>Una cosa interesante a tener en cuenta aquí es que si las etiquetas especificadas contienen la misma publicación, esa publicación solo se mostrará una vez en la lista, en lugar de tener duplicados en la lista.</span></p>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>¿Cómo implementar la compatibilidad con ventanas emergentes de cookies GDPR en su tema?</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-implementar-la-compatibilidad-con-ventanas-emergentes-de-cookies-gdpr-en-su-tema.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/como-implementar-la-compatibilidad-con-ventanas-emergentes-de-cookies-gdpr-en-su-tema.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-12-06T20:53:56-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Si desea agregar compatibilidad con la ventana emergente de cookies GDPR a su tema Publii, deberá realizar algunos cambios simples&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Si desea agregar compatibilidad con la ventana emergente de cookies GDPR a su tema Publii, deberá realizar algunos cambios simples pero necesarios en su tema:</span></p>
-</header>
-<div class="post__entry">
-<ol>
-<li><span>Agregue el </span><code>{{{ publiiFooter }}}</code><span>ayudante antes de la etiqueta &lt;/body&gt; en el código de su tema; si está usando un </span><a href="https://marketplace.getpublii.com/"><span>tema Publii</span></a><span> predeterminado como base, puede omitir este paso, pero deberá asegurarse de que el tema esté actualizado a la última versión.</span></li>
-<li><span>Busque y catalogue todos los scripts que sus usuarios deberán consentir para ejecutarse y sepárelos en grupos según su función específica, por ejemplo, análisis, marketing, etc.</span></li>
-<li><span>Para cada script que se deba bloquear de forma predeterminada (antes de que se dé el consentimiento), agregue un </span><code>type</code><span>atributo con el </span><code>{{ gdprScriptBlocker "group-name" }}</code><span>valor. Por ejemplo, si desea bloquear un script del grupo de análisis, deberá utilizar:</span>
-<div class="code-toolbar">
-<pre class="language-html" tabindex="0"><code>&lt;script src="analytics.js" type="{{ gdprScriptBlocker "analytics"}}"&gt;&lt;/script&gt;</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-</li>
-<li><span>Una vez que hayas agregado esto a todos los scripts relevantes, crea una nueva publicación en Publii que funcionará como tu página de Política de privacidad. Te recomendamos que la conviertas en una publicación oculta para que no aparezca en las listas de publicaciones, solo en los enlaces de la ventana emergente o de los enlaces agregados a tus menús.</span></li>
-<li><span>En la sección </span><strong><span>Configuración del sitio</span></strong><span> de Publii, abra la pestaña </span><strong><span>GDPR y habilite la opción </span></strong><strong><span>Agregar banner de cookies GDPR</span></strong><span> . Luego, configure el contenido emergente (descripción, etiquetas, etc.) y seleccione su página de Política de privacidad de la lista en la opción </span><strong><span>Página de política de privacidad</span></strong><span> .</span></li>
-<li><span>A continuación, defina los grupos de scripts que se gestionarán mediante la ventana emergente de cookies. Para cada grupo de scripts, puede definir un nombre de grupo y un ID. Los usuarios verán el nombre del grupo como una casilla de verificación disponible en la ventana emergente, mientras que el ID debe ser el mismo que el parámetro </span><strong><span>de nombre de grupo</span></strong><span> que configuró en el asistente </span><strong><span>{{ gdprScriptBlocker }}</span></strong><span> para ese grupo en particular.</span></li>
-<li><span>(Opcional) Si está utilizando la opción </span><strong><span>Acceder a la ventana emergente como un enlace personalizado</span></strong><span> , asegúrese de agregar un elemento de menú o un elemento de sitio web común que pueda usarse como enlace para mostrar la ventana emergente de cookies de GDPR; recuerde que este enlace debe ser un ancla.</span></li>
-</ol>
-<p><span>Su ventana emergente ya está configurada y lista para usar.</span></p>
-<h2 id="advancedintegration"><span>Integración avanzada</span></h2>
-<p><span>Desde Publii v.0.39, el banner de cookies envía eventos personalizados para </span><strong><span>document.body</span></strong><span> después de recibir el consentimiento para grupos de cookies específicos.</span></p>
-<p><span>Por lo tanto, es posible ejecutar scripts después de recibir el consentimiento del usuario. Estos eventos utilizan los siguientes nombres:</span></p>
-<div class="code-toolbar">
-<pre class="language-html" tabindex="0"><code>publii-cookie-banner-unblock-GROUPNAME</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Entonces, para </span><strong><span>el análisis</span></strong><span> será:</span></p>
-<div class="code-toolbar">
-<pre class="language-html" tabindex="0"><code>publii-cookie-banner-unblock-analytics</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Este evento se envía cuando el usuario da su consentimiento y también cuando se ha guardado el consentimiento y se carga nuevamente el sitio web.</span></p>
-<p><span>Algunos complementos utilizan esta función para integrarse con el banner de cookies mediante el nombre del grupo de banners de cookies.</span></p>
-<p><span>Por ejemplo, el complemento Comentarios de Facebook que utiliza estos eventos oculta información sobre el consentimiento requerido:</span></p>
-<div class="code-toolbar">
-<pre class="language-html" tabindex="0"><code>&lt;script type="text/javascript"&gt;
-   document.body.addEventListener('publii-cookie-banner-unblock-${this.config.cookieBannerGroup.trim()}', function () 
-   {document.getElementById('fbcomments-no-consent-info').style.display = 'none';}, false);
-&lt;/script&gt;`;</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-</div>
-<footer>
-<div class="post__footer-top">
-<div class="post__meta"><time datetime="2018-05-17T11:59"><span>17 de mayo de 2018</span></time><span>Actualizado el:</span><time datetime="2024-02-08T10:31"><span>8 de febrero de 2024</span></time></div>
-</div>
-</footer>
             ]]>
         </content>
     </entry>

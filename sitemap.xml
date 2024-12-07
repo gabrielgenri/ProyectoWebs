@@ -7,6 +7,42 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/ahora-es-posible-traducir-temas.html</loc>
 <lastmod>2024-11-13T21:04:20-03:00</lastmod>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/portfolio-theme.jpg</image:loc>
+<image:title><![CDATA[Tema de portafolio para Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/amazon-s3.png</image:loc>
+<image:title><![CDATA[Publii es compatible con Amazon S3]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/backup.png</image:loc>
+<image:title><![CDATA[Opción de copia de seguridad del sitio web de Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/post-options.png</image:loc>
+<image:title><![CDATA[Opciones de diseño de publicaciones]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/files-location.png</image:loc>
+<image:title><![CDATA[Ubicación de los archivos del sitio web local]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/publii-sftp-key.png</image:loc>
+<image:title><![CDATA[SFTP con claves]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/tags-template.png</image:loc>
+<image:title><![CDATA[Plantilla de etiqueta de publicación]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/language-file.png</image:loc>
+<image:title><![CDATA[Localización de temas de Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/9/basic-settings.png</image:loc>
+<image:title><![CDATA[Configuraciones básicas flexibles]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/anulaciones-de-temas.html</loc>
@@ -18,11 +54,79 @@
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/api-de-configuracion-de-temas.html</loc>
-<lastmod>2024-12-06T21:38:19-03:00</lastmod>
+<lastmod>2024-12-07T16:20:57-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/67/11.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/108/custom-settings.svg</image:loc>
+<image:title><![CDATA[API de configuración de temas]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/110/text-input.svg</image:loc>
+<image:title><![CDATA[Entrada de texto]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/110/text.svg</image:loc>
+<image:title><![CDATA[Entrada de texto]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/111/textarea.svg</image:loc>
+<image:title><![CDATA[Área de texto]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/123/dropdown.svg</image:loc>
+<image:title><![CDATA[Menú desplegable - Lista de selección]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/113/color-picker.svg</image:loc>
+<image:title><![CDATA[Selector de color]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/114/image-uploader.svg</image:loc>
+<image:title><![CDATA[Cargador de imágenes HTML]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/115/small-file-uploader.svg</image:loc>
+<image:title><![CDATA[Cargador de archivos pequeños]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/116/radio-buttons.svg</image:loc>
+<image:title><![CDATA[Botones de radio]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/117/switcher.svg</image:loc>
+<image:title><![CDATA[Conmutador HTML]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/118/range-slider.svg</image:loc>
+<image:title><![CDATA[Control deslizante de rango]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/119/separator.svg</image:loc>
+<image:title><![CDATA[Separadores]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/120/posts-dropdown.svg</image:loc>
+<image:title><![CDATA[Lista desplegable de publicaciones]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/121/tags-dropdown.svg</image:loc>
+<image:title><![CDATA[Lista desplegable de etiquetas]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/dev/media/posts/122/authors-dropdown.svg</image:loc>
+<image:title><![CDATA[Lista desplegable de autores]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/api-del-editor-de-publicaciones.html</loc>
-<lastmod>2024-12-06T21:26:31-03:00</lastmod>
+<lastmod>2024-12-07T16:21:13-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/66/gallery13.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/aplicaciones-de-escritorio-multiplataforma-usando-python.html</loc>
@@ -41,8 +145,36 @@
 </image:image>
 </url>
 <url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/blog.html</loc>
+<lastmod>2024-12-07T18:17:02-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/68/clayton-robbins-kmzrutvsqai-unsplash-1.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/cinco-alternativas-de-sketch-de-alta-calidad-para-windows.html</loc>
 <lastmod>2024-11-10T03:28:07-03:00</lastmod>
+<image:image>
+<image:loc>https://iotvnaw69daj.i.optimole.com/cb:mLvy.66914/w:509/h:239/q:90/f:best/https://wpshout.com/wp-content/uploads/2024/07/figma.png</image:loc>
+<image:title><![CDATA[Alternativas de Sketch para Windows: Figma]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://iotvnaw69daj.i.optimole.com/cb:mLvy.66914/w:509/h:266/q:90/f:best/https://wpshout.com/wp-content/uploads/2019/08/Vectr-Home-Page.png</image:loc>
+<image:title><![CDATA[Alternativas de Sketch para Windows: Vectr]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://iotvnaw69daj.i.optimole.com/cb:mLvy.66914/w:509/h:226/q:90/f:best/https://wpshout.com/wp-content/uploads/2019/08/Adobe-Illustrator-Home-Page.png</image:loc>
+<image:title><![CDATA[Alternativas de Sketch para Windows: Adobe Illustrator]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://iotvnaw69daj.i.optimole.com/cb:mLvy.66914/w:509/h:284/q:90/f:best/https://wpshout.com/wp-content/uploads/2019/08/Moqups-Home-Page.png</image:loc>
+<image:title><![CDATA[Alternativas de Sketch para Windows: Moqups]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://iotvnaw69daj.i.optimole.com/cb:mLvy.66914/w:509/h:382/q:90/f:best/https://wpshout.com/wp-content/uploads/2019/08/FluidUI-Home-Page.png</image:loc>
+<image:title><![CDATA[Alternativas de Sketch: FluidUI]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/como-agregar-compatibilidad-con-paginas-en-temas-de-publii.html</loc>
@@ -87,6 +219,10 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/como-traducir-tu-tema-de-publii-a-otro-idioma.html</loc>
 <lastmod>2024-11-13T21:05:43-03:00</lastmod>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/27/language-file-publii-theme.png</image:loc>
+<image:title><![CDATA[Archivo de idioma del tema Publii]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/complementos-publii.html</loc>
@@ -98,7 +234,11 @@
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/creacion-de-parciales-personalizados.html</loc>
-<lastmod>2024-12-06T21:24:31-03:00</lastmod>
+<lastmod>2024-12-07T16:21:58-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/daniela-diaz-u0lqnabx2he-unsplash.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/creacion-de-un-sitio-de-github-pages-2.html</loc>
@@ -107,6 +247,74 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/creacion-de-un-sitio-de-github-pages.html</loc>
 <lastmod>2024-11-13T21:06:33-03:00</lastmod>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/signin-3-3.jpg</image:loc>
+<image:title><![CDATA[Iniciar sesión en la cuenta de Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-settings</image:loc>
+<image:title><![CDATA[Configuración del perfil de usuario de Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/developer-settings-2-2.png</image:loc>
+<image:title><![CDATA[Configuración de desarrollador de Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/access-token-2-2.png</image:loc>
+<image:title><![CDATA[Enlace a tokens de acceso personal]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-token-2.png</image:loc>
+<image:title><![CDATA[Generar nuevo token]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/generate-token-2.png</image:loc>
+<image:title><![CDATA[Nuevo token de acceso personal a GitHub]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/personal-access-token-2.png</image:loc>
+<image:title><![CDATA[Copiar token de acceso personal]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-pages-new-repository-2.png</image:loc>
+<image:title><![CDATA[Crear un repositorio en Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/create-new-repository-2-2.png</image:loc>
+<image:title><![CDATA[Crear un nuevo repositorio de GitHub]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-pages-quick-setup-2.png</image:loc>
+<image:title><![CDATA[Configuración rápida de páginas de Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/commit-new-file-2.png</image:loc>
+<image:title><![CDATA[Confirmar nuevo archivo]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-settings-2.png</image:loc>
+<image:title><![CDATA[Configuración de páginas de Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/main-branch-github-pages.png</image:loc>
+<image:title><![CDATA[Rama principal de Github Pages]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/gitHub-pages-url-2.png</image:loc>
+<image:title><![CDATA[URL de páginas de GitHub]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-pages-configuration-2.svg</image:loc>
+<image:title><![CDATA[Configuración de páginas de GitHub]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-commits.png</image:loc>
+<image:title><![CDATA[Botón de confirmación de páginas de Github]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/25/github-commits-list.png</image:loc>
+<image:title><![CDATA[Lista de commits de GitHub]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/documentacion-para-desarrolladores-publii.html</loc>
@@ -139,6 +347,58 @@
 <image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/33/Frameworks-de-Python-Que-son-frameworks-de-Python-scaled1.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/Frameworks-de-Python-Que-son-frameworks-de-Python-scaled.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/Que-son-frameworks-de-Python-mejores-frameworks-de-Python-300x300.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/flask-frameworks-de-python.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/cherry-py-mejores-frameworks-de-python-2023.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/django-mejores-frameworks-de-python.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/fastAPI-frameworks-de-Python.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/Pyramid-framework-de-python-1024x562.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2023/01/perspectiva-del-telefono-movil-con-iconos-de-aplicaciones-en-pantalla-150x150.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/Tornado-frameworks-de-python-1024x663.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/PyQt-frameworks-de-Python-288x300.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/kivy-mejores-frameworks-de-python-300x100.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/scikit-mejores-frameworks-de-Python.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bambu-mobile.com/wp-content/uploads/2024/01/TensorFlow-frameworks-de-python-2023-300x250.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/funciones-compatibles-con-el-tema.html</loc>
@@ -162,7 +422,11 @@
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/html-and-css-2.html</loc>
-<lastmod>2024-11-13T21:31:07-03:00</lastmod>
+<lastmod>2024-12-07T16:28:07-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/44/gallery02.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/informacion-sobre-los-anuncios-de-facebook.html</loc>
@@ -171,10 +435,106 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/introduccion-a-eleventy.html</loc>
 <lastmod>2024-11-13T21:01:32-03:00</lastmod>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/ea4b2b8f-untitled-1024x200.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/5e3ca6df-untitled-1.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/0b4d132d-untitled-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/3eea7275-untitled-3-1024x733.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/f9776109-untitled-4-300x190.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/007a3a57-untitled-5-1024x624.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/01/aa60e3af-untitled-6-300x199.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/introduccion-a-payload-un-cms-y-un-marco-de-aplicaciones-sin-interfaz-grafica.html</loc>
 <lastmod>2024-11-13T21:01:13-03:00</lastmod>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/1a832a6f-image-1024x197.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/9c193e71-image-1-1024x118.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/03f012b8-image-2-1024x196.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/2bc07cf3-image-3-1024x447.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/74580164-image-4-1024x366.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/207fe4cb-image-5-1024x184.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/e9ce4056-image-6-1024x333.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/d8d60994-image-7-1024x569.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/f522cb54-image-8.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/63b0b83f-image-9-1024x496.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/8665f2c5-image-10-1024x269.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/e60fda67-image-11-1024x235.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/5d82e49d-image-13-1024x193.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/fb2d1728-image-14-1024x337.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/a983c25e-image-17-1024x326.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/96d6c533-image-18-1024x355.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/2024/09/8313cfd3-image-19-1024x378.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/introduccion-etiquetas.html</loc>
@@ -191,6 +551,66 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/mejorar-los-temas-con-fuentes-cargadas-localmente.html</loc>
 <lastmod>2024-11-13T21:02:53-03:00</lastmod>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/fonts-loaded-locally-2.webp</image:loc>
+<image:title><![CDATA[Fuentes de Google cargadas localmente]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/page-speed.webp</image:loc>
+<image:title><![CDATA[Velocidad de la página de las fuentes de Google cargadas localmente]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/font-options-2.webp</image:loc>
+<image:title><![CDATA[Opciones de fuente]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/font-weight.webp</image:loc>
+<image:title><![CDATA[Peso de fuente en rango completo]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/simle-dark-mode.webp</image:loc>
+<image:title><![CDATA[Tema simple con modo oscuro]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/dweb-protocol.webp</image:loc>
+<image:title><![CDATA[Protocolo Dweb]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/file-location.webp</image:loc>
+<image:title><![CDATA[Ubicación del archivo del sitio]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/comments-custom-code.webp</image:loc>
+<image:title><![CDATA[Comentarios Código personalizado]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/blog/media/posts/73/preview-changes-2.webp</image:loc>
+<image:title><![CDATA[Habilitar vista previa avanzada]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/oferta-dos.html</loc>
+<lastmod>2024-12-07T16:39:18-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/70/Stone-Featured.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/oferta-tres.html</loc>
+<lastmod>2024-12-07T16:39:08-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/71/WebsiteFeature-Image.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/oferta-uno.html</loc>
+<lastmod>2024-12-07T16:38:18-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/69/Arch-Featured.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/page/2/</loc>
@@ -205,16 +625,56 @@
 <loc>https://gabrielgenri.github.io/ProyectoWebs/page/5/</loc>
 </url>
 <url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/pagina-dos.html</loc>
+<lastmod>2024-12-07T19:23:50-03:00</lastmod>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/pagina-empty-container.html</loc>
+<lastmod>2024-12-07T17:47:06-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/72/mbr-1200x797.jpg</image:loc>
+<image:title><![CDATA[Este es el Texto Alternativo]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/pagina-tres.html</loc>
+<lastmod>2024-12-07T19:24:29-03:00</lastmod>
+</url>
+<url>
+<loc>https://gabrielgenri.github.io/ProyectoWebs/pagina-uno.html</loc>
+<lastmod>2024-12-07T19:23:59-03:00</lastmod>
+</url>
+<url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/publii.html</loc>
 <lastmod>2024-11-13T21:08:06-03:00</lastmod>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/6/files-location.svg</image:loc>
+<image:title><![CDATA[Ubicación de los archivos de Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/49/creating-new-website-2.svg</image:loc>
+<image:title><![CDATA[Gestión de sitios web: creación, eliminación, modificación y duplicación]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/49/install-from-backup.svg</image:loc>
+<image:title><![CDATA[Crear un sitio web a partir de un archivo de respaldo]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://getpublii.com/docs/media/posts/49/website-switcher.png</image:loc>
+<image:title><![CDATA[El selector de sitios web en la barra de herramientas]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/python-y-webassembly-mejora-del-rendimiento-de-las-aplicaciones-web.html</loc>
 <lastmod>2024-11-13T21:01:50-03:00</lastmod>
+<image:image>
+<image:loc>https://cdn.thenewstack.io/media/3c493fe0-fermyon-logo-tns.svg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/quienes-somos.html</loc>
-<lastmod>2024-11-13T21:34:45-03:00</lastmod>
+<lastmod>2024-12-07T18:23:18-03:00</lastmod>
 <image:image>
 <image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/45/background4.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -222,7 +682,11 @@
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/secciones-pruebas.html</loc>
-<lastmod>2024-11-13T21:23:50-03:00</lastmod>
+<lastmod>2024-12-07T16:28:33-03:00</lastmod>
+<image:image>
+<image:loc>https://gabrielgenri.github.io/ProyectoWebs/media/posts/43/gallery03.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/sites-google.html</loc>
@@ -235,6 +699,142 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/tutorial-de-publii-creacion-de-un-sitio-estatico-implementado-en-netlify.html</loc>
 <lastmod>2024-11-13T21:02:21-03:00</lastmod>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTE2Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664066-downloading-publii-s-desktop-app.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Descargando la aplicación de escritorio de Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTQ5Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUxIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664078-picking-a-theme-in-publii.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Elegir un tema en Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUwIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664084-adding-a-new-post-in-publii.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Agregar una nueva publicación en Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUwIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664090-editing-a-post-in-publii.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Editar una publicación en Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUxIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664097-custom-settings-in-publii.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Configuración de temas personalizados en Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUwIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664102-final-favicon-troll.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Añadir la pelota de playa giratoria de la muerte de Mac como favicono]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUxIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTYyIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664119-publii-plus-snipcart-flow-live.gif?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Publii + Snipcart en vivo]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUxIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664135-including-snipcart-s-js-in-publii-s-source.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Incluyendo JS de Snipcart en la fuente Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iMjQxIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTQ4Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664221-adding-the-buy-button-in-publii-s-html.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Agregar el botón de compra en el HTML de Publii]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTUwIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664226-synchronizing-publii-with-netlify.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Sincronización de Publii con Netlify]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTI1Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTE2Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664239-oauth-access-tokens-in-netlify.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[OAuth access tokens in Netlify]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTMxIj48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664265-netlify-custom-domains-management.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Netlify custom domains management]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iMzI4Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664271-netlify-nameservers.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Netlify nameservers]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjQ0Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664278-iwantmyname-netlify-dns-updates.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[iwantmyname Netlify DNS updates]]></image:title>
+</image:image>
+<image:image>
+<image:loc>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNDg2Ij48L3N2Zz4=</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.datocms-assets.com/48401/1627664284-netlify-ssl-let-s-encrypt-panel.png?fit=max&amp;w=900</image:loc>
+<image:title><![CDATA[Netlify SSL Let's Encrypt panel]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/tutoriales-temas-de-publii.html</loc>
@@ -247,6 +847,30 @@
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/usamos-python-en-workers-con-pyodide-y-webassembly.html</loc>
 <lastmod>2024-11-10T03:08:59-03:00</lastmod>
+<image:image>
+<image:loc>https://cf-assets.www.cloudflare.com/zkvhlag99gkb/4BCvEmK49aK7qLQuTkUsI1/0aecc2333aabe7e94ee99cdf9f830ef6/pythonweba.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cf-assets.www.cloudflare.com/zkvhlag99gkb/4eCllqbVYDOzao6swhou7t/c4731707e15b9b37b4198f05a88682ee/VMs--Containers--ans-Isolates-comparison.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cf-assets.www.cloudflare.com/zkvhlag99gkb/736nXjbNS1gxb4dm8xaptB/9f4dd0232d22e7d7070b1f716813a7e6/Python-Worker-Request-Lifecycle.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1JiF8v11hINyO6CpNnuP6a/52fad68dedc7a4d1c6beba46eb13f964/Python-Workers---Runtime.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2q0ztvdb60NUqlAsOWWFX4/203e421e31e25c5794f5fada1ad94c40/apipyth.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1nmt4B6AYocqmJCw21v5pL/112dcd395906643cbf8a67de22470e13/Workers-and-Python.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://gabrielgenri.github.io/ProyectoWebs/uso-de-webassembly-con-python.html</loc>
