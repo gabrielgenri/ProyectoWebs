@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>Libro Diario - ProyectoWebs</title><meta name="description" content="Cuaderno de viaje del diseño. 7/12 Agrupamos las últimas 3 publicaciones de una Etiqueta y los mostramos. En este caso,&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://gabrielgenri.github.io/ProyectoWebs/libro-diario.html"><link rel="alternate" type="application/atom+xml" href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml"><link rel="alternate" type="application/json" href="https://gabrielgenri.github.io/ProyectoWebs/feed.json"><meta property="og:title" content="Libro Diario - ProyectoWebs "><meta property="og:image" content="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png"><meta property="og:image:width" content="208"><meta property="og:image:height" content="40"><meta property="og:site_name" content="ProyectoWebs"><meta property="og:description" content="Cuaderno de viaje del diseño. 7/12 Agrupamos las últimas 3 publicaciones de una Etiqueta y los mostramos. En este caso,&hellip;"><meta property="og:url" content="https://gabrielgenri.github.io/ProyectoWebs/libro-diario.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://gabrielgenri.github.io/ProyectoWebs/assets/css/fontawesome-all.min.css?v=85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://gabrielgenri.github.io/ProyectoWebs/assets/css/style.css?v=9a6c1f5a1ce9b2549a2dfd134d879080"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabrielgenri.github.io/ProyectoWebs/libro-diario.html"},"headline":"Libro Diario","datePublished":"2024-12-07T22:05-03:00","dateModified":"2024-12-07T22:16-03:00","image":{"@type":"ImageObject","url":"https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png","height":40,"width":208},"description":"Cuaderno de viaje del diseño. 7/12 Agrupamos las últimas 3 publicaciones de una Etiqueta y los mostramos. En este caso,&hellip;","author":{"@type":"Person","name":"Gabriel Genri","url":"https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/"},"publisher":{"@type":"Organization","name":"Gabriel Genri","logo":{"@type":"ImageObject","url":"https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png","height":40,"width":208}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><script>// OPEN-CLOSE navbar
+function openNav() {
+ document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+ document.getElementById("nav").style.width = "0%";
+}
+//Get the button
+var topbtn = document.getElementById("topbtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//SmoothScroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".smooth").on('click', function(event) {
+// Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+// Overlay Promo */
+function on() { document.getElementById("overlay").style.display = "block";
+}
+function off() { document.getElementById("overlay").style.display = "none";
+}
+
+
+/*
+===============================================================
+
+Hi! Welcome to my little playground!
+
+My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
+I'm a publicist, visual designer and frontend developer based in Barcelona. 
+
+Here you will find some of my personal experiments. Sometimes usefull,
+sometimes simply for fun. You are free to use them for whatever you want 
+but I would appreciate an attribution from my work. I hope you enjoy it.
+
+===============================================================
+*/
+
+/*
+=====================
+=====================
+JSON list
+=====================
+=====================
+*/
+var post=[
+  {
+    postTitle: "REDES DE MERCADEO",
+    postAbstract: "¿Cómo te puedo ayudar a lograr la Libertad Financiera con las Redes de Mercadeo?",
+    postContent: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae placeat, inventore eligendi qui deserunt asperiores error laboriosam libero blanditiis dignissimos eius molestias cumque necessitatibus est. <b>Quae velit ad cupiditate necessitatibus</b>, facere eum earum ut odio nostrum labore a explicabo quasi voluptates, consequatur obcaecati quos, quis fugiat veniam ea ipsam consequuntur illo!</p><p>Aperiam fugit nulla, praesentium doloremque harum laborum ipsam officia minima. Alias saepe cumque mollitia soluta totam facere, iusto ab officiis cum itaque! Sit sint earum sequi quae mollitia quibusdam adipisci facere explicabo libero nihil! Velit aliquam asperiores possimus eligendi dolore reprehenderit similique suscipit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-quinon.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-quinon5.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Las Preguntas que Cambiaron Mi VIda",
+    postAbstract: "14 años atrás me hice las siguientes 4 preguntas",
+    postContent: "<p>¿Me gustaría tener el estilo de vida que siempre soñé? </p><p>¿Me gustaría tener más tiempo libre y  libertad para hacer lo que quiera?</p><p>¿Busco más tranquilidad económica?</p><p>¿Como me veo en los próximos 5 a 10 años si sigo haciendo lo mismo?</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-inaem.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-inaem2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Política de Privacidad",
+    postAbstract: "Tu privacidad es importante para nosotros. En esta declaración de privacidad se explica qué datos personales recopilamos de nuestros usuarios y cómo los utilizamos. Te animamos a leer detenidamente estos términos antes de facilitar tus datos personales en esta web. Los mayores de trece años podrán registrarse en https://jmgaluppo.com como usuarios sin el previo consentimiento de sus padres o tutores.",
+    postContent: "",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-shigeru.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-shigeru4.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Quidem neque commodi",
+    postAbstract: "Aliquid sapiente harum maiores alias optio, ea vero perferendis impedit architecto culpa libero corporis.",
+    postContent: "<p>Dolorum eos dignissimos eveniet deserunt veritatis possimus magnam enim, eaque non, architecto voluptates consequuntur nulla, modi nobis sunt perferendis voluptatibus accusantium voluptatem! Delectus iure architecto rem, ex quas necessitatibus illum autem obcaecati sapiente ea inventore quisquam debitis quae numquam. Iusto mollitia suscipit iste quae tempore ipsam facere <b>quia nobis et omnis accusantium quo</b>, quod tenetur, aperiam, rem quos quas eveniet exercitationem. Rem, hic optio. Harum quis porro optio facilis totam velit quibusdam corrupti saepe similique sed aut doloribus temporibus ipsum modi rerum, ab impedit.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-karuna.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-karuna2.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Explicabo obcaecati",
+    postAbstract: "Iste explicabo, architecto maiores nisi eaque doloribus aspernatur esse tera corporis iure itaque animi?",
+    postContent: "<p>Voluptatem, similique. Sed doloribus quaerat ratione deleniti esse odit doloremque incidunt, aut, recusandae? Ipsam ipsum voluptas tenetur aut atque tempora ducimus, dolores qui, <b>maiores voluptatibus veniam</b>, quos inventore esse illum adipisci. Error quo officia, distinctio voluptates, possimus voluptatem dignissimos magni dolor, nobis expedita doloribus consequuntur beatae natus iusto ipsum culpa. Delectus pariatur, officia voluptatem, dolore enim cum temporibus deserunt reiciendis at quam labore aperiam, adipisci nesciunt.</p><p>Laborum placeat <b>adipisci ex porro</b>, labore impedit sed nulla perferendis architecto quis vitae laudantium animi, dolorum repudiandae incidunt eaque! Possimus corporis voluptatum aut velit similique facilis fugit quis eaque, fugiat inventore beatae minus nemo soluta quia earum, atque accusamus!</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-vinallonga.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-vinallonga1.jpg",
+    postLink: "article-link1"
+  },
+  {
+    postTitle: "Ullam provident",
+    postAbstract: "Lorem ipsum dolor sit amet eveniet, consectetur adipisicing elit. Numquam repudiandae nam dolore.",
+    postContent: "<p>Possimus ipsam, aliquid voluptate ab quaerat mollitia deleniti recusandae, voluptas quisquam consequatur porro nesciunt sed commodi reprehenderit, amet earum sapiente sunt, temporibus aut <b>consectetur eligendi</b> laudantium. Cum, eius! Optio tempora unde, non quasi fugit, eos corporis iusto dolores, quam suscipit ipsum cum nesciunt incidunt atque in recusandae amet totam ea fuga! Aliquid similique exercitationem accusamus, et vitae molestiae voluptatum quo earum doloribus <b>nisi hic nesciunt</b>, blanditiis dignissimos. Quia veniam neque facere nesciunt quibusdam distinctio architecto perferendis veritatis? Laboriosam architecto culpa hic aspernatur ratione possimus nostrum mollitia, soluta aliquid reiciendis doloribus.</p>",
+    postThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-urban.jpg",
+    postImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-urban4.jpg",
+    postLink: "article-link1"
+  }
+];
+
+
+/*
+=====================
+=====================
+Thumbs
+=====================
+=====================
+*/
+//Loop length:
+var postLength = post.length;
+//Empty container:
+$(".posts-box").empty();
+//Loop:
+for (i=0; i<postLength; i++) {
+  //Create thumb structure:
+  var listItem =
+    '<li>'+
+      '<div class="card">'+
+        '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">'+
+          '<img src="'+post[i].postThumb+'" alt="">'+
+        '</a>'+
+        '<div>'+
+          '<h3>'+post[i].postTitle+'</h3>'+
+          '<p>'+post[i].postAbstract+'</p>'+
+        '</div>'+
+        '<div>'+
+          '<a class="button" href="'+post[i].postLink+'" data-obj="'+i+'">Ver</a>'+
+        '</div>'+
+      '</div>'+
+    '</li>';
+  //Append thumb:
+  $(".posts-box").append(listItem);
+};
+
+
+/*
+=====================
+=====================
+Inner post
+=====================
+=====================
+*/
+var thisElement = 0;
+
+function innerContent(content){
+  $(".inner-img").attr("src",post[content].postImg);
+  $(".inner-title").html(post[content].postTitle);
+  $(".inner-text").html(post[content].postContent);
+};
+
+//Open post:
+$(".button").click(function(e){
+  e.preventDefault();
+  thisElement = $(this).attr("data-obj");
+  innerContent(thisElement);
+  $(".modal").css({"display":"block"});
+  dissBtn();
+});
+
+//Close post:
+$(".close-post, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+});
+
+//Next post:
+$(".next-post").click(function(e){
+  e.preventDefault();
+  if (thisElement<postLength-1) {
+    thisElement = parseInt(thisElement) + 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Prev post:
+$(".prev-post").click(function(e){
+  e.preventDefault();
+  if (thisElement>0) {
+    thisElement = parseInt(thisElement) - 1;
+    innerContent(thisElement);
+    dissBtn();
+  };
+});
+
+//Button disable:
+function dissBtn(){
+  $(".prev-post, .next-post").removeClass("disabled");
+  if (thisElement<=0){
+    $(".prev-post").addClass("disabled");
+  }
+  else if (thisElement>=postLength-1){
+    $(".next-post").addClass("disabled");
+  };
+};
+
+
+// TESTIMONIOS Define data for the popup
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+// envio
+ function enviar_pedido_whatsapp(){
+        	var cadena_pedido="";
+
+        	cadena_pedido+="%2ANuevo Pedido%2A"+'%0A'+'%0A';
+        	
+        	//cadena_pedido+="-------------------"+'%0A';
+
+        	
+
+
+   /*     	for(var i=0;i<arra_prods_exis.length;i++){       
+
+
+        		var obj_prod=get_nombre_ref(arra_prods_exis[i]);
+
+        		if(obj_prod.nombre_producto!=""){
+        			cadena_pedido+="%2A"+obj_prod.nombre_producto+'%2A%0A';
+        		}
+        		
+        		cadena_pedido+=""+get_linea_cadena_by_ref(arra_prods_exis[i],"1");
+        		cadena_pedido+="---------------------------------"+'%0A';
+        		
+        	}
+        	cadena_pedido+="---------------------------------"+'%0A';
+        	if(valor_total_cotizacion>0){
+        		cadena_pedido+="%2A"+"TOTAL:"+"%2A%20%20"+addCommas(valor_total_cotizacion)+'%0A';
+        		cadena_pedido+="---------------------------------"+'%0A';
+        	} */
+        	
+
+        	cadena_pedido+="%2A"+"Nombres:"+"%2A%20"+encodeURIComponent($("#nombrePedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Email:"+"%2A%20"+$("#emailPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Teléfonos:"+"%2A%20"+encodeURIComponent($("#telefonoPedido").val())+'%0A';
+        	cadena_pedido+="%2A"+"Dirección:"+"%2A%20"+encodeURIComponent($("#direccionPedido").val())+'%0A';
+
+        	if($("#identificacionPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Identificación:"+"%2A%20"+encodeURIComponent($("#identificacionPedido").val())+'%0A';
+        	}
+
+
+        	if($("#vendedorPedido").val()!=""){
+        		cadena_pedido+="%2A"+"Referido:"+"%2A%20"+encodeURIComponent($("#vendedorPedido").val())+'%0A';
+        	}
+
+        	cadena_pedido+="%2A"+"Ciudad:"+"%2A%20"+$("#ciudadPedido").val()+'%0A';
+        	cadena_pedido+="%2A"+"Observación:"+"%2A%20"+encodeURIComponent($("#observacionPedido").val())+'%0A';
+
+
+        	var url_final="https://api.whatsapp.com/send?phone=5493804402424&text="+cadena_pedido;
+
+        	window.open(url_final,"_self");
+
+
+        	localStorage.setItem('nombrePedido', ''+$("#nombrePedido").val());
+        	localStorage.setItem('emailPedido', ''+$("#emailPedido").val());
+        	localStorage.setItem('telefonoPedido', ''+$("#telefonoPedido").val());
+        	localStorage.setItem('direccionPedido', ''+$("#direccionPedido").val());
+        	localStorage.setItem('ciudadPedido', ''+$("#ciudadPedido").val());
+        	localStorage.setItem('observacionPedido', ''+$("#observacionPedido").val());
+ }
+
+
+function abrir_sms(){
+			var url_enviar="";
+
+			var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+
+			if(iOS){
+				url_enviar="sms:#celular&body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				url_enviar="sms://#celular?body=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			/*
+
+	 $url_share_sms="{$ruta_external}sms://#celular?body={$cadena_compartir} - {$url_compartir}";    
+    $url_share_sms_iphone="{$ruta_external}sms:#celular&body={$cadena_compartir} - {$url_compartir}";
+
+			*/
+
+
+
+			var cadena_cel="";
+			if(numero_whats!=""){
+				url_enviar = url_enviar.replace("#celular", numero_whats);
+			}else{
+				url_enviar = url_enviar.replace("#celular", "");
+			}
+
+			console.log("Prueba: "+url_enviar);
+
+			window.open(""+url_enviar+"","_self");
+			console.log("Prueba: "+url_enviar);
+		}
+
+		function compartir_whatsapp(){
+			var numero_whats=""+$("#numero-whatsapp-share").val();
+			var cadena_compartir_whatsapp="";
+			if(numero_whats!=""){
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?phone="+numero_whats+"&text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}else{
+				cadena_compartir_whatsapp="https://api.whatsapp.com/send?text=Mi Tarjeta Digital - https://www.wikomm.com/card/carlos-campos/9326";
+			}
+
+			window.open(""+cadena_compartir_whatsapp,"_blank");
+
+		}</script></head><body class="is-preload page-template"><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-12-07T22:05" class="post__date">7 dic. 2024</time><h1>Libro Diario</h1></header><div class="post__inner post__entry"><p>Cuaderno de viaje del diseño.</p><hr><p><strong><span style="color: #34495e;">7/12</span></strong></p><h4>Partials creados</h4><p>Agrupamos las últimas 3 publicaciones de una Etiqueta y los mostramos. En este caso, seleccionamos la<code>tag Ofertas</code></p><pre class="language-handlebars"><code>&lt;section&gt;
+&lt;div class="posts"&gt;
+    {{#each @website.contentStructure.tags}}
+  {{#checkIf this.name '==' 'Ofertas'}}
+    {{#if this.postsNumber}}
+    {{#each this.posts}}
+      {{#checkIf @index '&lt;' 3}}
+    &lt;article class="item-wrapper carta"&gt;
+         {{#featuredImage}}
+                        {{#if url}}
+                           &lt;a href="{{../url}}" class="image"&gt;
+                           &lt;img src="{{url}}" lazyload="lazy" class="item features-image item-img"&gt;
+                              
+                           &lt;/a&gt;
+                               {{/if}}
+                     {{/featuredImage}}
+                      &lt;div class="item-content"&gt;
+                     &lt;h2 class="item-title"&gt;
+                        &lt;a href="{{url}}"&gt;&lt;strong&gt;&lt;font style="vertical-align: inherit;"&gt;{{title}}&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;
+                     &lt;/h2&gt;
+                     &lt;p class="item-subtitle "&gt;&lt;font style="vertical-align: inherit;"&gt;
+							$10.00
+						&lt;/font&gt;&lt;/p&gt;
+                     &lt;p&gt;{{{excerpt }}}&lt;/p&gt;
+&lt;/div&gt;
+ &lt;/article&gt;
+   {{/checkIf}}
+    {{/each}}
+    {{else}}
+      There are no posts connected with TAGNAME :(
+    {{/if}}
+  {{/checkIf}}
+{{/each}}
+&lt;/div&gt;
+&lt;/section&gt;</code></pre><p><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.26562em; font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing);">Tarjeta animada con sombra deslizante </span></p><p>Utilizada en los Partials de Destacadas y Ofertas como clase de <code>article</code></p><pre class="language-css"><code> /* Tarjeta animada con sombra deslizante */
+.carta {
+  padding: 1.5rem;
+  border-radius:  16px;
+  background: linear-gradient(85deg, #ffffff, #f1f1f1);
+  color:#3f3f3f;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.4s;
+   
+  &amp;:hover {
+     box-shadow: -2rem 0 3rem -2rem #000;
+      transform: translateY(-10px);
+  }
+}</code></pre></div><footer class="post__inner post__footer"><p class="post__last-updated">Actualizado el: 7 dic. 2024</p><div class="post__share"><h3>Compartir:</h3><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Flibro-diario.html" class="js-share icon brands fa-facebook" rel="nofollow noopener noreferrer"><span class="label">Facebook</span> </a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Flibro-diario.html&amp;via=ProyectoWebs&amp;text=Libro%20Diario" class="js-share icon brands fa-x-twitter" rel="nofollow noopener noreferrer"><span class="label">Twitter</span> </a><a href="https://api.whatsapp.com/send?text=Libro%20Diario https%3A%2F%2Fgabrielgenri.github.io%2FProyectoWebs%2Flibro-diario.html" class="js-share icon brands fa-whatsapp" rel="nofollow noopener noreferrer"><span class="label">WhatsApp</span></a></div><div class="post__bio"><div><h3><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/" class="invert" rel="author">Gabriel Genri</a></h3></div></div></footer></article></div></div><div id="sidebar"><div class="inner"><section></section><nav id="menu"><header class="major"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a></header><ul><li><a href="https://gabrielgenri.github.io/ProyectoWebs/" target="_self">Inicio</a></li><li class="has-submenu"><span aria-haspopup="true" class="opener">Plantillas de Páginas</span><ul class="submenu level-2" aria-hidden="true"><li><a href="https://gabrielgenri.github.io/ProyectoWebs/pagina-empty-container.html" target="_self">Página Empty Container</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/blog.html" target="_self">Página con Plantilla Nueva</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/" target="_self">BLOG</a></li></ul></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/authors/gabriel-genri/" target="_self">AUTOR</a></li><li><a href="https://gabrielgenri.github.io/ProyectoWebs/quienes-somos.html" target="_self">Somos</a></li><li class="has-submenu"><span aria-haspopup="true" class="opener">Material</span><ul class="submenu level-2" aria-hidden="true"><li><a href="https://gabrielgenri.github.io/ProyectoWebs/tags/publii/">Publii</a></li></ul></li><li class="active"><a href="https://gabrielgenri.github.io/ProyectoWebs/libro-diario.html" target="_self">Libro Diario</a></li></ul></nav><footer id="footer"><p class="copyright">© Editorial 2 - All rights reserved<br>Design by: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>, Powered by Publii</p></footer></div></div></div><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/jquery.min.js?v=7c14a783dfeb3d238ccd3edd840d82ee"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/browser.min.js?v=c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/breakpoints.min.js?v=81a479eb099e3b187613943b085923b8"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/util.min.js?v=cbdaf7c20ac2883c77ae23acfbabd47e"></script><script src="https://gabrielgenri.github.io/ProyectoWebs/assets/js/main.min.js?v=08add7f6d435054ad38ec38d7cf8be40"></script><script>var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};</script><script src="https://gabrielgenri.github.io/ProyectoWebs/media/plugins/pagePrefetching/quicklink.umd.js"></script><script>window.addEventListener('load', () => {
+					quicklink.listen({
+						prerender: false,
+						el: document.querySelector('body'),
+						delay: 0,
+						limit: Infinity,
+						throttle: Infinity,
+						timeout: 2000
+					});
+				});</script></body></html>
