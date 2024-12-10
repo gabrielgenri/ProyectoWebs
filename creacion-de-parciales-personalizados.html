@@ -16,7 +16,7 @@
     color: #ffffff;
     }
 .background-modulo-primary {
-    background: linear-gradient(85deg, #ffffff, #f1f1f1);
+    background: linear-gradient(85deg, hsl(33.53deg 32.57% 85.85%), hsla(33, 28%, 74%, 0.945));
     /* height:60vh; */
     width: 100%;
     background-position:center;
@@ -63,6 +63,11 @@
 .image-2 {
   background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
+.image-3 {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/63937510a0eb3d4c4baab32e/f736e4e0-a921-42f2-b391-32191776984a/Store-header.jpg");
+}
+
+
 /* Elementos de los Modulos-Banner */
 .header {
   position: relative;
@@ -81,11 +86,11 @@
   transform: translate(-50%, -50%);
   webkit-transform: translate(-50%, -50%);
   moz-transform: translate(-50%, -50%);
-font-size: 58px;
+font-size: 38px;
 font-weight: bold;
 }
 .header p {
-  position: absolute;
+  position: relative;
   width: 90%;
   text-align: center;
   top: 80%;
@@ -136,7 +141,100 @@ font-weight: normal;
     width: auto !important;
     visibility: hidden;
     z-index: 999;
-}</style></head><body class="is-preload post-template"><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop is-visible" aria-label="Arriba" title="Arriba"><svg width="20px" height="20px"><use xlink:href="../assets/svg/svg-map.svg#toparrow"></use></svg></button><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-12-06T21:19" class="post__date">6 dic. 2024</time><h1>Creación de parciales personalizados</h1></header><figure class="image main"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/daniela-diaz-u0lqnabx2he-unsplash.jpg" srcset="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-xs.jpg 300w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-sm.jpg 480w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-md.jpg 768w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-lg.jpg 1024w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-xl.jpg 1360w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-xxl.jpg 1600w" sizes="(max-width: 1600px) 100vw, 1600px" loading="lazy" height="562" width="1000" alt=""></figure><div class="post__inner post__entry"><header><header><h1 class="post__title">Introducción - parciales</h1></header><div class="post__entry"><p>Los parciales son fragmentos comunes de su sitio web que se colocan en archivos separados para facilitar su reutilización.</p><p>Se encuentran en el directorio <strong>de parciales</strong> de su tema.</p><p>Partial se carga utilizando la siguiente sintaxis:</p><div class="code-toolbar"><pre class="language-handlebars" tabindex="0"><code>{{&gt; header}}
+}
+/* Estilos de formulario de contacto */ .contact-section { min-width: 30%; padding: 2rem;
+  background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,
+  0, 0, 0.8); margin: 2rem; animation: slideIn 2s ease-in-out; }
+   .contact-content { width: 100%; padding: 2rem;
+  /*background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,
+  0, 0, 0.8);*/ margin: 2rem; animation: slideIn 2s ease-in-out; }
+  
+   .contact-section
+  h2 { text-align: center; margin-bottom: 1rem; animation: slideIn 1.5s
+  ease-in-out; } .contact-section label { display: block; margin: 0.5rem 0
+  0.2rem; } .contact-section input, .contact-section textarea { width: 100%;
+  padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius:
+  4px; } /* Estilos de botones */ .contact-section button { background-color:
+  #e26218; color: white; border: none; /*padding: 0.5rem 0.5rem;*/ border-radius:
+  4px; cursor: pointer; transition: background-color 0.3s; } .contact-section
+  button:hover { background-color: #585858; } /* Fotogramas clave de animación */
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @keyframes
+  slideIn { from { transform: translateY(-80px); opacity: 0; } to { transform:
+  translateY(0); opacity: 1; } } /* Animación de tarjetas */ .tarjeta { transition:
+  transform 0.3s, box-shadow 0.3s; } .tarjeta:hover { transform:
+  translateY(-5px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); }
+  /* FIN Estilos de formulario de contacto */
+  /* Tarjetas Carrousel */
+    .card {
+      width: 100%;
+      color: #fff;
+      border-radius: 24px;
+      box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+      padding: 20px;
+      font-size: xx-large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+    }
+
+    .card:nth-child(1) {
+    
+      background: #ffca5833;
+    }
+
+    .card:nth-child(2) {
+      background: #fdfaeb4f;
+    }
+
+    .card:nth-child(3) {
+      background: #fcf7d133;
+    }
+
+    .carousel {
+      margin: 0 auto;
+      padding: 20px 0;
+      max-width: 100%;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .elcarousel {
+        width: 100%;
+       position: absolute;
+    bottom: 20px;
+
+    }
+
+    .carousel.animated:hover .group {
+      animation-play-state: paused;
+    }
+
+    .carousel:not(.basic) > * {
+      flex: 0 0 100%;
+    }
+
+    .group {
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+      will-change: transform;
+    }
+
+    .group.animated {
+      animation: scrolling 30s linear infinite;
+    }
+
+    @keyframes scrolling {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    /* FIN Tarjetas Carrousel */</style></head><body class="is-preload post-template"><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop is-visible" aria-label="Arriba" title="Arriba"><svg width="20px" height="20px"><use xlink:href="../assets/svg/svg-map.svg#toparrow"></use></svg></button><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-12-06T21:19" class="post__date">6 dic. 2024</time><h1>Creación de parciales personalizados</h1></header><figure class="image main"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/daniela-diaz-u0lqnabx2he-unsplash.jpg" srcset="https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-xs.jpg 300w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-sm.jpg 480w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-md.jpg 768w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-lg.jpg 1024w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-xl.jpg 1360w, https://gabrielgenri.github.io/ProyectoWebs/media/posts/65/responsive/daniela-diaz-u0lqnabx2he-unsplash-xxl.jpg 1600w" sizes="(max-width: 1600px) 100vw, 1600px" loading="lazy" height="562" width="1000" alt=""></figure><div class="post__inner post__entry"><header><header><h1 class="post__title">Introducción - parciales</h1></header><div class="post__entry"><p>Los parciales son fragmentos comunes de su sitio web que se colocan en archivos separados para facilitar su reutilización.</p><p>Se encuentran en el directorio <strong>de parciales</strong> de su tema.</p><p>Partial se carga utilizando la siguiente sintaxis:</p><div class="code-toolbar"><pre class="language-handlebars" tabindex="0"><code>{{&gt; header}}
 </code></pre><div class="toolbar"><div class="toolbar-item"><a>Copiar</a></div></div></div><p>El código anterior carga el archivo <strong>partials/header.hbs</strong> .</p><p>Cada tema de Publii utiliza al menos 4 parciales:</p><ul><li><a href="https://getpublii.com/dev/headerhbs-partial/">header.hbs</a> - para el comienzo de cada página de su sitio web,</li><li><a href="https://getpublii.com/dev/footerhbs-partial/">footer.hbs</a> - para el final de cada página de su sitio web,</li><li><a href="https://getpublii.com/dev/menuhbs-partial/">menu.hbs</a> - para la estructura del menú,</li><li><a href="https://getpublii.com/dev/paginationhbs-partial/">pagination.hbs</a> - para la estructura de paginación</li></ul><p>Los <strong>archivos menu.hbs</strong> y <strong>pagination.hbs</strong> son opcionales para los temas tal como están definidos en Publii y estos archivos predeterminados se utilizan si estos archivos no existen en el tema.</p><p>También puedes definir <a href="https://getpublii.com/dev/creating-custom-partials/">tus parciales personalizados</a> : también deben colocarse en el directorio <strong>de parciales</strong> .</p></div><p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Los desarrolladores de temas pueden crear partes personalizadas en sus temas. Esto resulta útil si desea reutilizar su código en muchas vistas.</span></p></header><div class="post__entry"><p>Para crear un elemento parcial personalizado, simplemente cree un archivo <strong>*.hbs</strong> en el directorio de elementos parciales del tema. El nombre del archivo parcial se utilizará en el código del tema.</p><p>Por ejemplo, si creas el archivo <strong>partials/cookiebar.hbs</strong>  en tu tema, podrás usarlo en otros archivos como:</p><div class="code-toolbar"><pre class="language-handlebars" tabindex="0"><code>{{&gt; cookiebar}}</code></pre><div class="toolbar"><div class="toolbar-item"><a>Copiar</a></div></div></div><p>También es posible crear parciales que tengan parámetros: esto es especialmente útil cuando tienes problemas con el contexto.</p><p>Analicemos la siguiente situación:</p><p>Tenemos el siguiente contexto para una vista:</p><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>{
     config: {
         optionValue: true 

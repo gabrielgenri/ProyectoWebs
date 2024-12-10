@@ -16,7 +16,7 @@
     color: #ffffff;
     }
 .background-modulo-primary {
-    background: linear-gradient(85deg, #ffffff, #f1f1f1);
+    background: linear-gradient(85deg, hsl(33.53deg 32.57% 85.85%), hsla(33, 28%, 74%, 0.945));
     /* height:60vh; */
     width: 100%;
     background-position:center;
@@ -63,6 +63,11 @@
 .image-2 {
   background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
+.image-3 {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/63937510a0eb3d4c4baab32e/f736e4e0-a921-42f2-b391-32191776984a/Store-header.jpg");
+}
+
+
 /* Elementos de los Modulos-Banner */
 .header {
   position: relative;
@@ -81,11 +86,11 @@
   transform: translate(-50%, -50%);
   webkit-transform: translate(-50%, -50%);
   moz-transform: translate(-50%, -50%);
-font-size: 58px;
+font-size: 38px;
 font-weight: bold;
 }
 .header p {
-  position: absolute;
+  position: relative;
   width: 90%;
   text-align: center;
   top: 80%;
@@ -136,7 +141,100 @@ font-weight: normal;
     width: auto !important;
     visibility: hidden;
     z-index: 999;
-}</style></head><body class="is-preload post-template"><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop is-visible" aria-label="Arriba" title="Arriba"><svg width="20px" height="20px"><use xlink:href="../assets/svg/svg-map.svg#toparrow"></use></svg></button><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-11-10T03:08" class="post__date">10 nov. 2024</time><h1>Usamos Python en Workers con Pyodide y WebAssembly</h1></header><div class="post__inner post__entry"><p class="f6 f7-l fw4 gray1 pt1 pt3-l mb1"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">A partir de hoy, puedes escribir Cloudflare Workers </span><a href="https://developers.cloudflare.com/workers/languages/python/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">en Python con la versión beta abierta.</a></p><section class="post-full-content"><div class="post-content lh-copy gray1"><figure class="kg-card kg-image-card"><figure class="kg-image"><img src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/4BCvEmK49aK7qLQuTkUsI1/0aecc2333aabe7e94ee99cdf9f830ef6/pythonweba.png" alt="" width="1600" height="900" loading="lazy" data-is-external-image="true"></figure></figure><p>Esta nueva compatibilidad para Python es diferente a la forma en la que Workers ha admitido tradicionalmente lenguajes más allá de JavaScript — en este caso, hemos integrado directamente una implementación de Python en <a href="https://github.com/cloudflare/workerd">workerd</a>, el entorno de ejecución de código abierto de Workers. Todos los <a href="https://developers.cloudflare.com/workers/configuration/bindings/">enlaces</a>, incluidos los enlaces a <a href="https://developers.cloudflare.com/vectorize/">Vectorize</a>, <a href="https://developers.cloudflare.com/workers-ai/">Workers AI</a>, <a href="https://developers.cloudflare.com/r2/">R2</a>, <a href="https://developers.cloudflare.com/durable-objects/">Durable Objects</a>, entre otros, son compatibles desde el primer día. Python Workers puede importar un subconjunto de <a href="https://developers.cloudflare.com/workers/languages/python/packages/">paquetes populares de Python</a> como <a href="https://fastapi.tiangolo.com/">FastAPI</a>, <a href="https://python.langchain.com/docs/get_started/introduction">Langchain</a>, <a href="https://numpy.org/">Numpy</a> y muchos más. No hay pasos de desarrollo adicionales ni cadenas de herramientas externas.</p><p>Para ello, hemos tenido que ampliar los límites de todos nuestros sistemas, desde el propio entorno de ejecución, pasando por nuestro sistema de implementación, hasta el contenido del paquete de Worker que se publica en nuestra <a href="https://www.cloudflare.com/network/">red</a>. Puedes <a href="https://developers.cloudflare.com/workers/languages/python/">leer los documentos</a> y empezar a usarlo hoy mismo.</p><p>Queremos aprovechar esta publicación para desvelar el ciclo de vida interno de un Python Worker, compartir lo que hemos aprendido en el proceso y destacar hacia dónde nos dirigimos próximamente.</p><div class="flex anchor relative"><h2 id="no-solo-compilamos-a-webassembly">No solo compilamos a WebAssembly</h2><a href="https://blog.cloudflare.com/es-es/python-workers/#no-solo-compilamos-a-webassembly" aria-hidden="true" class="relative sm:absolute sm:-left-5"><svg width="16" height="16" viewbox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></a></div><p>Cloudflare Workers es compatible con WebAssembly <a href="https://blog.cloudflare.com/webassembly-on-cloudflare-workers">desde 2018</a>. Cada Worker es un motor <a href="https://developers.cloudflare.com/workers/reference/how-workers-works/">V8 aislado</a>, que funciona con el mismo motor JavaScript que el navegador web Chrome. En principio, durante años ha sido <a href="https://blog.cloudflare.com/webassembly-on-cloudflare-workers">posible</a> escribir Workers en cualquier lenguaje, incluido Python, siempre que se compile primero en WebAssembly o en JavaScript.</p><p>En la práctica, el hecho de que algo sea posible no significa que sea sencillo. Y el hecho de que "Hello World" funcione no significa que puedas crear una aplicación de forma fiable. El desarrollo de una aplicación completa requiere admitir un ecosistema de paquetes con el que los desarrolladores estén acostumbrados a crear. Para que una plataforma sea realmente compatible con un lenguaje de programación, es necesario ir mucho más allá de mostrar cómo compilar código utilizando cadenas de herramientas externas.</p><p>Python Workers es diferente de lo que hemos hecho hasta ahora. Es una versión preliminar, y aún está en fase beta, pero creemos que muestra la forma de prestar servicio de primera calidad para lenguajes de programación más allá de JavaScript en Workers.</p><div class="flex anchor relative"><h2 id="el-ciclo-de-vida-de-un-python-worker">El ciclo de vida de un Python Worker</h2><a href="https://blog.cloudflare.com/es-es/python-workers/#el-ciclo-de-vida-de-un-python-worker" aria-hidden="true" class="relative sm:absolute sm:-left-5"><svg width="16" height="16" viewbox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></a></div><p>Con Pyodide ahora <a href="https://github.com/cloudflare/workerd/tree/main/src/pyodide">integrado en workerd</a>, puedes escribir un Worker como este:</p><p>…con un archivo Wrangler.toml que apunta a un archivo .py :</p><pre class="language-js"><code>from js import Response
+}
+/* Estilos de formulario de contacto */ .contact-section { min-width: 30%; padding: 2rem;
+  background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,
+  0, 0, 0.8); margin: 2rem; animation: slideIn 2s ease-in-out; }
+   .contact-content { width: 100%; padding: 2rem;
+  /*background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,
+  0, 0, 0.8);*/ margin: 2rem; animation: slideIn 2s ease-in-out; }
+  
+   .contact-section
+  h2 { text-align: center; margin-bottom: 1rem; animation: slideIn 1.5s
+  ease-in-out; } .contact-section label { display: block; margin: 0.5rem 0
+  0.2rem; } .contact-section input, .contact-section textarea { width: 100%;
+  padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius:
+  4px; } /* Estilos de botones */ .contact-section button { background-color:
+  #e26218; color: white; border: none; /*padding: 0.5rem 0.5rem;*/ border-radius:
+  4px; cursor: pointer; transition: background-color 0.3s; } .contact-section
+  button:hover { background-color: #585858; } /* Fotogramas clave de animación */
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @keyframes
+  slideIn { from { transform: translateY(-80px); opacity: 0; } to { transform:
+  translateY(0); opacity: 1; } } /* Animación de tarjetas */ .tarjeta { transition:
+  transform 0.3s, box-shadow 0.3s; } .tarjeta:hover { transform:
+  translateY(-5px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); }
+  /* FIN Estilos de formulario de contacto */
+  /* Tarjetas Carrousel */
+    .card {
+      width: 100%;
+      color: #fff;
+      border-radius: 24px;
+      box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+      padding: 20px;
+      font-size: xx-large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+    }
+
+    .card:nth-child(1) {
+    
+      background: #ffca5833;
+    }
+
+    .card:nth-child(2) {
+      background: #fdfaeb4f;
+    }
+
+    .card:nth-child(3) {
+      background: #fcf7d133;
+    }
+
+    .carousel {
+      margin: 0 auto;
+      padding: 20px 0;
+      max-width: 100%;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .elcarousel {
+        width: 100%;
+       position: absolute;
+    bottom: 20px;
+
+    }
+
+    .carousel.animated:hover .group {
+      animation-play-state: paused;
+    }
+
+    .carousel:not(.basic) > * {
+      flex: 0 0 100%;
+    }
+
+    .group {
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+      will-change: transform;
+    }
+
+    .group.animated {
+      animation: scrolling 30s linear infinite;
+    }
+
+    @keyframes scrolling {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    /* FIN Tarjetas Carrousel */</style></head><body class="is-preload post-template"><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop is-visible" aria-label="Arriba" title="Arriba"><svg width="20px" height="20px"><use xlink:href="../assets/svg/svg-map.svg#toparrow"></use></svg></button><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-11-10T03:08" class="post__date">10 nov. 2024</time><h1>Usamos Python en Workers con Pyodide y WebAssembly</h1></header><div class="post__inner post__entry"><p class="f6 f7-l fw4 gray1 pt1 pt3-l mb1"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">A partir de hoy, puedes escribir Cloudflare Workers </span><a href="https://developers.cloudflare.com/workers/languages/python/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">en Python con la versión beta abierta.</a></p><section class="post-full-content"><div class="post-content lh-copy gray1"><figure class="kg-card kg-image-card"><figure class="kg-image"><img src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/4BCvEmK49aK7qLQuTkUsI1/0aecc2333aabe7e94ee99cdf9f830ef6/pythonweba.png" alt="" width="1600" height="900" loading="lazy" data-is-external-image="true"></figure></figure><p>Esta nueva compatibilidad para Python es diferente a la forma en la que Workers ha admitido tradicionalmente lenguajes más allá de JavaScript — en este caso, hemos integrado directamente una implementación de Python en <a href="https://github.com/cloudflare/workerd">workerd</a>, el entorno de ejecución de código abierto de Workers. Todos los <a href="https://developers.cloudflare.com/workers/configuration/bindings/">enlaces</a>, incluidos los enlaces a <a href="https://developers.cloudflare.com/vectorize/">Vectorize</a>, <a href="https://developers.cloudflare.com/workers-ai/">Workers AI</a>, <a href="https://developers.cloudflare.com/r2/">R2</a>, <a href="https://developers.cloudflare.com/durable-objects/">Durable Objects</a>, entre otros, son compatibles desde el primer día. Python Workers puede importar un subconjunto de <a href="https://developers.cloudflare.com/workers/languages/python/packages/">paquetes populares de Python</a> como <a href="https://fastapi.tiangolo.com/">FastAPI</a>, <a href="https://python.langchain.com/docs/get_started/introduction">Langchain</a>, <a href="https://numpy.org/">Numpy</a> y muchos más. No hay pasos de desarrollo adicionales ni cadenas de herramientas externas.</p><p>Para ello, hemos tenido que ampliar los límites de todos nuestros sistemas, desde el propio entorno de ejecución, pasando por nuestro sistema de implementación, hasta el contenido del paquete de Worker que se publica en nuestra <a href="https://www.cloudflare.com/network/">red</a>. Puedes <a href="https://developers.cloudflare.com/workers/languages/python/">leer los documentos</a> y empezar a usarlo hoy mismo.</p><p>Queremos aprovechar esta publicación para desvelar el ciclo de vida interno de un Python Worker, compartir lo que hemos aprendido en el proceso y destacar hacia dónde nos dirigimos próximamente.</p><div class="flex anchor relative"><h2 id="no-solo-compilamos-a-webassembly">No solo compilamos a WebAssembly</h2><a href="https://blog.cloudflare.com/es-es/python-workers/#no-solo-compilamos-a-webassembly" aria-hidden="true" class="relative sm:absolute sm:-left-5"><svg width="16" height="16" viewbox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></a></div><p>Cloudflare Workers es compatible con WebAssembly <a href="https://blog.cloudflare.com/webassembly-on-cloudflare-workers">desde 2018</a>. Cada Worker es un motor <a href="https://developers.cloudflare.com/workers/reference/how-workers-works/">V8 aislado</a>, que funciona con el mismo motor JavaScript que el navegador web Chrome. En principio, durante años ha sido <a href="https://blog.cloudflare.com/webassembly-on-cloudflare-workers">posible</a> escribir Workers en cualquier lenguaje, incluido Python, siempre que se compile primero en WebAssembly o en JavaScript.</p><p>En la práctica, el hecho de que algo sea posible no significa que sea sencillo. Y el hecho de que "Hello World" funcione no significa que puedas crear una aplicación de forma fiable. El desarrollo de una aplicación completa requiere admitir un ecosistema de paquetes con el que los desarrolladores estén acostumbrados a crear. Para que una plataforma sea realmente compatible con un lenguaje de programación, es necesario ir mucho más allá de mostrar cómo compilar código utilizando cadenas de herramientas externas.</p><p>Python Workers es diferente de lo que hemos hecho hasta ahora. Es una versión preliminar, y aún está en fase beta, pero creemos que muestra la forma de prestar servicio de primera calidad para lenguajes de programación más allá de JavaScript en Workers.</p><div class="flex anchor relative"><h2 id="el-ciclo-de-vida-de-un-python-worker">El ciclo de vida de un Python Worker</h2><a href="https://blog.cloudflare.com/es-es/python-workers/#el-ciclo-de-vida-de-un-python-worker" aria-hidden="true" class="relative sm:absolute sm:-left-5"><svg width="16" height="16" viewbox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></a></div><p>Con Pyodide ahora <a href="https://github.com/cloudflare/workerd/tree/main/src/pyodide">integrado en workerd</a>, puedes escribir un Worker como este:</p><p>…con un archivo Wrangler.toml que apunta a un archivo .py :</p><pre class="language-js"><code>from js import Response
 
 async def on_fetch(request, env):
     return Response.new("Hello world!")</code></pre><p>…y cuando ejecutas <a href="https://developers.cloudflare.com/workers/wrangler/commands/#dev">npx wrangler@latest dev</a>, el entorno de ejecución de Workers:</p><pre class="language-js"><code>name = "hello-world-python-worker"

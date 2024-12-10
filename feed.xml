@@ -3,12 +3,151 @@
     <title>ProyectoWebs</title>
     <link href="https://gabrielgenri.github.io/ProyectoWebs/feed.xml" rel="self" />
     <link href="https://gabrielgenri.github.io/ProyectoWebs" />
-    <updated>2024-12-07T16:39:18-03:00</updated>
+    <updated>2024-12-09T16:55:29-03:00</updated>
     <author>
         <name>Gabriel Genri</name>
     </author>
     <id>https://gabrielgenri.github.io/ProyectoWebs</id>
 
+    <entry>
+        <title>CSS Scroll Snap</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/css-scroll-snap.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/css-scroll-snap.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/80/2024-12-09-16_54_27-Window.png" medium="image" />
+            <category term="HTML"/>
+
+        <updated>2024-12-09T15:51:34-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/80/2024-12-09-16_54_27-Window.png" alt="" />
+                    CSS Scroll Snap nos permite declarar posiciones en nuestro scroll, de forma que podemos controlarlo mejor, especialmente al utilizar nuestros dedos&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/80/2024-12-09-16_54_27-Window.png" class="type:primaryImage" alt="" /></p>
+                <p><strong><a href="https://midu.dev/css-scroll-snap-la-solucion-definitiva-a-la-creacion-de-sliders-en-la-web/" target="_blank" rel="noopener noreferrer">CSS Scroll Snap</a></strong> nos permite declarar posiciones en nuestro scroll, de forma que podemos controlarlo mejor, especialmente al utilizar nuestros dedos para desplazarnos.</p>
+<p>Esto, antes, lo conseguíamos utilizando Javascript y haciendo algunos cálculos (normalmente costosos) sobre los elementos del DOM. Como la web ha ido evolucionando para adaptarse a los móviles, y la experiencia a la hora de hacer scroll se ha convertido en vital por la falta de espacio, hace tiempo que se puso el foco en mejor la experiencia a la hora de dirigir el scroll.</p>
+<p><a href="https://blog.logto.io/es/carrusel-de-desplazamiento-infinito-solo-con-css" target="_blank" rel="noopener noreferrer">Animación de carrusel de desplazamiento infinito solo con CSS</a></p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Obsidian es la aplicación de escritura privada</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/obsidian-es-la-aplicacion-de-escritura-privada.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/obsidian-es-la-aplicacion-de-escritura-privada.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/79/Store-header.jpg" medium="image" />
+
+        <updated>2024-12-09T15:27:56-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/79/Store-header.jpg" alt="" />
+                    Obsidian es la aplicación de escritura privada y flexible que se adapta a la forma en que piensas. Desde notas&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/79/Store-header.jpg" class="type:primaryImage" alt="" /></p>
+                <h4><a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian </a>es la aplicación de escritura privada y flexible que se adapta a la forma en que piensas. Desde notas personales hasta revistas, bases de conocimiento y gestión de proyectos, Obsidian te da las herramientas para idear ideas y organizarlas. <a href="https://docs.obsidian.md/Home" target="_blank" rel="noopener noreferrer">Docs.</a></h4>
+<figure class="post__image"><img loading="lazy"  src="https://obsidian.md/images/screenshot-1.0-hero-combo.png" alt="" width="2928" height="1728" data-is-external-image="true"></figure>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Tus pensamientos son tuyos. Las tiendas de obsidian apuntan en tu dispositivo, para que puedas acceder a ellas rápidamente, incluso fuera de línea. Nadie más puede leerlos, ni siquiera nosotros.</span></p>
+<div class="max-w-2xl mx-auto lg:mx-0">
+<div> </div>
+<div>Tu mente es única.Con <a href="https://obsidian.md/plugins" class="text-accent font-medium">miles de plugins</a> y temas, puedes dar forma a Obsidian para que se adapte a tu forma de pensar.</div>
+<div> </div>
+<div>Tu conocimiento debería durar.Obsidian utiliza archivos abiertos y no patentados, por lo que nunca estás encerrado, y puedes preservar tus datos a largo plazo.</div>
+<h5>Enlaces</h5>
+<p>Crea conexiones entre tus notas. Vincular cualquier cosa y todo, ideas, gente, lugares, libros y más allá. Invente su propia Wikipedia personal.</p>
+<h5>Gráfico</h5>
+<p>Visualiza las relaciones entre tus notas. Encuentra patrones ocultos en tu pensamiento a través de un gráfico visualmente atractivo e interactivo.</p>
+<h5>Lienzo</h5>
+<p>Un espacio infinito para investigar, hacer una lluvia de ideas, diagrama y presentar sus ideas. <a href="https://obsidian.md/canvas" target="_blank" rel="noopener noreferrer">El lienzo es un patio de juegos ilimitado para tu mente</a>. <span class="text-accent font-medium hover:text-accent-300">Aprende más.</span></p>
+<h5>Plug Ins</h5>
+<p>Construye tu espacio de pensamiento ideal. Con miles de plugins y nuestra API abierta, es fácil adaptar Obsidian para adaptarse a su flujo de trabajo personal. </p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Agente de inteligencia artificial de CyberCoder VSCode</title>
+        <author>
+            <name>Gabriel Genri</name>
+        </author>
+        <link href="https://gabrielgenri.github.io/ProyectoWebs/agente-de-inteligencia-artificial-de-cybercoder-vscode.html"/>
+        <id>https://gabrielgenri.github.io/ProyectoWebs/agente-de-inteligencia-artificial-de-cybercoder-vscode.html</id>
+        <media:content url="https://gabrielgenri.github.io/ProyectoWebs/media/posts/78/mbr-1200x797.jpg" medium="image" />
+
+        <updated>2024-12-09T12:49:15-03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/78/mbr-1200x797.jpg" alt="" />
+                    ¡Descubra la revolucionaria función CyberCoder de BLACKBOX AI que transforma la experiencia de codificación! Mirar también el Agente front-end de&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://gabrielgenri.github.io/ProyectoWebs/media/posts/78/mbr-1200x797.jpg" class="type:primaryImage" alt="" /></p>
+                <p class="mb-2 last:mb-0">¡Descubra la revolucionaria función <strong>CyberCoder </strong>de <a href="https://www.blackbox.ai/" target="_blank" rel="nofollow noopener noreferrer"><strong>BLACKBOX AI</strong></a> que transforma la experiencia de codificación! Mirar también el Agente front-end de  <a href="https://www.robocoders.ai/"><strong>Robocoder.ai</strong></a>  -  <a href="https://www.blackbox.ai/blog" target="_blank" rel="noopener noreferrer">Accede al Blog</a></p>
+<p>El agente front-end de <strong>Robocoder </strong>está diseñado para centrarse en completar tareas front-end con diseños atractivos. De manera similar al agente full stack, una vez que le asignas una tarea a Robocoder, este generará un plan para que lo revises y apruebes. Una vez que estés de acuerdo, el trabajo comenzará de manera autónoma.<br><br>Puedes hacer un seguimiento del trabajo que se está realizando y orientarlo en diferentes direcciones si es necesario. Tienes acceso al editor de código para revisar el código en el que está trabajando Robocoder. Una vez que la tarea esté terminada, Robocoder te dará un enlace para que pruebes el diseño de interfaz en el que trabajó. Si tienes algún comentario, Robocoder seguirá iterándolo hasta que estés satisfecho con el trabajo.</p>
+<p class="mb-2 last:mb-0">En este video, analizamos cómo <strong>CyberCoder </strong>permite a los desarrolladores editar varios archivos simultáneamente, agilizando los flujos de trabajo y mejorando la productividad.</p>
+<p class="mb-2 last:mb-0">Aprenda a activar esta poderosa herramienta y véala en acción mientras demostramos sus capacidades en escenarios de codificación en tiempo real.</p>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/8v5MsZOaQC8?si=JA4vSYojLLgYIT91" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>En este video, exploramos las innovadoras capacidades de CyberCoder, el primer y mejor agente de codificación autónomo desarrollado por Blackbox AI. Diseñado para integrarse sin problemas con editores de código populares como VS Code, IntelliJ y PyCharm, CyberCoder transforma el proceso de desarrollo de software al actuar como un ingeniero senior virtual.</p>
+<p>Observa cómo demostramos la capacidad de CyberCoder para comentar de forma autónoma los archivos en un gran repositorio de código abierto, lo que reduce significativamente el tiempo dedicado a tareas tediosas. Con su interfaz intuitiva, los usuarios pueden aprobar o rechazar cambios fácilmente, lo que garantiza un control total sobre el proceso de codificación.</p>
+<p>CyberCoder no solo mejora la productividad, sino que también permite a los desarrolladores centrarse en proyectos de mayor impacto, lo que lo convierte en una herramienta invaluable para equipos de cualquier tamaño. Únase a nosotros mientras mostramos cómo CyberCoder puede optimizar su flujo de trabajo, mejorar la eficiencia y, en última instancia, brindar valor a sus clientes más rápido que nunca. Para obtener más información y comenzar, visite blackbox.com. ¡Esté atento a las actualizaciones emocionantes!</p>
+<h4>TRANSCRIPCIÓN </h4>
+<div class="item style-scope yt-dropdown-menu" style="display: inline !important;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Inglés (generado automáticamente)</span></span></div>
+<div> </div>
+<div>
+<h1 id="blackbox-ai--1-coding-agent-10-million-devs-free-and-no-signup-required">BLACKBOX AI — #1 Coding Agent. +10 Million Devs. Free and No Signup Required</h1>
+<blockquote>
+<p><strong>+10 Million Developers</strong> rely on BLACKBOX.AI for code. <strong>+3 Million VSCode Installs.</strong> Chat with your entire codebase and ask any coding question</p>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?v=8v5MsZOaQC8&amp;t=7s" title="https://www.youtube.com/watch?v=8v5MsZOaQC8&amp;t=7s"><img loading="lazy" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5886/cybercoder.gif" alt="" data-is-external-image="true"></a></p>
+<h1 id="whats-new">What's New!</h1>
+<ul>
+<li>Crea aplicaciones y sitios web completamente funcionales desde cero</li>
+<li>Agrega nuevas funciones a tu producto existente</li>
+<li>Ejecuta ediciones de múltiples archivos</li>
+<li>Ejecuta código en tu terminal</li>
+<li>Autorefinamiento Corrige errores</li>
+<li>Escribe la documentación adecuada para tu código</li>
+<li>Traduce tu código de un idioma a otro Y mucho más. </li>
+</ul>
+<h2 id="blackbox-chat-with-your-codebase">Blackbox Chat With Your Codebase</h2>
+<p>Chat de Blackbox con tu base de código</p>
+<p><a><img loading="lazy" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5886/code-repo.gif" alt="" data-is-external-image="true"></a></p>
+<h2 id="worlds-fastest-ai-code-autocomplete-200-milliseconds">World's Fastest AI Code Autocomplete (200 milliseconds)<a name="code-autocomplete"></a></h2>
+<p>Autocompletado de código de IA más rápido del mundo (200 milisegundos)</p>
+<p><a><img loading="lazy" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5886/code-autocomplete.gif" alt="" data-is-external-image="true"></a></p>
+<h2 id="github-publicprivate-repo-chat">Github Public/Private Repo Chat<a name="github"></a></h2>
+<p>Chat en repositorio público/privado de Github</p>
+<p><a><img loading="lazy" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5886/github.gif" alt="" data-is-external-image="true"></a></p>
+<h2 id="chat-with-any-model">Chat With Any Model<a name="model"></a></h2>
+<p><a><img loading="lazy" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5886/model.gif" alt="" data-is-external-image="true"></a></p>
+<h2 id="search-the-web">Search the Web<a name="web"></a></h2>
+<p><a><img loading="lazy" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5886/web.gif" alt="" data-is-external-image="true"></a></p>
+<h2 id="blackbox-ai-commit">Blackbox AI Commit<a name="blackbox-commit"></a></h2>
+<p>Confirmación de IA de Blackbox</p>
+<p><a href="https://www.useblackbox.io/chat?videoId=V_3h3fjeHGM" title="https://www.useblackbox.io/chat?videoId=V_3h3fjeHGM"><img loading="lazy" src="https://storage.googleapis.com/a1aa/uploads/demo-autocommit.gif" alt="" data-is-external-image="true"></a></p>
+<h2 id="schedule-onboarding-call">Schedule Onboarding Call</h2>
+<p>The Blackbox team would love to onboard you and make sure you have access to all the core features. <a href="https://calendly.com/blackboxapp/30min" title="https://calendly.com/blackboxapp/30min">Schedule Onboarding/Support Call</a></p>
+<p>Programa una llamada de incorporación<br>Al equipo de Blackbox le encantaría incorporarte y asegurarse de que tengas acceso a todas las funciones principales. Programa una llamada de incorporación/soporte</p>
+<h2 id="product-terms">Product Terms</h2>
+<p>Blackbox is subject to the <a href="https://www.useblackbox.io/terms" title="https://www.useblackbox.io/terms">Blackbox Product Terms</a> &amp; <a href="https://www.useblackbox.io/privacy" title="https://www.useblackbox.io/privacy">Privacy Policy</a>.</p>
+</div>
+<div> </div>
+<div>fff</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>OFERTA TRES</title>
         <author>
@@ -2026,194 +2165,6 @@
 </div>
 </div>
 </div>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Anulaciones visuales CSS</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/anulaciones-visuales-css.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/anulaciones-visuales-css.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-12-06T21:02:00-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Casi todos los temas tienen opciones que no se pueden implementar con una simple adición de clase CSS, como opciones&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Casi todos los temas tienen opciones que no se pueden implementar con una simple adición de clase CSS, como opciones de color que permiten al usuario seleccionar el color desde el selector de color.</span></p>
-</header>
-<div class="post__entry">
-<p><span>Como usar el atributo de estilo no es una solución elegante, hemos creado una alternativa que le permite crear código CSS personalizado sobre la marcha durante el proceso de representación del sitio web.</span></p>
-<p><span>Para ello, cree un archivo </span><strong><span>visual-override.js</span></strong><span> en el directorio de su tema y cree una función que se utilizará para generar código CSS adicional según los parámetros de opciones:</span></p>
-<div class="code-toolbar">
-<pre class="language-javascript" tabindex="0"><code>/*
- * Custom function used to generate the output of the override.css file
- */
-
-var generateOverride = function(themeConfig, postConfig, commonConfig, pageConfig) {
-    return `
-        body {
-            background: ${themeConfig.primaryColor};
-            font-size: ${themeConfig.fontSize}px;
-        }
-    `;
-};
-
-module.exports = generateOverride;</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Su función debe poder utilizar cuatro argumentos:</span></p>
-<ul>
-<li><strong><span>themeConfig</span></strong><span> : contiene un objeto con todos los valores de las opciones de su tema personalizado</span></li>
-<li><strong><span>postConfig</span></strong><span> : contiene opciones que son específicas de la publicación.</span></li>
-<li><strong><span>commonConfig</span></strong><span> : contiene otras opciones como la longitud del extracto, publicaciones por página, etc.</span></li>
-<li><strong><span>pageConfig</span></strong><span> : contiene opciones que son específicas de la página.</span></li>
-</ul>
-<p><span>La función debe devolver el código CSS que se vinculará con el archivo CSS principal del tema.</span></p>
-<p><span>Recomendamos utilizar cadenas multilínea de JavaScript para una mejor legibilidad del código.</span></p>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>¿Cómo crear ayudantes de manillar personalizados?</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-crear-ayudantes-de-manillar-personalizados.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/como-crear-ayudantes-de-manillar-personalizados.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-12-06T21:00:13-03:00</updated>
-            <summary>
-                <![CDATA[
-                    Al crear su tema, es posible que desee ampliar la cantidad de ayudantes; Publii ofrece a los desarrolladores de temas&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Al crear su tema, es posible que desee ampliar la cantidad de ayudantes; Publii ofrece a los desarrolladores de temas la posibilidad de crear ayudantes personalizados según sus necesidades. Son útiles si necesita simplificar el código de su tema.</span></p>
-</header>
-<div class="post__entry">
-<p><span>Por ejemplo, puede crear un ayudante personalizado que reemplazará múltiples condiciones con una única verificación condicional.</span></p>
-<p><span>Para crear ayudantes personalizados en su tema, simplemente cree un archivo </span><strong><span>helpers.js</span></strong><span> en el directorio del tema; aquí puede agregar sus funciones ayudantes personalizadas.</span></p>
-<p><span>A continuación se muestra un ejemplo de código que crea dos ayudantes personalizados súper simples que aceptan un argumento:</span></p>
-<div class="code-toolbar">
-<pre class="language-javascript" tabindex="0"><code>/*
- * Custom theme helpers for Handlebars.js
- */
-
-let themeHelpers = {
-    test1: function(value) {
-        return "TEST1 " + value;
-    },
-    test2: function(value) {
-        return "TEST2 " + value;
-    }
-};
-
-module.exports = themeHelpers;</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Como puede ver, todas las funciones auxiliares están envueltas dentro de un objeto que se exporta desde el archivo </span><strong><span>helpers.js</span></strong><span> al renderizador.</span></p>
-<p><span>También es posible utilizar la instancia del objeto </span><strong><span>Handlebars</span></strong><span> : este escenario requerirá que el campo  se  </span><code>includeHandlebarsInHelpers</code><span> establezca como </span><strong><span>verdadero</span></strong><code>renderer</code><span>  en la sección de configuración del tema.</span></p>
-<p><span>Luego el archivo </span><strong><span>helpers.js</span></strong><span> se puede escribir como:</span></p>
-<div class="code-toolbar">
-<pre class="language-javascript" tabindex="0"><code>module.exports = function (Handlebars) {
-	return {
-	    functionName: function(arg) {
-	        // ...
-	        return new Handlebars.SafeString(arg);
-	    }
-	};
-  };</code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-</div>
-<footer>
-<div class="post__footer-top">
-<div class="post__meta"><time datetime="2017-08-05T00:03"><span>5 de agosto de 2017</span></time><span>Actualizado el:</span><time datetime="2024-02-08T12:58"><span>8 de febrero de 2024</span></time></div>
-</div>
-</footer>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>¿Cómo mostrar publicaciones conectadas con un nombre de etiqueta específico?</title>
-        <author>
-            <name>Gabriel Genri</name>
-        </author>
-        <link href="https://gabrielgenri.github.io/ProyectoWebs/como-mostrar-publicaciones-conectadas-con-un-nombre-de-etiqueta-especifico.html"/>
-        <id>https://gabrielgenri.github.io/ProyectoWebs/como-mostrar-publicaciones-conectadas-con-un-nombre-de-etiqueta-especifico.html</id>
-            <category term="Publii"/>
-
-        <updated>2024-12-06T20:58:43-03:00</updated>
-            <summary>
-                <![CDATA[
-                    A veces, es necesario crear secciones en el sitio web que se utilizarán para mostrar publicaciones de etiquetas específicas. Con&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header>
-<p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">A veces, es necesario crear secciones en el sitio web que se utilizarán para mostrar publicaciones de etiquetas específicas. Con el nuevo motor de renderizado, introducido en Publii v.0.18.2, finalmente es posible.</span></p>
-</header>
-<div class="post__entry">
-<p><span>Todo lo que necesitamos es una representación activa de la variable global </span><strong><span>@website.contentStructure</span></strong><span> (se puede deshabilitar en su tema para una representación más rápida del sitio web).</span></p>
-<p><span>Para representar publicaciones conectadas con una etiqueta seleccionada necesitamos usar el siguiente código:</span></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#each @website.contentStructure.tags}}
-  {{#checkIf this.name '==' 'TAGNAME'}}
-    {{#if this.postsNumber}}
-    {{#each this.posts}}
-      {{title}}
-    {{/each}}
-    {{else}}
-      There are no posts connected with TAGNAME :(
-    {{/if}}
-  {{/checkIf}}
-{{/each}}
-  </code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>Si desea limitar el número de publicaciones renderizadas, recuerde que puede utilizar la variable </span><strong><span>@index :</span></strong></p>
-<div class="code-toolbar">
-<pre class="language-handlebars" tabindex="0"><code>{{#each @website.contentStructure.tags}}
-  {{#checkIf this.name '==' 'TAGNAME'}}
-    {{#if this.postsNumber}}
-    {{#each this.posts}}
-      {{#checkIf @index '&lt;' 5}}
-        {{title}}
-      {{/checkIf}}
-    {{/each}}
-    {{else}}
-      There are no posts connected with TAGNAME :(
-    {{/if}}
-  {{/checkIf}}
-{{/each}}
- </code></pre>
-<div class="toolbar">
-<div class="toolbar-item"><a><span>Copiar</span></a></div>
-</div>
-</div>
-<p><span>El código anterior mostrará hasta cinco publicaciones conectadas con un nombre de etiqueta específico.</span></p>
 </div>
             ]]>
         </content>

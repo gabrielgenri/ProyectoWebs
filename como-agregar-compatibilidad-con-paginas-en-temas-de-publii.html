@@ -16,7 +16,7 @@
     color: #ffffff;
     }
 .background-modulo-primary {
-    background: linear-gradient(85deg, #ffffff, #f1f1f1);
+    background: linear-gradient(85deg, hsl(33.53deg 32.57% 85.85%), hsla(33, 28%, 74%, 0.945));
     /* height:60vh; */
     width: 100%;
     background-position:center;
@@ -63,6 +63,11 @@
 .image-2 {
   background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
+.image-3 {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/63937510a0eb3d4c4baab32e/f736e4e0-a921-42f2-b391-32191776984a/Store-header.jpg");
+}
+
+
 /* Elementos de los Modulos-Banner */
 .header {
   position: relative;
@@ -81,11 +86,11 @@
   transform: translate(-50%, -50%);
   webkit-transform: translate(-50%, -50%);
   moz-transform: translate(-50%, -50%);
-font-size: 58px;
+font-size: 38px;
 font-weight: bold;
 }
 .header p {
-  position: absolute;
+  position: relative;
   width: 90%;
   text-align: center;
   top: 80%;
@@ -136,7 +141,100 @@ font-weight: normal;
     width: auto !important;
     visibility: hidden;
     z-index: 999;
-}</style></head><body class="is-preload post-template"><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop is-visible" aria-label="Arriba" title="Arriba"><svg width="20px" height="20px"><use xlink:href="../assets/svg/svg-map.svg#toparrow"></use></svg></button><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-12-06T20:49" class="post__date">6 dic. 2024</time><h1>Cómo agregar compatibilidad con páginas en temas de Publii</h1></header><div class="post__inner post__entry"><header><p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">La versión 0.46 de Publii introdujo una nueva y poderosa característica: Páginas. Esto te permite crear contenido estático separado de las publicaciones de tu blog, ideal para contenido como páginas "Acerca de nosotros", "Contacto" o "Servicios". Si bien los temas oficiales de Publii lanzados junto con la versión 0.46 integran perfectamente las Páginas, los temas personalizados o modificados pueden requerir ajustes.</span></p></header><div class="post__entry"><p><span>Esta guía lo guiará en el proceso de agregar compatibilidad con páginas a su tema Publii, lo que le garantizará que pueda aprovechar al máximo esta nueva característica sin sacrificar el diseño y la funcionalidad únicos de su tema.</span></p><h2 id="whendoyouneedthisguide"><span>¿Cuándo necesitas esta guía?</span></h2><p><span>Esta guía le resultará especialmente útil si:</span></p><ol><li><span>Estás utilizando una versión personalizada o modificada de un tema oficial.</span></li><li><span>Verá un mensaje que indica una falta de compatibilidad con Páginas al acceder a la pestaña Páginas en Publii.</span></li><li><span>Desea comprender los aspectos técnicos de la implementación del soporte de páginas en los temas de Publii.</span></li></ol><p><span>Siguiendo estos pasos, puede ampliar las capacidades de su tema y crear páginas enriquecidas y estáticas dentro de su sitio web impulsado por Publii.</span></p><h2 id="stepactivatingpagessupport"><span>Paso 1: Activación del soporte de páginas</span></h2><p><span>El primer paso es informar a Publii que su tema admite páginas agregando una bandera al archivo de configuración del tema.</span></p><ol><li><span>Localiza el archivo de tu tema </span><code>config.json</code><span>. Debería estar en el siguiente directorio:</span><br><div class="code-toolbar"><pre class="language-markdown" tabindex="0"><code>/Documents/Publii/sites/YOUR_SITE/input/themes/YOUR_THEME/config.json</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div></li><li><span>Abra el </span><code>config.json</code><span>archivo en un editor de texto.</span></li><li><span>Encuentra la </span><code>supportedFeatures</code><span>sección. Si no existe, créala.</span></li><li><span>Agregue la bandera de soporte de Páginas de la siguiente manera:</span><br><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>"supportedFeatures": {
+}
+/* Estilos de formulario de contacto */ .contact-section { min-width: 30%; padding: 2rem;
+  background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,
+  0, 0, 0.8); margin: 2rem; animation: slideIn 2s ease-in-out; }
+   .contact-content { width: 100%; padding: 2rem;
+  /*background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,
+  0, 0, 0.8);*/ margin: 2rem; animation: slideIn 2s ease-in-out; }
+  
+   .contact-section
+  h2 { text-align: center; margin-bottom: 1rem; animation: slideIn 1.5s
+  ease-in-out; } .contact-section label { display: block; margin: 0.5rem 0
+  0.2rem; } .contact-section input, .contact-section textarea { width: 100%;
+  padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius:
+  4px; } /* Estilos de botones */ .contact-section button { background-color:
+  #e26218; color: white; border: none; /*padding: 0.5rem 0.5rem;*/ border-radius:
+  4px; cursor: pointer; transition: background-color 0.3s; } .contact-section
+  button:hover { background-color: #585858; } /* Fotogramas clave de animación */
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @keyframes
+  slideIn { from { transform: translateY(-80px); opacity: 0; } to { transform:
+  translateY(0); opacity: 1; } } /* Animación de tarjetas */ .tarjeta { transition:
+  transform 0.3s, box-shadow 0.3s; } .tarjeta:hover { transform:
+  translateY(-5px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); }
+  /* FIN Estilos de formulario de contacto */
+  /* Tarjetas Carrousel */
+    .card {
+      width: 100%;
+      color: #fff;
+      border-radius: 24px;
+      box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+      padding: 20px;
+      font-size: xx-large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+    }
+
+    .card:nth-child(1) {
+    
+      background: #ffca5833;
+    }
+
+    .card:nth-child(2) {
+      background: #fdfaeb4f;
+    }
+
+    .card:nth-child(3) {
+      background: #fcf7d133;
+    }
+
+    .carousel {
+      margin: 0 auto;
+      padding: 20px 0;
+      max-width: 100%;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .elcarousel {
+        width: 100%;
+       position: absolute;
+    bottom: 20px;
+
+    }
+
+    .carousel.animated:hover .group {
+      animation-play-state: paused;
+    }
+
+    .carousel:not(.basic) > * {
+      flex: 0 0 100%;
+    }
+
+    .group {
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+      will-change: transform;
+    }
+
+    .group.animated {
+      animation: scrolling 30s linear infinite;
+    }
+
+    @keyframes scrolling {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    /* FIN Tarjetas Carrousel */</style></head><body class="is-preload post-template"><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop is-visible" aria-label="Arriba" title="Arriba"><svg width="20px" height="20px"><use xlink:href="../assets/svg/svg-map.svg#toparrow"></use></svg></button><div id="wrapper"><div id="main"><div class="inner"><div id="search" class="alt"></div><header id="header"><a class="logo logo-image" href="https://gabrielgenri.github.io/ProyectoWebs/"><img src="https://gabrielgenri.github.io/ProyectoWebs/media/website/Sin-titulo-1.png" alt="ProyectoWebs" width="208" height="40"></a><ul class="icons"><li><a href="https://www.facebook.com/GabrielGenri.prensa" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li></ul></header><article class="post"><header class="main post__header"><time datetime="2024-12-06T20:49" class="post__date">6 dic. 2024</time><h1>Cómo agregar compatibilidad con páginas en temas de Publii</h1></header><div class="post__inner post__entry"><header><p class="post__title"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">La versión 0.46 de Publii introdujo una nueva y poderosa característica: Páginas. Esto te permite crear contenido estático separado de las publicaciones de tu blog, ideal para contenido como páginas "Acerca de nosotros", "Contacto" o "Servicios". Si bien los temas oficiales de Publii lanzados junto con la versión 0.46 integran perfectamente las Páginas, los temas personalizados o modificados pueden requerir ajustes.</span></p></header><div class="post__entry"><p><span>Esta guía lo guiará en el proceso de agregar compatibilidad con páginas a su tema Publii, lo que le garantizará que pueda aprovechar al máximo esta nueva característica sin sacrificar el diseño y la funcionalidad únicos de su tema.</span></p><h2 id="whendoyouneedthisguide"><span>¿Cuándo necesitas esta guía?</span></h2><p><span>Esta guía le resultará especialmente útil si:</span></p><ol><li><span>Estás utilizando una versión personalizada o modificada de un tema oficial.</span></li><li><span>Verá un mensaje que indica una falta de compatibilidad con Páginas al acceder a la pestaña Páginas en Publii.</span></li><li><span>Desea comprender los aspectos técnicos de la implementación del soporte de páginas en los temas de Publii.</span></li></ol><p><span>Siguiendo estos pasos, puede ampliar las capacidades de su tema y crear páginas enriquecidas y estáticas dentro de su sitio web impulsado por Publii.</span></p><h2 id="stepactivatingpagessupport"><span>Paso 1: Activación del soporte de páginas</span></h2><p><span>El primer paso es informar a Publii que su tema admite páginas agregando una bandera al archivo de configuración del tema.</span></p><ol><li><span>Localiza el archivo de tu tema </span><code>config.json</code><span>. Debería estar en el siguiente directorio:</span><br><div class="code-toolbar"><pre class="language-markdown" tabindex="0"><code>/Documents/Publii/sites/YOUR_SITE/input/themes/YOUR_THEME/config.json</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div></li><li><span>Abra el </span><code>config.json</code><span>archivo en un editor de texto.</span></li><li><span>Encuentra la </span><code>supportedFeatures</code><span>sección. Si no existe, créala.</span></li><li><span>Agregue la bandera de soporte de Páginas de la siguiente manera:</span><br><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>"supportedFeatures": {
     "pages": true
 },</code></pre><div class="toolbar"><div class="toolbar-item"><a><span>Copiar</span></a></div></div></div><p><span> Si existen otras funciones compatibles, simplemente agregue la línea "páginas" al objeto existente.</span></p></li></ol><h2 id="stepcreatingthepagehbsfile"><span>Paso 2: Creación del archivo page.hbs</span></h2><p><span>A continuación, debemos crear un archivo de plantilla para Pages. La forma más sencilla es duplicar el </span><code>post.hbs</code><span>archivo existente y modificarlo.</span></p><ol><li><span>En el directorio de tu tema, busca el </span><code>post.hbs</code><span>archivo.</span></li><li><span>Crea una copia de este archivo y nómbrala </span><code>page.hbs</code><span>.</span></li><li><span>Abrir </span><code>page.hbs</code><span>en un editor de texto.</span></li></ol><p><span>Ahora, repasemos los principales cambios que debes realizar en el </span><code>page.hbs</code><span>archivo:</span></p><ol><li><span>Cambiar el contenedor principal:</span><ul><li><span>Reemplazar </span><code>{{#post}}</code><span>con </span><code>{{#page}}</code><span>al principio del archivo.</span></li><li><span>Reemplazar </span><code>{{/post}}</code><span>con </span><code>{{/page}}</code><span>al final del archivo.</span></li></ul></li><li><span>Eliminar secciones no compatibles porque son específicas de las publicaciones del blog y no se aplican a las páginas estáticas:</span><br><ul><li><span>Eliminar la sección para mostrar etiquetas.</span></li><li><span>Eliminar la sección de navegación de publicaciones (enlaces de publicaciones anteriores y siguientes).</span></li><li><span>Eliminar la sección de publicaciones relacionadas.</span></li></ul></li><li><span>Actualizar referencias de configuración:</span><ul><li><span>Reemplace todas las ocurrencias de </span><code>@config.post</code><span>con, </span><code>@config.page</code><span>por ejemplo,  </span><code>@config.post.displayFeaturedImage</code><span>para</span><code>@config.page.displayFeaturedImage</code></li><li><span>Además, debe actualizar el </span><code>config.json</code><span>archivo para que admita configuraciones específicas de la página. Esto implica copiar la </span><code>postConfig</code><span>sección y modificarla a </span><code>pageConfig</code><span>. Elimine todos los elementos que no se apliquen a las páginas, como </span><code>displayRelatedPosts</code><span>y </span><code>displayPostNavigation</code><span>. A continuación, se muestra un ejemplo:</span><br><div class="code-toolbar"><pre class="language-json" tabindex="0"><code>"pageConfig": [
     {
